@@ -189,3 +189,26 @@ a.leaf:hover{background:color-mix(in srgb,var(--h) 22%,var(--surface))}
 .mtag{font-family:var(--font-mono);font-size:10px;font-weight:700;padding:1px 5px;border-radius:4px;margin-right:3px;border:1px solid var(--border)}
 .mtag.F{color:var(--no)}.mtag.S{color:var(--accent)}.mtag.M{color:var(--warn)}
 @media(max-width:720px){.tree{flex-direction:column}.tree .root{width:auto}.branch{flex-direction:column;gap:8px}.bnode{width:auto}}
+
+/* ---- compact architecture diagrams (§4) ---- */
+.archblk{padding:13px 0;border-top:1px solid var(--border)}
+.archblk:first-child{border-top:none;padding-top:0}
+.archh{font-family:var(--font-mono);font-size:12px;font-weight:650;color:var(--text);margin-bottom:9px}
+.archh b{color:var(--accent)}
+.archh .arefs{font-weight:400;color:var(--faint);margin-left:7px}
+.archrow{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.abox{font-family:var(--font-mono);font-size:11.5px;border:1px solid var(--border-strong);border-radius:8px;padding:6px 10px;background:var(--surface-2);color:var(--text)}
+.abox.core{border-color:var(--accent-line);background:var(--accent-tint);color:var(--accent);font-weight:650}
+.abox.mem{border-color:color-mix(in srgb,var(--warn) 55%,transparent);color:var(--warn)}
+.aarr{color:var(--faint);font-weight:700}
+.afb{flex-basis:100%;font-family:var(--font-mono);font-size:11px;color:var(--accent);margin-top:8px}
+.afb.none{color:var(--faint)}
+
+/* ---- collapsible taxonomy nodes ---- */
+.tree .bnode{cursor:pointer;user-select:none}
+.tree .bnode:hover{filter:brightness(1.04)}
+.btgl{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:4px;background:var(--h,var(--accent));
+  color:#fff;font-family:var(--font-mono);font-size:12px;font-weight:800;line-height:1;margin-right:7px;vertical-align:middle;flex:none}
+.branch.collapsed .leaves{display:none}
+.treebar{display:flex;justify-content:flex-end;margin:0 0 12px}
+.treebar .fbtn{cursor:pointer}
