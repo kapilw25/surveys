@@ -1,4 +1,4 @@
-\section{Code-as-Policy: Robots that Write their Own Skills}
+\subsection{Code-as-Policy: Robots that Write their Own Skills}
 \label{sec:code}
 
 The organising contribution of this survey is to arrange code-as-policy methods not by
@@ -15,7 +15,7 @@ survey is naming this progression and showing that the top rung is nearly empty.
 \input{figures/fig_taxonomy_31}
 \input{figures/fig_architectures}
 
-\subsection{Zero-shot synthesis (\S3.1.1)}
+\subsubsection{Zero-shot synthesis}
 \label{ssec:zeroshot}
 The foundational move is to treat the language model as a \emph{program synthesiser} over
 a fixed library of perception and control primitives. \emph{Code-as-Policies}
@@ -38,7 +38,7 @@ What unites this rung, and limits it, is that the program is written \emph{once}
 no channel from execution back to the synthesiser, so a plan that fails at run time simply
 fails.
 
-\subsection{Closed-loop self-repair (\S3.1.2)}
+\subsubsection{Closed-loop self-repair}
 \label{ssec:selfrepair}
 The second rung adds a within-task feedback loop. \emph{Inner Monologue}
 \citep{innermonologue} feeds success detectors, scene descriptions and human feedback back
@@ -52,17 +52,18 @@ systems push the monitor into the perception loop---\emph{Code-as-Monitor}
 of this rung is the closed loop, but it is a \emph{short} loop: corrections are discarded
 at task boundaries, so nothing accumulates.
 
-\subsection{Skill-library accumulation (\S3.1.3)}
+\subsubsection{Skill-library accumulation}
 \label{ssec:skilllib}
 The third rung makes the loop persistent by writing validated code into a growing library
 that later tasks retrieve and compose. Because this ``memory'' axis is a full technique
 family in its own right, we catalogue its systems once, in \S\ref{sec:skill}
 (\S3.4.3)---\emph{Voyager} \citep{voyager} is the canonical example, curating an
-ever-growing library of verified skill programs with when-to-apply guards. The key
+ever-growing library of verified skill programs with when-to-apply guards, while related
+methods distil language corrections into retrievable knowledge for future tasks~\citep{droc}. The key
 distinction from \S3.1.2 is temporal scope: competence compounds \emph{across} tasks rather
 than being rebuilt each time.
 
-\subsection{Evolutionary program search (\S3.1.4)}
+\subsubsection{Evolutionary program search}
 \label{ssec:search}
 The fourth rung replaces a single chain of repairs with population-based search over
 programs. Rather than iteratively debugging one candidate, the agent maintains several,
@@ -73,7 +74,7 @@ that mines near-miss failures to stabilise search. The novelty is the shift from
 \emph{repair} to \emph{search}: exploration is explicit and parallel, which trades compute
 for a better chance of escaping local failures.
 
-\subsection{The full self-improving loop (\S3.1.5)}
+\subsubsection{The full self-improving loop}
 \label{ssec:fullloop}
 The top rung combines all three mechanisms---execution feedback (F), a persistent skill
 memory (M), and evolutionary search (S)---into one open-ended loop
