@@ -10,15 +10,20 @@
 % ---- journal metadata (draft placeholders) ----
 \acmJournal{CSUR}
 \acmYear{2026}\acmVolume{1}\acmNumber{1}\acmArticle{1}\acmMonth{1}
-\settopmatter{authorsperrow=3}      % pack authors horizontally (ACM still stacks in acmsmall)
-\citestyle{acmauthoryear}           % [Author, Year] citations (matches the taxonomy figures)
+\settopmatter{authorsperrow=3}      % (ACM journal format stacks authors regardless)
+% numeric [N] citations = ACM default -> numbered References [1], [2], ...
 
 % ---- packages for the taxonomy figures (xcolor already loaded by acmart) ----
 \usepackage{forest}
 \useforestlibrary{edges}   % provides `forked edges` (the Fig2 look)
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,fit,backgrounds}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,shapes.geometric}
 \usepackage{pifont}
+
+% colourful yes/no/na marks for the capability matrix (Table 2)
+\newcommand{\yy}{\textcolor{ForestGreen}{\ding{52}}}      % yes
+\newcommand{\nn}{\textcolor{BrickRed}{\ding{56}}}         % no
+\newcommand{\dm}{\textcolor{gray!65}{\textbf{--}}}         % n/a
 
 % ---- shared Fig2-style taxonomy forest style + colours ----
 \input{styles/taxonomy_style}

@@ -1,21 +1,44 @@
-% Table — related surveys in the physical-AI / robot-learning landscape.
-\begin{table*}[t]
+% Table 1 — related surveys as a colored TikZ timeline (year axis, one marker each).
+\begin{table}[t]
 \centering
-\footnotesize
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{@{}p{0.34\textwidth}p{0.14\textwidth}p{0.44\textwidth}@{}}
-\toprule
-\textbf{Survey} & \textbf{Year} & \textbf{Focus / gap vs. ours} \\
-\midrule
-Foundation Models in Robotics       & 2023 & broad FM survey; no self-improvement axis \\
-VLA Models (survey)                 & 2024 & weights-based policies only (our \S3.2) \\
-LLMs for Robotics                   & 2024 & planning/language; not code self-improvement \\
-Robot Skill Learning (survey)       & 2024 & skill acquisition; no marketplace / \S3.1.5 gap \\
-Code Generation for Robotics        & 2025 & code-as-policy; not organized by self-improvement \\
-\textbf{Ours (Weights or Skills?)}  & 2026 & \textbf{organizes code-as-policy by degree of self-improvement; names the \S3.1.5 gap} \\
-\bottomrule
-\end{tabular}
-\caption{Related surveys. None organizes code-as-policy by \emph{degree of self-improvement}
-or isolates the feedback$+$memory$+$search cell (\S3.1.5) that ASPIRE occupies.}
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}[font=\small]
+  % year gridlines + labels
+  \foreach \x/\yr in {0/2023, 2.4/2024, 4.8/2025, 7.2/2026}{
+    \draw[gray!22] (\x,-0.35) -- (\x,5.5);
+    \node[gray, font=\footnotesize, below] at (\x,-0.4) {\yr};
+  }
+  % rows: dotted leader + name (left) + colored marker at its year
+  \draw[gray!35, densely dotted] (-0.25,5) -- (0,5);
+  \node[anchor=east] at (-0.3,5) {\textbf{Foundation Models in Robotics}};
+  \filldraw[fill=secA, draw=hidden-draw] (0,5) circle (5.5pt);
+
+  \draw[gray!35, densely dotted] (-0.25,4) -- (2.4,4);
+  \node[anchor=east] at (-0.3,4) {\textbf{VLA Models survey}};
+  \filldraw[fill=secB, draw=hidden-draw] (2.4,4) circle (5.5pt);
+
+  \draw[gray!35, densely dotted] (-0.25,3) -- (2.4,3);
+  \node[anchor=east] at (-0.3,3) {\textbf{LLMs for Robotics}};
+  \filldraw[fill=secC, draw=hidden-draw] (2.4,3) circle (5.5pt);
+
+  \draw[gray!35, densely dotted] (-0.25,2) -- (2.4,2);
+  \node[anchor=east] at (-0.3,2) {\textbf{Robot Skill Learning}};
+  \filldraw[fill=secF, draw=hidden-draw] (2.4,2) circle (5.5pt);
+
+  \draw[gray!35, densely dotted] (-0.25,1) -- (4.8,1);
+  \node[anchor=east] at (-0.3,1) {\textbf{Code Generation for Robotics}};
+  \filldraw[fill=secD, draw=hidden-draw] (4.8,1) circle (5.5pt);
+
+  \draw[gray!35, densely dotted] (-0.25,0) -- (7.2,0);
+  \node[anchor=east] at (-0.3,0) {\textbf{Ours --- \emph{Weights or Skills?}}};
+  \node[star, star points=5, star point ratio=2.3, fill=secE, draw=hidden-draw,
+        minimum size=18pt, inner sep=0] at (7.2,0) {};
+\end{tikzpicture}%
+}
+\caption{Related surveys on a timeline. Prior surveys (2023--2025) each cover part of the
+landscape---foundation models, VLA policies, LLM planning, skill acquisition, code
+generation---but none organizes code-as-policy by \emph{degree of self-improvement}.
+\textbf{Ours} ($\star$, 2026) isolates the feedback\,+\,memory\,+\,search cell (\S3.1.5)
+that ASPIRE occupies.}
 \label{tab:surveys}
-\end{table*}
+\end{table}
