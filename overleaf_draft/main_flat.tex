@@ -25,6 +25,7 @@
 \newcommand{\nn}{\textcolor{BrickRed}{\ding{56}}}         %
 \newcommand{\dm}{\textcolor{gray!65}{\textbf{--}}}         %
 \usepackage{longtable}
+\usepackage{array}      %
 \usepackage{placeins}   %
 
 %
@@ -471,6 +472,105 @@ $\boldsymbol{\pi_{0.5}}$~\cite{pi05} & 2025 & arXiv & \tweights & \dreal & \nn\\
 \textbf{CALVIN}~\cite{calvin} & 2022 & RA-L & \tbench & \dsim & \dm\\
 \end{longtable}
 }
+ 
+\subsection{Survey methodology: how the corpus was built}
+\label{sec:method}
+
+Figure~\ref{fig:prisma} summarises the corpus construction in the PRISMA~2020
+style~\citep{prisma2020}. The corpus was assembled in two passes over a January~2016 to
+July~2026 window. First, the 77 taxonomy systems were curated by \emph{seeding and
+snowballing}: for each of the six branches we started from its landmark systems and chased
+citations forward and backward until new candidates stopped appearing. Second, the 225-work
+landscape corpus (Table~\ref{tab:landscape}) was gathered by five \emph{structured web-search
+sweeps}, one per area cluster: (i) generalist and vision-language-action policies, imitation
+and diffusion policies; (ii) language-model planning, task-and-motion planning, reward and data
+synthesis; (iii) skill discovery, hierarchical reinforcement learning, and world models;
+(iv) manipulation, dexterity, sim-to-real, locomotion, and benchmarks; and (v) representation
+learning, offline reinforcement learning, navigation, and tactile sensing. Each sweep queried
+the open web with area-specific search strings of the form ``\emph{<system or family name>
+robot learning arXiv}'' and ``\emph{<area> survey/benchmark/dataset}'' over arXiv, the ACM
+Digital Library, IEEE Xplore, Google Scholar, and venue proceedings pages (CoRL, RSS, ICRA,
+IROS, NeurIPS, ICML, ICLR, CVPR).
+
+\emph{Inclusion} required a work to (a) concern how an embodied agent's skill or policy is
+authored, learned, transferred, evaluated, or distributed, and (b) carry verifiable metadata:
+exact title, first author, year, and an arXiv identifier or DOI, each confirmed against the
+source. \emph{Exclusion} removed pure perception, navigation, and locomotion work with no
+bearing on skill authoring (retained only in the landscape appendix where it anchors an area),
+works whose metadata could not be verified, and duplicates, detected by both bibliographic key
+and arXiv identifier. Every reference in this survey passed the verification step; candidates
+that failed it were discarded at harvest time, and we report that their count was not logged
+rather than estimate it. Included systems were then mapped onto the taxonomy of
+Figure~\ref{fig:taxonomy_main} by the mechanism definitions of Table~\ref{tab:defs}.
+
+%
+%
+%
+%
+%
+%
+\begin{figure}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  font=\footnotesize,
+  box/.style={draw=hidden-draw, rounded corners=1pt, align=left, inner sep=5pt,
+              text width=16.5em, fill=white},
+  ex/.style={font=\scriptsize\itshape, text=BrickRed!85!black},
+  bar/.style={draw=hidden-draw, rounded corners=1pt, inner sep=2pt, rotate=90,
+              anchor=center, align=center, font=\footnotesize\bfseries, minimum width=8em},
+  ar/.style={-{Stealth[length=2mm]}, darkgray, line width=0.7pt},
+  node distance=4mm and 9mm,
+]
+%
+\node[box, fill=secA!30] (L1)
+  {\textbf{Identification (web search).} 237 candidate records from five thematic sweeps\\
+   {\scriptsize\itshape\color{BrickRed!85!black} --12 cross-sweep duplicates removed}};
+\node[box, fill=secC!22, below=of L1] (L2)
+  {\textbf{Screening.} 225 screened against the existing corpus (bibkey, arXiv-ID)\\
+   {\scriptsize\itshape\color{BrickRed!85!black} --0 records overlapping the taxonomy corpus}};
+\node[box, fill=secC!22, below=of L2] (L3)
+  {\textbf{Eligibility.} 225 metadata-verified: exact title, first author, year, arXiv ID\\
+   {\scriptsize\itshape\color{BrickRed!85!black} --candidates failing verification dropped at harvest (count not logged)}};
+\node[box, fill=secEl, below=of L3] (L4)
+  {\textbf{Landscape corpus:} 225 works (Table~\ref{tab:landscape})};
+%
+\node[box, fill=secB!25, right=9mm of L1] (R1)
+  {\textbf{Identification (seeding \& snowballing).} Seed systems per branch, then citation
+   chasing across the six branches};
+\node[box, fill=secB!12, below=of R1] (R2)
+  {\textbf{Taxonomy systems:} 77 metadata-verified};
+\node[box, fill=secB!12, below=of R2] (R3)
+  {\textbf{Prior surveys:} 7 (venue-targeted search)};
+%
+\node[box, fill=secEl, below=7mm of L4, xshift=13em, text width=35em, align=center] (INC)
+  {\textbf{Included:} 302 systems mapped (77 taxonomy $+$ 225 landscape) $+$ 7 prior surveys
+   $+$ 1 industry reference $=$ \textbf{310 references}};
+%
+\draw[ar] (L1) -- (L2); \draw[ar] (L2) -- (L3); \draw[ar] (L3) -- (L4);
+\draw[ar] (R1) -- (R2); \draw[ar] (R2) -- (R3);
+\draw[ar] (L4.south) -- (L4.south |- INC.north);
+\draw[ar] (R3.south) |- ([xshift=6em]INC.north) -- ([xshift=6em]INC.north |- INC.north);
+%
+\node[bar, fill=secA] at ($(L1.west)+(-2em,0)$) {Identification};
+\node[bar, fill=secC] at ($(L2.west)!0.5!(L3.west)+(-2em,0)$) {Screening};
+\node[bar, fill=secE] at ($(L4.west)+(-2em,0)$) {Included};
+\end{tikzpicture}}
+\caption{\textbf{Corpus construction} in the PRISMA 2020 style~\citep{prisma2020}. The left column
+is the web-search stream behind the landscape corpus (Table~\ref{tab:landscape}), with recorded
+counts and inline exclusions (red) at each stage; the right column is the seed-and-snowball
+curation behind the taxonomy corpus (Figure~\ref{fig:taxonomy_main}). Both streams feed the
+included set. Candidates whose metadata could not be verified were discarded at harvest time; their
+count was not logged, which we state rather than estimate (\S\ref{sec:method}).}
+\Description{A PRISMA 2020 style flow diagram with two identification columns. The left column
+(structured web search) shows 237 candidate records, minus 12 duplicates, screened to 225 with zero
+taxonomy overlap, and 225 metadata-verified records forming the landscape corpus; exclusions are
+noted inline, including a note that candidates failing verification were dropped with their count
+not logged. The right column (seed-and-snowball curation) yields 77 taxonomy systems and 7 prior
+surveys. Both columns feed an included box of 302 systems and 310 total references. Side bars mark
+the Identification, Screening, and Included stages.}
+\label{fig:prisma}
+\end{figure}
   %
 \section{The Technique Families}
 \label{sec:techniques}
@@ -530,7 +630,7 @@ with no selection; repeated prompting whose candidates are never compared \\
 \bottomrule
 \end{tabular}
 \caption{Operational definitions of the three mechanisms used to place a system on the
-code-as-policy ladder (\S\ref{sec:code}). These fix the reviewer-relevant boundary cases: a
+code-as-policy ladder (\S\ref{sec:code}). These resolve the ambiguous boundary cases: a
 failure detector or a grounded critique counts as Feedback, trained weights do not count as
 Memory, and repeated prompting counts as Search only when its candidates are compared and
 selected.}
@@ -996,31 +1096,70 @@ self-improvement; each other camp lacks at least one axis. \yy~= yes, \nn~= no, 
  
 \subsection{Synthesis: what each family cannot do}
 \label{sec:synthesis}
-Table~\ref{tab:branch_limits} scores every family on six properties. No family scores well on
-all of them, which is the tension the skill economy (\S\ref{sec:open}) inherits.
+Table~\ref{tab:branch_limits} compares every family on six axes: data needs, task horizon,
+transfer, interpretability, safety, and characteristic failure mode. Reading it column-wise
+profiles a family; reading it row-wise shows that every axis has at least one weak family, and
+no family is favourable on all six, which is the tension the skill economy (\S\ref{sec:open})
+inherits.
 
+%
 %
 %
 \begin{table*}[t]
 \centering
-\footnotesize
-\renewcommand{\arraystretch}{1.3}
-\begin{tabular}{@{}p{0.19\textwidth} *{6}{c} p{0.23\textwidth}@{}}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.125\textwidth} >{\raggedright\arraybackslash}p{0.16\textwidth} >{\raggedright\arraybackslash}p{0.16\textwidth} >{\raggedright\arraybackslash}p{0.15\textwidth} >{\raggedright\arraybackslash}p{0.15\textwidth} >{\raggedright\arraybackslash}p{0.155\textwidth}@{}}
 \toprule
-\textbf{Family} & \textbf{Gen.} & \textbf{Inspect.} & \textbf{Adapt.} & \textbf{Compos.}
- & \textbf{Distrib.} & \textbf{Self-impr.} & \textbf{Key limitation} \\
+ & \textbf{End-to-end VLA} (\S\ref{sec:vla}) & \textbf{Code-as-policy} (\S\ref{sec:code})
+ & \textbf{Reward synthesis} (\S\ref{sec:reward}) & \textbf{RL skill discovery} (\S\ref{sec:skill})
+ & \textbf{Market skills} (\S\ref{sec:open}) \\
 \midrule
-End-to-end VLA (\S\ref{sec:vla}) & \yy & \nn & \nn & \nn & \pp & \nn & no inspectable reuse or editing \\
-Code-as-policy (\S\ref{sec:code}) & \pp & \yy & \yy & \yy & \pp & \yy & brittle under perception errors \\
-Reward synthesis (\S\ref{sec:reward}) & \pp & \nn & \yy & \nn & \nn & \pp & ships opaque weights, sim-bound \\
-RL skill discovery (\S\ref{sec:skill}) & \pp & \nn & \pp & \pp & \nn & \nn & symbolically un-inspectable \\
-Market skills (\S\ref{sec:open}) & \nn & \nn & \nn & \pp & \yy & \nn & no adaptation or provenance \\
+\textbf{Data needs} &
+\nn\ web-scale teleop corpora: 1M+ episodes, 22 embodiments~\citep{openx} &
+\yy\ few-shot prompts over a pretrained LLM~\citep{codeaspolicies} &
+\pp\ massive \emph{simulated} interaction, no demonstrations~\citep{eureka} &
+\nn\ millions of environment steps per embodiment~\citep{diayn} &
+\yy\ none at deployment; vendor-recorded playback~\citep{unistore2026} \\
+\textbf{Task horizon} &
+\pp\ short reactive chunks; long tasks by chaining~\citep{rt2} &
+\yy\ long: programs compose perception and control primitives~\citep{voxposer} &
+\nn\ one low-level skill per synthesised reward~\citep{eureka} &
+\nn\ temporally-extended primitives, not full tasks~\citep{metra} &
+\pp\ fixed multi-step routines; no branching \\
+\textbf{Transfer} &
+\yy\ cross-task and cross-embodiment via co-training~\citep{openx} &
+\pp\ API-level portability, but bound to the perception stack &
+\pp\ sim-to-real via randomisation search~\citep{dreureka} &
+\pp\ latent skills seed downstream RL~\citep{spirl} &
+\nn\ certified robot models only; no adaptation~\citep{unistore2026} \\
+\textbf{Interpretability} &
+\nn\ opaque weights; behaviour only observable &
+\yy\ readable, editable, diffable programs &
+\pp\ readable reward code; opaque trained policy &
+\nn\ latent skill codes, symbolically uninspectable &
+\nn\ sealed vendor package \\
+\textbf{Safety} &
+\nn\ emergent behaviour is hard to verify pre-deployment &
+\yy\ inspectable before execution; constrained to vetted APIs &
+\nn\ reward hacking; unintended optima~\citep{eureka} &
+\nn\ unconstrained exploration unsafe on hardware &
+\pp\ vendor certification, but no provenance record \\
+\textbf{Failure mode} &
+silent misgrounding under distribution shift &
+brittle when perception mislabels the scene &
+specification gaming that passes in sim only &
+skill collapse into degenerate behaviours &
+context mismatch with no recovery path \\
 \bottomrule
 \end{tabular}
-\caption{What each family can (\yy) and cannot (\nn) do (\pp\ partial). Columns:
-\textbf{Gen.}eralization, \textbf{Inspect.}ability, \textbf{Adapt.}ability,
-\textbf{Compos.}ability, \textbf{Distrib.}utability, and run-time \textbf{Self-impr.}ovement.
-No family scores well on all six, the tension the skill economy (\S\ref{sec:open}) inherits.}
+\caption{\textbf{Family comparison matrix}: the five technique families on six axes (data needs,
+task horizon, transfer, interpretability, safety, characteristic failure mode). Marks grade each
+family on the axis (\yy\ favourable, \pp\ mixed, \nn\ weak); evidence anchors include the
+Open X-Embodiment corpus~\citep{openx} for data and transfer and lifelong suites such as
+LIBERO~\citep{libero} for horizon and reuse. No family is favourable on all six axes, which is
+the tension the skill economy (\S\ref{sec:open}) inherits.}
 \label{tab:branch_limits}
 \end{table*}
   %
@@ -1103,21 +1242,74 @@ problems, not as a mature body of results.
 \section{Future Directions}
 \label{sec:future}
 
-Three directions follow directly from the map. \textbf{(1) Standardised evaluation of
-self-improvement.} The systems on the top rung (\S3.1.5) each report improvement on their
-own splits; the field lacks a shared protocol that measures held-out success as a function
-of accumulated experience (an area-under-the-learning-curve metric), cross-embodiment
-transfer, and library-reuse rate under a common budget. Building such a benchmark is a natural next step. \textbf{(2) Adaptation as a first-class marketplace
-primitive.} The open problems of \S\ref{sec:open} suggest a research programme in which a
-downloaded skill is not a frozen artefact but a starting point that the \S\ref{sec:code}
-loop specialises to the local robot and environment; turning distribution (layer~2) and
-adaptation (layer~3) into a single pipeline. \textbf{(3) Bridging the RL and code flavours
-of skills.} \S\ref{sec:skill} shows that skills are learned either as latent RL policies or
-as retrievable code; a unifying interface, code that wraps, calls, and refines learned
-policies, and learned policies distilled back into inspectable code, would let the
-self-improvement machinery of \S\ref{sec:code} operate over both. We see the combination of
-a standard self-improvement benchmark with an adaptation-centric marketplace as the most
-likely path from today's static skill stores to genuinely capable, compounding robots.
+To make the agenda actionable rather than aspirational, we anchor it on four measurable
+quantities, defined with concrete testbeds in Table~\ref{tab:future_metrics}: the
+\emph{success-vs-interactions curve} (does competence rise with autonomous experience?), the
+\emph{skill-library reuse rate} (does stored competence compound?), the \emph{cross-embodiment
+transfer drop} (how much is lost when a skill changes bodies?), and the \emph{provenance check}
+(can a distributed skill's origin and test record be verified?). The first two instantiate
+naturally on LIBERO-style lifelong task streams~\citep{libero}; the third on held-out-embodiment
+splits of Open X-Embodiment~\citep{openx}; the fourth on marketplace
+listings~\citep{unistore2026}.
+
+%
+%
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}p{0.17\textwidth} p{0.30\textwidth} p{0.27\textwidth} p{0.17\textwidth}@{}}
+\toprule
+\textbf{Metric} & \textbf{Definition} & \textbf{Instantiation (testbed)} & \textbf{Family stressed} \\
+\midrule
+Success-vs-interactions curve &
+held-out success rate as a function of accumulated autonomous interactions; report the curve
+and its area, not a single endpoint &
+lifelong task streams in the style of LIBERO-100~\citep{libero}, fixed interaction budget &
+\S\ref{sec:code} full loop; \S\ref{sec:vla} fine-tuning \\
+Skill-library reuse rate &
+fraction of new-task solutions that invoke at least one previously stored skill, and mean
+invocations per stored skill &
+growing code libraries~\citep{voyager} evaluated across LIBERO-style task suites~\citep{libero} &
+\S\ref{sec:skill} libraries; \S\ref{sec:code} memory rung \\
+Cross-embodiment transfer drop &
+difference in success between the training embodiment and an unseen one, at matched task and
+budget &
+held-out-embodiment splits of Open X-Embodiment~\citep{openx} (22 embodiments) &
+\S\ref{sec:vla}; \S\ref{sec:transfer} \\
+Provenance check &
+fraction of distributed skills carrying a verifiable origin, training-data statement, and
+reproducible test record &
+audits of marketplace listings~\citep{unistore2026} against a declared provenance schema &
+market skills (\S\ref{sec:open}) \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{An actionable protocol for the future agenda}: four measurable quantities, their
+definitions, and concrete testbeds. The first two instantiate LIBERO-style lifelong
+learning~\citep{libero}; the third instantiates Open X-Embodiment-style multi-robot
+transfer~\citep{openx}; the fourth targets the skill marketplaces of \S\ref{sec:open}.}
+\label{tab:future_metrics}
+\end{table*}
+ 
+Three directions follow directly from the map, each now with its success measure.
+\textbf{(1) Standardised evaluation of self-improvement.} The systems on the top rung
+(\S3.1.5) each report improvement on their own splits; the field lacks a shared protocol that
+plots the success-vs-interactions curve and the skill-library reuse rate under a common interaction
+budget. A benchmark that publishes both curves per system, in the way LIBERO standardised
+lifelong manipulation~\citep{libero}, would make ``self-improvement'' a reported number rather
+than a claim. \textbf{(2) Adaptation as a first-class marketplace primitive.} The open problems
+of \S\ref{sec:open} suggest a research programme in which a downloaded skill is not a frozen
+artefact but a starting point that the \S\ref{sec:code} loop specialises to the local robot and
+environment; its success measures are the transfer drop before versus after on-device
+adaptation, and the provenance check on what was downloaded. \textbf{(3) Bridging the RL and
+code flavours of skills.} \S\ref{sec:skill} shows that skills are learned either as latent RL
+policies or as retrievable code; a unifying interface, code that wraps, calls, and refines
+learned policies, and learned policies distilled back into inspectable code, would let the
+self-improvement machinery of \S\ref{sec:code} operate over both, and its progress is legible in
+the reuse rate crossing family boundaries. We see the combination of a standard self-improvement
+benchmark with an adaptation-centric marketplace as the most likely path from today's static
+skill stores to genuinely capable, compounding robots.
  %
 \section{Conclusion}
 \label{sec:conclusion}
@@ -1144,7 +1336,7 @@ research opportunity for physical AI, and the self-improvement ladder of \S\ref{
 %
 %
 
-\begin{thebibliography}{310}
+\begin{thebibliography}{311}
 
 %
 %
@@ -3800,6 +3992,21 @@ research opportunity for physical AI, and the self-improvement ladder of \S\ref{
 \newblock
 \newblock
 \shownote{arXiv:2310.08864}.
+
+
+\bibitem[Page et~al\mbox{.}(2021)]%
+        {prisma2020}
+\bibfield{author}{\bibinfo{person}{Matthew~J. Page}, \bibinfo{person}{Joanne~E.
+  McKenzie}, \bibinfo{person}{Patrick~M. Bossuyt}, \bibinfo{person}{Isabelle
+  Boutron}, \bibinfo{person}{Tammy~C. Hoffmann}, \bibinfo{person}{Cynthia~D.
+  Mulrow}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{The {PRISMA} 2020 statement: an updated guideline
+  for reporting systematic reviews}.
+\newblock \bibinfo{journal}{\emph{BMJ}}  \bibinfo{volume}{372}
+  (\bibinfo{year}{2021}), \bibinfo{pages}{n71}.
+\newblock
+\newblock
+\shownote{doi:10.1136/bmj.n71}.
 
 
 \bibitem[Pan et~al\mbox{.}(2026)]%

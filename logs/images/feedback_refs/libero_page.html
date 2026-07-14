@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+
+  <!-- Page Info -->
+  <link rel="shortcut icon" href="">
+  <title>LIBERO – LIBERO</title>
+
+  <link rel="stylesheet" href="/assets/css/index.css">
+
+  <meta name="description" content="">
+
+  <!--  Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link href="/assets/css/font-awesome.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/styles/styles.css" rel="stylesheet">
+
+  
+  <!-- Analytics Code -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6L1G6GMR63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6L1G6GMR63');
+</script>
+
+  
+
+  
+
+  <script src="/assets/js/custom.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body>
+  
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent headroom">
+  
+
+        <div class="container">
+          
+          <a href="/" class="navbar-brand mr-lg-5">
+            <img src="/assets/img/libero/libero_logo.png">
+          </a>
+          
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  
+                  <a href="/">
+                    <img src="">
+                  </a>
+                  
+                </div>
+                <div class="col-6 collapse-close">
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+              
+                
+                  <li class="nav-item">
+                    <a href="/main" class="nav-link">
+                      <span class="nav-link-inner--text">Home</span>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">LIBERO</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="https://arxiv.org/abs/2306.03310">
+                        <i class="ni ni-single-copy-04 text-default"></i>
+                        Paper
+                      </a>
+                      
+                      <a class="dropdown-item" href="https://github.com/Lifelong-Robot-Learning/LIBERO">
+                        <i class="ni ni-spaceship text-success"></i>
+                        Codebase
+                      </a>
+                      
+                      <a class="dropdown-item" href="https://lifelong-robot-learning.github.io/LIBERO/html/getting_started/overview.html">
+                        <i class="ni ni-single-copy-04 text-danger"></i>
+                        Documentation
+                      </a>
+                      
+                    </div>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/datasets" class="nav-link">
+                      <span class="nav-link-inner--text">Datasets</span>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/research" class="nav-link">
+                      <span class="nav-link-inner--text">Research</span>
+                    </a>
+                  </li>
+                
+              
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <div class="wrapper page">
+    
+    <!-- Is not a blog post or blog archive or contact page -->
+    
+    <!-- Is a page with a banner -->
+    <div class="page-header page-header-small header-filter mb-4">
+      
+      <div class="page-header-image card-background"
+        style="background-image: url(/assets/img/libero/whole_img.png);"></div>
+      
+      
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-2 text-white">LIBERO</h2>
+            <h2 class="lead text-white pl-5 pr-5 pb-3 text-center">Benchmarking Knowledge Transfer in Lifelong Robot Learning</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+
+    <div id="main" class="container">
+      <!-- <div id="mainContent"> -->
+<!-- </div> -->
+
+<!-- <h5>LIBERO is a lifelong robot learning benchmark for studying knowledge transfer.</h5> -->
+
+<p>In the future, robots will be pretrained with a diverse set of skills in factory before deployment. However, we believe it is also a must for them to learn with their human users throughout their lifetime to really become a personalized embodied agent. This pertains to the paradigm of lifelong learning in decision making (LLDM). While LLDM is an important research question, currently the community lacks good testbeds for studying LLDM. We offer LIBERO, a benchmark that is tailored to the nature of lifelong robot learning — a benchmark that can continually grow. We build this benchmark to invite communities of machine learning and robotics people to study a core problem in lifelong learning: knowledge transfer. We hope this benchmark can serve as a common ground for the community to develop and evaluate new lifelong learning algorithms.</p>
+
+<p><img src="assets/img/libero/fig1.png" alt="LIBERO" /></p>
+
+<!-- <div class="section features-1">
+    <div class="container">
+      <div class="row text-left justify-content-left">
+        <div class="col-lg-8">
+          <h4>The LIBERO Team</h4>
+          <br>
+        </div>
+      </div>
+      <div class="row text-center justify-content-center" align="middle">
+      
+        <div class="col">
+          <a href="https://cranial-xix.github.io/" class="avatar avatar-xl rounded-circle" align="middle">
+            <img alt="Bo Liu portrait" src="/assets/img/people/bliu.jpg">
+          </a>
+          <small class="d-block font-weight-bold mb-4">Bo Liu</small>
+        </div>
+        
+        <div class="col">
+          <a href="https://cs.utexas.edu/~yifengz" class="avatar avatar-xl rounded-circle" align="middle">
+            <img alt="Yifeng Zhu portrait" src="/assets/img/people/yifengz.jpg">
+          </a>
+          <small class="d-block font-weight-bold mb-4">Yifeng Zhu</small>
+        </div>
+        
+        <div class="col">
+          <a href="https://chongkaigao.com/" class="avatar avatar-xl rounded-circle" align="middle">
+            <img alt="Chongkai Gao portrait" src="/assets/img/people/chongkaig.png">
+          </a>
+          <small class="d-block font-weight-bold mb-4">Chongkai Gao</small>
+        </div>
+        
+        <div class="col">
+          <a href="" class="avatar avatar-xl rounded-circle" align="middle">
+            <img alt="Yihao Feng portrait" src="/assets/img/people/yihaof.jpg">
+          </a>
+          <small class="d-block font-weight-bold mb-4">Yihao Feng</small>
+        </div>
+        
+        <div class="col">
+          <a href="https://cs.utexas.edu/~lqiang" class="avatar avatar-xl rounded-circle" align="middle">
+            <img alt="Qiang Liu portrait" src="/assets/img/people/lqiang.jpg">
+          </a>
+          <small class="d-block font-weight-bold mb-4">Qiang Liu</small>
+        </div>
+        
+        <div class="col">
+          <a href="https://cs.utexas.edu/~yukez" class="avatar avatar-xl rounded-circle" align="middle">
+            <img alt="Yuke Zhu portrait" src="/assets/img/people/yukez.png">
+          </a>
+          <small class="d-block font-weight-bold mb-4">Yuke Zhu</small>
+        </div>
+        
+        <div class="col">
+          <a href="https://cs.utexas.edu/~pstone" class="avatar avatar-xl rounded-circle" align="middle">
+            <img alt="Peter Stone portrait" src="/assets/img/people/pstone.png">
+          </a>
+          <small class="d-block font-weight-bold mb-4">Peter Stone</small>
+        </div>
+        
+      </div>
+    </div>
+  </div> -->
+
+<div class="section features-1">
+    <div class="container">
+        <div class="row text-left justify-content-left">
+            <div class="col-lg-8">
+                <h4>The LIBERO Team</h4>
+                <br />
+            </div>
+        </div>
+        <div class="container-flex">
+            
+            <div class="avatar-container">
+                <a href="https://cranial-xix.github.io/" class="avatar-circle">
+                    <img class="avatar-circle" alt="Bo Liu portrait" src="/assets/img/people/bliu.jpg" />
+                </a>
+                <small class="d-block font-weight-bold mb-4">Bo Liu</small>
+            </div>
+            
+            <div class="avatar-container">
+                <a href="https://cs.utexas.edu/~yifengz" class="avatar-circle">
+                    <img class="avatar-circle" alt="Yifeng Zhu portrait" src="/assets/img/people/yifengz.jpg" />
+                </a>
+                <small class="d-block font-weight-bold mb-4">Yifeng Zhu</small>
+            </div>
+            
+            <div class="avatar-container">
+                <a href="https://chongkaigao.com/" class="avatar-circle">
+                    <img class="avatar-circle" alt="Chongkai Gao portrait" src="/assets/img/people/chongkaig.png" />
+                </a>
+                <small class="d-block font-weight-bold mb-4">Chongkai Gao</small>
+            </div>
+            
+            <div class="avatar-container">
+                <a href="" class="avatar-circle">
+                    <img class="avatar-circle" alt="Yihao Feng portrait" src="/assets/img/people/yihaof.jpg" />
+                </a>
+                <small class="d-block font-weight-bold mb-4">Yihao Feng</small>
+            </div>
+            
+            <div class="avatar-container">
+                <a href="https://cs.utexas.edu/~lqiang" class="avatar-circle">
+                    <img class="avatar-circle" alt="Qiang Liu portrait" src="/assets/img/people/lqiang.jpg" />
+                </a>
+                <small class="d-block font-weight-bold mb-4">Qiang Liu</small>
+            </div>
+            
+            <div class="avatar-container">
+                <a href="https://cs.utexas.edu/~yukez" class="avatar-circle">
+                    <img class="avatar-circle" alt="Yuke Zhu portrait" src="/assets/img/people/yukez.png" />
+                </a>
+                <small class="d-block font-weight-bold mb-4">Yuke Zhu</small>
+            </div>
+            
+            <div class="avatar-container">
+                <a href="https://cs.utexas.edu/~pstone" class="avatar-circle">
+                    <img class="avatar-circle" alt="Peter Stone portrait" src="/assets/img/people/pstone.png" />
+                </a>
+                <small class="d-block font-weight-bold mb-4">Peter Stone</small>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+  <footer class="footer mt-5 pt-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            <span> © 2023 <a href="https://www.cs.utexas.edu/~pstone/students.shtml" target="_blank">LARG</a>, <a href="https://rpl.cs.utexas.edu/people/" target="_blank">RPL</a>, and <a href="https://www.cs.utexas.edu/~qlearning/">Statistical Learning &#38; AI groups</a> at UT Austin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  <!--   Core JS Files   -->
+  <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="/assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the Carousel, full documentation here: http://jedrzejchalubek.com/ -->
+  <script src="/assets/js/plugins/glide.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://flatpickr.js.org/ -->
+  <script src="/assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for Select, full documentation here: https://joshuajohnson.co.uk/Choices/ -->
+  <script src="/assets/js/plugins/choices.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DateTimePicker, full documentation here: https://flatpickr.js.org/ -->
+  <script src="/assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="/assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <!-- Plugin for Headrom, full documentation here: https://wicky.nillia.ms/headroom.js/ -->
+  <script src="/assets/js/plugins/headroom.min.js"></script>
+  <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+  
+  <script>
+    // Blog Post Carousel
+    if (document.querySelector('.blogGlide') !== null) {
+      new Glide('.blogGlide', {
+        type: 'carousel',
+        startAt: 0,
+        focusAt: 2,
+        perTouch: 1,
+        perView: 4
+      }).mount();
+    }
+  
+    if (document.querySelector('.glide') !== null) {
+      // Generic
+       new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        focusAt: 2,
+        perTouch: 1,
+        perView: 4
+      }).mount();
+    }
+  
+    if (document.querySelector('.testimonial-glide') !== null) {
+      // Testimonial Carousel
+      new Glide('.testimonial-glide', {
+        type: 'carousel',
+        startAt: 0,
+        focusAt: 2,
+        perTouch: 1,
+        perView: 4
+      }).mount();
+    }
+  
+  </script>
+  
+  <script>
+    $(function () {
+      var navOffset = $('#navbar-main').height();
+      $('.contentWrapper').css('padding-top', navOffset * 2 + 'px');
+    });    
+  </script>
+  
+  
+  
+  <script src="/assets/js/argon-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+
+  
+
+</body>
+
+</html>
+</body>
+
+</html>
