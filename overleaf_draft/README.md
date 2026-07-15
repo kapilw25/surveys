@@ -25,7 +25,7 @@ Three taxonomy figures are built with the LaTeX **`forest`** package in the exac
 
 1. Zip and upload the whole `overleaf_draft/` folder (New Project → Upload Project).
 2. Set **`main.tex`** as the main document, **Compiler → pdfLaTeX**.
-3. Recompile — Overleaf runs the full `pdflatex → bibtex → pdflatex ×2` cycle automatically.
+3. Recompile — Overleaf runs the full `pdflatex → bibtex → pdflatex ×2` cycle automatically. 
 
 ## Conventions
 
