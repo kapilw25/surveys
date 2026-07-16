@@ -5,11 +5,12 @@
 %  Compiler: pdfLaTeX (Overleaf runs bibtex automatically).
 % ============================================================
 \PassOptionsToPackage{svgnames,dvipsnames}{xcolor} % acmart loads xcolor; set options first
-\documentclass[acmsmall,screen,nonacm]{acmart}
+\documentclass[acmsmall,review,anonymous]{acmart}
 
 % ---- journal metadata (draft placeholders) ----
 \acmJournal{CSUR}
-\acmYear{2026}\acmVolume{1}\acmNumber{1}\acmArticle{1}\acmMonth{1}
+\acmYear{2026}\acmVolume{1}\acmNumber{1}\acmArticle{1}\acmMonth{7}
+\setcopyright{acmlicensed}  % submission placeholder; camera-ready gets the real ACM rights form
 \settopmatter{authorsperrow=3}      % (ACM journal format stacks authors regardless)
 % numeric [N] citations = ACM default -> numbered References [1], [2], ...
 
@@ -69,7 +70,11 @@
 \author{Amitava Das}
 \affiliation{\institution{Pragya Lab, BITS Pilani Goa}\country{India}}
 
-\renewcommand{\shortauthors}{Jena et al.}
+\makeatletter
+\if@ACM@anonymous\else
+  \renewcommand{\shortauthors}{Jena et al.}% only in the non-blind (camera-ready) build
+\fi
+\makeatother
 
 \input{sections/0_abstract}
 
