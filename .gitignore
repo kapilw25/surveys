@@ -13,10 +13,18 @@ scratchpad/
 # excluded from the public site repo
 #  - literature/: contains full third-party paper text (copyright)
 #  - logs/: contains third-party figure screenshots
-#  - .claude/: local tooling / slash commands
 # literature/
 # logs/
-.claude/
+
+# .claude/: share the reusable survey pipeline (commands, hooks, skills) and the
+# shared config with collaborators; keep per-user and runtime bits private.
+.claude/*
+!.claude/commands/
+!.claude/hooks/
+!.claude/skills/
+!.claude/settings.json
+# not re-included above, so .claude/* keeps them ignored (per-user / runtime):
+#   settings.local.json (personal permission ledger), state/, memory/
 
 # Secrets & Scripts
 .env
