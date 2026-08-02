@@ -26,11 +26,13 @@ permanent archive. Both can coexist with a later journal publication.
 
 **Authors (name, affiliation):**
 1. Gaytri Jena, UC Berkeley, USA
-2. Kapil Wanaskar, Canva Research, USA
-3. Vinija Jain, Google, USA
-4. Aman Chadha, Google DeepMind, USA
+2. Kapil Wanaskar, San Jose State University, USA
+3. Vinija Jain, Meta, USA
+4. Aman Chadha, Apple, USA
 5. Vasu Sharma, PocketFM, USA
 6. Amitava Das, Pragya Lab, BITS Pilani Goa, India
+
+**Author note (all six):** work done independently of their roles and employment.
 
 (Set the corresponding author + email during upload; confirm the author order.)
 

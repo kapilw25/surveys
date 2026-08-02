@@ -2,7 +2,7 @@
 
 > For the ScholarOne "suggested reviewers" field (CSUR recommends 4+). All candidates were
 > web-verified against 2025-2026 affiliations and screened against the authors' institutions
-> (UC Berkeley, Google, Google DeepMind). **Before entering into ScholarOne you must:**
+> (UC Berkeley, San Jose State, Meta, Apple, PocketFM, BITS Pilani Goa). **Before entering into ScholarOne you must:**
 > - [ ] Confirm each person's CURRENT affiliation and look up their email from their lab page
 >       (affiliations in this field change often).
 > - [ ] Confirm none is your advisor, recent co-author, or close collaborator (only you can check
@@ -13,7 +13,8 @@
 
 This subset covers both poles and all six coverage areas, spans six institutions across three
 regions, and deliberately **avoids the NVIDIA / GEAR and Physical Intelligence entanglements**
-flagged below (important because the manuscript spotlights ASPIRE, an NVIDIA GEAR system).
+flagged below (important because the manuscript spotlights ASPIRE, an NVIDIA GEAR system). None of
+the six is at an author institution (UC Berkeley, San Jose State, Meta, Apple, PocketFM, BITS Pilani).
 
 | # | Name | Current affiliation | Reviews (coverage area) | Representative work | Link |
 |---|------|---------------------|-------------------------|---------------------|------|
@@ -47,15 +48,24 @@ skill discovery / HRL (Eysenbach, Peters).
 - **Abhishek Gupta** (Univ. of Washington) - unsupervised skill discovery / RL.
 - **Osbert Bastani** (UPenn) - program synthesis bridging code-as-policy and reward-code (use as a
   substitute for Jayaraman, not in addition; same institution).
-- **Dorsa Sadigh** (Stanford) - VLA + human-robot interaction (verify: has an RT-H DeepMind tie).
+- **Dorsa Sadigh** (Stanford) - VLA + human-robot interaction (clean institution; her RT-H tie is no
+  longer an author-institution COI now that no author is at DeepMind, but verify no personal
+  co-authorship overlap).
 
 ## Explicitly EXCLUDED for conflict of interest (do not list)
 
-- **Sergey Levine** (UC Berkeley) - author institution, and the most-entangled figure across
-  RT-2 / Octo / OpenVLA / pi0.
-- **Karol Hausman** (Physical Intelligence; ex-Google DeepMind) - direct author of surveyed methods
-  (RT-1/RT-2/pi0).
-- Any **Google DeepMind** authors of Code-as-Policies / RT-X (author-institution COI).
+- **Sergey Levine** (UC Berkeley) - author institution (Gaytri Jena is at Berkeley), and the
+  most-entangled figure across RT-2 / Octo / OpenVLA / pi0.
+- **Apple / Meta researchers** - now author-institution COI (Aman Chadha is at Apple, Vinija Jain at
+  Meta). Screen the final list against both.
+- **Karol Hausman** (Physical Intelligence) - method-authorship COI (direct author of RT-1/RT-2/pi0).
+- **Direct authors of surveyed systems** (Code-as-Policies, RT-X, Octo, VoxPoser, etc.) -
+  method-authorship COI, regardless of employer.
+
+**Note on Google / DeepMind:** these are **no longer** author-institution COIs (the authors moved to
+Meta and Apple), so a Google/DeepMind researcher is not conflicted *by institution*. But most
+Google/DeepMind robotics researchers authored a surveyed system (RT-1/RT-2/RT-X/Octo, etc.), so they
+remain excluded on **method-authorship** grounds. Net: this opens few new clean options there.
 
 *Source: web-verified 2025-2026 affiliations; no email addresses are pre-filled (look them up from
 the lab pages so you enter current, correct addresses).*
