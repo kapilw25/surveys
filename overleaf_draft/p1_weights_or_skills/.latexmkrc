@@ -8,3 +8,9 @@
 # convenience; skip it when uploading folders to Overleaf.
 $out_dir  = 'no_upload/build';
 $pdf_mode = 1;
+
+# Post-build hook: shrink the NAMED preprint (main_preprint.pdf) to ~18-20 MB via ghostscript.
+# Runs after a successful compile. The script (no_upload/compress_pdf.sh) only touches
+# main_preprint.pdf and skips any file already under 20 MB, so the anonymized main.pdf stays
+# full-res and no-op rebuilds never re-compress (which would progressively degrade quality).
+$success_cmd = 'sh no_upload/compress_pdf.sh "%D"';
