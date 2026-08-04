@@ -22,6 +22,7 @@ scratchpad/
 !.claude/commands/
 !.claude/hooks/
 !.claude/skills/
+!.claude/audit/
 !.claude/settings.json
 # not re-included above, so .claude/* keeps them ignored (per-user / runtime):
 #   settings.local.json (personal permission ledger), state/, memory/
