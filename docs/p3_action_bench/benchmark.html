@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan: the gap made visual + the survey blueprint (P1 to P3)</title>
+  <meta name="description" content="A proposal for the P3 benchmark/evaluation survey: the coverage matrix that pins the novelty gap, plus a figure-by-figure and table-by-table blueprint mapping every artifact of the P1 survey to its P3 analog, and the build roadmap.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="../assets/theme-survey.css?v=2">
+  <link rel="stylesheet" href="../assets/site.css?v=3">
+  <script src="../assets/theme.js?v=2"></script>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">
+      <span class="eyebrow">Proposal · novelty gap + survey blueprint</span>
+      <h1>The plan</h1>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">&larr; Surveys</a>
+      <a href="index.html">Survey</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="benchmark.html" aria-current="page">Plan</a>
+      <button class="toggle" id="themeBtn" aria-label="Toggle color theme"><span class="dot"></span><span id="themeLabel">Theme</span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero" style="padding-bottom:20px">
+    <span class="eyebrow">from a confirmed novelty gap to a detailed CSUR-style survey</span>
+    <h2>The <em>proposal</em>: the gap made visual, then a figure-by-figure plan for the paper.</h2>
+    <p>This page is the bridge from the <a href="index.html">novelty gap</a> to a full survey. First the <b>coverage matrix</b> that pins the empty cell; then a <b>blueprint</b> that maps every figure and table of the proven <b>P1 "Weights or Skills?"</b> survey to its <b>P3</b> analog; then the build roadmap.</p>
+  </section>
+
+  <!-- coverage matrix -->
+  <div class="sec" style="margin-top:14px"><span class="tag">Evidence</span><h3>📊 Coverage matrix: which axis does each survey own?</h3></div>
+  <div class="scroll"><table class="gt">
+    <thead><tr><th>Axis</th><th>Owned (✅ spine · 🟡 partial)</th><th>Empty for a survey?</th></tr></thead>
+    <tbody>
+      <tr><td class="k">🔭 α · evaluation mode</td><td>🟡 Hou-eval · B.Hou · Duan · <b>✅ Yang Yu</b> (position paper)</td><td class="none">no survey owns it</td></tr>
+      <tr><td class="k">🧩 β · robotic capability</td><td>🟡 Hou-eval · Lai · Duan · Yang Yu</td><td class="none">partial only; hidden-state/counterfactual absent</td></tr>
+      <tr><td class="k">⚔️ γ · capability x model-family</td><td>🟡 B.Hou · Shang</td><td class="none">✅ NONE, anywhere</td></tr>
+      <tr><td class="k">📐 δ · advantage-of-prediction metric</td><td>🟡 B.Hou · <b>✅ Yang Yu</b> (position paper)</td><td class="none">no survey owns it</td></tr>
+      <tr><td class="k">🗺️ ε · benchmark catalog</td><td>✅ Hou-eval · Z.Wang · Lai · Duan</td><td>owned, but never crossed with γ, δ</td></tr>
+    </tbody>
+  </table></div>
+  <div class="cap">The empty cell = 🔭α and 🧩β and ⚔️γ and 📐δ, delivered as 🗺️ε. Axes ⚔️γ and 📐δ are owned by <b>no survey</b> (only a position paper, Yang Yu 2606.15032). Full landscape in the <a href="catalog.html">catalog</a>.</div>
+
+  <!-- planned figures -->
+  <div class="sec"><span class="tag">Blueprint · figures</span><h3>🖼️ Planned figures (every P1 figure to its P3 analog)</h3></div>
+  <div class="scroll"><table class="gt" style="min-width:820px">
+    <thead><tr><th>P1 figure</th><th>P1 was</th><th>P3 planned analog</th></tr></thead>
+    <tbody>
+      <tr><td class="k mono">fig_taxonomy_main</td><td>hero taxonomy of ~77 systems by self-improvement</td><td class="new">🧭 taxonomy of benchmarks by eval-mode x capability x family</td></tr>
+      <tr><td class="k mono">fig_corpus_collage</td><td>two-pole hero (weights vs skills)</td><td class="new">🔭 hero: open-loop generation vs closed-loop action, empty cell in the middle</td></tr>
+      <tr><td class="k mono">fig_architectures</td><td>the self-improving loop pipeline</td><td class="new">📐 the measurement pipeline: prediction to action to advantage instrument</td></tr>
+      <tr><td class="k mono">fig_prisma</td><td>PRISMA-2020 methodology flow</td><td class="new">📋 PRISMA of the benchmark corpus (sources, in/exclusion, counts): required for survey voice</td></tr>
+      <tr><td class="k mono">fig_survey_timeline</td><td>related surveys on a timeline</td><td class="new">📆 benchmarks + eval-surveys on a 2019-2026 timeline (star = ours)</td></tr>
+      <tr><td class="k mono">fig_corpus_overview</td><td>corpus at a glance (stat callouts + bars)</td><td class="new">🗂️ benchmarks at a glance: counts by lane / eval-mode / capability</td></tr>
+      <tr><td class="k mono">fig_corpus_dist</td><td>distribution charts (year/eval/signal/embod)</td><td class="new">📊 distributions by year / eval-mode / capability (shows the counterfactual hole)</td></tr>
+      <tr><td class="k mono">fig_pole_trend</td><td>per-pole (weights vs skills) over time</td><td class="new">📈 open-loop vs closed-loop vs bridge benchmark counts per year</td></tr>
+      <tr><td class="k mono">fig_robots_canvas</td><td>subject gallery (27 robot panels)</td><td class="new">🖼️ gallery of benchmark environments / example tasks (scraped, audited)</td></tr>
+      <tr><td class="k mono">fig_plots_canvas</td><td>results gallery (20 result plots)</td><td class="new">📉 gallery of "visual-quality vs task-success" plots from bridge papers</td></tr>
+      <tr><td class="k mono">fig_future_protocol</td><td>future-work protocol schematic</td><td class="new">🎯 the target protocol that would fill the cell (schematic: "target, not measured")</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- planned tables -->
+  <div class="sec"><span class="tag">Blueprint · tables</span><h3>📋 Planned tables (every P1 table to its P3 analog)</h3></div>
+  <div class="scroll"><table class="gt" style="min-width:820px">
+    <thead><tr><th>P1 table</th><th>P1 was</th><th>P3 planned analog</th></tr></thead>
+    <tbody>
+      <tr><td class="k mono">tab_survey_compare</td><td>coverage matrix (surveys vs ours)</td><td class="new">✅ surveys x 5 axes (α to ε): the matrix above, DONE</td></tr>
+      <tr><td class="k mono">tab_landscape</td><td>200+ works comparison (6 axes)</td><td class="new">🗺️ auto-generated 150-300 benchmark landscape (the anti-position-paper safeguard)</td></tr>
+      <tr><td class="k mono">tab_compare_main</td><td>representative systems longtable</td><td class="new">🗂️ benchmark longtable: name x lane x capability x eval-mode x contrast x metric</td></tr>
+      <tr><td class="k mono">tab_definitions</td><td>iff-definitions of the mechanisms</td><td class="new">📐 operational definitions: open/closed/bridge, the 4 capabilities, the advantage instrument</td></tr>
+      <tr><td class="k mono">tab_branch_limits</td><td>family x six-axes spec-sheet</td><td class="new">⚖️ VLA/LWM/WAM/WFM x six axes (data/horizon/transfer/interpretability/safety/failure)</td></tr>
+      <tr><td class="k mono">tab_compare_31 / _34</td><td>per-branch deep-dive matrices</td><td class="new">🧩 per-capability deep-dives (hidden-state · counterfactual · long-horizon · social)</td></tr>
+      <tr><td class="k mono">tab_skill_senses</td><td>the word "skill" in 5 senses</td><td class="new">🌐 the term "world model" disambiguated (LWM/WAM/WFM/video/simulator)</td></tr>
+      <tr><td class="k mono">tab_capability_matrix</td><td>exemplar x ~10 dimensions</td><td class="new">🎯 one exemplar benchmark per capability x evaluation dimensions</td></tr>
+      <tr><td class="k mono">tab_future_metrics</td><td>metric-anchored future work</td><td class="new">🔮 metric-anchored future evaluation (advantage, per-capability, counterfactual testbed)</td></tr>
+      <tr><td class="k mono">tab_canvas_provenance</td><td>per-panel gallery provenance</td><td class="new">🧾 per-panel provenance (source paper + figure number) if galleries are built</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- roadmap -->
+  <div class="sec"><span class="tag">Roadmap</span><h3>🚀 Build roadmap (what this proposal has vs what the paper adds)</h3></div>
+  <div class="scroll"><table class="gt">
+    <thead><tr><th>Phase</th><th>Deliverable</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td class="k">1 · novelty</td><td>gap confirmed + adversarially audited</td><td><span class="win">✅ done</span></td></tr>
+      <tr><td class="k">2 · seed</td><td>~34-benchmark catalog + coverage matrix + 5-axis framework</td><td><span class="win">✅ done (this site)</span></td></tr>
+      <tr><td class="k">3 · scaffold</td><td>CSUR acmart tree (/survey-init)</td><td class="none">⬜ planned</td></tr>
+      <tr><td class="k">4 · landscape</td><td>harvest 150-300 benchmarks (tab_landscape) + PRISMA</td><td class="none">⬜ planned</td></tr>
+      <tr><td class="k">5 · structure</td><td>taxonomy figure + definitions + family-limits + per-capability tables</td><td class="none">⬜ planned</td></tr>
+      <tr><td class="k">6 · figures</td><td>distribution charts + galleries (audited) + target protocol</td><td class="none">⬜ planned</td></tr>
+      <tr><td class="k">7 · write</td><td>prose + future-metrics + 5-agent audit fleet to arXiv PDF</td><td class="none">⬜ planned</td></tr>
+    </tbody>
+  </table></div>
+
+  <footer>🎯 A <b>proposal</b>: the coverage matrix pins the novelty gap, and the blueprint maps the proven P1 survey structure onto P3. Survey voice is enforced by construction: a PRISMA methodology and a 150-300 benchmark landscape (not a small citation list) are what keep this a <b>survey</b>, not a position paper. Companion to the <a href="index.html">gap</a> and the <a href="catalog.html">catalog</a>.</footer>
+</div>
+</body>
+</html>

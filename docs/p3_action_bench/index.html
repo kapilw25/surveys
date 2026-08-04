@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do World Models Make Better Robots? A Survey of Benchmarks for Predictive Embodied Intelligence</title>
+  <meta name="description" content="A benchmark and evaluation survey of predictive embodied intelligence: does world modeling (LWM / WAM / WFM) earn a measurable closed-loop advantage over direct Vision-Language-Action policies, and for which robotic capabilities? Organized by evaluation-mode x capability x model-family.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="stylesheet" href="../assets/theme-survey.css?v=2">
+  <link rel="stylesheet" href="../assets/site.css?v=3">
+  <script src="../assets/theme.js?v=2"></script>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">
+      <span class="eyebrow">Survey · benchmarks for predictive embodied intelligence</span>
+      <h1>Do world models make better robots?</h1>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">&larr; Surveys</a>
+      <a href="index.html" aria-current="page">Survey</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="benchmark.html">Plan</a>
+      <button class="toggle" id="themeBtn" aria-label="Toggle color theme"><span class="dot"></span><span id="themeLabel">Theme</span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero" style="padding-bottom:20px">
+    <span class="eyebrow">VLA policies vs world models (LWM · WAM · WFM), judged by closed-loop behavior</span>
+    <h2><span style="color:var(--accent);font-weight:800">Do world models make better robots?</span> A survey of benchmarks for <em>predictive embodied intelligence</em>.</h2>
+    <p style="font-size:15px"><b>Central question:</b> across the robot-evaluation landscape, which benchmarks can actually establish that predictive world modeling produces a measurable, <b>closed-loop behavioral advantage</b> over direct Vision-Language-Action policies, and for <b>which robotic capabilities</b>?</p>
+    <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px;color:var(--faint)">
+      <span>🗂️ <b>~34</b> benchmarks</span>
+      <span>🎥 <b>7</b> open-loop</span>
+      <span>🦾 <b>23</b> closed-loop</span>
+      <span>🌉 <b>4</b> bridges</span>
+      <span>📚 <b>6</b> competitor surveys + 2 position papers</span>
+    </div>
+    <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+      <a href="catalog.html" style="display:inline-block;text-decoration:none;font-weight:650;font-size:14px;padding:10px 20px;border-radius:10px;border:1px solid var(--accent);color:var(--accent)">🗂️ Browse the benchmark catalog</a>
+      <a href="benchmark.html" style="display:inline-block;text-decoration:none;font-weight:650;font-size:14px;padding:10px 20px;border-radius:10px;border:1px solid var(--accent);color:var(--accent)">📊 The plan (coverage + blueprint)</a>
+      <span style="font-size:13px;color:var(--faint);font-style:italic">📄 Full survey PDF: in preparation</span>
+    </div>
+  </section>
+
+  <!-- the evaluation split -->
+  <div class="sec" style="margin-top:14px"><span class="tag">Figure 1</span><h3>🔭 The evaluation split, and the missing bridge</h3></div>
+  <div class="figure">
+    <div class="flow">
+      <div class="io"><span class="g">🎥</span><span>open-loop<br>generation quality</span></div>
+      <div class="arrow">→</div>
+      <div class="node accent"><span class="n">1</span><span class="ne">🦾</span><span class="nt">closed-loop task success</span><span class="sub">model-agnostic; no VLA-vs-WM</span></div>
+      <div class="arrow">→</div>
+      <div class="node accent"><span class="n">2</span><span class="ne">🌉</span><span class="nt">bridges to action</span><span class="sub">no per-capability ablation</span></div>
+      <div class="arrow">→</div>
+      <div class="io"><span class="g">✨</span><span>the empty cell<br>= this survey</span></div>
+    </div>
+    <div class="loop">↺ open-loop suites measure prediction fidelity; closed-loop suites measure success; neither isolates whether prediction earns a closed-loop advantage, per capability, VLA vs LWM/WAM/WFM.</div>
+  </div>
+  <div class="cap">Figure 1 · World-model benchmarks grade generation quality (no action); policy benchmarks grade task success (any policy, no built-in contrast); three recent bridges reach action but run no per-capability head-to-head. That intersection is the survey's organizing cell.</div>
+
+  <!-- 5-axis framework -->
+  <div class="sec"><span class="tag">Table 1</span><h3>🧭 The 5-axis framework (the organization no survey uses)</h3></div>
+  <div class="scroll"><table class="gt">
+    <thead><tr><th>Axis</th><th>What it separates</th><th>Status in prior surveys</th></tr></thead>
+    <tbody>
+      <tr><td class="k">🔭 α · evaluation mode</td><td>open-loop prediction quality vs closed-loop behavioral utility</td><td class="none">never the primary axis</td></tr>
+      <tr><td class="k">🧩 β · robotic capability</td><td>hidden-state / counterfactual / long-horizon / social</td><td class="none">only long-horizon recurs; counterfactual ~untested</td></tr>
+      <tr><td class="k">⚔️ γ · model family, one protocol</td><td>direct VLA vs LWM / WAM / WFM head-to-head</td><td class="none">absent everywhere</td></tr>
+      <tr><td class="k">📐 δ · behavioral-advantage instrument</td><td>"does prediction beat a VLA baseline in the loop"</td><td class="none">proposed only (not established)</td></tr>
+      <tr><td class="k">🗺️ ε · comprehensive benchmark catalog</td><td>the full evaluation landscape mapped by α to δ</td><td>catalogs exist, but never crossed with γ, δ</td></tr>
+    </tbody>
+  </table></div>
+  <div class="cap">The empty cell = 🔭α and 🧩β and ⚔️γ and 📐δ, delivered as 🗺️ε. See the full <a href="benchmark.html">coverage matrix</a>.</div>
+
+  <!-- why the field can't answer -->
+  <div class="sec"><span class="tag">Table 2</span><h3>🕳️ Why the field cannot answer this yet</h3></div>
+  <div class="scroll"><table class="gt">
+    <thead><tr><th>Regime</th><th>How it is measured</th><th>Why it can't answer "does prediction help acting"</th></tr></thead>
+    <tbody>
+      <tr><td class="k">🎥 world-model suites</td><td>open-loop: FVD, physics-consistency, rollout realism</td><td class="none">no action, no VLA baseline</td></tr>
+      <tr><td class="k">🦾 policy + VLA suites</td><td>closed-loop task success, but model-agnostic</td><td class="none">hosts any policy, never builds a WM-vs-VLA contrast</td></tr>
+      <tr><td class="k">🌉 bridges</td><td>closed-loop, prediction turned into action</td><td class="none">no per-capability VLA head-to-head</td></tr>
+      <tr><td class="k">🗣️ position papers</td><td>argue open vs closed, decision utility</td><td class="none">no benchmark catalog; not a survey</td></tr>
+      <tr><td class="k new">✨ the empty cell</td><td class="new">joint α x β x γ x δ, delivered as ε</td><td class="new">= this survey</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- landscape -->
+  <div class="sec"><span class="tag">Landscape</span><h3>🗂️ The benchmark landscape (~34, web-verified)</h3></div>
+  <div class="scroll"><table class="gt">
+    <thead><tr><th>Lane</th><th>Examples</th><th>Eval mode</th><th>Builds a VLA-vs-WM contrast?</th></tr></thead>
+    <tbody>
+      <tr><td class="k">🦾 policy suites (14)</td><td>LIBERO · CALVIN · SIMPLER · COLOSSEUM · RoboArena · ManiSkill2</td><td>closed-loop</td><td class="none">⬜ model-agnostic</td></tr>
+      <tr><td class="k">🧭 embodied nav/social (9)</td><td>Habitat 3.0 · BEHAVIOR-1K · ALFRED · TEACh · LIBERO-Mem · SocNavBench</td><td>closed-loop</td><td>🟡 a few (LIBERO-Mem ✅)</td></tr>
+      <tr><td class="k">🎥 world-model eval (7)</td><td>WorldModelBench · Physics-IQ · VBench-2.0 · WorldScore · EWMBench</td><td class="none">open-loop</td><td class="none">⬜ WM-only</td></tr>
+      <tr><td class="k">🌉 bridges (4)</td><td>WorldSimBench · World-in-World · RoboWM-Bench · WorldArena</td><td>bridge</td><td>🟡 partial, no VLA pole</td></tr>
+    </tbody>
+  </table></div>
+  <div class="cap">Explore all ~34 in the sortable <a href="catalog.html">catalog</a>. Key finding: 🔀 <b>counterfactual</b> capability is barely testable anywhere.</div>
+
+  <footer>🎯 A benchmark and evaluation survey of predictive embodied intelligence, organized by <b>evaluation-mode x capability x model-family</b>. It describes and assesses the field (survey voice); "prediction must earn a closed-loop advantage" is reported as a <b>finding</b>, not argued as a stance. Companion to the <a href="catalog.html">catalog</a> and <a href="benchmark.html">coverage matrix</a>. Part of the <a href="../index.html">Surveys</a> series.</footer>
+</div>
+</body>
+</html>

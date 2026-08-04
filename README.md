@@ -10,12 +10,13 @@ Interactive companions to a series of survey papers on AI systems. Each survey s
 |---|---|---|---|
 | **P1** | **Weights or Skills?** — robot-learning techniques for **Physical AI** (VLA policies, code-as-policy, reward synthesis, self-evolving skill libraries, cross-embodiment transfer), anchored on [ASPIRE](https://arxiv.org/abs/2607.00272) (NVIDIA GEAR, 2026). *Thesis:* two ways to build a generalist robot — **ship weights** (end-to-end VLA) vs **ship code + skills**. | [`p1_weights_or_skills/`](https://kapilw25.github.io/surveys/p1_weights_or_skills/) | `overleaf_draft/p1_weights_or_skills/` |
 | **P2** | **Cross-Modal Evaluation Validity** — *pass the benchmark, fail reality*: generative, agentic, and embodied AI cheat the same five ways (leakage, saturation, judge-gaming, sim-to-real). One validity-threat taxonomy across all three. | [`p2_eval_validity/`](https://kapilw25.github.io/surveys/p2_eval_validity/) | `overleaf_draft/p2_eval_validity/` *(stub)* |
+| **P3** | **Do World Models Make Better Robots?** A benchmark/evaluation survey of predictive embodied intelligence (VLA vs world models, per capability). *Proposal stage:* novelty gap + interactive site. | [`p3_action_bench/`](https://kapilw25.github.io/surveys/p3_action_bench/) | `overleaf_draft/p3_action_bench/` |
 
 > **P1 preprint (published):** [arXiv:2608.01851](https://arxiv.org/abs/2608.01851) (cs.RO, cross-list cs.AI) · [Zenodo DOI 10.5281/zenodo.21764307](https://doi.org/10.5281/zenodo.21764307). Peer review at ACM CSUR / TMLR is the next step.
 
 ## What's inside (`docs/`)
 
-- **`index.html`** — portal linking the two projects.
+- **`index.html`** — portal linking the three projects.
 - **`p1_weights_or_skills/`**
   - `index.html` — the survey: canonical **taxonomy tree** (~47 physical-AI systems in 6 branches §3.1–§3.6) → the loop → ship-weights-vs-code thesis table → mechanism taxonomy → capability matrix → related-survey landscape.
   - `catalog.html` — sortable / filterable catalog of ~47 systems, tagged by domain × mechanism (**F** feedback · **S** search · **M** memory) × year × benchmark.
@@ -23,6 +24,10 @@ Interactive companions to a series of survey papers on AI systems. Each survey s
 - **`p2_eval_validity/`**
   - `index.html` — project hub.
   - `eval_validity_cross_modal.html` — coverage grid (8 validity surveys × 3 AI domains), the five recurring threats, and cross-modal positioning.
+- **`p3_action_bench/`**
+  - `index.html`: the survey landing (evaluation split, 5-axis framework, benchmark landscape).
+  - `catalog.html`: sortable catalog of ~34 benchmarks by lane, capability, eval-mode, VLA-vs-WM contrast.
+  - `benchmark.html`: the plan (coverage matrix + a P1-to-P3 figure/table blueprint + roadmap).
 
 Everything is a **self-contained static site** — no build step, no server. Plain HTML/CSS/vanilla JS with light/dark themes.
 
