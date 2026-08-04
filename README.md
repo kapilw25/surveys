@@ -11,6 +11,8 @@ Interactive companions to a series of survey papers on AI systems. Each survey s
 | **P1** | **Weights or Skills?** — robot-learning techniques for **Physical AI** (VLA policies, code-as-policy, reward synthesis, self-evolving skill libraries, cross-embodiment transfer), anchored on [ASPIRE](https://arxiv.org/abs/2607.00272) (NVIDIA GEAR, 2026). *Thesis:* two ways to build a generalist robot — **ship weights** (end-to-end VLA) vs **ship code + skills**. | [`p1_weights_or_skills/`](https://kapilw25.github.io/surveys/p1_weights_or_skills/) | `overleaf_draft/p1_weights_or_skills/` |
 | **P2** | **Cross-Modal Evaluation Validity** — *pass the benchmark, fail reality*: generative, agentic, and embodied AI cheat the same five ways (leakage, saturation, judge-gaming, sim-to-real). One validity-threat taxonomy across all three. | [`p2_eval_validity/`](https://kapilw25.github.io/surveys/p2_eval_validity/) | `overleaf_draft/p2_eval_validity/` *(stub)* |
 
+> **P1 preprint (published):** [arXiv:2608.01851](https://arxiv.org/abs/2608.01851) (cs.RO, cross-list cs.AI) · [Zenodo DOI 10.5281/zenodo.21764307](https://doi.org/10.5281/zenodo.21764307). Peer review at ACM CSUR / TMLR is the next step.
+
 ## What's inside (`docs/`)
 
 - **`index.html`** — portal linking the two projects.

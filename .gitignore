@@ -26,5 +26,8 @@ scratchpad/
 # not re-included above, so .claude/* keeps them ignored (per-user / runtime):
 #   settings.local.json (personal permission ledger), state/, memory/
 
+# arXiv submission package (large build artifact, regenerated from source on demand)
+overleaf_draft/p1_weights_or_skills/weights_or_skills_arxiv.zip
+
 # Secrets & Scripts
 .env
