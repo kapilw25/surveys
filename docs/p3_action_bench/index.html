@@ -33,9 +33,9 @@
     <h2><span style="color:var(--accent);font-weight:800">Do world models make better robots?</span> A survey of benchmarks for <em>predictive embodied intelligence</em>.</h2>
     <p style="font-size:15px"><b>Central question:</b> across the robot-evaluation landscape, which benchmarks can actually establish that predictive world modeling produces a measurable, <b>closed-loop behavioral advantage</b> over direct Vision-Language-Action policies, and for <b>which robotic capabilities</b>?</p>
     <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px;color:var(--faint)">
-      <span>🗂️ <b>~34</b> benchmarks</span>
-      <span>🎥 <b>7</b> open-loop</span>
-      <span>🦾 <b>23</b> closed-loop</span>
+      <span>🗂️ <b>158</b> benchmarks</span>
+      <span>🎥 <b>42</b> open-loop</span>
+      <span>🦾 <b>112</b> closed-loop</span>
       <span>🌉 <b>4</b> bridges</span>
       <span>📚 <b>6</b> competitor surveys + 2 position papers</span>
     </div>
@@ -90,17 +90,17 @@
   </table></div>
 
   <!-- landscape -->
-  <div class="sec"><span class="tag">Landscape</span><h3>🗂️ The benchmark landscape (~34, web-verified)</h3></div>
+  <div class="sec"><span class="tag">Landscape</span><h3>🗂️ The benchmark landscape (158, web-verified)</h3></div>
   <div class="scroll"><table class="gt">
     <thead><tr><th>Lane</th><th>Examples</th><th>Eval mode</th><th>Builds a VLA-vs-WM contrast?</th></tr></thead>
     <tbody>
-      <tr><td class="k">🦾 policy suites (14)</td><td>LIBERO · CALVIN · SIMPLER · COLOSSEUM · RoboArena · ManiSkill2</td><td>closed-loop</td><td class="none">⬜ model-agnostic</td></tr>
-      <tr><td class="k">🧭 embodied nav/social (9)</td><td>Habitat 3.0 · BEHAVIOR-1K · ALFRED · TEACh · LIBERO-Mem · SocNavBench</td><td>closed-loop</td><td>🟡 a few (LIBERO-Mem ✅)</td></tr>
-      <tr><td class="k">🎥 world-model eval (7)</td><td>WorldModelBench · Physics-IQ · VBench-2.0 · WorldScore · EWMBench</td><td class="none">open-loop</td><td class="none">⬜ WM-only</td></tr>
+      <tr><td class="k">🦾 policy suites (37)</td><td>LIBERO · CALVIN · SIMPLER · COLOSSEUM · RoboArena · ManiSkill2</td><td>closed-loop</td><td class="none">⬜ model-agnostic</td></tr>
+      <tr><td class="k">🧭 embodied nav/social (84)</td><td>Habitat 3.0 · BEHAVIOR-1K · ALFRED · TEACh · LIBERO-Mem · SocNavBench</td><td>closed-loop</td><td>🟡 a few (LIBERO-Mem ✅)</td></tr>
+      <tr><td class="k">🎥 world-model eval (33)</td><td>WorldModelBench · Physics-IQ · VBench-2.0 · WorldScore · EWMBench</td><td class="none">open-loop</td><td class="none">⬜ WM-only</td></tr>
       <tr><td class="k">🌉 bridges (4)</td><td>WorldSimBench · World-in-World · RoboWM-Bench · WorldArena</td><td>bridge</td><td>🟡 partial, no VLA pole</td></tr>
     </tbody>
   </table></div>
-  <div class="cap">Explore all ~34 in the sortable <a href="catalog.html">catalog</a>. Key finding: 🔀 <b>counterfactual</b> capability is barely testable anywhere.</div>
+  <div class="cap">Explore all 158 in the sortable <a href="catalog.html">catalog</a>. Key finding: 🔀 <b>counterfactual</b> is tested almost only in offline video-reasoning (CoPhy, ACRE, CLEVRER), rarely in closed-loop robot suites.</div>
 
   <footer>🎯 A benchmark and evaluation survey of predictive embodied intelligence, organized by <b>evaluation-mode x capability x model-family</b>. It describes and assesses the field (survey voice); "prediction must earn a closed-loop advantage" is reported as a <b>finding</b>, not argued as a stance. Companion to the <a href="catalog.html">catalog</a> and <a href="benchmark.html">coverage matrix</a>. Part of the <a href="../index.html">Surveys</a> series.</footer>
 </div>
