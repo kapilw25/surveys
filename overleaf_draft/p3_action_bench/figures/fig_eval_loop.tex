@@ -1,0 +1,49 @@
+% The evaluation loop that isolates the advantage of prediction (P1 analog: fig_architectures).
+% Purely structural (no counts): shows where a benchmark must run BOTH a direct-VLA policy and a
+% world-model policy under one closed loop, and where the per-capability advantage is measured.
+\begin{figure}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+ box/.style={draw=black!55, rounded corners, align=center, font=\footnotesize\bfseries,
+             minimum height=9mm, text width=20mm, inner sep=3pt},
+ io/.style={draw=none, font=\footnotesize\bfseries\itshape, align=center},
+ gap/.style={box, fill=secEl, draw=secE!60!black, line width=1.1pt, text width=24mm},
+ ar/.style={-{Stealth[length=2mm]}, darkgray, line width=0.8pt},
+ fb/.style={-{Stealth[length=1.8mm]}, gray!70, line width=0.6pt},
+]
+ \node[io] (task) at (0,0) {task /\\ scene};
+ \node[box, fill=cat-vla] (vla) at (3.1,1.15) {direct VLA\\ policy};
+ \node[box, fill=secFl] (wm) at (3.1,-1.15) {world model:\\ predict $\rightarrow$ plan};
+ \node[box, fill=secCl] (env) at (6.4,0) {environment\\ (closed loop)};
+ \node[box, fill=secBl] (succ) at (9.4,0) {task\\ success};
+ \node[gap] (adv) at (12.5,0) {advantage of\\ prediction ($\delta$)\\ per capability ($\beta$)};
+
+ \draw[ar] (task) -- (vla);
+ \draw[ar] (task) -- (wm);
+ \draw[ar] (vla) -- (env);
+ \draw[ar] (wm) -- (env);
+ \draw[ar] (env) -- (succ);
+ \draw[ar] (succ) -- (adv);
+ % state-feedback loops (what makes it closed-loop); label once on top
+ \draw[fb] (env.north) to[out=90,in=90] node[above,font=\scriptsize\bfseries,text=gray!20!black]{state feedback} (vla.north);
+ \draw[fb] (env.south) to[out=-90,in=-90] (wm.south);
+ % gap callout: the two ways today's suites break the loop
+ \node[draw=BrickRed!55!black, dashed, rounded corners, fill=BrickRed!5, inner sep=4pt,
+       text width=30mm, font=\scriptsize\bfseries, text=BrickRed!85!black, align=center] at (3.1,-3.1)
+   {model-agnostic suites run \textbf{one} branch (no contrast); world-model suites never reach the loop};
+ \draw[BrickRed!55!black, dashed, -{Stealth[length=1.6mm]}] (3.1,-2.2) -- (3.1,-2.55);
+\end{tikzpicture}}
+\caption{\textbf{The evaluation loop that isolates the advantage of prediction.} A benchmark that
+can answer ``does world modelling help a robot act'' must run a direct Vision-Language-Action policy
+\emph{and} a world-model policy (predict then plan) under one closed loop, then report the
+closed-loop gain ($\delta$) sliced by capability ($\beta$). Today's suites break this loop in one of
+two ways: model-agnostic policy suites host a single policy and never build the contrast, while
+world-model suites score the prediction open-loop and never execute it (\S\ref{sec:gap}).}
+\Description{A left-to-right diagram. A task/scene forks into two branches, a direct VLA policy and a
+world model that predicts then plans; both feed an environment closed loop with state feedback,
+producing task success, which feeds an advantage-of-prediction measurement sliced per capability. An
+annotation notes that model-agnostic suites run only one branch and world-model suites never close
+the loop, so the contrast is missing.}
+\label{fig:eval_loop}
+\end{figure}

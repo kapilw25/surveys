@@ -1,0 +1,37 @@
+% Table 7 -- capability matrix: one representative benchmark per evaluation lane.
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}p{0.22\textwidth}*{4}{>{\centering\arraybackslash}p{0.15\textwidth}}@{}}
+\toprule
+\textbf{Dimension}
+ & \textbf{LIBERO}~\cite{libero}
+ & \textbf{Habitat 3.0}~\cite{habitat30}
+ & \textbf{World\-Model\-Bench}~\cite{worldmodelbench}
+ & \textbf{World\--in\--World}~\cite{worldinworld} \\
+ & {\footnotesize\itshape policy suite} & {\footnotesize\itshape embodied nav}
+ & {\footnotesize\itshape world-model eval} & {\footnotesize\itshape bridge} \\
+\midrule
+What it scores & task success & social-nav success & video-pred.\ quality & closed-loop WM success \\
+Evaluation mode & \dclosed & \dclosed & \dopen & \dbridge \\
+Executes actions in a loop? & \yy & \yy & \nn & \yy \\
+Native VLA-vs-WM contrast? & \nn & \nn & \nn & \pp \\
+Capability stressed & short-horizon + transfer & social / multi-agent & physical realism & plan executability \\
+Per-capability slicing? & \pp & \pp & \nn & \nn \\
+Advantage-of-prediction metric? & \nn & \nn & \nn & \pp \\
+Real / sim / video & sim & sim & video & sim \\
+Counterfactual probing? & \nn & \nn & \nn & \nn \\
+Reusable leaderboard? & \yy & \yy & \yy & \pp \\
+\bottomrule
+\end{tabular}}
+\caption{Capability matrix, one representative benchmark per evaluation lane. No lane's exemplar
+builds a native VLA-vs-world-model contrast: policy and embodied suites are model-agnostic (they
+\emph{host} any policy), world-model suites score generation quality with no action, and the
+bridge exemplar reaches closed-loop success but reports only a partial contrast (``visual quality
+is not task success''). Counterfactual probing is absent throughout. \yy~yes, \pp~partial,
+\nn~no, \dm~n/a; \dopen\ open-loop, \dclosed\ closed-loop, \dbridge\ bridge.}
+\label{tab:matrix}
+\end{table*}

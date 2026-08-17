@@ -1,0 +1,29 @@
+\section{An agenda for advantage-aware evaluation}
+\label{sec:future}
+
+If the gap is that no benchmark is built to ask whether prediction helps acting, the remedy is a
+small, measurable protocol that any benchmark could adopt. Table~\ref{tab:future_metrics} sets out
+four quantities, each with a definition, a concrete testbed, and the axis it stresses, and
+Figure~\ref{fig:future_protocol} sketches how they compose. The figure shows target shapes, not
+measured results: it is a protocol, not a leaderboard.
+
+The first quantity is an \emph{advantage-of-prediction curve}: the closed-loop success gain of a
+world-model policy over a matched direct-VLA baseline, reported per capability as a curve rather than
+a single endpoint, instantiated over LIBERO~\cite{libero} and CALVIN~\cite{calvin} run under one
+harness. The second is \emph{counterfactual accuracy}: task success on episodes that require
+reasoning over unobserved or hypothetical dynamics, built from WorldPrediction~\cite{worldprediction}
+together with occlusion and memory splits in the style of LIBERO-Mem~\cite{liberomem}; this targets
+the capability the corpus most neglects. The third is the \emph{prediction-to-action fidelity gap}:
+the difference between a world model's open-loop generation quality and its closed-loop task success,
+measured on bridge protocols such as WorldSimBench~\cite{worldsimbench} and
+World-in-World~\cite{worldinworld}, which quantifies directly the ``visual quality is not task
+success'' warning of Section~\ref{sec:gap}. The fourth is \emph{per-capability contrast coverage}:
+the fraction of capabilities for which a benchmark actually runs a VLA-versus-world-model head-to-head,
+computed by auditing the landscape (Table~\ref{tab:landscape}) against a declared contrast schema.
+Each is reported as a distribution or a curve, never as one number, so that ``prediction helps'' can
+be replaced by ``prediction helps \emph{here}, by \emph{this much}''.
+
+\input{tables/tab_future_metrics}
+\input{figures/fig_future_protocol}
+
+\FloatBarrier

@@ -1,0 +1,19 @@
+\documentclass[acmsmall,nonacm]{acmart}
+\usepackage{tikz}
+\usepackage{forest}
+\useforestlibrary{edges}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\input{../styles/taxonomy_style.tex}
+\definecolor{ForestGreen}{rgb}{0.13,0.55,0.13}
+\definecolor{BrickRed}{rgb}{0.70,0.13,0.13}
+\graphicspath{{../}}
+\settopmatter{printacmref=false}
+\title{P3 collage hero compile test}
+\author{test}
+\affiliation{\institution{test}\country{}}
+\begin{document}
+\input{../figures/fig_corpus_collage.tex}
+\input{../tables/tab_collage_provenance.tex}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../refs}
+\end{document}

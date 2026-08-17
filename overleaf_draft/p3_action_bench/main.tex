@@ -1,0 +1,111 @@
+% ============================================================
+%  Do World Models Make Better Robots?
+%  A Survey of Evaluation Benchmarks for Predictive Embodied Intelligence
+%  arXiv manuscript -- acmart / manuscript, nonacm (pdfLaTeX, \pdfoutput=1).
+%  Compiler: pdfLaTeX (Overleaf runs bibtex automatically).
+%  Build: pdflatex -> bibtex -> pdflatex -> pdflatex.
+% ============================================================
+\pdfoutput=1 % arXiv: force pdfLaTeX
+\PassOptionsToPackage{svgnames,dvipsnames}{xcolor} % acmart loads xcolor; set options first
+\documentclass[manuscript,nonacm,oneside]{acmart}
+\geometry{hmarginratio=1:1} % arXiv/screen: identical left+right margins on every page (no odd/even slip)
+
+% numeric [N] citations = ACM default -> numbered References [1], [2], ...
+\settopmatter{printacmref=false}   % arXiv preprint: suppress the ACM reference block
+\settopmatter{authorsperrow=3}
+\setcopyright{none}
+
+% ---- packages for the taxonomy figures and comparison tables ----
+\usepackage{forest}
+\useforestlibrary{edges}   % `forked edges` used by the hero taxonomy (Fig 2)
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,shapes.geometric,calc}
+\usepackage{pifont}
+\usepackage{longtable}
+\usepackage{array}      % >{\raggedright\arraybackslash}p{...} columns in comparison tables
+\usepackage{placeins}   % \FloatBarrier
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% ---- shared taxonomy forest style + colour palette (cat-*, sec*, leaf-*, tx-root) ----
+\input{styles/taxonomy_style}
+
+% ---- colours + coloured marks (the ONLY definitions; every figure/table depends on these) ----
+\definecolor{ForestGreen}{rgb}{0.13,0.55,0.13}
+\definecolor{BrickRed}{rgb}{0.70,0.13,0.13}
+\newcommand{\yy}{\textcolor{ForestGreen}{\ding{52}}}       % yes / explicit
+\newcommand{\nn}{\textcolor{BrickRed}{\ding{56}}}          % no / absent
+\newcommand{\dm}{\textcolor{gray!65}{\textbf{-{}-}}}        % n/a / model-agnostic
+\newcommand{\pp}{\textcolor{orange!90!black}{\textbf{\textasciitilde}}} % partial
+\newcommand{\dopen}{\textcolor{magenta!80!black}{\textsf{open}}}    % open-loop eval mode
+\newcommand{\dclosed}{\textcolor{teal!80!black}{\textsf{closed}}}   % closed-loop eval mode
+\newcommand{\dbridge}{\textcolor{violet!80!black}{\textsf{bridge}}} % prediction-to-action bridge
+
+\begin{document}
+
+\title{Do World Models Make Better Robots?}
+\subtitle{A Survey of Evaluation Benchmarks for Predictive Embodied Intelligence}
+
+\author{Gaytri Jena}
+\authornote{The authors contributed to this work independently of their roles and employment.}
+\affiliation{\institution{UC Berkeley}\city{Berkeley}\state{CA}\country{USA}}
+\author{Kapil Wanaskar}
+\affiliation{\institution{San Jose State University}\country{USA}}
+\author{Vinija Jain}
+\affiliation{\institution{Meta}\country{USA}}
+\author{Aman Chadha}
+\affiliation{\institution{Apple}\country{USA}}
+\author{Vasu Sharma}
+\affiliation{\institution{PocketFM}\country{USA}}
+\author{Amitava Das}
+\affiliation{\institution{Pragya Lab, BITS Pilani Goa}\country{India}}
+\renewcommand{\shortauthors}{Jena et al.}
+
+\input{sections/0_abstract}
+
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10010147.10010178.10010224</concept_id>
+       <concept_desc>Computing methodologies~Robotic planning</concept_desc>
+       <concept_significance>500</concept_significance>
+   </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010199</concept_id>
+       <concept_desc>Computing methodologies~Computer vision</concept_desc>
+       <concept_significance>300</concept_significance>
+   </concept>
+   <concept>
+       <concept_id>10010147.10010257</concept_id>
+       <concept_desc>Computing methodologies~Machine learning</concept_desc>
+       <concept_significance>300</concept_significance>
+   </concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Computing methodologies~Robotic planning}
+\ccsdesc[300]{Computing methodologies~Computer vision}
+\ccsdesc[300]{Computing methodologies~Machine learning}
+
+\keywords{robot learning, world models, evaluation, benchmarks, vision-language-action
+  models, embodied AI, predictive models, survey}
+
+\maketitle
+
+\input{sections/1_intro}
+\input{sections/2_methodology}
+\input{sections/3_taxonomy}
+\input{sections/4_gap}
+\input{sections/5_future}
+\input{sections/limitations}
+\input{sections/conclusion}
+
+\clearpage
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+
+% Appendices follow the References (acmart convention); start on a fresh page.
+\clearpage
+\appendix
+\input{sections/appendix}
+
+\end{document}

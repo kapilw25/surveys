@@ -1,0 +1,34 @@
+% The senses in which the literature uses the term "world model" (P1 analog: Table 5, skill senses).
+% Split along the two axes a parallel audit surfaced: representation (what it is) vs role (what it is for).
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}p{0.16\textwidth} p{0.23\textwidth} p{0.18\textwidth} c c c c@{}}
+\toprule
+\textbf{Sense of ``world model''} & \textbf{What it is} & \textbf{Examples} &
+\textbf{Act.\ cond.} & \textbf{Loop} & \textbf{Metric} & \textbf{VLA-cmp.} \\
+\midrule
+\multicolumn{7}{@{}l}{\rule{0pt}{2.4ex}\emph{As a representation (what the model is)}}\\
+latent WM (LWM) & latent-dynamics predictor $z_{t+1}=f(z_t,a_t)$ & DreamerV3, TD-MPC2 & \yy & \yy & \pp & \pp \\
+action-cond.\ WM (WAM) & action-conditioned future-frame predictor & iVideoGPT, GR-2 & \yy & \pp & \pp & \pp \\
+generative WM (WFM) & text / image-to-video generator & Sora, Cosmos, Genie & \pp & \nn & \yy & \nn \\
+\multicolumn{7}{@{}l}{\rule{0pt}{2.6ex}\emph{As a role (what the model is used for)}}\\
+neural simulator & learned environment for policy training / eval & UniSim & \yy & \yy & \pp & \pp \\
+evaluation target & benchmarks that \emph{score} world models & WorldSimBench, WorldModelBench, EWMBench & \dm & \pp & \yy & \nn \\
+\bottomrule
+\end{tabular}}
+\caption{The term ``world model'' spans two orthogonal axes the literature routinely conflates: a
+\emph{representation} axis (what the model is: latent-state dynamics, action-conditioned video, or
+generative video, a soft boundary since action-conditioned generators straddle WAM and WFM) and a
+\emph{role} axis (what it is used for: a neural simulator, or the object a benchmark scores).
+Columns record whether a sense is \textbf{act}ion-\textbf{cond}itioned, is used in a closed
+\textbf{loop}, carries a standard evaluation \textbf{metric}, and is readily \textbf{VLA-comp}arable
+under one protocol (\yy\ yes, \pp\ partial, \nn\ no, \dm\ n/a). No single sense is action-conditioned,
+closed-loop, and VLA-comparable at once, which is why a benchmark that contrasts a world-model policy
+with a VLA policy per capability (\S\ref{sec:gap}) is still missing. Evaluation benchmarks score the
+world model as an \emph{object}; they are not world models acting as judges.}
+\label{tab:wm_senses}
+\end{table*}

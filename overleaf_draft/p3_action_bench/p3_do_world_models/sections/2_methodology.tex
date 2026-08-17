@@ -1,0 +1,63 @@
+\section{Survey methodology and corpus}
+\label{sec:method}
+
+\subsection{Scope, search, and verification}
+
+The unit of this survey is the \emph{benchmark}: an individually citeable evaluation artefact, a
+suite, a dataset paired with a scoring protocol, or an interactive environment with a task
+distribution, that measures robot, embodied-agent, or world-model behaviour. We deliberately exclude
+three neighbouring categories that a benchmark survey is often confused with: individual models and
+policies (the systems a benchmark scores), raw datasets with no scoring protocol, and pure simulators
+with no task distribution. Where a work contributes both a model and a benchmark, only its benchmark
+enters the corpus.
+
+Candidates were gathered by parallel web search over arXiv, publisher venues, and project pages,
+using query strings built from the cross-product of the evaluation lanes (policy, embodied,
+world-model, bridge) with capability terms (manipulation, navigation, long-horizon, social,
+counterfactual, physical reasoning, generation quality) and with the terms
+\emph{benchmark}, \emph{evaluation}, and \emph{suite}. Every candidate was then web-verified against
+its arXiv or venue page for exact title, first author, year, and identifier; any candidate that could
+not be verified was dropped rather than recorded from memory, and entries were de-duplicated by both
+citation key and arXiv identifier. Figure~\ref{fig:prisma} records the resulting funnel in the
+PRISMA~2020 style~\cite{prisma2020}; stages that were not logged as counts are marked as such rather
+than estimated. The procedure yields 160 web-verified benchmarks drawing on 164 references.
+
+\input{figures/fig_prisma}
+
+\subsection{Placement, definitions, and the core-versus-appendix rule}
+
+Each benchmark is placed on four axes: its evaluation \emph{lane} (Section~\ref{sec:taxonomy}), the
+robotic \emph{capability} it primarily stresses, its evaluation \emph{mode} (open-loop prediction or
+generation quality, closed-loop task success, or a prediction-to-action bridge), and whether it
+builds a native VLA-versus-world-model \emph{contrast} (explicit, partial, or model-agnostic).
+Table~\ref{tab:defs} states the operational definition used for each placement, so that boundary
+cases are resolved by a written rule rather than by taste; a benchmark counts as building a contrast,
+for example, only if a direct-policy and a world-model policy are run under one protocol and compared.
+
+Because the full corpus is large, we split it. A benchmark enters the core taxonomy
+(Figure~\ref{fig:taxonomy_main}) when it is cleanly axis-placeable, distinct from its neighbours, and
+fully characterisable from its paper; the 86 representative benchmarks that meet all three sit in the
+taxonomy, and the complete set of 160 is catalogued in the landscape table
+(Table~\ref{tab:landscape}, Appendix~\ref{app:landscape}). Every count in the survey reconciles with
+that table.
+
+\input{tables/tab_definitions}
+
+\subsection{The corpus at a glance}
+
+Figures~\ref{fig:corpus_overview} and~\ref{fig:corpus_dist} profile the corpus, with all counts
+re-tallied directly from the catalogue rather than taken from any single paper. The 160 benchmarks
+divide by lane into 37 policy suites, 85 embodied-agent benchmarks, 34 world-model-evaluation
+benchmarks, and 4 prediction-to-action bridges, and by capability area into twelve clusters led by
+long-horizon planning (26), manipulation and dexterity (22), and generation quality (19). By
+evaluation mode, 113 score closed-loop task success, 43 score open-loop prediction or generation, and
+only 4 bridge the two. Publication years show the field's shape clearly: a steady rise from 2 in 2017
+to a peak of 36 in 2024, with the world-model-evaluation lane arriving almost entirely in the last
+three years (Figure~\ref{fig:lane_trend}). The single most consequential distribution is the contrast
+axis: 138 of 160 benchmarks are model-agnostic, 11 build a partial contrast, and 11 (7\%) build one
+explicitly. That imbalance is the empirical core of the survey and is taken up in
+Section~\ref{sec:gap}.
+
+\input{figures/fig_corpus_overview}
+\input{figures/fig_corpus_dist}
+\input{figures/fig_lane_trend}

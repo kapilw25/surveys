@@ -1,0 +1,61 @@
+% Per-capability deep-dive (P1 analog: Table 4/6): which benchmarks probe each capability cut,
+% and whether each builds a VLA-vs-world-model contrast. Marks (Eval, VLA-vs-WM) are the catalogue's
+% own values (docs/assets/catalog_p3.js); native contrasts cluster in the reasoning cuts.
+{\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{@{}p{0.26\textwidth} c c >{\raggedright\arraybackslash}p{0.48\textwidth} c@{}}
+\caption{\textbf{Capability deep-dive}: the benchmarks that probe each of the $\beta$ capability
+cuts, and whether each builds a native VLA-vs-world-model contrast. Native contrasts cluster in the
+hidden-state, theory-of-mind and counterfactual \emph{reasoning} cuts (LIBERO-Mem, ComPhy, AGENT,
+BIB, ACRE, CoPhy, CausalWorld); the long-horizon and social \emph{task-success} cuts are largely
+model-agnostic (ALFWorld's abstract-to-grounded transfer is the lone partial). \textbf{Eval}: \dopen/\dclosed. \textbf{VLA vs WM}: \yy\ native contrast,
+\pp\ partial, \dm\ model-agnostic; each cut's header tallies the fraction of its benchmarks that
+build any (native or partial) contrast.}\label{tab:compare_capability}\\
+\toprule
+\textbf{Benchmark} & \textbf{Year} & \textbf{Eval} & \textbf{What it probes} & \textbf{VLA vs WM}\\
+\midrule
+\endfirsthead
+\multicolumn{5}{@{}l}{\footnotesize\emph{Table~\ref{tab:compare_capability} (continued)}}\\
+\toprule
+\textbf{Benchmark} & \textbf{Year} & \textbf{Eval} & \textbf{What it probes} & \textbf{VLA vs WM}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\multicolumn{4}{@{}l}{\rule{0pt}{2.2ex}\textbf{\textsf{Hidden-state / memory / occlusion}}} & {\footnotesize\itshape 3/4}\\[1pt]
+\textbf{LIBERO-Mem}~\cite{liberomem} & 2025 & \dclosed & occluded object state carried across time & \yy\\
+\textbf{TEACh}~\cite{teach} & 2021 & \dclosed & partner belief and history via dialog & \dm\\
+\textbf{ComPhy}~\cite{comphy} & 2022 & \dopen & hidden mass and charge inferred from collisions & \yy\\
+\textbf{Bongard-HOI}~\cite{bongardhoi} & 2022 & \dopen & few-shot hidden-concept induction & \pp\\
+\midrule
+\multicolumn{4}{@{}l}{\rule{0pt}{2.2ex}\textbf{\textsf{Theory-of-mind}}} & {\footnotesize\itshape 3/4}\\[1pt]
+\textbf{AGENT}~\cite{agent} & 2021 & \dopen & expectations over an agent's goals and actions & \yy\\
+\textbf{BIB}~\cite{bib} & 2021 & \dopen & infant-style goal inference from behaviour & \yy\\
+\textbf{PHASE}~\cite{phase} & 2021 & \dclosed & social relations and goals inferred from motion & \pp\\
+\textbf{SocialAI}~\cite{socialai} & 2021 & \dclosed & language-based social interaction with agents & \dm\\
+\midrule
+\multicolumn{4}{@{}l}{\rule{0pt}{2.2ex}\textbf{\textsf{Counterfactual / physical inference}}} & {\footnotesize\itshape 3/6}\\[1pt]
+\textbf{WorldPrediction}~\cite{worldprediction} & 2025 & \dopen & discriminate correct vs counterfactual action & \dm\\
+\textbf{Physion}~\cite{physion} & 2021 & \dopen & predict a physical outcome from vision & \dm\\
+\textbf{Physion++}~\cite{physionpp} & 2023 & \dopen & infer latent physical properties online & \dm\\
+\textbf{ACRE}~\cite{acre} & 2021 & \dopen & abstract causal reasoning over blicket tests & \yy\\
+\textbf{CoPhy}~\cite{cophy} & 2019 & \dopen & counterfactual outcome under a changed cause & \yy\\
+\textbf{CausalWorld}~\cite{causalworld} & 2020 & \dclosed & causal do-interventions on task variables & \yy\\
+\midrule
+\multicolumn{4}{@{}l}{\rule{0pt}{2.2ex}\textbf{\textsf{Long-horizon / compositional}}} & {\footnotesize\itshape 1/6}\\[1pt]
+\textbf{CALVIN}~\cite{calvin} & 2021 & \dclosed & chain several language subtasks in a row & \dm\\
+\textbf{BEHAVIOR-1K}~\cite{behavior1k} & 2024 & \dclosed & 1000 long-horizon household activities & \dm\\
+\textbf{ALFRED}~\cite{alfred} & 2019 & \dclosed & instruction to action under partial view & \dm\\
+\textbf{ALFWorld}~\cite{alfworld} & 2020 & \dclosed & abstract-text to grounded-task transfer & \pp\\
+\textbf{EmbodiedBench}~\cite{embodiedbench} & 2025 & \dclosed & broad long-horizon embodied planning & \dm\\
+\textbf{PARTNR}~\cite{partnr} & 2024 & \dclosed & human-robot collaborative household tasks & \dm\\
+\midrule
+\multicolumn{4}{@{}l}{\rule{0pt}{2.2ex}\textbf{\textsf{Social / multi-agent}}} & {\footnotesize\itshape 0/5}\\[1pt]
+\textbf{Habitat 3.0}~\cite{habitat30} & 2023 & \dclosed & human-robot co-habitation and hand-off & \dm\\
+\textbf{SocNavBench}~\cite{socnavbench} & 2021 & \dclosed & socially compliant navigation & \dm\\
+\textbf{Melting Pot}~\cite{meltingpot} & 2021 & \dclosed & mixed-motive multi-agent generalization & \dm\\
+\textbf{SMAC}~\cite{smac} & 2019 & \dclosed & cooperative multi-agent micro-control & \dm\\
+\textbf{CrowdNav}~\cite{crowdnav} & 2018 & \dclosed & socially-aware navigation among pedestrians & \dm\\
+\end{longtable}
+}

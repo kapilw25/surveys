@@ -1,0 +1,54 @@
+% Evaluation-lane comparison matrix: 4 lanes x 6 evaluation axes
+% (loop closure, task horizon, capability breadth, model-family contrast, reproducibility, blind spot).
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.45}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.135\textwidth} >{\raggedright\arraybackslash}p{0.195\textwidth} >{\raggedright\arraybackslash}p{0.195\textwidth} >{\raggedright\arraybackslash}p{0.195\textwidth} >{\raggedright\arraybackslash}p{0.195\textwidth}@{}}
+\toprule
+ & \textbf{Policy suites}~\cite{libero} & \textbf{Embodied nav / social}~\cite{habitat30}
+ & \textbf{World-model eval}~\cite{worldmodelbench} & \textbf{Bridges}~\cite{worldinworld} \\
+\midrule
+\textbf{Loop closure} &
+\yy\ closed-loop; steps the environment~\cite{calvin} &
+\yy\ closed-loop; long-horizon rollouts~\cite{behavior1k} &
+\nn\ open-loop; scores generation, no action~\cite{physicsiq} &
+\pp\ converts a prediction into an executed action~\cite{worldsimbench} \\
+\textbf{Task horizon} &
+\pp\ short reactive skills; long by chaining~\cite{libero} &
+\yy\ long-horizon household and dialog~\cite{teach} &
+\pp\ short clips; temporal but not task-level~\cite{ewmbench} &
+\pp\ a single executed rollout~\cite{robowmbench} \\
+\textbf{Capability breadth} &
+\pp\ manipulation + transfer; hidden-state rare~\cite{thecolosseum} &
+\yy\ navigation, social, some hidden-state~\cite{robothor} &
+\pp\ physical / temporal; counterfactual barely~\cite{worldprediction} &
+\nn\ narrow; executability only~\cite{worldarena} \\
+\textbf{Model-family contrast} &
+\nn\ model-agnostic host of any policy~\cite{roboarena} &
+\pp\ memory-vs-Markovian in one suite~\cite{liberomem} &
+\nn\ world-model-only scores~\cite{worldmodelbench} &
+\pp\ WM as policy substrate; no VLA pole~\cite{worldinworld} \\
+\textbf{Reproducibility} &
+\pp\ sim; some real-vs-sim transfer~\cite{simpler} &
+\pp\ sim-heavy; a sim-to-real gap~\cite{robothor} &
+\yy\ fixed offline sets; deterministic scoring~\cite{vbench20} &
+\nn\ new, still-unstandardised protocols~\cite{worldarena} \\
+\textbf{Structural blind spot} &
+hosts a world-model policy but never builds the VLA contrast &
+capability cuts exist, but no per-capability family ablation &
+visual quality is not task success; no behavioural utility &
+reaches action, but omits the per-capability VLA head-to-head \\
+\bottomrule
+\end{tabular}}
+\caption{\textbf{Evaluation-lane comparison matrix}: the four benchmark lanes on six evaluation
+axes (loop closure, task horizon, capability breadth, model-family contrast, reproducibility, and
+characteristic blind spot). Marks grade each lane on the axis (\yy\ favourable, \pp\ mixed, \nn\
+weak), with an anchoring benchmark per cell. No lane closes the loop, slices capability, \emph{and}
+builds a native VLA-vs-world-model contrast at once; the bridge lane comes closest yet still omits
+the per-capability VLA head-to-head, which is the empty cell this survey names
+(\S\ref{sec:gap}).}
+\label{tab:branch_limits}
+\end{table*}

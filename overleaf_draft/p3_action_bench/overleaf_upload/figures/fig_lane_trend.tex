@@ -1,0 +1,36 @@
+% Real per-year counts of closed-loop vs open-loop benchmarks (year x eval tally from catalog_p3.js).
+% The story: open-loop world-model evaluation surges and overtakes closed-loop in 2025.
+\begin{figure}[t]
+\centering
+\definecolor{cclosed}{HTML}{1E8449}\definecolor{copen}{HTML}{C2185B}%
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}
+  \foreach \i in {5,10,15,20}{\node[font=\scriptsize,left=1pt,text=black!55] at (0.5,{\i*0.11}) {\i};
+    \draw[black!12] (0.5,{\i*0.11})--(8.4,{\i*0.11});}
+  \draw[->,black!45] (0.5,0)--(0.5,2.95); \draw[->,black!45] (0.5,0)--(8.6,0);
+  \foreach [count=\g] \yr/\c/\o in {2019/10/3,2020/16/1,2021/19/4,2022/8/3,2023/24/7,2024/24/11,2025/6/13}{
+    \pgfmathsetmacro\x{\g*1.12+0.15}
+    \fill[cclosed] ({\x-0.34},0) rectangle ({\x-0.02},{\c*0.11});
+    \fill[copen]   ({\x+0.02},0) rectangle ({\x+0.34},{\o*0.11});
+    \node[font=\tiny,text=black!65,above=-1.5pt] at ({\x-0.18},{\c*0.11}) {\c};
+    \node[font=\tiny,text=black!65,above=-1.5pt] at ({\x+0.18},{\o*0.11}) {\o};
+    \node[font=\scriptsize] at (\x,-0.25) {\yr};}
+  % legend (top-right, 2-row, above the value labels so it clears the tall centre bars; matches p1_fig7)
+  \fill[cclosed] (6.3,3.06) rectangle (6.53,3.24);
+  \node[font=\scriptsize,right=1pt] at (6.53,3.15) {closed-loop};
+  \fill[copen] (6.3,2.76) rectangle (6.53,2.94);
+  \node[font=\scriptsize,right=1pt] at (6.53,2.85) {open-loop};
+  \node[font=\footnotesize\bfseries] at (3.2,3.25) {Benchmarks by evaluation mode, per year};
+\end{tikzpicture}}
+\caption{\textbf{The world-model-evaluation wave is recent.} Per-year counts of closed-loop
+task-success benchmarks (green) and open-loop world-model / video-generation benchmarks (magenta) in
+the catalogue. Closed-loop suites dominate through 2024; in \textbf{2025 open-loop evaluation
+overtakes them} (13 vs 6) as the world-model-generation literature arrives. The four
+prediction-to-action bridges are newer still, all appearing in 2024 or later. Years are the
+benchmarks' first-release years (2026 is partial and omitted); counts are the tallies of
+Table~\ref{tab:landscape}.}
+\Description{A grouped bar chart of benchmarks by evaluation mode per year, 2019 to 2025. Closed-loop
+(green): 10, 16, 19, 8, 24, 24, 6. Open-loop (magenta): 3, 1, 4, 3, 7, 11, 13. Closed-loop dominates
+until 2024, then open-loop overtakes it in 2025.}
+\label{fig:lane_trend}
+\end{figure}

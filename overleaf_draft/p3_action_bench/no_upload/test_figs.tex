@@ -1,0 +1,26 @@
+\documentclass[acmsmall,nonacm]{acmart}
+\usepackage{tikz}
+\usepackage{forest}
+\useforestlibrary{edges}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc,shapes.symbols}
+\input{../styles/taxonomy_style.tex}
+\definecolor{ForestGreen}{rgb}{0.13,0.55,0.13}
+\definecolor{BrickRed}{rgb}{0.70,0.13,0.13}
+\definecolor{RoyalBlue}{rgb}{0.25,0.41,0.88}
+\settopmatter{printacmref=false}
+\title{P3 figures compile test}
+\author{test}
+\affiliation{\institution{test}\country{}}
+\begin{document}
+\input{../figures/fig_gap_hero.tex}
+\input{../figures/fig_taxonomy_main.tex}
+\input{../figures/fig_survey_timeline.tex}
+\input{../figures/fig_prisma.tex}
+\input{../figures/fig_corpus_overview.tex}
+\input{../figures/fig_corpus_dist.tex}
+\input{../figures/fig_lane_trend.tex}
+\input{../figures/fig_eval_loop.tex}
+\input{../figures/fig_future_protocol.tex}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../refs}
+\end{document}

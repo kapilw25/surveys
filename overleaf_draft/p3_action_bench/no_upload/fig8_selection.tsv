@@ -1,0 +1,29 @@
+band	name	lane	arxivId	tile	notes
+# Band 1: closed-loop task-success suites (policy + embodied closed) -- subject = robot/sim task scene
+closed	LIBERO	policy	2306.03310	libero	short-horizon + transfer
+closed	CALVIN	policy	2112.03227	calvin	long-horizon language
+closed	Meta-World	policy	1910.10897	metaworld	multi-task / meta-RL
+closed	ManiSkill2	policy	2302.04659	maniskill2	generalizable skills
+closed	RoboCasa	policy	2406.02523	robocasa	long-horizon kitchen
+closed	BEHAVIOR-1K	embodied	2403.09227	behavior1k	long-horizon household
+closed	ALFRED	embodied	1912.01734	alfred	long-horizon partial-obs
+closed	GemBench	policy	2410.01345	gembench	generalization levels
+closed	VLABench	policy	2412.18194	vlabench	long-horizon reasoning
+closed	Habitat 3.0	embodied	2310.13724	habitat30	social / multi-agent (tile BROKEN, re-fetch)
+# Band 2: world-model & video-generation evaluation (wmeval, open-loop) -- subject = generated-video sample grid
+wmeval	WorldModelBench	wmeval	2502.20694	worldmodelbench	video-WM prediction quality
+wmeval	Physics-IQ	wmeval	2501.09038	physicsiq	physical realism
+wmeval	VBench-2.0	wmeval	2503.21755	vbench20	generation faithfulness
+wmeval	WorldScore	wmeval	2504.00983	worldscore	world-gen quality
+wmeval	EWMBench	wmeval	2505.09694	ewmbench	scene/motion/semantic quality
+wmeval	EVA-Bench	wmeval	2410.15461	evabench	embodied video anticipation
+wmeval	WorldPrediction	wmeval	2506.04363	worldprediction	counterfactual action recognition
+wmeval	Physion	wmeval	2106.08261	physion	physical prediction from vision
+wmeval	Physion++	wmeval	2306.15668	physionpp	property inference
+wmeval	VideoPhy	wmeval	2406.03520	videophy	physical commonsense in gen video
+wmeval	EvalCrafter	wmeval	2310.11440	evalcrafter	17-metric suite (likely RESULTS -> fig9)
+# Band 3: prediction-to-action bridges (bridge lane) -- verify each has a real subject figure
+bridge	WorldSimBench	bridge	2410.18072	-	video-to-action consistency (fetch)
+bridge	World-in-World	bridge	2510.18135	-	closed-loop task success of WMs (fetch, verify id)
+bridge	RoboWM-Bench	bridge	2604.19092	-	prediction executability (2026 id, VERIFY exists)
+bridge	WorldArena	bridge	2602.08971	-	closed-loop WM arena (2026 id, VERIFY exists)

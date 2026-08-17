@@ -1,0 +1,85 @@
+\section{Introduction}
+\label{sec:intro}
+
+A robot can be taught to act in two broadly different ways. The first learns a \emph{direct policy}:
+a function that maps an observation, and often a language instruction, straight to an action. Recent
+Vision-Language-Action (VLA) models are the prominent instance of this track, and they are judged by
+running them in an environment and counting task success, on suites such as
+LIBERO~\cite{libero}, CALVIN~\cite{calvin}, RLBench~\cite{rlbench}, and
+ManiSkill2~\cite{maniskill2}. The second track learns a \emph{world model}: a predictor of future
+observations that a controller can plan against. This track spans latent-dynamics predictors
+(DreamerV3, TD-MPC2), action-conditioned video predictors (iVideoGPT, GR-2), and large generative
+video models (Sora, Cosmos, Genie), and it is judged not by acting but by the quality of what it
+predicts or generates, on suites such as VBench~\cite{vbench}, EvalCrafter~\cite{evalcrafter}, and
+EWMBench~\cite{ewmbench}.
+
+Between these two tracks sits a question that neither is built to answer: does world modelling earn a
+measurable, closed-loop \emph{advantage} over a direct policy, and for which robotic capabilities?
+Figure~\ref{fig:corpus_collage} poses that question with real benchmarks. On the left, closed-loop
+policy and embodied suites score success by executing a policy in the environment. On the right,
+open-loop world-model and video-generation suites score prediction or generation with no action
+taken. The axis down the centre, whether prediction buys a closed-loop advantage, is the one the
+field has not instrumented.
+
+\input{figures/fig_corpus_collage}
+
+The gap is methodological rather than empirical. A world-model benchmark scores a rollout for
+realism or physical plausibility and then stops; it never closes the loop, so it cannot report
+whether the prediction would have helped a robot act. A task-success suite does close the loop, but
+it hosts a single policy and is deliberately model-agnostic, so it never contrasts a world-model
+policy against a direct VLA policy under one protocol. A benchmark that could answer the question
+must run \emph{both} branches in one closed loop and report the per-capability gain
+(Section~\ref{sec:gap}, Figure~\ref{fig:eval_loop}). Only a handful of recent
+``bridge'' benchmarks attempt this, and none yet reports a capability-sliced VLA head-to-head.
+
+This survey is therefore about \emph{evaluation}, not about models. It maps the benchmark landscape
+that surrounds the question and asks which benchmarks could, in principle, establish an
+advantage of prediction. We catalogue 160 web-verified benchmarks spanning 2017 to 2026 and organise
+them by evaluation mode, robotic capability, and model family. The headline finding is stark: 138 of
+the 160 benchmarks are model-agnostic and only 11 (7\%) build an explicit VLA-versus-world-model
+contrast, counterfactual capability is almost entirely unmeasured, and only four benchmarks turn
+prediction into executed action.
+
+\paragraph{Contributions.} This survey offers the following.
+\begin{itemize}
+  \item An \textbf{operational taxonomy} of 160 robot-evaluation benchmarks across four evaluation
+        lanes and twelve capability areas (Figure~\ref{fig:taxonomy_main}), with per-benchmark detail
+        in Tables~\ref{tab:compare_main} and~\ref{tab:landscape} and placement rules in
+        Table~\ref{tab:defs}.
+  \item A \textbf{profile of the corpus} (Figures~\ref{fig:corpus_overview},
+        \ref{fig:corpus_dist},~\ref{fig:lane_trend}) and two galleries of the benchmarks' own subject
+        and results figures (Figures~\ref{fig:subject_gallery},~\ref{fig:results_gallery}), each panel
+        provenance-tracked.
+  \item A \textbf{coverage comparison} against the eight closest benchmark and evaluation surveys
+        (Table~\ref{tab:survey_compare}): ours is the only one that crosses robotic capability with
+        model family under a single protocol.
+  \item A \textbf{contrast-gap analysis} (Section~\ref{sec:gap}): an evaluation loop that isolates
+        the advantage of prediction (Figure~\ref{fig:eval_loop}), a disambiguation of the overloaded
+        term ``world model'' (Table~\ref{tab:wm_senses}), and a lane-by-lane account of why the
+        contrast is missing (Table~\ref{tab:branch_limits}).
+  \item An \textbf{actionable protocol} for advantage-aware evaluation: four measurable quantities
+        with named testbeds (Table~\ref{tab:future_metrics}, Figure~\ref{fig:future_protocol}).
+\end{itemize}
+
+\noindent The organising claim is deliberately modest. We do not argue that world models help, or
+that they do not. We argue that the question is currently unanswerable with the benchmarks the field
+has built, and we specify what a benchmark that could answer it would have to do.
+
+\subsection{Related surveys and the empty cell}
+\label{sec:related}
+
+Table~\ref{tab:survey_compare} places the eight closest surveys and position papers against five axes
+that a survey of predictive embodied evaluation could organise around: ($\alpha$) evaluation mode,
+open- versus closed-loop, as the \emph{primary} axis; ($\beta$) robotic capability, such as
+hidden-state, counterfactual, long-horizon, and social; ($\gamma$) a capability-by-model-family
+cross-tabulation, direct VLA against latent, action-conditioned, and generative world models under
+one protocol; ($\delta$) a behavioural advantage-of-prediction metric, which we \emph{assess} in the
+literature rather than adopt; and ($\varepsilon$) a comprehensive benchmark catalogue. Existing
+surveys populate $\varepsilon$ well and touch $\alpha$ and $\beta$ in passing, but the capability-by-family
+cross-tab $\gamma$ is absent everywhere, and the advantage metric $\delta$ is reached only partially,
+and only by a position paper~\cite{pos_yangyu}, never by a survey. Figure~\ref{fig:surveys} places
+these works on a timeline: two predate the recent world-model wave, and the rest cluster in the last
+two years, none of them crossing capability with family.
+
+\input{tables/tab_survey_compare}
+\input{figures/fig_survey_timeline}

@@ -1,0 +1,19 @@
+\documentclass[acmsmall,nonacm]{acmart}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pifont}
+\definecolor{ForestGreen}{rgb}{0.13,0.55,0.13}
+\definecolor{BrickRed}{rgb}{0.70,0.13,0.13}
+\newcommand{\yy}{\textcolor{ForestGreen}{\ding{52}}}
+\newcommand{\nn}{\textcolor{BrickRed}{\ding{56}}}
+\newcommand{\pp}{\textcolor{orange!90!black}{\textbf{\textasciitilde}}}
+\newcommand{\dm}{\textcolor{gray!65}{\textbf{--}}}
+\settopmatter{printacmref=false}
+\title{P3 landscape compile test}
+\author{test}
+\affiliation{\institution{test}\country{}}
+\begin{document}
+\input{../tables/tab_landscape.tex}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../refs}
+\end{document}

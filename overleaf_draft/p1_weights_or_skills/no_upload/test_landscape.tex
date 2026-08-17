@@ -1,0 +1,24 @@
+\documentclass[acmsmall,nonacm]{acmart}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pifont}
+\definecolor{ForestGreen}{rgb}{0.13,0.55,0.13}
+\definecolor{BrickRed}{rgb}{0.70,0.13,0.13}
+\definecolor{RoyalBlue}{rgb}{0.25,0.41,0.88}
+\definecolor{Purple}{rgb}{0.63,0.13,0.94}
+\newcommand{\yy}{\textcolor{ForestGreen}{\ding{52}}}
+\newcommand{\nn}{\textcolor{BrickRed}{\ding{56}}}
+\newcommand{\dm}{\textcolor{gray!65}{\textbf{-{}-}}}
+\newcommand{\pp}{\textcolor{orange!90!black}{\textbf{\textasciitilde}}}
+\newcommand{\dreal}{\textcolor{ForestGreen}{\textsf{real}}}
+\newcommand{\dsim}{\textcolor{RoyalBlue}{\textsf{sim}}}
+\newcommand{\dgame}{\textcolor{Purple}{\textsf{game}}}
+\settopmatter{printacmref=false}
+\title{P1 landscape compile test}
+\author{test}
+\affiliation{\institution{test}\country{}}
+\begin{document}
+\input{../tables/tab_landscape.tex}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../refs}
+\end{document}

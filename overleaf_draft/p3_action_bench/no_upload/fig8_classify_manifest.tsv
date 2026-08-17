@@ -1,0 +1,26 @@
+index	tile	class	band	action	reason
+0	alfred	subject	closed	keep	sim bathroom task scene
+1	behavior1k	subject	closed	keep	household sim scene w/ robot
+2	calvin	subject	closed	keep	arm + coloured blocks at table
+3	evabench	subject	wmeval	keep	real-world anticipation scene (bedroom)
+4	evalcrafter	neither	wmeval	purge	dataset-stat infographic (candidate for fig9 results)
+5	ewmbench	subject	wmeval	keep	generated video sample (anthropomorphic cat)
+6	gembench	subject	closed	keep	arm manipulating box in sim
+7	habitat30	subject-broken	closed	refetch	near-black raster (mean 1148); humanoid ok but unusable
+8	libero	neither	closed	refetch	procedural-generation FLOWCHART schematic, not a task scene
+9	maniskill2	subject	closed	keep	multi-panel sim manipulation
+10	metaworld	subject	closed	keep	train-task thumbnail grid (scenes)
+11	physicsiq	subject	wmeval	keep	rubber-duck physical-realism sample
+12	physion	subject	wmeval	keep	dominoes/support/collide scene frames
+13	physionpp	subject	wmeval	keep	physical-prediction scene
+14	robocasa	subject	closed	keep	kitchen sim w/ mobile robot
+15	vbench20	neither	wmeval	refetch	PDF text page (abstract), not a sample
+16	videophy	subject	wmeval	keep	milk-pour generated sample
+17	vlabench	neither	closed	refetch	VLA-Bench evaluate SCHEMATIC (busy diagram)
+18	worldmodelbench	subject	wmeval	keep	generated video sample (hand)
+19	worldprediction	neither	wmeval	refetch	generic globe raster, off-subject
+20	worldscore	subject	wmeval	keep	anime bedroom world-gen sample
+-	worldsimbench	notfetched	bridge	fetch	2410.18072 video-to-action consistency
+-	worldinworld	notfetched	bridge	fetch	2510.18135 closed-loop task success of WMs
+-	robowmbench	notfetched	bridge	fetch	2604.19092 prediction executability (verify id exists)
+-	worldarena	notfetched	bridge	fetch	2602.08971 closed-loop WM arena (verify id exists)

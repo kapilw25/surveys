@@ -1,0 +1,2583 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{164}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Ahmed et~al\mbox{.}(2020)]%
+        {causalworld}
+\bibfield{author}{\bibinfo{person}{Ossama Ahmed}, \bibinfo{person}{Frederik
+  Trauble}, \bibinfo{person}{Anirudh Goyal}, \bibinfo{person}{Alexander Neitz},
+  \bibinfo{person}{Yoshua Bengio}, \bibinfo{person}{Bernhard Scholkopf},
+  \bibinfo{person}{Manuel Wuthrich}, {and} \bibinfo{person}{Stefan Bauer}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{CausalWorld: A Robotic Manipulation Benchmark for
+  Causal Structure and Transfer Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2010.04296}.
+
+
+\bibitem[Anderson et~al\mbox{.}(2017)]%
+        {r2r}
+\bibfield{author}{\bibinfo{person}{Peter Anderson}, \bibinfo{person}{Qi Wu},
+  \bibinfo{person}{Damien Teney}, \bibinfo{person}{Jake Bruce},
+  \bibinfo{person}{Mark Johnson}, \bibinfo{person}{Niko Sunderhauf},
+  \bibinfo{person}{Ian Reid}, \bibinfo{person}{Stephen Gould}, {and}
+  \bibinfo{person}{Anton van~den Hengel}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Vision-and-Language Navigation: Interpreting
+  visually-grounded navigation instructions in real environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1711.07280}.
+
+
+\bibitem[Ates et~al\mbox{.}(2020)]%
+        {craft}
+\bibfield{author}{\bibinfo{person}{Tayfun Ates}, \bibinfo{person}{M.~Samil
+  Atesoglu}, \bibinfo{person}{Cagatay Yigit}, \bibinfo{person}{Ilker Kesen},
+  \bibinfo{person}{Mert Kobas}, \bibinfo{person}{Erkut Erdem},
+  \bibinfo{person}{Aykut Erdem}, \bibinfo{person}{Tilbe Goksun}, {and}
+  \bibinfo{person}{Deniz Yuret}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{CRAFT: A Benchmark for Causal Reasoning About Forces
+  and inTeractions}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2012.04293}.
+
+
+\bibitem[Atreya et~al\mbox{.}(2025)]%
+        {roboarena}
+\bibfield{author}{\bibinfo{person}{Pranav Atreya}, \bibinfo{person}{Karl
+  Pertsch}, \bibinfo{person}{Tony Lee}, \bibinfo{person}{Moo~Jin Kim},
+  \bibinfo{person}{Arhan Jain}, \bibinfo{person}{Artur Kuramshin},
+  \bibinfo{person}{Clemens Eppner}, \bibinfo{person}{Cyrus Neary},
+  \bibinfo{person}{Edward Hu}, \bibinfo{person}{Fabio Ramos},
+  \bibinfo{person}{Jonathan Tremblay}, \bibinfo{person}{Kanav Arora},
+  \bibinfo{person}{Kirsty Ellis}, \bibinfo{person}{Luca Macesanu},
+  \bibinfo{person}{Marcel~Torne Villasevil}, \bibinfo{person}{Matthew Leonard},
+  \bibinfo{person}{Meedeum Cho}, \bibinfo{person}{Ozgur Aslan},
+  \bibinfo{person}{Shivin Dass}, \bibinfo{person}{Jie Wang},
+  \bibinfo{person}{William Reger}, \bibinfo{person}{Xingfang Yuan},
+  \bibinfo{person}{Xuning Yang}, \bibinfo{person}{Abhishek Gupta},
+  \bibinfo{person}{Dinesh Jayaraman}, \bibinfo{person}{Glen Berseth},
+  \bibinfo{person}{Kostas Daniilidis}, \bibinfo{person}{Roberto Martin-Martin},
+  \bibinfo{person}{Youngwoon Lee}, \bibinfo{person}{Percy Liang},
+  \bibinfo{person}{Chelsea Finn}, {and} \bibinfo{person}{Sergey Levine}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{RoboArena: Distributed Real-World Evaluation of
+  Generalist Robot Policies}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2506.18123}.
+
+
+\bibitem[Bai et~al\mbox{.}(2025)]%
+        {ipvbench}
+\bibfield{author}{\bibinfo{person}{Zechen Bai}, \bibinfo{person}{Hai Ci}, {and}
+  \bibinfo{person}{Mike~Zheng Shou}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Impossible Videos}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2503.14378}.
+
+
+\bibitem[Bansal et~al\mbox{.}(2023)]%
+        {videocon}
+\bibfield{author}{\bibinfo{person}{Hritik Bansal}, \bibinfo{person}{Yonatan
+  Bitton}, \bibinfo{person}{Idan Szpektor}, \bibinfo{person}{Kai-Wei Chang},
+  {and} \bibinfo{person}{Aditya Grover}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{VideoCon: Robust Video-Language Alignment via
+  Contrast Captions}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2311.10111}.
+
+
+\bibitem[Bansal et~al\mbox{.}(2024)]%
+        {videophy}
+\bibfield{author}{\bibinfo{person}{Hritik Bansal}, \bibinfo{person}{Zongyu
+  Lin}, \bibinfo{person}{Tianyi Xie}, \bibinfo{person}{Zeshun Zong},
+  \bibinfo{person}{Michal Yarom}, \bibinfo{person}{Yonatan Bitton},
+  \bibinfo{person}{Chenfanfu Jiang}, \bibinfo{person}{Yizhou Sun},
+  \bibinfo{person}{Kai-Wei Chang}, {and} \bibinfo{person}{Aditya Grover}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{VideoPhy: Evaluating Physical Commonsense for Video
+  Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2406.03520}.
+
+
+\bibitem[Bansal et~al\mbox{.}(2025)]%
+        {videophy2}
+\bibfield{author}{\bibinfo{person}{Hritik Bansal}, \bibinfo{person}{Clark
+  Peng}, \bibinfo{person}{Yonatan Bitton}, \bibinfo{person}{Roman Goldenberg},
+  \bibinfo{person}{Aditya Grover}, {and} \bibinfo{person}{Kai-Wei Chang}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{VideoPhy-2: A Challenging Action-Centric Physical
+  Commonsense Evaluation in Video Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2503.06800}.
+
+
+\bibitem[Bao et~al\mbox{.}(2023)]%
+        {dexart}
+\bibfield{author}{\bibinfo{person}{Chen Bao}, \bibinfo{person}{Helin Xu},
+  \bibinfo{person}{Yuzhe Qin}, {and} \bibinfo{person}{Xiaolong Wang}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{DexArt: Benchmarking Generalizable Dexterous
+  Manipulation with Articulated Objects}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2305.05706}.
+
+
+\bibitem[Baradel et~al\mbox{.}(2019)]%
+        {cophy}
+\bibfield{author}{\bibinfo{person}{Fabien Baradel}, \bibinfo{person}{Natalia
+  Neverova}, \bibinfo{person}{Julien Mille}, \bibinfo{person}{Greg Mori}, {and}
+  \bibinfo{person}{Christian Wolf}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{CoPhy: Counterfactual Learning of Physical Dynamics}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1909.12000}.
+
+
+\bibitem[Batra et~al\mbox{.}(2020)]%
+        {objectnav}
+\bibfield{author}{\bibinfo{person}{Dhruv Batra}, \bibinfo{person}{Aaron
+  Gokaslan}, \bibinfo{person}{Aniruddha Kembhavi}, \bibinfo{person}{Oleksandr
+  Maksymets}, \bibinfo{person}{Roozbeh Mottaghi}, \bibinfo{person}{Manolis
+  Savva}, \bibinfo{person}{Alexander Toshev}, {and} \bibinfo{person}{Erik
+  Wijmans}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{ObjectNav Revisited: On Evaluation of Embodied Agents
+  Navigating to Objects}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2006.13171}.
+
+
+\bibitem[Bear et~al\mbox{.}(2021)]%
+        {physion}
+\bibfield{author}{\bibinfo{person}{Daniel~M. Bear}, \bibinfo{person}{Elias
+  Wang}, \bibinfo{person}{Damian Mrowca}, \bibinfo{person}{Felix~J. Binder},
+  \bibinfo{person}{Hsiao-Yu~Fish Tung}, \bibinfo{person}{R.~T. Pramod},
+  \bibinfo{person}{Cameron Holdaway}, \bibinfo{person}{Sirui Tao},
+  \bibinfo{person}{Kevin Smith}, \bibinfo{person}{Fan-Yun Sun},
+  \bibinfo{person}{Li Fei-Fei}, \bibinfo{person}{Nancy Kanwisher},
+  \bibinfo{person}{Joshua~B. Tenenbaum}, \bibinfo{person}{Daniel L.~K. Yamins},
+  {and} \bibinfo{person}{Judith~E. Fan}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Physion: Evaluating Physical Prediction from Vision
+  in Humans and Machines}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2106.08261}.
+
+
+\bibitem[Bharadhwaj et~al\mbox{.}(2023)]%
+        {roboagent}
+\bibfield{author}{\bibinfo{person}{Homanga Bharadhwaj}, \bibinfo{person}{Jay
+  Vakil}, \bibinfo{person}{Mohit Sharma}, \bibinfo{person}{Abhinav Gupta},
+  \bibinfo{person}{Shubham Tulsiani}, {and} \bibinfo{person}{Vikash Kumar}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{RoboAgent: Generalization and Efficiency in Robot
+  Manipulation via Semantic Augmentations and Action Chunking}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2309.01918}.
+
+
+\bibitem[Biswas et~al\mbox{.}(2021)]%
+        {socnavbench}
+\bibfield{author}{\bibinfo{person}{Abhijat Biswas}, \bibinfo{person}{Allan
+  Wang}, \bibinfo{person}{Gustavo Silvera}, \bibinfo{person}{Aaron Steinfeld},
+  {and} \bibinfo{person}{Henny Admoni}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{SocNavBench: A Grounded Simulation Testing Framework
+  for Evaluating Social Navigation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2103.00047}.
+
+
+\bibitem[Bordes et~al\mbox{.}(2025)]%
+        {intphys2}
+\bibfield{author}{\bibinfo{person}{Florian Bordes}, \bibinfo{person}{Quentin
+  Garrido}, \bibinfo{person}{Justine~T Kao}, \bibinfo{person}{Adina Williams},
+  \bibinfo{person}{Michael Rabbat}, {and} \bibinfo{person}{Emmanuel Dupoux}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{IntPhys 2: Benchmarking Intuitive Physics
+  Understanding In Complex Synthetic Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2506.09849}.
+
+
+\bibitem[Bugliarello et~al\mbox{.}(2023)]%
+        {storybench}
+\bibfield{author}{\bibinfo{person}{Emanuele Bugliarello},
+  \bibinfo{person}{Hernan Moraldo}, \bibinfo{person}{Ruben Villegas},
+  \bibinfo{person}{Mohammad Babaeizadeh}, \bibinfo{person}{Mohammad~Taghi
+  Saffar}, \bibinfo{person}{Han Zhang}, \bibinfo{person}{Dumitru Erhan},
+  \bibinfo{person}{Vittorio Ferrari}, \bibinfo{person}{Pieter-Jan Kindermans},
+  {and} \bibinfo{person}{Paul Voigtlaender}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{StoryBench: A Multifaceted Benchmark for Continuous
+  Story Visualization}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2308.11606}.
+
+
+\bibitem[Caesar et~al\mbox{.}(2019)]%
+        {nuscenes}
+\bibfield{author}{\bibinfo{person}{Holger Caesar}, \bibinfo{person}{Varun
+  Bankiti}, \bibinfo{person}{Alex~H. Lang}, \bibinfo{person}{Sourabh Vora},
+  \bibinfo{person}{Venice~Erin Liong}, \bibinfo{person}{Qiang Xu},
+  \bibinfo{person}{Anush Krishnan}, \bibinfo{person}{Yu Pan},
+  \bibinfo{person}{Giancarlo Baldan}, {and} \bibinfo{person}{Oscar Beijbom}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{nuScenes: A multimodal dataset for autonomous
+  driving}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1903.11027}.
+
+
+\bibitem[Caluwaerts et~al\mbox{.}(2023)]%
+        {barkour}
+\bibfield{author}{\bibinfo{person}{Ken Caluwaerts}, \bibinfo{person}{Atil
+  Iscen}, \bibinfo{person}{J.~Chase Kew}, \bibinfo{person}{Wenhao Yu},
+  \bibinfo{person}{Tingnan Zhang}, \bibinfo{person}{Daniel Freeman},
+  \bibinfo{person}{Kuang-Huei Lee}, \bibinfo{person}{Lisa Lee},
+  \bibinfo{person}{Stefano Saliceti}, \bibinfo{person}{Vincent Zhuang},
+  \bibinfo{person}{Nathan Batchelor}, \bibinfo{person}{Steven Bohez},
+  \bibinfo{person}{Federico Casarini}, \bibinfo{person}{Jose~Enrique Chen},
+  \bibinfo{person}{Omar Cortes}, \bibinfo{person}{Erwin Coumans},
+  \bibinfo{person}{Adil Dostmohamed}, \bibinfo{person}{Gabriel Dulac-Arnold},
+  \bibinfo{person}{Alejandro Escontrela}, \bibinfo{person}{Erik Frey},
+  \bibinfo{person}{Roland Hafner}, \bibinfo{person}{Deepali Jain},
+  \bibinfo{person}{Bauyrjan Jyenis}, \bibinfo{person}{Yuheng Kuang},
+  \bibinfo{person}{Edward Lee}, \bibinfo{person}{Linda Luu},
+  \bibinfo{person}{Ofir Nachum}, \bibinfo{person}{Ken Oslund},
+  \bibinfo{person}{Jason Powell}, \bibinfo{person}{Diego Reyes},
+  \bibinfo{person}{Francesco Romano}, \bibinfo{person}{Feresteh Sadeghi},
+  \bibinfo{person}{Ron Sloat}, \bibinfo{person}{Baruch Tabanpour},
+  \bibinfo{person}{Daniel Zheng}, \bibinfo{person}{Michael Neunert},
+  \bibinfo{person}{Raia Hadsell}, \bibinfo{person}{Nicolas Heess},
+  \bibinfo{person}{Francesco Nori}, \bibinfo{person}{Jeff Seto},
+  \bibinfo{person}{Carolina Parada}, \bibinfo{person}{Vikas Sindhwani},
+  \bibinfo{person}{Vincent Vanhoucke}, {and} \bibinfo{person}{Jie Tan}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Barkour: Benchmarking Animal-level Agility with
+  Quadruped Robots}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2305.14654}.
+
+
+\bibitem[Carroll et~al\mbox{.}(2019)]%
+        {overcookedai}
+\bibfield{author}{\bibinfo{person}{Micah Carroll}, \bibinfo{person}{Rohin
+  Shah}, \bibinfo{person}{Mark~K. Ho}, \bibinfo{person}{Thomas~L. Griffiths},
+  \bibinfo{person}{Sanjit~A. Seshia}, \bibinfo{person}{Pieter Abbeel}, {and}
+  \bibinfo{person}{Anca Dragan}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{On the Utility of Learning about Humans for Human-AI
+  Coordination}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1910.05789}.
+
+
+\bibitem[Chang et~al\mbox{.}(2017)]%
+        {matterport3d}
+\bibfield{author}{\bibinfo{person}{Angel Chang}, \bibinfo{person}{Angela Dai},
+  \bibinfo{person}{Thomas Funkhouser}, \bibinfo{person}{Maciej Halber},
+  \bibinfo{person}{Matthias Niessner}, \bibinfo{person}{Manolis Savva},
+  \bibinfo{person}{Shuran Song}, \bibinfo{person}{Andy Zeng}, {and}
+  \bibinfo{person}{Yinda Zhang}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Matterport3D: Learning from RGB-D Data in Indoor
+  Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1709.06158}.
+
+
+\bibitem[Chang et~al\mbox{.}(2024)]%
+        {partnr}
+\bibfield{author}{\bibinfo{person}{Matthew Chang}, \bibinfo{person}{Gunjan
+  Chhablani}, \bibinfo{person}{Alexander Clegg},
+  \bibinfo{person}{Mikael~Dallaire Cote}, \bibinfo{person}{Ruta Desai},
+  \bibinfo{person}{Michal Hlavac}, \bibinfo{person}{Vladimir Karashchuk},
+  \bibinfo{person}{Jacob Krantz}, \bibinfo{person}{Roozbeh Mottaghi},
+  \bibinfo{person}{Priyam Parashar}, \bibinfo{person}{Siddharth Patki},
+  \bibinfo{person}{Ishita Prasad}, \bibinfo{person}{Xavier Puig},
+  \bibinfo{person}{Akshara Rai}, \bibinfo{person}{Ram Ramrakhya},
+  \bibinfo{person}{Daniel Tran}, \bibinfo{person}{Joanne Truong},
+  \bibinfo{person}{John~M. Turner}, \bibinfo{person}{Eric Undersander}, {and}
+  \bibinfo{person}{Tsung-Yen Yang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{PARTNR: A Benchmark for Planning and Reasoning in
+  Embodied Multi-agent Tasks}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2411.00081}.
+
+
+\bibitem[Chao et~al\mbox{.}(2022)]%
+        {handoversim}
+\bibfield{author}{\bibinfo{person}{Yu-Wei Chao}, \bibinfo{person}{Chris
+  Paxton}, \bibinfo{person}{Yu Xiang}, \bibinfo{person}{Wei Yang},
+  \bibinfo{person}{Balakumar Sundaralingam}, \bibinfo{person}{Tao Chen},
+  \bibinfo{person}{Adithyavairavan Murali}, \bibinfo{person}{Maya Cakmak},
+  {and} \bibinfo{person}{Dieter Fox}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{HandoverSim: A Simulation Framework and Benchmark for
+  Human-to-Robot Object Handovers}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2205.09747}.
+
+
+\bibitem[Chen et~al\mbox{.}(2019)]%
+        {soundspaces}
+\bibfield{author}{\bibinfo{person}{Changan Chen}, \bibinfo{person}{Unnat Jain},
+  \bibinfo{person}{Carl Schissler}, \bibinfo{person}{Sebastia Vicenc~Amengual
+  Gari}, \bibinfo{person}{Ziad Al-Halah}, \bibinfo{person}{Vamsi~Krishna
+  Ithapu}, \bibinfo{person}{Philip Robinson}, {and} \bibinfo{person}{Kristen
+  Grauman}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{SoundSpaces: Audio-Visual Navigation in 3D
+  Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1912.11474}.
+
+
+\bibitem[Chen et~al\mbox{.}(2018a)]%
+        {crowdnav}
+\bibfield{author}{\bibinfo{person}{Changan Chen}, \bibinfo{person}{Yuejiang
+  Liu}, \bibinfo{person}{Sven Kreiss}, {and} \bibinfo{person}{Alexandre
+  Alahi}.} \bibinfo{year}{2018}\natexlab{a}.
+\newblock \bibinfo{title}{Crowd-Robot Interaction: Crowd-aware Robot Navigation
+  with Attention-based Deep Reinforcement Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1809.08835}.
+
+
+\bibitem[Chen et~al\mbox{.}(2025)]%
+        {worldprediction}
+\bibfield{author}{\bibinfo{person}{Delong Chen}, \bibinfo{person}{Willy Chung},
+  \bibinfo{person}{Yejin Bang}, \bibinfo{person}{Ziwei Ji}, {and}
+  \bibinfo{person}{Pascale Fung}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{WorldPrediction: A Benchmark for High-level World
+  Modeling and Long-horizon Procedural Planning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2506.04363}.
+
+
+\bibitem[Chen et~al\mbox{.}(2018b)]%
+        {touchdown}
+\bibfield{author}{\bibinfo{person}{Howard Chen}, \bibinfo{person}{Alane Suhr},
+  \bibinfo{person}{Dipendra Misra}, \bibinfo{person}{Noah Snavely}, {and}
+  \bibinfo{person}{Yoav Artzi}.} \bibinfo{year}{2018}\natexlab{b}.
+\newblock \bibinfo{title}{Touchdown: Natural Language Navigation and Spatial
+  Reasoning in Visual Street Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1811.12354}.
+
+
+\bibitem[Chen et~al\mbox{.}(2023)]%
+        {egoplanbench}
+\bibfield{author}{\bibinfo{person}{Yi Chen}, \bibinfo{person}{Yuying Ge},
+  \bibinfo{person}{Yixiao Ge}, \bibinfo{person}{Mingyu Ding},
+  \bibinfo{person}{Bohao Li}, \bibinfo{person}{Rui Wang},
+  \bibinfo{person}{Ruifeng Xu}, \bibinfo{person}{Ying Shan}, {and}
+  \bibinfo{person}{Xihui Liu}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{EgoPlan-Bench: Benchmarking Multimodal Large Language
+  Models for Human-Level Planning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2312.06722}.
+
+
+\bibitem[Chen et~al\mbox{.}(2022a)]%
+        {bidexhands}
+\bibfield{author}{\bibinfo{person}{Yuanpei Chen}, \bibinfo{person}{Tianhao Wu},
+  \bibinfo{person}{Shengjie Wang}, \bibinfo{person}{Xidong Feng},
+  \bibinfo{person}{Jiechuang Jiang}, \bibinfo{person}{Stephen~Marcus McAleer},
+  \bibinfo{person}{Yiran Geng}, \bibinfo{person}{Hao Dong},
+  \bibinfo{person}{Zongqing Lu}, \bibinfo{person}{Song-Chun Zhu}, {and}
+  \bibinfo{person}{Yaodong Yang}.} \bibinfo{year}{2022}\natexlab{a}.
+\newblock \bibinfo{title}{Towards Human-Level Bimanual Dexterous Manipulation
+  with Reinforcement Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2206.08686}.
+
+
+\bibitem[Chen et~al\mbox{.}(2022b)]%
+        {comphy}
+\bibfield{author}{\bibinfo{person}{Zhenfang Chen}, \bibinfo{person}{Kexin Yi},
+  \bibinfo{person}{Yunzhu Li}, \bibinfo{person}{Mingyu Ding},
+  \bibinfo{person}{Antonio Torralba}, \bibinfo{person}{Joshua~B. Tenenbaum},
+  {and} \bibinfo{person}{Chuang Gan}.} \bibinfo{year}{2022}\natexlab{b}.
+\newblock \bibinfo{title}{ComPhy: Compositional Physical Reasoning of Objects
+  and Events from Videos}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2205.01089}.
+
+
+\bibitem[Cheng et~al\mbox{.}(2025)]%
+        {embodiedeval}
+\bibfield{author}{\bibinfo{person}{Zhili Cheng}, \bibinfo{person}{Yuge Tu},
+  \bibinfo{person}{Ran Li}, \bibinfo{person}{Shiqi Dai}, \bibinfo{person}{Jinyi
+  Hu}, \bibinfo{person}{Shengding Hu}, \bibinfo{person}{Jiahao Li},
+  \bibinfo{person}{Yang Shi}, \bibinfo{person}{Tianyu Yu},
+  \bibinfo{person}{Weize Chen}, \bibinfo{person}{Lei Shi}, {and}
+  \bibinfo{person}{Maosong Sun}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{EmbodiedEval: Evaluate Multimodal LLMs as Embodied
+  Agents}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2501.11858}.
+
+
+\bibitem[Cheng et~al\mbox{.}(2024)]%
+        {legent}
+\bibfield{author}{\bibinfo{person}{Zhili Cheng}, \bibinfo{person}{Zhitong
+  Wang}, \bibinfo{person}{Jinyi Hu}, \bibinfo{person}{Shengding Hu},
+  \bibinfo{person}{An Liu}, \bibinfo{person}{Yuge Tu}, \bibinfo{person}{Pengkai
+  Li}, \bibinfo{person}{Lei Shi}, \bibinfo{person}{Zhiyuan Liu}, {and}
+  \bibinfo{person}{Maosong Sun}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{LEGENT: Open Platform for Embodied Agents}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2404.18243}.
+
+
+\bibitem[Chernyadev et~al\mbox{.}(2024)]%
+        {bigym}
+\bibfield{author}{\bibinfo{person}{Nikita Chernyadev},
+  \bibinfo{person}{Nicholas Backshall}, \bibinfo{person}{Xiao Ma},
+  \bibinfo{person}{Yunfan Lu}, \bibinfo{person}{Younggyo Seo}, {and}
+  \bibinfo{person}{Stephen James}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{BiGym: A Demo-Driven Mobile Bi-Manual Manipulation
+  Benchmark}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2407.07788}.
+
+
+\bibitem[Chi et~al\mbox{.}(2024)]%
+        {evabench}
+\bibfield{author}{\bibinfo{person}{Xiaowei Chi}, \bibinfo{person}{Chun-Kai
+  Fan}, \bibinfo{person}{Hengyuan Zhang}, \bibinfo{person}{Xingqun Qi},
+  \bibinfo{person}{Rongyu Zhang}, \bibinfo{person}{Anthony Chen},
+  \bibinfo{person}{Chi min Chan}, \bibinfo{person}{Wei Xue},
+  \bibinfo{person}{Qifeng Liu}, \bibinfo{person}{Shanghang Zhang}, {and}
+  \bibinfo{person}{Yike Guo}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{EVA: An Embodied World Model for Future Video
+  Anticipation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2410.15461}.
+
+
+\bibitem[Choi et~al\mbox{.}(2024)]%
+        {lotabench}
+\bibfield{author}{\bibinfo{person}{Jae-Woo Choi}, \bibinfo{person}{Youngwoo
+  Yoon}, \bibinfo{person}{Hyobin Ong}, \bibinfo{person}{Jaehong Kim}, {and}
+  \bibinfo{person}{Minsu Jang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{LoTa-Bench: Benchmarking Language-oriented Task
+  Planners for Embodied Agents}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2402.08178}.
+
+
+\bibitem[Chow et~al\mbox{.}(2025)]%
+        {physbench}
+\bibfield{author}{\bibinfo{person}{Wei Chow}, \bibinfo{person}{Jiageng Mao},
+  \bibinfo{person}{Boyi Li}, \bibinfo{person}{Daniel Seita},
+  \bibinfo{person}{Vitor Guizilini}, {and} \bibinfo{person}{Yue Wang}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{PhysBench: Benchmarking and Enhancing Vision-Language
+  Models for Physical World Understanding}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2501.16411}.
+
+
+\bibitem[Chung et~al\mbox{.}(2025)]%
+        {liberomem}
+\bibfield{author}{\bibinfo{person}{Nhat Chung}, \bibinfo{person}{Taisei Hanyu},
+  \bibinfo{person}{Toan Nguyen}, \bibinfo{person}{Huy Le},
+  \bibinfo{person}{Frederick Bumgarner}, \bibinfo{person}{Duy Minh~Ho Nguyen},
+  \bibinfo{person}{Khoa Vo}, \bibinfo{person}{Kashu Yamazaki},
+  \bibinfo{person}{Chase Rainwater}, \bibinfo{person}{Tung Kieu},
+  \bibinfo{person}{Anh Nguyen}, {and} \bibinfo{person}{Ngan Le}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Rethinking Progression of Memory State in Robotic
+  Manipulation: An Object-Centric Perspective}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2511.11478}.
+
+
+\bibitem[Dauner et~al\mbox{.}(2024)]%
+        {navsim}
+\bibfield{author}{\bibinfo{person}{Daniel Dauner}, \bibinfo{person}{Marcel
+  Hallgarten}, \bibinfo{person}{Tianyu Li}, \bibinfo{person}{Xinshuo Weng},
+  \bibinfo{person}{Zhiyu Huang}, \bibinfo{person}{Zetong Yang},
+  \bibinfo{person}{Hongyang Li}, \bibinfo{person}{Igor Gilitschenski},
+  \bibinfo{person}{Boris Ivanovic}, \bibinfo{person}{Marco Pavone},
+  \bibinfo{person}{Andreas Geiger}, {and} \bibinfo{person}{Kashyap Chitta}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle
+  Simulation and Benchmarking}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2406.15349}.
+
+
+\bibitem[Deitke et~al\mbox{.}(2020)]%
+        {robothor}
+\bibfield{author}{\bibinfo{person}{Matt Deitke}, \bibinfo{person}{Winson Han},
+  \bibinfo{person}{Alvaro Herrasti}, \bibinfo{person}{Aniruddha Kembhavi},
+  \bibinfo{person}{Eric Kolve}, \bibinfo{person}{Roozbeh Mottaghi},
+  \bibinfo{person}{Jordi Salvador}, \bibinfo{person}{Dustin Schwenk},
+  \bibinfo{person}{Eli VanderBilt}, \bibinfo{person}{Matthew Wallingford},
+  \bibinfo{person}{Luca Weihs}, \bibinfo{person}{Mark Yatskar}, {and}
+  \bibinfo{person}{Ali Farhadi}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{RoboTHOR: An Open Simulation-to-Real Embodied AI
+  Platform}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2004.06799}.
+
+
+\bibitem[Deitke et~al\mbox{.}(2022)]%
+        {procthor}
+\bibfield{author}{\bibinfo{person}{Matt Deitke}, \bibinfo{person}{Eli
+  VanderBilt}, \bibinfo{person}{Alvaro Herrasti}, \bibinfo{person}{Luca Weihs},
+  \bibinfo{person}{Jordi Salvador}, \bibinfo{person}{Kiana Ehsani},
+  \bibinfo{person}{Winson Han}, \bibinfo{person}{Eric Kolve},
+  \bibinfo{person}{Ali Farhadi}, \bibinfo{person}{Aniruddha Kembhavi}, {and}
+  \bibinfo{person}{Roozbeh Mottaghi}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{ProcTHOR: Large-Scale Embodied AI Using Procedural
+  Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2206.06994}.
+
+
+\bibitem[Dosovitskiy et~al\mbox{.}(2017)]%
+        {carla}
+\bibfield{author}{\bibinfo{person}{Alexey Dosovitskiy}, \bibinfo{person}{German
+  Ros}, \bibinfo{person}{Felipe Codevilla}, \bibinfo{person}{Antonio Lopez},
+  {and} \bibinfo{person}{Vladlen Koltun}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{CARLA: An Open Urban Driving Simulator}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1711.03938}.
+
+
+\bibitem[Duan et~al\mbox{.}(2025)]%
+        {worldscore}
+\bibfield{author}{\bibinfo{person}{Haoyi Duan}, \bibinfo{person}{Hong-Xing Yu},
+  \bibinfo{person}{Sirui Chen}, \bibinfo{person}{Li Fei-Fei}, {and}
+  \bibinfo{person}{Jiajun Wu}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{WorldScore: A Unified Evaluation Benchmark for World
+  Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2504.00983}.
+
+
+\bibitem[Duan et~al\mbox{.}(2022)]%
+        {survey_embodiedsim}
+\bibfield{author}{\bibinfo{person}{Jiafei Duan}, \bibinfo{person}{Samson Yu},
+  \bibinfo{person}{Hui~Li Tan}, \bibinfo{person}{Hongyuan Zhu}, {and}
+  \bibinfo{person}{Cheston Tan}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A Survey of Embodied AI: From Simulators to
+  Research Tasks}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Emerging Topics in
+  Computational Intelligence}} (\bibinfo{year}{2022}).
+\newblock
+\newblock
+\shownote{arXiv:2103.04918}.
+
+
+\bibitem[Ehsanpour et~al\mbox{.}(2021)]%
+        {jrdbact}
+\bibfield{author}{\bibinfo{person}{Mahsa Ehsanpour}, \bibinfo{person}{Fatemeh
+  Saleh}, \bibinfo{person}{Silvio Savarese}, \bibinfo{person}{Ian Reid}, {and}
+  \bibinfo{person}{Hamid Rezatofighi}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{JRDB-Act: A Large-scale Dataset for Spatio-temporal
+  Action, Social Group and Activity Detection}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2106.08827}.
+
+
+\bibitem[Feng et~al\mbox{.}(2024)]%
+        {tcbench}
+\bibfield{author}{\bibinfo{person}{Weixi Feng}, \bibinfo{person}{Jiachen Li},
+  \bibinfo{person}{Michael Saxon}, \bibinfo{person}{Tsu jui Fu},
+  \bibinfo{person}{Wenhu Chen}, {and} \bibinfo{person}{William~Yang Wang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{TC-Bench: Benchmarking Temporal Compositionality in
+  Text-to-Video and Image-to-Video Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2406.08656}.
+
+
+\bibitem[Foss et~al\mbox{.}(2025)]%
+        {causalvqa}
+\bibfield{author}{\bibinfo{person}{Aaron Foss}, \bibinfo{person}{Chloe Evans},
+  \bibinfo{person}{Sasha Mitts}, \bibinfo{person}{Koustuv Sinha},
+  \bibinfo{person}{Ammar Rizvi}, {and} \bibinfo{person}{Justine~T. Kao}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{CausalVQA: A Physically Grounded Causal Reasoning
+  Benchmark for Video Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2506.09943}.
+
+
+\bibitem[Freeman et~al\mbox{.}(2021)]%
+        {brax}
+\bibfield{author}{\bibinfo{person}{C.~Daniel Freeman}, \bibinfo{person}{Erik
+  Frey}, \bibinfo{person}{Anton Raichuk}, \bibinfo{person}{Sertan Girgin},
+  \bibinfo{person}{Igor Mordatch}, {and} \bibinfo{person}{Olivier Bachem}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Brax -- A Differentiable Physics Engine for Large
+  Scale Rigid Body Simulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2106.13281}.
+
+
+\bibitem[Gan et~al\mbox{.}(2021)]%
+        {tdwtransport}
+\bibfield{author}{\bibinfo{person}{Chuang Gan}, \bibinfo{person}{Siyuan Zhou},
+  \bibinfo{person}{Jeremy Schwartz}, \bibinfo{person}{Seth Alter},
+  \bibinfo{person}{Abhishek Bhandwaldar}, \bibinfo{person}{Dan Gutfreund},
+  \bibinfo{person}{Daniel L.~K. Yamins}, \bibinfo{person}{James~J DiCarlo},
+  \bibinfo{person}{Josh McDermott}, \bibinfo{person}{Antonio Torralba}, {and}
+  \bibinfo{person}{Joshua~B. Tenenbaum}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{The ThreeDWorld Transport Challenge: A Visually
+  Guided Task-and-Motion Planning Benchmark for Physically Realistic Embodied
+  AI}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2103.14025}.
+
+
+\bibitem[Gandhi et~al\mbox{.}(2021)]%
+        {bib}
+\bibfield{author}{\bibinfo{person}{Kanishk Gandhi}, \bibinfo{person}{Gala
+  Stojnic}, \bibinfo{person}{Brenden~M. Lake}, {and} \bibinfo{person}{Moira~R.
+  Dillon}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Baby Intuitions Benchmark (BIB): Discerning the
+  goals, preferences, and actions of others}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2102.11938}.
+
+
+\bibitem[Gao et~al\mbox{.}(2024b)]%
+        {embodiedcity}
+\bibfield{author}{\bibinfo{person}{Chen Gao}, \bibinfo{person}{Baining Zhao},
+  \bibinfo{person}{Weichen Zhang}, \bibinfo{person}{Jinzhu Mao},
+  \bibinfo{person}{Jun Zhang}, \bibinfo{person}{Zhiheng Zheng},
+  \bibinfo{person}{Fanhang Man}, \bibinfo{person}{Jianjie Fang},
+  \bibinfo{person}{Zile Zhou}, \bibinfo{person}{Jinqiang Cui},
+  \bibinfo{person}{Xinlei Chen}, {and} \bibinfo{person}{Yong Li}.}
+  \bibinfo{year}{2024}\natexlab{b}.
+\newblock \bibinfo{title}{EmbodiedCity: A Benchmark Platform for Embodied Agent
+  in Real-world City Environment}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2410.09604}.
+
+
+\bibitem[Gao et~al\mbox{.}(2025)]%
+        {genmanip}
+\bibfield{author}{\bibinfo{person}{Ning Gao}, \bibinfo{person}{Yilun Chen},
+  \bibinfo{person}{Shuai Yang}, \bibinfo{person}{Xinyi Chen},
+  \bibinfo{person}{Yang Tian}, \bibinfo{person}{Hao Li},
+  \bibinfo{person}{Haifeng Huang}, \bibinfo{person}{Hanqing Wang},
+  \bibinfo{person}{Tai Wang}, {and} \bibinfo{person}{Jiangmiao Pang}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{GENMANIP: LLM-driven Simulation for Generalizable
+  Instruction-Following Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2506.10966}.
+
+
+\bibitem[Gao et~al\mbox{.}(2023)]%
+        {alexaarena}
+\bibfield{author}{\bibinfo{person}{Qiaozi Gao}, \bibinfo{person}{Govind
+  Thattai}, \bibinfo{person}{Suhaila Shakiah}, \bibinfo{person}{Xiaofeng Gao},
+  \bibinfo{person}{Shreyas Pansare}, \bibinfo{person}{Vasu Sharma},
+  \bibinfo{person}{Gaurav Sukhatme}, \bibinfo{person}{Hangjie Shi},
+  \bibinfo{person}{Bofei Yang}, \bibinfo{person}{Desheng Zheng},
+  \bibinfo{person}{Lucy Hu}, \bibinfo{person}{Karthika Arumugam},
+  \bibinfo{person}{Shui Hu}, \bibinfo{person}{Matthew Wen},
+  \bibinfo{person}{Dinakar Guthy}, \bibinfo{person}{Cadence Chung},
+  \bibinfo{person}{Rohan Khanna}, \bibinfo{person}{Osman Ipek},
+  \bibinfo{person}{Leslie Ball}, \bibinfo{person}{Kate Bland},
+  \bibinfo{person}{Heather Rocker}, \bibinfo{person}{Yadunandana Rao},
+  \bibinfo{person}{Michael Johnston}, \bibinfo{person}{Reza Ghanadan},
+  \bibinfo{person}{Arindam Mandal}, \bibinfo{person}{Dilek~Hakkani Tur}, {and}
+  \bibinfo{person}{Prem Natarajan}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Alexa Arena: A User-Centric Interactive Platform for
+  Embodied AI}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2303.01586}.
+
+
+\bibitem[Gao et~al\mbox{.}(2024a)]%
+        {vista}
+\bibfield{author}{\bibinfo{person}{Shenyuan Gao}, \bibinfo{person}{Jiazhi
+  Yang}, \bibinfo{person}{Li Chen}, \bibinfo{person}{Kashyap Chitta},
+  \bibinfo{person}{Yihang Qiu}, \bibinfo{person}{Andreas Geiger},
+  \bibinfo{person}{Jun Zhang}, {and} \bibinfo{person}{Hongyang Li}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \bibinfo{title}{Vista: A Generalizable Driving World Model with High
+  Fidelity and Versatile Controllability}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2405.17398}.
+
+
+\bibitem[Gao et~al\mbox{.}(2022)]%
+        {dialfred}
+\bibfield{author}{\bibinfo{person}{Xiaofeng Gao}, \bibinfo{person}{Qiaozi Gao},
+  \bibinfo{person}{Ran Gong}, \bibinfo{person}{Kaixiang Lin},
+  \bibinfo{person}{Govind Thattai}, {and} \bibinfo{person}{Gaurav~S.
+  Sukhatme}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{DialFRED: Dialogue-Enabled Agents for Embodied
+  Instruction Following}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2202.13330}.
+
+
+\bibitem[Garcia et~al\mbox{.}(2024)]%
+        {gembench}
+\bibfield{author}{\bibinfo{person}{Ricardo Garcia}, \bibinfo{person}{Shizhe
+  Chen}, {and} \bibinfo{person}{Cordelia Schmid}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Towards Generalizable Vision-Language Robotic
+  Manipulation: A Benchmark and LLM-guided 3D Policy}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2410.01345}.
+
+
+\bibitem[Girdhar and Ramanan(2019)]%
+        {cater}
+\bibfield{author}{\bibinfo{person}{Rohit Girdhar} {and} \bibinfo{person}{Deva
+  Ramanan}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{CATER: A diagnostic dataset for Compositional Actions
+  and TEmporal Reasoning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1910.04744}.
+
+
+\bibitem[Gong et~al\mbox{.}(2023)]%
+        {arnold}
+\bibfield{author}{\bibinfo{person}{Ran Gong}, \bibinfo{person}{Jiangyong
+  Huang}, \bibinfo{person}{Yizhou Zhao}, \bibinfo{person}{Haoran Geng},
+  \bibinfo{person}{Xiaofeng Gao}, \bibinfo{person}{Qingyang Wu},
+  \bibinfo{person}{Wensi Ai}, \bibinfo{person}{Ziheng Zhou},
+  \bibinfo{person}{Demetri Terzopoulos}, \bibinfo{person}{Song-Chun Zhu},
+  \bibinfo{person}{Baoxiong Jia}, {and} \bibinfo{person}{Siyuan Huang}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{ARNOLD: A Benchmark for Language-Grounded Task
+  Learning With Continuous States in Realistic 3D Scenes}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2304.04321}.
+
+
+\bibitem[Grotz et~al\mbox{.}(2024)]%
+        {peract2}
+\bibfield{author}{\bibinfo{person}{Markus Grotz}, \bibinfo{person}{Mohit
+  Shridhar}, \bibinfo{person}{Tamim Asfour}, {and} \bibinfo{person}{Dieter
+  Fox}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{PerAct2: Benchmarking and Learning for Robotic
+  Bimanual Manipulation Tasks}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2407.00278}.
+
+
+\bibitem[Gu et~al\mbox{.}(2025)]%
+        {phyworldbench}
+\bibfield{author}{\bibinfo{person}{Jing Gu}, \bibinfo{person}{Xian Liu},
+  \bibinfo{person}{Yu Zeng}, \bibinfo{person}{Ashwin Nagarajan},
+  \bibinfo{person}{Fangrui Zhu}, \bibinfo{person}{Daniel Hong},
+  \bibinfo{person}{Yue Fan}, \bibinfo{person}{Qianqi Yan},
+  \bibinfo{person}{Kaiwen Zhou}, \bibinfo{person}{Ming-Yu Liu}, {and}
+  \bibinfo{person}{Xin~Eric Wang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{PhyWorldBench: A Comprehensive Evaluation of Physical
+  Realism in Text-to-Video Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2507.13428}.
+
+
+\bibitem[Gu et~al\mbox{.}(2023)]%
+        {maniskill2}
+\bibfield{author}{\bibinfo{person}{Jiayuan Gu}, \bibinfo{person}{Fanbo Xiang},
+  \bibinfo{person}{Xuanlin Li}, \bibinfo{person}{Zhan Ling},
+  \bibinfo{person}{Xiqiang Liu}, \bibinfo{person}{Tongzhou Mu},
+  \bibinfo{person}{Yihe Tang}, \bibinfo{person}{Stone Tao},
+  \bibinfo{person}{Xinyue Wei}, \bibinfo{person}{Yunchao Yao},
+  \bibinfo{person}{Xiaodi Yuan}, \bibinfo{person}{Pengwei Xie},
+  \bibinfo{person}{Zhiao Huang}, \bibinfo{person}{Rui Chen}, {and}
+  \bibinfo{person}{Hao Su}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{ManiSkill2: A Unified Benchmark for Generalizable
+  Manipulation Skills}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2302.04659}.
+
+
+\bibitem[Gulino et~al\mbox{.}(2023)]%
+        {waymax}
+\bibfield{author}{\bibinfo{person}{Cole Gulino}, \bibinfo{person}{Justin Fu},
+  \bibinfo{person}{Wenjie Luo}, \bibinfo{person}{George Tucker},
+  \bibinfo{person}{Eli Bronstein}, \bibinfo{person}{Yiren Lu},
+  \bibinfo{person}{Jean Harb}, \bibinfo{person}{Xinlei Pan},
+  \bibinfo{person}{Yan Wang}, \bibinfo{person}{Xiangyu Chen},
+  \bibinfo{person}{John~D. Co-Reyes}, \bibinfo{person}{Rishabh Agarwal},
+  \bibinfo{person}{Rebecca Roelofs}, \bibinfo{person}{Yao Lu},
+  \bibinfo{person}{Nico Montali}, \bibinfo{person}{Paul Mougin},
+  \bibinfo{person}{Zoey Yang}, \bibinfo{person}{Brandyn White},
+  \bibinfo{person}{Aleksandra Faust}, \bibinfo{person}{Rowan McAllister},
+  \bibinfo{person}{Dragomir Anguelov}, {and} \bibinfo{person}{Benjamin Sapp}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Waymax: An Accelerated, Data-Driven Simulator for
+  Large-Scale Autonomous Driving Research}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2310.08710}.
+
+
+\bibitem[Gupta et~al\mbox{.}(2019)]%
+        {frankakitchen}
+\bibfield{author}{\bibinfo{person}{Abhishek Gupta}, \bibinfo{person}{Vikash
+  Kumar}, \bibinfo{person}{Corey Lynch}, \bibinfo{person}{Sergey Levine}, {and}
+  \bibinfo{person}{Karol Hausman}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Relay Policy Learning: Solving Long-Horizon Tasks via
+  Imitation and Reinforcement Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1910.11956}.
+
+
+\bibitem[Gupta et~al\mbox{.}(2021)]%
+        {derl}
+\bibfield{author}{\bibinfo{person}{Agrim Gupta}, \bibinfo{person}{Silvio
+  Savarese}, \bibinfo{person}{Surya Ganguli}, {and} \bibinfo{person}{Li
+  Fei-Fei}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Embodied Intelligence via Learning and Evolution}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2102.02202}.
+
+
+\bibitem[He et~al\mbox{.}(2024)]%
+        {videoscore}
+\bibfield{author}{\bibinfo{person}{Xuan He}, \bibinfo{person}{Dongfu Jiang},
+  \bibinfo{person}{Ge Zhang}, \bibinfo{person}{Max Ku}, \bibinfo{person}{Achint
+  Soni}, \bibinfo{person}{Sherman Siu}, \bibinfo{person}{Haonan Chen},
+  \bibinfo{person}{Abhranil Chandra}, \bibinfo{person}{Ziyan Jiang},
+  \bibinfo{person}{Aaran Arulraj}, \bibinfo{person}{Kai Wang},
+  \bibinfo{person}{Quy~Duc Do}, \bibinfo{person}{Yuansheng Ni},
+  \bibinfo{person}{Bohan Lyu}, \bibinfo{person}{Yaswanth Narsupalli},
+  \bibinfo{person}{Rongqi Fan}, \bibinfo{person}{Zhiheng Lyu},
+  \bibinfo{person}{Yuchen Lin}, {and} \bibinfo{person}{Wenhu Chen}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{VideoScore: Building Automatic Metrics to Simulate
+  Fine-grained Human Feedback for Video Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2406.15252}.
+
+
+\bibitem[Heo et~al\mbox{.}(2023)]%
+        {furniturebench}
+\bibfield{author}{\bibinfo{person}{Minho Heo}, \bibinfo{person}{Youngwoon Lee},
+  \bibinfo{person}{Doohyun Lee}, {and} \bibinfo{person}{Joseph~J. Lim}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{FurnitureBench: Reproducible Real-World Benchmark for
+  Long-Horizon Complex Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2305.12821}.
+
+
+\bibitem[Hou et~al\mbox{.}(2026b)]%
+        {survey_wmrobot}
+\bibfield{author}{\bibinfo{person}{Bohan Hou}, \bibinfo{person}{Gen Li},
+  \bibinfo{person}{Jindou Jia}, \bibinfo{person}{Tuo An},
+  \bibinfo{person}{Xinying Guo}, \bibinfo{person}{Sicong Leng},
+  \bibinfo{person}{Haoran Geng}, \bibinfo{person}{Yanjie Ze},
+  \bibinfo{person}{Tatsuya Harada}, \bibinfo{person}{Philip Torr},
+  \bibinfo{person}{Oier Mees}, \bibinfo{person}{Marc Pollefeys},
+  \bibinfo{person}{Zhuang Liu}, \bibinfo{person}{Jiajun Wu},
+  \bibinfo{person}{Pieter Abbeel}, \bibinfo{person}{Jitendra Malik},
+  \bibinfo{person}{Yilun Du}, {and} \bibinfo{person}{Jianfei Yang}.}
+  \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{World Model for Robot Learning: A Comprehensive
+  Survey}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2605.00080}.
+
+
+\bibitem[Hou et~al\mbox{.}(2026a)]%
+        {survey_evalembodied}
+\bibfield{author}{\bibinfo{person}{Liyu Hou}, \bibinfo{person}{Linyuan Gao},
+  \bibinfo{person}{Yuan Wu}, {and} \bibinfo{person}{Yi Chang}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{A Survey on Evaluation of Embodied AI}.
+\newblock
+\newblock
+\newblock
+\shownote{Authorea preprint, DOI:10.22541/au.176851544.45077723}.
+
+
+\bibitem[Hu et~al\mbox{.}(2025)]%
+        {ewmbench}
+\bibfield{author}{\bibinfo{person}{Yue Hu}, \bibinfo{person}{Siyuan Huang},
+  \bibinfo{person}{Yue Liao}, \bibinfo{person}{Shengcong Chen},
+  \bibinfo{person}{Pengfei Zhou}, \bibinfo{person}{Liliang Chen},
+  \bibinfo{person}{Maoqing Yao}, {and} \bibinfo{person}{Guanghui Ren}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{EWMBench: Evaluating Scene, Motion, and Semantic
+  Quality in Embodied World Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2505.09694}.
+
+
+\bibitem[Huang et~al\mbox{.}(2023)]%
+        {vbench}
+\bibfield{author}{\bibinfo{person}{Ziqi Huang}, \bibinfo{person}{Yinan He},
+  \bibinfo{person}{Jiashuo Yu}, \bibinfo{person}{Fan Zhang},
+  \bibinfo{person}{Chenyang Si}, \bibinfo{person}{Yuming Jiang},
+  \bibinfo{person}{Yuanhan Zhang}, \bibinfo{person}{Tianxing Wu},
+  \bibinfo{person}{Qingyang Jin}, \bibinfo{person}{Nattapol Chanpaisit},
+  \bibinfo{person}{Yaohui Wang}, \bibinfo{person}{Xinyuan Chen},
+  \bibinfo{person}{Limin Wang}, \bibinfo{person}{Dahua Lin},
+  \bibinfo{person}{Yu Qiao}, {and} \bibinfo{person}{Ziwei Liu}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{VBench: Comprehensive Benchmark Suite for Video
+  Generative Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2311.17982}.
+
+
+\bibitem[James et~al\mbox{.}(2019)]%
+        {rlbench}
+\bibfield{author}{\bibinfo{person}{Stephen James}, \bibinfo{person}{Zicong Ma},
+  \bibinfo{person}{David~Rovick Arrojo}, {and} \bibinfo{person}{Andrew~J.
+  Davison}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{RLBench: The Robot Learning Benchmark and Learning
+  Environment}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1909.12271}.
+
+
+\bibitem[Janny et~al\mbox{.}(2022)]%
+        {filteredcophy}
+\bibfield{author}{\bibinfo{person}{Steeven Janny}, \bibinfo{person}{Fabien
+  Baradel}, \bibinfo{person}{Natalia Neverova}, \bibinfo{person}{Madiha Nadri},
+  \bibinfo{person}{Greg Mori}, {and} \bibinfo{person}{Christian Wolf}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Filtered-CoPhy: Unsupervised Learning of
+  Counterfactual Physics in Pixel Space}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2202.00368}.
+
+
+\bibitem[Jassim et~al\mbox{.}(2023)]%
+        {grasp}
+\bibfield{author}{\bibinfo{person}{Serwan Jassim}, \bibinfo{person}{Mario
+  Holubar}, \bibinfo{person}{Annika Richter}, \bibinfo{person}{Cornelius
+  Wolff}, \bibinfo{person}{Xenia Ohmer}, {and} \bibinfo{person}{Elia Bruni}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{GRASP: A novel benchmark for evaluating language
+  GRounding And Situated Physics understanding in multimodal language models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2311.09048}.
+
+
+\bibitem[Jia et~al\mbox{.}(2024)]%
+        {bench2drive}
+\bibfield{author}{\bibinfo{person}{Xiaosong Jia}, \bibinfo{person}{Zhenjie
+  Yang}, \bibinfo{person}{Qifeng Li}, \bibinfo{person}{Zhiyuan Zhang}, {and}
+  \bibinfo{person}{Junchi Yan}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Bench2Drive: Towards Multi-Ability Benchmarking of
+  Closed-Loop End-To-End Autonomous Driving}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2406.03877}.
+
+
+\bibitem[Jiang et~al\mbox{.}(2026)]%
+        {robowmbench}
+\bibfield{author}{\bibinfo{person}{Feng Jiang}, \bibinfo{person}{Yang Chen},
+  \bibinfo{person}{Kyle Xu}, \bibinfo{person}{Yuchen Liu},
+  \bibinfo{person}{Haifeng Wang}, \bibinfo{person}{Zhenhao Shen},
+  \bibinfo{person}{Jasper Lu}, \bibinfo{person}{Shengze Huang},
+  \bibinfo{person}{Yuanfei Wang}, \bibinfo{person}{Chen Xie}, {and}
+  \bibinfo{person}{Ruihai Wu}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{RoboWM-Bench: A Benchmark for Evaluating World Models
+  in Robotic Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2604.19092}.
+
+
+\bibitem[Jiang et~al\mbox{.}(2022b)]%
+        {bongardhoi}
+\bibfield{author}{\bibinfo{person}{Huaizu Jiang}, \bibinfo{person}{Xiaojian
+  Ma}, \bibinfo{person}{Weili Nie}, \bibinfo{person}{Zhiding Yu},
+  \bibinfo{person}{Yuke Zhu}, \bibinfo{person}{Song-Chun Zhu}, {and}
+  \bibinfo{person}{Anima Anandkumar}.} \bibinfo{year}{2022}\natexlab{b}.
+\newblock \bibinfo{title}{Bongard-HOI: Benchmarking Few-Shot Visual Reasoning
+  for Human-Object Interactions}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2205.13803}.
+
+
+\bibitem[Jiang et~al\mbox{.}(2022a)]%
+        {vimabench}
+\bibfield{author}{\bibinfo{person}{Yunfan Jiang}, \bibinfo{person}{Agrim
+  Gupta}, \bibinfo{person}{Zichen Zhang}, \bibinfo{person}{Guanzhi Wang},
+  \bibinfo{person}{Yongqiang Dou}, \bibinfo{person}{Yanjun Chen},
+  \bibinfo{person}{Li Fei-Fei}, \bibinfo{person}{Anima Anandkumar},
+  \bibinfo{person}{Yuke Zhu}, {and} \bibinfo{person}{Linxi Fan}.}
+  \bibinfo{year}{2022}\natexlab{a}.
+\newblock \bibinfo{title}{VIMA: General Robot Manipulation with Multimodal
+  Prompts}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2210.03094}.
+
+
+\bibitem[Kannan et~al\mbox{.}(2023)]%
+        {smartllm}
+\bibfield{author}{\bibinfo{person}{Shyam~Sundar Kannan},
+  \bibinfo{person}{Vishnunandan L.~N. Venkatesh}, {and}
+  \bibinfo{person}{Byung-Cheol Min}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{SMART-LLM: Smart Multi-Agent Robot Task Planning
+  using Large Language Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2309.10062}.
+
+
+\bibitem[Khanna et~al\mbox{.}(2024)]%
+        {goatbench}
+\bibfield{author}{\bibinfo{person}{Mukul Khanna}, \bibinfo{person}{Ram
+  Ramrakhya}, \bibinfo{person}{Gunjan Chhablani}, \bibinfo{person}{Sriram
+  Yenamandra}, \bibinfo{person}{Theophile Gervet}, \bibinfo{person}{Matthew
+  Chang}, \bibinfo{person}{Zsolt Kira}, \bibinfo{person}{Devendra~Singh
+  Chaplot}, \bibinfo{person}{Dhruv Batra}, {and} \bibinfo{person}{Roozbeh
+  Mottaghi}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{GOAT-Bench: A Benchmark for Multi-Modal Lifelong
+  Navigation}. In \bibinfo{booktitle}{\emph{IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)}}.
+\newblock
+\newblock
+\shownote{arXiv:2404.06609}.
+
+
+\bibitem[Kovac et~al\mbox{.}(2021)]%
+        {socialai}
+\bibfield{author}{\bibinfo{person}{Grgur Kovac}, \bibinfo{person}{Remy
+  Portelas}, \bibinfo{person}{Katja Hofmann}, {and}
+  \bibinfo{person}{Pierre-Yves Oudeyer}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{SocialAI: Benchmarking Socio-Cognitive Abilities in
+  Deep Reinforcement Learning Agents}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2107.00956}.
+
+
+\bibitem[Krantz et~al\mbox{.}(2020)]%
+        {vlnce}
+\bibfield{author}{\bibinfo{person}{Jacob Krantz}, \bibinfo{person}{Erik
+  Wijmans}, \bibinfo{person}{Arjun Majumdar}, \bibinfo{person}{Dhruv Batra},
+  {and} \bibinfo{person}{Stefan Lee}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Beyond the Nav-Graph: Vision-and-Language Navigation
+  in Continuous Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2004.02857}.
+
+
+\bibitem[Ku et~al\mbox{.}(2020)]%
+        {rxr}
+\bibfield{author}{\bibinfo{person}{Alexander Ku}, \bibinfo{person}{Peter
+  Anderson}, \bibinfo{person}{Roma Patel}, \bibinfo{person}{Eugene Ie}, {and}
+  \bibinfo{person}{Jason Baldridge}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Room-Across-Room: Multilingual Vision-and-Language
+  Navigation with Dense Spatiotemporal Grounding}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2010.07954}.
+
+
+\bibitem[Kumar et~al\mbox{.}(2023)]%
+        {robohive}
+\bibfield{author}{\bibinfo{person}{Vikash Kumar}, \bibinfo{person}{Rutav Shah},
+  \bibinfo{person}{Gaoyue Zhou}, \bibinfo{person}{Vincent Moens},
+  \bibinfo{person}{Vittorio Caggiano}, \bibinfo{person}{Jay Vakil},
+  \bibinfo{person}{Abhishek Gupta}, {and} \bibinfo{person}{Aravind
+  Rajeswaran}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{RoboHive: A Unified Framework for Robot Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2310.06828}.
+
+
+\bibitem[Lai et~al\mbox{.}(2026)]%
+        {survey_benchconstruct}
+\bibfield{author}{\bibinfo{person}{Jinshan Lai}, \bibinfo{person}{Jianwei Hu},
+  \bibinfo{person}{Baoyang Jiang}, \bibinfo{person}{Fengchun Zhang},
+  \bibinfo{person}{Leyuan Wang}, \bibinfo{person}{Haotian Li},
+  \bibinfo{person}{Yida Wang}, \bibinfo{person}{Tingxuan Huang},
+  \bibinfo{person}{Xi Ren}, {and} \bibinfo{person}{Qiang Ma}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Intelligent Automation for Embodied Benchmark
+  Construction: Pipelines, Embodiments, Simulators, and Trends}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2606.12207}.
+
+
+\bibitem[Lee et~al\mbox{.}(2021)]%
+        {rgbstacking}
+\bibfield{author}{\bibinfo{person}{Alex~X. Lee}, \bibinfo{person}{Coline
+  Devin}, \bibinfo{person}{Yuxiang Zhou}, \bibinfo{person}{Thomas Lampe},
+  \bibinfo{person}{Konstantinos Bousmalis}, \bibinfo{person}{Jost~Tobias
+  Springenberg}, \bibinfo{person}{Arunkumar Byravan}, \bibinfo{person}{Abbas
+  Abdolmaleki}, \bibinfo{person}{Nimrod Gileadi}, \bibinfo{person}{David
+  Khosid}, \bibinfo{person}{Claudio Fantacci}, \bibinfo{person}{Jose~Enrique
+  Chen}, \bibinfo{person}{Akhil Raju}, \bibinfo{person}{Rae Jeong},
+  \bibinfo{person}{Michael Neunert}, \bibinfo{person}{Antoine Laurens},
+  \bibinfo{person}{Stefano Saliceti}, \bibinfo{person}{Federico Casarini},
+  \bibinfo{person}{Martin Riedmiller}, \bibinfo{person}{Raia Hadsell}, {and}
+  \bibinfo{person}{Francesco Nori}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Beyond Pick-and-Place: Tackling Robotic Stacking of
+  Diverse Shapes}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2110.06192}.
+
+
+\bibitem[Leibo et~al\mbox{.}(2021)]%
+        {meltingpot}
+\bibfield{author}{\bibinfo{person}{Joel~Z. Leibo}, \bibinfo{person}{Edgar
+  Duenez-Guzman}, \bibinfo{person}{Alexander~Sasha Vezhnevets},
+  \bibinfo{person}{John~P. Agapiou}, \bibinfo{person}{Peter Sunehag},
+  \bibinfo{person}{Raphael Koster}, \bibinfo{person}{Jayd Matyas},
+  \bibinfo{person}{Charles Beattie}, \bibinfo{person}{Igor Mordatch}, {and}
+  \bibinfo{person}{Thore Graepel}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Scalable Evaluation of Multi-Agent Reinforcement
+  Learning with Melting Pot}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2107.06857}.
+
+
+\bibitem[Li et~al\mbox{.}(2024b)]%
+        {behavior1k}
+\bibfield{author}{\bibinfo{person}{Chengshu Li}, \bibinfo{person}{Ruohan
+  Zhang}, \bibinfo{person}{Josiah Wong}, \bibinfo{person}{Cem Gokmen},
+  \bibinfo{person}{Sanjana Srivastava}, \bibinfo{person}{Roberto
+  Martin-Martin}, \bibinfo{person}{Chen Wang}, \bibinfo{person}{Gabrael
+  Levine}, \bibinfo{person}{Wensi Ai}, \bibinfo{person}{Benjamin Martinez},
+  \bibinfo{person}{Hang Yin}, \bibinfo{person}{Michael Lingelbach},
+  \bibinfo{person}{Minjune Hwang}, \bibinfo{person}{Ayano Hiranaka},
+  \bibinfo{person}{Sujay Garlanka}, \bibinfo{person}{Arman Aydin},
+  \bibinfo{person}{Sharon Lee}, \bibinfo{person}{Jiankai Sun},
+  \bibinfo{person}{Mona Anvari}, \bibinfo{person}{Manasi Sharma},
+  \bibinfo{person}{Dhruva Bansal}, \bibinfo{person}{Samuel Hunter},
+  \bibinfo{person}{Kyu-Young Kim}, \bibinfo{person}{Alan Lou},
+  \bibinfo{person}{Caleb~R Matthews}, \bibinfo{person}{Ivan Villa-Renteria},
+  \bibinfo{person}{Jerry~Huayang Tang}, \bibinfo{person}{Claire Tang},
+  \bibinfo{person}{Fei Xia}, \bibinfo{person}{Yunzhu Li},
+  \bibinfo{person}{Silvio Savarese}, \bibinfo{person}{Hyowon Gweon},
+  \bibinfo{person}{C.~Karen Liu}, \bibinfo{person}{Jiajun Wu}, {and}
+  \bibinfo{person}{Li Fei-Fei}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \bibinfo{title}{BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark
+  with 1,000 Everyday Activities and Realistic Simulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2403.09227}.
+
+
+\bibitem[Li et~al\mbox{.}(2025)]%
+        {worldmodelbench}
+\bibfield{author}{\bibinfo{person}{Dacheng Li}, \bibinfo{person}{Yunhao Fang},
+  \bibinfo{person}{Yukang Chen}, \bibinfo{person}{Shuo Yang},
+  \bibinfo{person}{Shiyi Cao}, \bibinfo{person}{Justin Wong},
+  \bibinfo{person}{Michael Luo}, \bibinfo{person}{Xiaolong Wang},
+  \bibinfo{person}{Hongxu Yin}, \bibinfo{person}{Joseph~E. Gonzalez},
+  \bibinfo{person}{Ion Stoica}, \bibinfo{person}{Song Han}, {and}
+  \bibinfo{person}{Yao Lu}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{WorldModelBench: Judging Video Generation Models As
+  World Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2502.20694}.
+
+
+\bibitem[Li et~al\mbox{.}(2021)]%
+        {metadrive}
+\bibfield{author}{\bibinfo{person}{Quanyi Li}, \bibinfo{person}{Zhenghao Peng},
+  \bibinfo{person}{Lan Feng}, \bibinfo{person}{Qihang Zhang},
+  \bibinfo{person}{Zhenghai Xue}, {and} \bibinfo{person}{Bolei Zhou}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{MetaDrive: Composing Diverse Driving Scenarios for
+  Generalizable Reinforcement Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2109.12674}.
+
+
+\bibitem[Li et~al\mbox{.}(2024a)]%
+        {simpler}
+\bibfield{author}{\bibinfo{person}{Xuanlin Li}, \bibinfo{person}{Kyle Hsu},
+  \bibinfo{person}{Jiayuan Gu}, \bibinfo{person}{Karl Pertsch},
+  \bibinfo{person}{Oier Mees}, \bibinfo{person}{Homer~Rich Walke},
+  \bibinfo{person}{Chuyuan Fu}, \bibinfo{person}{Ishikaa Lunawat},
+  \bibinfo{person}{Isabel Sieh}, \bibinfo{person}{Sean Kirmani},
+  \bibinfo{person}{Sergey Levine}, \bibinfo{person}{Jiajun Wu},
+  \bibinfo{person}{Chelsea Finn}, \bibinfo{person}{Hao Su},
+  \bibinfo{person}{Quan Vuong}, {and} \bibinfo{person}{Ted Xiao}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \bibinfo{title}{Evaluating Real-World Robot Manipulation Policies in
+  Simulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2405.05941}.
+
+
+\bibitem[Liao et~al\mbox{.}(2024)]%
+        {devil}
+\bibfield{author}{\bibinfo{person}{Mingxiang Liao}, \bibinfo{person}{Hannan
+  Lu}, \bibinfo{person}{Xinyu Zhang}, \bibinfo{person}{Fang Wan},
+  \bibinfo{person}{Tianyu Wang}, \bibinfo{person}{Yuzhong Zhao},
+  \bibinfo{person}{Wangmeng Zuo}, \bibinfo{person}{Qixiang Ye}, {and}
+  \bibinfo{person}{Jingdong Wang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Evaluation of Text-to-Video Generation Models: A
+  Dynamics Perspective}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2407.01094}.
+
+
+\bibitem[Lin et~al\mbox{.}(2020)]%
+        {softgym}
+\bibfield{author}{\bibinfo{person}{Xingyu Lin}, \bibinfo{person}{Yufei Wang},
+  \bibinfo{person}{Jake Olkin}, {and} \bibinfo{person}{David Held}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{SoftGym: Benchmarking Deep Reinforcement Learning for
+  Deformable Object Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2011.07215}.
+
+
+\bibitem[Liu et~al\mbox{.}(2023c)]%
+        {libero}
+\bibfield{author}{\bibinfo{person}{Bo Liu}, \bibinfo{person}{Yifeng Zhu},
+  \bibinfo{person}{Chongkai Gao}, \bibinfo{person}{Yihao Feng},
+  \bibinfo{person}{Qiang Liu}, \bibinfo{person}{Yuke Zhu}, {and}
+  \bibinfo{person}{Peter Stone}.} \bibinfo{year}{2023}\natexlab{c}.
+\newblock \bibinfo{title}{LIBERO: Benchmarking Knowledge Transfer for Lifelong
+  Robot Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2306.03310}.
+
+
+\bibitem[Liu et~al\mbox{.}(2023a)]%
+        {evalcrafter}
+\bibfield{author}{\bibinfo{person}{Yaofang Liu}, \bibinfo{person}{Xiaodong
+  Cun}, \bibinfo{person}{Xuebo Liu}, \bibinfo{person}{Xintao Wang},
+  \bibinfo{person}{Yong Zhang}, \bibinfo{person}{Haoxin Chen},
+  \bibinfo{person}{Yang Liu}, \bibinfo{person}{Tieyong Zeng},
+  \bibinfo{person}{Raymond Chan}, {and} \bibinfo{person}{Ying Shan}.}
+  \bibinfo{year}{2023}\natexlab{a}.
+\newblock \bibinfo{title}{EvalCrafter: Benchmarking and Evaluating Large Video
+  Generation Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2310.11440}.
+
+
+\bibitem[Liu et~al\mbox{.}(2023b)]%
+        {fetv}
+\bibfield{author}{\bibinfo{person}{Yuanxin Liu}, \bibinfo{person}{Lei Li},
+  \bibinfo{person}{Shuhuai Ren}, \bibinfo{person}{Rundong Gao},
+  \bibinfo{person}{Shicheng Li}, \bibinfo{person}{Sishuo Chen},
+  \bibinfo{person}{Xu Sun}, {and} \bibinfo{person}{Lu Hou}.}
+  \bibinfo{year}{2023}\natexlab{b}.
+\newblock \bibinfo{title}{FETV: A Benchmark for Fine-Grained Evaluation of
+  Open-Domain Text-to-Video Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2311.01813}.
+
+
+\bibitem[Luo et~al\mbox{.}(2024)]%
+        {fmb}
+\bibfield{author}{\bibinfo{person}{Jianlan Luo}, \bibinfo{person}{Charles Xu},
+  \bibinfo{person}{Fangchen Liu}, \bibinfo{person}{Liam Tan},
+  \bibinfo{person}{Zipeng Lin}, \bibinfo{person}{Jeffrey Wu},
+  \bibinfo{person}{Pieter Abbeel}, {and} \bibinfo{person}{Sergey Levine}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{FMB: a Functional Manipulation Benchmark for
+  Generalizable Robotic Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2401.08553}.
+
+
+\bibitem[Lynnerup et~al\mbox{.}(2020)]%
+        {survey_rlrepro}
+\bibfield{author}{\bibinfo{person}{Nicolai~A. Lynnerup}, \bibinfo{person}{Laura
+  Nolling}, \bibinfo{person}{Rasmus Hasle}, {and} \bibinfo{person}{John
+  Hallam}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{A Survey on Reproducibility by Evaluating Deep
+  Reinforcement Learning Algorithms on Real-World Robots}. In
+  \bibinfo{booktitle}{\emph{Conference on Robot Learning (CoRL), PMLR vol.\
+  100}}.
+\newblock
+\newblock
+\shownote{arXiv:1909.03772}.
+
+
+\bibitem[Majumdar et~al\mbox{.}(2023)]%
+        {cortexbench}
+\bibfield{author}{\bibinfo{person}{Arjun Majumdar}, \bibinfo{person}{Karmesh
+  Yadav}, \bibinfo{person}{Sergio Arnaud}, \bibinfo{person}{Yecheng~Jason Ma},
+  \bibinfo{person}{Claire Chen}, \bibinfo{person}{Sneha Silwal},
+  \bibinfo{person}{Aryan Jain}, \bibinfo{person}{Vincent-Pierre Berges},
+  \bibinfo{person}{Pieter Abbeel}, \bibinfo{person}{Jitendra Malik},
+  \bibinfo{person}{Dhruv Batra}, \bibinfo{person}{Yixin Lin},
+  \bibinfo{person}{Oleksandr Maksymets}, \bibinfo{person}{Aravind Rajeswaran},
+  {and} \bibinfo{person}{Franziska Meier}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Where are we in the search for an Artificial Visual
+  Cortex for Embodied Intelligence?}
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2303.18240}.
+
+
+\bibitem[Makoviychuk et~al\mbox{.}(2021)]%
+        {isaacgym}
+\bibfield{author}{\bibinfo{person}{Viktor Makoviychuk}, \bibinfo{person}{Lukasz
+  Wawrzyniak}, \bibinfo{person}{Yunrong Guo}, \bibinfo{person}{Michelle Lu},
+  \bibinfo{person}{Kier Storey}, \bibinfo{person}{Miles Macklin},
+  \bibinfo{person}{David Hoeller}, \bibinfo{person}{Nikita Rudin},
+  \bibinfo{person}{Arthur Allshire}, \bibinfo{person}{Ankur Handa}, {and}
+  \bibinfo{person}{Gavriel State}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Isaac Gym: High Performance GPU-Based Physics
+  Simulation For Robot Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2108.10470}.
+
+
+\bibitem[Mandlekar et~al\mbox{.}(2021)]%
+        {robomimic}
+\bibfield{author}{\bibinfo{person}{Ajay Mandlekar}, \bibinfo{person}{Danfei
+  Xu}, \bibinfo{person}{Josiah Wong}, \bibinfo{person}{Soroush Nasiriany},
+  \bibinfo{person}{Chen Wang}, \bibinfo{person}{Rohun Kulkarni},
+  \bibinfo{person}{Li Fei-Fei}, \bibinfo{person}{Silvio Savarese},
+  \bibinfo{person}{Yuke Zhu}, {and} \bibinfo{person}{Roberto Martin-Martin}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{What Matters in Learning from Offline Human
+  Demonstrations for Robot Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2108.03298}.
+
+
+\bibitem[Martin-Martin et~al\mbox{.}(2019)]%
+        {jrdb}
+\bibfield{author}{\bibinfo{person}{Roberto Martin-Martin},
+  \bibinfo{person}{Mihir Patel}, \bibinfo{person}{Hamid Rezatofighi},
+  \bibinfo{person}{Abhijeet Shenoi}, \bibinfo{person}{JunYoung Gwak},
+  \bibinfo{person}{Eric Frankel}, \bibinfo{person}{Amir Sadeghian}, {and}
+  \bibinfo{person}{Silvio Savarese}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{JRDB: A Dataset and Benchmark of Egocentric Robot
+  Visual Perception of Humans in Built Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1910.11792}.
+
+
+\bibitem[McDuff et~al\mbox{.}(2021)]%
+        {causalcity}
+\bibfield{author}{\bibinfo{person}{Daniel McDuff}, \bibinfo{person}{Yale Song},
+  \bibinfo{person}{Jiyoung Lee}, \bibinfo{person}{Vibhav Vineet},
+  \bibinfo{person}{Sai Vemprala}, \bibinfo{person}{Nicholas Gyde},
+  \bibinfo{person}{Hadi Salman}, \bibinfo{person}{Shuang Ma},
+  \bibinfo{person}{Kwanghoon Sohn}, {and} \bibinfo{person}{Ashish Kapoor}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{CausalCity: Complex Simulations with Agency for
+  Causal Discovery and Reasoning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2106.13364}.
+
+
+\bibitem[Mees et~al\mbox{.}(2021)]%
+        {calvin}
+\bibfield{author}{\bibinfo{person}{Oier Mees}, \bibinfo{person}{Lukas Hermann},
+  \bibinfo{person}{Erick Rosete-Beas}, {and} \bibinfo{person}{Wolfram
+  Burgard}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{CALVIN: A Benchmark for Language-Conditioned Policy
+  Learning for Long-Horizon Robot Manipulation Tasks}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2112.03227}.
+
+
+\bibitem[Meng et~al\mbox{.}(2024)]%
+        {phygenbench}
+\bibfield{author}{\bibinfo{person}{Fanqing Meng}, \bibinfo{person}{Jiaqi Liao},
+  \bibinfo{person}{Xinyu Tan}, \bibinfo{person}{Wenqi Shao},
+  \bibinfo{person}{Quanfeng Lu}, \bibinfo{person}{Kaipeng Zhang},
+  \bibinfo{person}{Yu Cheng}, \bibinfo{person}{Dianqi Li}, \bibinfo{person}{Yu
+  Qiao}, {and} \bibinfo{person}{Ping Luo}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Towards World Simulator: Crafting Physical
+  Commonsense-Based Benchmark for Video Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2410.05363}.
+
+
+\bibitem[Motamed et~al\mbox{.}(2025)]%
+        {physicsiq}
+\bibfield{author}{\bibinfo{person}{Saman Motamed}, \bibinfo{person}{Laura
+  Culp}, \bibinfo{person}{Kevin Swersky}, \bibinfo{person}{Priyank Jaini},
+  {and} \bibinfo{person}{Robert Geirhos}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Do generative video models understand physical
+  principles?}
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2501.09038}.
+
+
+\bibitem[Mu et~al\mbox{.}(2024)]%
+        {robotwin}
+\bibfield{author}{\bibinfo{person}{Yao Mu}, \bibinfo{person}{Tianxing Chen},
+  \bibinfo{person}{Shijia Peng}, \bibinfo{person}{Zanxin Chen},
+  \bibinfo{person}{Zeyu Gao}, \bibinfo{person}{Yude Zou},
+  \bibinfo{person}{Lunkai Lin}, \bibinfo{person}{Zhiqiang Xie}, {and}
+  \bibinfo{person}{Ping Luo}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{RoboTwin: Dual-Arm Robot Benchmark with Generative
+  Digital Twins}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2409.02920}.
+
+
+\bibitem[Nasiriany et~al\mbox{.}(2024)]%
+        {robocasa}
+\bibfield{author}{\bibinfo{person}{Soroush Nasiriany}, \bibinfo{person}{Abhiram
+  Maddukuri}, \bibinfo{person}{Lance Zhang}, \bibinfo{person}{Adeet Parikh},
+  \bibinfo{person}{Aaron Lo}, \bibinfo{person}{Abhishek Joshi},
+  \bibinfo{person}{Ajay Mandlekar}, {and} \bibinfo{person}{Yuke Zhu}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{RoboCasa: Large-Scale Simulation of Everyday Tasks
+  for Generalist Robots}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2406.02523}.
+
+
+\bibitem[Netanyahu et~al\mbox{.}(2021)]%
+        {phase}
+\bibfield{author}{\bibinfo{person}{Aviv Netanyahu}, \bibinfo{person}{Tianmin
+  Shu}, \bibinfo{person}{Boris Katz}, \bibinfo{person}{Andrei Barbu}, {and}
+  \bibinfo{person}{Joshua~B. Tenenbaum}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{PHASE: PHysically-grounded Abstract Social Events for
+  Machine Social Perception}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2103.01933}.
+
+
+\bibitem[Padmakumar et~al\mbox{.}(2021)]%
+        {teach}
+\bibfield{author}{\bibinfo{person}{Aishwarya Padmakumar},
+  \bibinfo{person}{Jesse Thomason}, \bibinfo{person}{Ayush Shrivastava},
+  \bibinfo{person}{Patrick Lange}, \bibinfo{person}{Anjali Narayan-Chen},
+  \bibinfo{person}{Spandana Gella}, \bibinfo{person}{Robinson Piramuthu},
+  \bibinfo{person}{Gokhan Tur}, {and} \bibinfo{person}{Dilek Hakkani-Tur}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{TEACh: Task-driven Embodied Agents that Chat}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2110.00534}.
+
+
+\bibitem[Page et~al\mbox{.}(2021)]%
+        {prisma2020}
+\bibfield{author}{\bibinfo{person}{Matthew~J. Page}, \bibinfo{person}{Joanne~E.
+  McKenzie}, \bibinfo{person}{Patrick~M. Bossuyt}, \bibinfo{person}{Isabelle
+  Boutron}, \bibinfo{person}{Tammy~C. Hoffmann}, \bibinfo{person}{Cynthia~D.
+  Mulrow}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{The {PRISMA} 2020 statement: an updated guideline
+  for reporting systematic reviews}.
+\newblock \bibinfo{journal}{\emph{BMJ}}  \bibinfo{volume}{372}
+  (\bibinfo{year}{2021}), \bibinfo{pages}{n71}.
+\newblock
+\newblock
+\shownote{doi:10.1136/bmj.n71}.
+
+
+\bibitem[Perez-Higueras et~al\mbox{.}(2023)]%
+        {hunavsim}
+\bibfield{author}{\bibinfo{person}{Noe Perez-Higueras},
+  \bibinfo{person}{Roberto Otero}, \bibinfo{person}{Fernando Caballero}, {and}
+  \bibinfo{person}{Luis Merino}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{HuNavSim: A ROS 2 Human Navigation Simulator for
+  Benchmarking Human-Aware Robot Navigation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2305.01303}.
+
+
+\bibitem[Puig et~al\mbox{.}(2018)]%
+        {virtualhome}
+\bibfield{author}{\bibinfo{person}{Xavier Puig}, \bibinfo{person}{Kevin Ra},
+  \bibinfo{person}{Marko Boben}, \bibinfo{person}{Jiaman Li},
+  \bibinfo{person}{Tingwu Wang}, \bibinfo{person}{Sanja Fidler}, {and}
+  \bibinfo{person}{Antonio Torralba}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{VirtualHome: Simulating Household Activities via
+  Programs}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1806.07011}.
+
+
+\bibitem[Puig et~al\mbox{.}(2020)]%
+        {watchandhelp}
+\bibfield{author}{\bibinfo{person}{Xavier Puig}, \bibinfo{person}{Tianmin Shu},
+  \bibinfo{person}{Shuang Li}, \bibinfo{person}{Zilin Wang},
+  \bibinfo{person}{Yuan-Hong Liao}, \bibinfo{person}{Joshua~B. Tenenbaum},
+  \bibinfo{person}{Sanja Fidler}, {and} \bibinfo{person}{Antonio Torralba}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Watch-And-Help: A Challenge for Social Perception and
+  Human-AI Collaboration}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2010.09890}.
+
+
+\bibitem[Puig et~al\mbox{.}(2023)]%
+        {habitat30}
+\bibfield{author}{\bibinfo{person}{Xavier Puig}, \bibinfo{person}{Eric
+  Undersander}, \bibinfo{person}{Andrew Szot}, \bibinfo{person}{Mikael~Dallaire
+  Cote}, \bibinfo{person}{Tsung-Yen Yang}, \bibinfo{person}{Ruslan Partsey},
+  \bibinfo{person}{Ruta Desai}, \bibinfo{person}{Alexander~William Clegg},
+  \bibinfo{person}{Michal Hlavac}, \bibinfo{person}{So~Yeon Min},
+  \bibinfo{person}{Vladimir Vondrus}, \bibinfo{person}{Theophile Gervet},
+  \bibinfo{person}{Vincent-Pierre Berges}, \bibinfo{person}{John~M. Turner},
+  \bibinfo{person}{Oleksandr Maksymets}, \bibinfo{person}{Zsolt Kira},
+  \bibinfo{person}{Mrinal Kalakrishnan}, \bibinfo{person}{Jitendra Malik},
+  \bibinfo{person}{Devendra~Singh Chaplot}, \bibinfo{person}{Unnat Jain},
+  \bibinfo{person}{Dhruv Batra}, \bibinfo{person}{Akshara Rai}, {and}
+  \bibinfo{person}{Roozbeh Mottaghi}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Habitat 3.0: A Co-Habitat for Humans, Avatars and
+  Robots}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2310.13724}.
+
+
+\bibitem[Pumacay et~al\mbox{.}(2024)]%
+        {thecolosseum}
+\bibfield{author}{\bibinfo{person}{Wilbert Pumacay}, \bibinfo{person}{Ishika
+  Singh}, \bibinfo{person}{Jiafei Duan}, \bibinfo{person}{Ranjay Krishna},
+  \bibinfo{person}{Jesse Thomason}, {and} \bibinfo{person}{Dieter Fox}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{THE COLOSSEUM: A Benchmark for Evaluating
+  Generalization for Robotic Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2402.08191}.
+
+
+\bibitem[Qi et~al\mbox{.}(2019)]%
+        {reverie}
+\bibfield{author}{\bibinfo{person}{Yuankai Qi}, \bibinfo{person}{Qi Wu},
+  \bibinfo{person}{Peter Anderson}, \bibinfo{person}{Xin Wang},
+  \bibinfo{person}{William~Yang Wang}, \bibinfo{person}{Chunhua Shen}, {and}
+  \bibinfo{person}{Anton van~den Hengel}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{REVERIE: Remote Embodied Visual Referring Expression
+  in Real Indoor Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1904.10151}.
+
+
+\bibitem[Qin et~al\mbox{.}(2024)]%
+        {worldsimbench}
+\bibfield{author}{\bibinfo{person}{Yiran Qin}, \bibinfo{person}{Zhelun Shi},
+  \bibinfo{person}{Jiwen Yu}, \bibinfo{person}{Xijun Wang},
+  \bibinfo{person}{Enshen Zhou}, \bibinfo{person}{Lijun Li},
+  \bibinfo{person}{Zhenfei Yin}, \bibinfo{person}{Xihui Liu},
+  \bibinfo{person}{Lu Sheng}, \bibinfo{person}{Jing Shao}, \bibinfo{person}{Lei
+  Bai}, \bibinfo{person}{Wanli Ouyang}, {and} \bibinfo{person}{Ruimao Zhang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{WorldSimBench: Towards Video Generation Models as
+  World Simulators}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2410.18072}.
+
+
+\bibitem[Qiu et~al\mbox{.}(2025)]%
+        {phybench}
+\bibfield{author}{\bibinfo{person}{Shi Qiu}, \bibinfo{person}{Shaoyang Guo},
+  \bibinfo{person}{Zhuo-Yang Song}, \bibinfo{person}{Yunbo Sun},
+  \bibinfo{person}{Zeyu Cai}, \bibinfo{person}{Jiashen Wei},
+  \bibinfo{person}{Tianyu Luo}, {and} \bibinfo{person}{Yixuan Yin}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{PHYBench: Holistic Evaluation of Physical Perception
+  and Reasoning in Large Language Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2504.16074}.
+
+
+\bibitem[Ramakrishnan et~al\mbox{.}(2021)]%
+        {hm3d}
+\bibfield{author}{\bibinfo{person}{Santhosh~K. Ramakrishnan},
+  \bibinfo{person}{Aaron Gokaslan}, \bibinfo{person}{Erik Wijmans},
+  \bibinfo{person}{Oleksandr Maksymets}, \bibinfo{person}{Alex Clegg},
+  \bibinfo{person}{John Turner}, \bibinfo{person}{Eric Undersander},
+  \bibinfo{person}{Wojciech Galuba}, \bibinfo{person}{Andrew Westbury},
+  \bibinfo{person}{Angel~X. Chang}, \bibinfo{person}{Manolis Savva},
+  \bibinfo{person}{Yili Zhao}, {and} \bibinfo{person}{Dhruv Batra}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Habitat-Matterport 3D Dataset (HM3D): 1000
+  Large-scale 3D Environments for Embodied AI}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2109.08238}.
+
+
+\bibitem[Riochet et~al\mbox{.}(2018)]%
+        {intphys}
+\bibfield{author}{\bibinfo{person}{Ronan Riochet},
+  \bibinfo{person}{Mario~Ynocente Castro}, \bibinfo{person}{Mathieu Bernard},
+  \bibinfo{person}{Adam Lerer}, \bibinfo{person}{Rob Fergus},
+  \bibinfo{person}{Veronique Izard}, {and} \bibinfo{person}{Emmanuel Dupoux}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{IntPhys: A Framework and Benchmark for Visual
+  Intuitive Physics Reasoning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1803.07616}.
+
+
+\bibitem[Rudin et~al\mbox{.}(2021)]%
+        {leggedgym}
+\bibfield{author}{\bibinfo{person}{Nikita Rudin}, \bibinfo{person}{David
+  Hoeller}, \bibinfo{person}{Philipp Reist}, {and} \bibinfo{person}{Marco
+  Hutter}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Learning to Walk in Minutes Using Massively Parallel
+  Deep Reinforcement Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2109.11978}.
+
+
+\bibitem[Samvelyan et~al\mbox{.}(2019)]%
+        {smac}
+\bibfield{author}{\bibinfo{person}{Mikayel Samvelyan}, \bibinfo{person}{Tabish
+  Rashid}, \bibinfo{person}{Christian~Schroeder de Witt},
+  \bibinfo{person}{Gregory Farquhar}, \bibinfo{person}{Nantas Nardelli},
+  \bibinfo{person}{Tim G.~J. Rudner}, \bibinfo{person}{Chia-Man Hung},
+  \bibinfo{person}{Philip H.~S. Torr}, \bibinfo{person}{Jakob Foerster}, {and}
+  \bibinfo{person}{Shimon Whiteson}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{The StarCraft Multi-Agent Challenge}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1902.04043}.
+
+
+\bibitem[Savva et~al\mbox{.}(2019)]%
+        {habitat}
+\bibfield{author}{\bibinfo{person}{Manolis Savva}, \bibinfo{person}{Abhishek
+  Kadian}, \bibinfo{person}{Oleksandr Maksymets}, \bibinfo{person}{Yili Zhao},
+  \bibinfo{person}{Erik Wijmans}, \bibinfo{person}{Bhavana Jain},
+  \bibinfo{person}{Julian Straub}, \bibinfo{person}{Jia Liu},
+  \bibinfo{person}{Vladlen Koltun}, \bibinfo{person}{Jitendra Malik},
+  \bibinfo{person}{Devi Parikh}, {and} \bibinfo{person}{Dhruv Batra}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Habitat: A Platform for Embodied AI Research}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1904.01201}.
+
+
+\bibitem[Sermanet et~al\mbox{.}(2023)]%
+        {robovqa}
+\bibfield{author}{\bibinfo{person}{Pierre Sermanet}, \bibinfo{person}{Tianli
+  Ding}, \bibinfo{person}{Jeffrey Zhao}, \bibinfo{person}{Fei Xia},
+  \bibinfo{person}{Debidatta Dwibedi}, \bibinfo{person}{Keerthana
+  Gopalakrishnan}, \bibinfo{person}{Christine Chan}, \bibinfo{person}{Gabriel
+  Dulac-Arnold}, \bibinfo{person}{Sharath Maddineni}, \bibinfo{person}{Nikhil~J
+  Joshi}, \bibinfo{person}{Pete Florence}, \bibinfo{person}{Wei Han},
+  \bibinfo{person}{Robert Baruch}, \bibinfo{person}{Yao Lu},
+  \bibinfo{person}{Suvir Mirchandani}, \bibinfo{person}{Peng Xu},
+  \bibinfo{person}{Pannag Sanketi}, \bibinfo{person}{Karol Hausman},
+  \bibinfo{person}{Izhak Shafran}, \bibinfo{person}{Brian Ichter}, {and}
+  \bibinfo{person}{Yuan Cao}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{RoboVQA: Multimodal Long-Horizon Reasoning for
+  Robotics}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2311.00899}.
+
+
+\bibitem[Sferrazza et~al\mbox{.}(2024)]%
+        {humanoidbench}
+\bibfield{author}{\bibinfo{person}{Carmelo Sferrazza},
+  \bibinfo{person}{Dun-Ming Huang}, \bibinfo{person}{Xingyu Lin},
+  \bibinfo{person}{Youngwoon Lee}, {and} \bibinfo{person}{Pieter Abbeel}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{HumanoidBench: Simulated Humanoid Benchmark for
+  Whole-Body Locomotion and Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2403.10506}.
+
+
+\bibitem[Shang et~al\mbox{.}(2026a)]%
+        {worldarena}
+\bibfield{author}{\bibinfo{person}{Yu Shang}, \bibinfo{person}{Zhuohang Li},
+  \bibinfo{person}{Yiding Ma}, \bibinfo{person}{Weikang Su},
+  \bibinfo{person}{Xin Jin}, \bibinfo{person}{Ziyou Wang}, \bibinfo{person}{Lei
+  Jin}, \bibinfo{person}{Xin Zhang}, \bibinfo{person}{Yinzhou Tang},
+  \bibinfo{person}{Haisheng Su}, \bibinfo{person}{Chen Gao},
+  \bibinfo{person}{Wei Wu}, \bibinfo{person}{Xihui Liu}, \bibinfo{person}{Dhruv
+  Shah}, \bibinfo{person}{Zhaoxiang Zhang}, \bibinfo{person}{Zhibo Chen},
+  \bibinfo{person}{Jun Zhu}, \bibinfo{person}{Yonghong Tian},
+  \bibinfo{person}{Wenwu Zhu}, {and} \bibinfo{person}{Yong Li}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{WorldArena: A Unified Benchmark for Evaluating
+  Perception and Functional Utility of Embodied World Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2602.08971}.
+
+
+\bibitem[Shang et~al\mbox{.}(2026b)]%
+        {survey_embodiedwm}
+\bibfield{author}{\bibinfo{person}{Yu Shang}, \bibinfo{person}{Yinzhou Tang},
+  \bibinfo{person}{Xin Zhang}, \bibinfo{person}{Shengyuan Wang},
+  \bibinfo{person}{Yuwei Yan}, \bibinfo{person}{Honglin Zhang},
+  \bibinfo{person}{Zhiheng Zheng}, \bibinfo{person}{Jie Zhao},
+  \bibinfo{person}{Jie Feng}, \bibinfo{person}{Chen Gao},
+  \bibinfo{person}{Jiansheng Chen}, {and} \bibinfo{person}{Yong Li}.}
+  \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{A Survey of Embodied World Models}.
+\newblock
+\newblock
+\newblock
+\shownote{Preprint (non-arXiv)}.
+
+
+\bibitem[Shen et~al\mbox{.}(2020)]%
+        {igibson}
+\bibfield{author}{\bibinfo{person}{Bokui Shen}, \bibinfo{person}{Fei Xia},
+  \bibinfo{person}{Chengshu Li}, \bibinfo{person}{Roberto Martin-Martin},
+  \bibinfo{person}{Linxi Fan}, \bibinfo{person}{Guanzhi Wang},
+  \bibinfo{person}{Claudia Perez-DArpino}, \bibinfo{person}{Shyamal Buch},
+  \bibinfo{person}{Sanjana Srivastava}, \bibinfo{person}{Lyne~P. Tchapmi},
+  \bibinfo{person}{Micael~E. Tchapmi}, \bibinfo{person}{Kent Vainio},
+  \bibinfo{person}{Josiah Wong}, \bibinfo{person}{Li Fei-Fei}, {and}
+  \bibinfo{person}{Silvio Savarese}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{iGibson 1.0: a Simulation Environment for Interactive
+  Tasks in Large Realistic Scenes}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2012.02924}.
+
+
+\bibitem[Shridhar et~al\mbox{.}(2022)]%
+        {peract}
+\bibfield{author}{\bibinfo{person}{Mohit Shridhar}, \bibinfo{person}{Lucas
+  Manuelli}, {and} \bibinfo{person}{Dieter Fox}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Perceiver-Actor: A Multi-Task Transformer for Robotic
+  Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2209.05451}.
+
+
+\bibitem[Shridhar et~al\mbox{.}(2019)]%
+        {alfred}
+\bibfield{author}{\bibinfo{person}{Mohit Shridhar}, \bibinfo{person}{Jesse
+  Thomason}, \bibinfo{person}{Daniel Gordon}, \bibinfo{person}{Yonatan Bisk},
+  \bibinfo{person}{Winson Han}, \bibinfo{person}{Roozbeh Mottaghi},
+  \bibinfo{person}{Luke Zettlemoyer}, {and} \bibinfo{person}{Dieter Fox}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{ALFRED: A Benchmark for Interpreting Grounded
+  Instructions for Everyday Tasks}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1912.01734}.
+
+
+\bibitem[Shridhar et~al\mbox{.}(2020)]%
+        {alfworld}
+\bibfield{author}{\bibinfo{person}{Mohit Shridhar}, \bibinfo{person}{Xingdi
+  Yuan}, \bibinfo{person}{Marc-Alexandre Cote}, \bibinfo{person}{Yonatan Bisk},
+  \bibinfo{person}{Adam Trischler}, {and} \bibinfo{person}{Matthew
+  Hausknecht}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{ALFWorld: Aligning Text and Embodied Environments for
+  Interactive Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2010.03768}.
+
+
+\bibitem[Shu et~al\mbox{.}(2021)]%
+        {agent}
+\bibfield{author}{\bibinfo{person}{Tianmin Shu}, \bibinfo{person}{Abhishek
+  Bhandwaldar}, \bibinfo{person}{Chuang Gan}, \bibinfo{person}{Kevin~A. Smith},
+  \bibinfo{person}{Shari Liu}, \bibinfo{person}{Dan Gutfreund},
+  \bibinfo{person}{Elizabeth Spelke}, \bibinfo{person}{Joshua~B. Tenenbaum},
+  {and} \bibinfo{person}{Tomer~D. Ullman}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{AGENT: A Benchmark for Core Psychological Reasoning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2102.12321}.
+
+
+\bibitem[Song et~al\mbox{.}(2024)]%
+        {lhvln}
+\bibfield{author}{\bibinfo{person}{Xinshuai Song}, \bibinfo{person}{Weixing
+  Chen}, \bibinfo{person}{Yang Liu}, \bibinfo{person}{Weikai Chen},
+  \bibinfo{person}{Guanbin Li}, {and} \bibinfo{person}{Liang Lin}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Towards Long-Horizon Vision-Language Navigation:
+  Platform, Benchmark and Method}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2412.09082}.
+
+
+\bibitem[Sprague et~al\mbox{.}(2023)]%
+        {socialgym20}
+\bibfield{author}{\bibinfo{person}{Zayne Sprague}, \bibinfo{person}{Rohan
+  Chandra}, \bibinfo{person}{Jarrett Holtz}, {and} \bibinfo{person}{Joydeep
+  Biswas}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{SocialGym 2.0: Simulator for Multi-Agent Social Robot
+  Navigation in Shared Human Spaces}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2303.05584}.
+
+
+\bibitem[Su et~al\mbox{.}(2024)]%
+        {robosense}
+\bibfield{author}{\bibinfo{person}{Haisheng Su}, \bibinfo{person}{Feixiang
+  Song}, \bibinfo{person}{Cong Ma}, \bibinfo{person}{Wei Wu}, {and}
+  \bibinfo{person}{Junchi Yan}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{RoboSense: Large-scale Dataset and Benchmark for
+  Egocentric Robot Perception and Navigation in Crowded and Unstructured
+  Environments}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2408.15503}.
+
+
+\bibitem[Sun et~al\mbox{.}(2024)]%
+        {t2vcompbench}
+\bibfield{author}{\bibinfo{person}{Kaiyue Sun}, \bibinfo{person}{Kaiyi Huang},
+  \bibinfo{person}{Xian Liu}, \bibinfo{person}{Yue Wu}, \bibinfo{person}{Zihan
+  Xu}, \bibinfo{person}{Zhenguo Li}, {and} \bibinfo{person}{Xihui Liu}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{T2V-CompBench: A Comprehensive Benchmark for
+  Compositional Text-to-video Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2407.14505}.
+
+
+\bibitem[Sun et~al\mbox{.}(2019)]%
+        {waymoopen}
+\bibfield{author}{\bibinfo{person}{Pei Sun}, \bibinfo{person}{Henrik
+  Kretzschmar}, \bibinfo{person}{Xerxes Dotiwalla}, \bibinfo{person}{Aurelien
+  Chouard}, \bibinfo{person}{Vijaysai Patnaik}, \bibinfo{person}{Paul Tsui},
+  \bibinfo{person}{James Guo}, \bibinfo{person}{Yin Zhou},
+  \bibinfo{person}{Yuning Chai}, \bibinfo{person}{Benjamin Caine},
+  \bibinfo{person}{Vijay Vasudevan}, \bibinfo{person}{Wei Han},
+  \bibinfo{person}{Jiquan Ngiam}, \bibinfo{person}{Hang Zhao},
+  \bibinfo{person}{Aleksei Timofeev}, \bibinfo{person}{Scott Ettinger},
+  \bibinfo{person}{Maxim Krivokon}, \bibinfo{person}{Amy Gao},
+  \bibinfo{person}{Aditya Joshi}, \bibinfo{person}{Sheng Zhao},
+  \bibinfo{person}{Shuyang Cheng}, \bibinfo{person}{Yu Zhang},
+  \bibinfo{person}{Jonathon Shlens}, \bibinfo{person}{Zhifeng Chen}, {and}
+  \bibinfo{person}{Dragomir Anguelov}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Scalability in Perception for Autonomous Driving:
+  Waymo Open Dataset}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1912.04838}.
+
+
+\bibitem[Szot et~al\mbox{.}(2021)]%
+        {habitat20}
+\bibfield{author}{\bibinfo{person}{Andrew Szot}, \bibinfo{person}{Alex Clegg},
+  \bibinfo{person}{Eric Undersander}, \bibinfo{person}{Erik Wijmans},
+  \bibinfo{person}{Yili Zhao}, \bibinfo{person}{John Turner},
+  \bibinfo{person}{Noah Maestre}, \bibinfo{person}{Mustafa Mukadam},
+  \bibinfo{person}{Devendra Chaplot}, \bibinfo{person}{Oleksandr Maksymets},
+  \bibinfo{person}{Aaron Gokaslan}, \bibinfo{person}{Vladimir Vondrus},
+  \bibinfo{person}{Sameer Dharur}, \bibinfo{person}{Franziska Meier},
+  \bibinfo{person}{Wojciech Galuba}, \bibinfo{person}{Angel Chang},
+  \bibinfo{person}{Zsolt Kira}, \bibinfo{person}{Vladlen Koltun},
+  \bibinfo{person}{Jitendra Malik}, \bibinfo{person}{Manolis Savva}, {and}
+  \bibinfo{person}{Dhruv Batra}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Habitat 2.0: Training Home Assistants to Rearrange
+  their Habitat}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2106.14405}.
+
+
+\bibitem[Tsoi et~al\mbox{.}(2020)]%
+        {sean}
+\bibfield{author}{\bibinfo{person}{Nathan Tsoi}, \bibinfo{person}{Mohamed
+  Hussein}, \bibinfo{person}{Jeacy Espinoza}, \bibinfo{person}{Xavier Ruiz},
+  {and} \bibinfo{person}{Marynel Vazquez}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{SEAN: Social Environment for Autonomous Navigation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2009.04300}.
+
+
+\bibitem[Tung et~al\mbox{.}(2023)]%
+        {physionpp}
+\bibfield{author}{\bibinfo{person}{Hsiao-Yu Tung}, \bibinfo{person}{Mingyu
+  Ding}, \bibinfo{person}{Zhenfang Chen}, \bibinfo{person}{Daniel Bear},
+  \bibinfo{person}{Chuang Gan}, \bibinfo{person}{Joshua~B. Tenenbaum},
+  \bibinfo{person}{Daniel L.~K. Yamins}, \bibinfo{person}{Judith~E. Fan}, {and}
+  \bibinfo{person}{Kevin~A. Smith}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Physion++: Evaluating Physical Scene Understanding
+  that Requires Online Inference of Different Physical Properties}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2306.15668}.
+
+
+\bibitem[Valmeekam et~al\mbox{.}(2022)]%
+        {planbench}
+\bibfield{author}{\bibinfo{person}{Karthik Valmeekam}, \bibinfo{person}{Matthew
+  Marquez}, \bibinfo{person}{Alberto Olmo}, \bibinfo{person}{Sarath
+  Sreedharan}, {and} \bibinfo{person}{Subbarao Kambhampati}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{PlanBench: An Extensible Benchmark for Evaluating
+  Large Language Models on Planning and Reasoning about Change}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2206.10498}.
+
+
+\bibitem[Wang et~al\mbox{.}(2024a)]%
+        {grutopia}
+\bibfield{author}{\bibinfo{person}{Hanqing Wang}, \bibinfo{person}{Jiahe Chen},
+  \bibinfo{person}{Wensi Huang}, \bibinfo{person}{Qingwei Ben},
+  \bibinfo{person}{Tai Wang}, \bibinfo{person}{Boyu Mi}, \bibinfo{person}{Tao
+  Huang}, \bibinfo{person}{Siheng Zhao}, \bibinfo{person}{Yilun Chen},
+  \bibinfo{person}{Sizhe Yang}, \bibinfo{person}{Peizhou Cao},
+  \bibinfo{person}{Wenye Yu}, \bibinfo{person}{Zichao Ye},
+  \bibinfo{person}{Jialun Li}, \bibinfo{person}{Junfeng Long},
+  \bibinfo{person}{Zirui Wang}, \bibinfo{person}{Huiling Wang},
+  \bibinfo{person}{Ying Zhao}, \bibinfo{person}{Zhongying Tu},
+  \bibinfo{person}{Yu Qiao}, \bibinfo{person}{Dahua Lin}, {and}
+  \bibinfo{person}{Jiangmiao Pang}.} \bibinfo{year}{2024}\natexlab{a}.
+\newblock \bibinfo{title}{GRUtopia: Dream General Robots in a City at Scale}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2407.10943}.
+
+
+\bibitem[Wang et~al\mbox{.}(2024b)]%
+        {videohallucer}
+\bibfield{author}{\bibinfo{person}{Yuxuan Wang}, \bibinfo{person}{Yueqian
+  Wang}, \bibinfo{person}{Dongyan Zhao}, \bibinfo{person}{Cihang Xie}, {and}
+  \bibinfo{person}{Zilong Zheng}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \bibinfo{title}{VideoHallucer: Evaluating Intrinsic and Extrinsic
+  Hallucinations in Large Video-Language Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2406.16338}.
+
+
+\bibitem[Wang et~al\mbox{.}(2026)]%
+        {survey_vladata}
+\bibfield{author}{\bibinfo{person}{Ziyao Wang}, \bibinfo{person}{Bingying
+  Wang}, \bibinfo{person}{Hanrong Zhang}, \bibinfo{person}{Tingting Du},
+  \bibinfo{person}{Tianyang Chen}, \bibinfo{person}{Guoheng Sun},
+  \bibinfo{person}{Yexiao He}, \bibinfo{person}{Zheyu Shen},
+  \bibinfo{person}{Wanghao Ye}, {and} \bibinfo{person}{Ang Li}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Vision-Language-Action in Robotics: A Survey of
+  Datasets, Benchmarks, and Data Engines}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2604.23001}.
+
+
+\bibitem[Wu et~al\mbox{.}(2023)]%
+        {tidybot}
+\bibfield{author}{\bibinfo{person}{Jimmy Wu}, \bibinfo{person}{Rika Antonova},
+  \bibinfo{person}{Adam Kan}, \bibinfo{person}{Marion Lepert},
+  \bibinfo{person}{Andy Zeng}, \bibinfo{person}{Shuran Song},
+  \bibinfo{person}{Jeannette Bohg}, \bibinfo{person}{Szymon Rusinkiewicz},
+  {and} \bibinfo{person}{Thomas Funkhouser}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{TidyBot: Personalized Robot Assistance with Large
+  Language Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2305.05658}.
+
+
+\bibitem[Wu et~al\mbox{.}(2024)]%
+        {t2vscore}
+\bibfield{author}{\bibinfo{person}{Jay~Zhangjie Wu}, \bibinfo{person}{Guian
+  Fang}, \bibinfo{person}{Haoning Wu}, \bibinfo{person}{Xintao Wang},
+  \bibinfo{person}{Yixiao Ge}, \bibinfo{person}{Xiaodong Cun},
+  \bibinfo{person}{David~Junhao Zhang}, \bibinfo{person}{Jia-Wei Liu},
+  \bibinfo{person}{Yuchao Gu}, \bibinfo{person}{Rui Zhao},
+  \bibinfo{person}{Weisi Lin}, \bibinfo{person}{Wynne Hsu},
+  \bibinfo{person}{Ying Shan}, {and} \bibinfo{person}{Mike~Zheng Shou}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Towards A Better Metric for Text-to-Video
+  Generation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2401.07781}.
+
+
+\bibitem[Xia et~al\mbox{.}(2018)]%
+        {gibsonenv}
+\bibfield{author}{\bibinfo{person}{Fei Xia}, \bibinfo{person}{Amir Zamir},
+  \bibinfo{person}{Zhi-Yang He}, \bibinfo{person}{Alexander Sax},
+  \bibinfo{person}{Jitendra Malik}, {and} \bibinfo{person}{Silvio Savarese}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Gibson Env: Real-World Perception for Embodied
+  Agents}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1808.10654}.
+
+
+\bibitem[Xu et~al\mbox{.}(2023)]%
+        {unidexgrasp}
+\bibfield{author}{\bibinfo{person}{Yinzhen Xu}, \bibinfo{person}{Weikang Wan},
+  \bibinfo{person}{Jialiang Zhang}, \bibinfo{person}{Haoran Liu},
+  \bibinfo{person}{Zikang Shan}, \bibinfo{person}{Hao Shen},
+  \bibinfo{person}{Ruicheng Wang}, \bibinfo{person}{Haoran Geng},
+  \bibinfo{person}{Yijia Weng}, \bibinfo{person}{Jiayi Chen},
+  \bibinfo{person}{Tengyu Liu}, \bibinfo{person}{Li Yi}, {and}
+  \bibinfo{person}{He Wang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{UniDexGrasp: Universal Robotic Dexterous Grasping via
+  Learning Diverse Proposal Generation and Goal-Conditioned Policy}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2303.00938}.
+
+
+\bibitem[Yang et~al\mbox{.}(2025)]%
+        {embodiedbench}
+\bibfield{author}{\bibinfo{person}{Rui Yang}, \bibinfo{person}{Hanyang Chen},
+  \bibinfo{person}{Junyu Zhang}, \bibinfo{person}{Mark Zhao},
+  \bibinfo{person}{Cheng Qian}, \bibinfo{person}{Kangrui Wang},
+  \bibinfo{person}{Qineng Wang}, \bibinfo{person}{Teja~Venkat Koripella},
+  \bibinfo{person}{Marziyeh Movahedi}, \bibinfo{person}{Manling Li},
+  \bibinfo{person}{Heng Ji}, \bibinfo{person}{Huan Zhang}, {and}
+  \bibinfo{person}{Tong Zhang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{EmbodiedBench: Comprehensive Benchmarking Multi-modal
+  Large Language Models for Vision-Driven Embodied Agents}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2502.09560}.
+
+
+\bibitem[Yang et~al\mbox{.}(2024)]%
+        {drivearena}
+\bibfield{author}{\bibinfo{person}{Xuemeng Yang}, \bibinfo{person}{Licheng
+  Wen}, \bibinfo{person}{Yukai Ma}, \bibinfo{person}{Jianbiao Mei},
+  \bibinfo{person}{Xin Li}, \bibinfo{person}{Tiantian Wei},
+  \bibinfo{person}{Wenjie Lei}, \bibinfo{person}{Daocheng Fu},
+  \bibinfo{person}{Pinlong Cai}, \bibinfo{person}{Min Dou},
+  \bibinfo{person}{Botian Shi}, \bibinfo{person}{Liang He},
+  \bibinfo{person}{Yong Liu}, {and} \bibinfo{person}{Yu Qiao}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{DriveArena: A Closed-loop Generative Simulation
+  Platform for Autonomous Driving}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2408.00415}.
+
+
+\bibitem[Yenamandra et~al\mbox{.}(2023)]%
+        {homerobotovmm}
+\bibfield{author}{\bibinfo{person}{Sriram Yenamandra}, \bibinfo{person}{Arun
+  Ramachandran}, \bibinfo{person}{Karmesh Yadav}, \bibinfo{person}{Austin
+  Wang}, \bibinfo{person}{Mukul Khanna}, \bibinfo{person}{Theophile Gervet},
+  \bibinfo{person}{Tsung-Yen Yang}, \bibinfo{person}{Vidhi Jain},
+  \bibinfo{person}{Alexander~William Clegg}, \bibinfo{person}{John Turner},
+  \bibinfo{person}{Zsolt Kira}, \bibinfo{person}{Manolis Savva},
+  \bibinfo{person}{Angel Chang}, \bibinfo{person}{Devendra~Singh Chaplot},
+  \bibinfo{person}{Dhruv Batra}, \bibinfo{person}{Roozbeh Mottaghi},
+  \bibinfo{person}{Yonatan Bisk}, {and} \bibinfo{person}{Chris Paxton}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{HomeRobot: Open-Vocabulary Mobile Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2306.11565}.
+
+
+\bibitem[Yi et~al\mbox{.}(2019)]%
+        {clevrer}
+\bibfield{author}{\bibinfo{person}{Kexin Yi}, \bibinfo{person}{Chuang Gan},
+  \bibinfo{person}{Yunzhu Li}, \bibinfo{person}{Pushmeet Kohli},
+  \bibinfo{person}{Jiajun Wu}, \bibinfo{person}{Antonio Torralba}, {and}
+  \bibinfo{person}{Joshua~B. Tenenbaum}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{CLEVRER: CoLlision Events for Video REpresentation
+  and Reasoning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1910.01442}.
+
+
+\bibitem[Yin et~al\mbox{.}(2024)]%
+        {safeagentbench}
+\bibfield{author}{\bibinfo{person}{Sheng Yin}, \bibinfo{person}{Xianghe Pang},
+  \bibinfo{person}{Yuanzhuo Ding}, \bibinfo{person}{Menglan Chen},
+  \bibinfo{person}{Yutong Bi}, \bibinfo{person}{Yichen Xiong},
+  \bibinfo{person}{Wenhao Huang}, \bibinfo{person}{Zhen Xiang},
+  \bibinfo{person}{Jing Shao}, {and} \bibinfo{person}{Siheng Chen}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{SafeAgentBench: A Benchmark for Safe Task Planning of
+  Embodied LLM Agents}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2412.13178}.
+
+
+\bibitem[Yu et~al\mbox{.}(2019)]%
+        {metaworld}
+\bibfield{author}{\bibinfo{person}{Tianhe Yu}, \bibinfo{person}{Deirdre
+  Quillen}, \bibinfo{person}{Zhanpeng He}, \bibinfo{person}{Ryan Julian},
+  \bibinfo{person}{Avnish Narayan}, \bibinfo{person}{Hayden Shively},
+  \bibinfo{person}{Adithya Bellathur}, \bibinfo{person}{Karol Hausman},
+  \bibinfo{person}{Chelsea Finn}, {and} \bibinfo{person}{Sergey Levine}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Meta-World: A Benchmark and Evaluation for Multi-Task
+  and Meta Reinforcement Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:1910.10897}.
+
+
+\bibitem[Yu et~al\mbox{.}(2026)]%
+        {pos_yangyu}
+\bibfield{author}{\bibinfo{person}{Yang Yu}, \bibinfo{person}{Shiyuan Zhang},
+  \bibinfo{person}{Yifei Sheng}, \bibinfo{person}{Haoxiang Ren}, {and}
+  \bibinfo{person}{Haoxin Lin}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{How Should World Models Be Evaluated for Embodied
+  Decision-Making? A Decision-Making-Centric Position}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2606.15032}.
+
+
+\bibitem[Zeng et~al\mbox{.}(2020)]%
+        {ravens}
+\bibfield{author}{\bibinfo{person}{Andy Zeng}, \bibinfo{person}{Pete Florence},
+  \bibinfo{person}{Jonathan Tompson}, \bibinfo{person}{Stefan Welker},
+  \bibinfo{person}{Jonathan Chien}, \bibinfo{person}{Maria Attarian},
+  \bibinfo{person}{Travis Armstrong}, \bibinfo{person}{Ivan Krasin},
+  \bibinfo{person}{Dan Duong}, \bibinfo{person}{Ayzaan Wahid},
+  \bibinfo{person}{Vikas Sindhwani}, {and} \bibinfo{person}{Johnny Lee}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Transporter Networks: Rearranging the Visual World
+  for Robotic Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2010.14406}.
+
+
+\bibitem[Zhang et~al\mbox{.}(2021)]%
+        {acre}
+\bibfield{author}{\bibinfo{person}{Chi Zhang}, \bibinfo{person}{Baoxiong Jia},
+  \bibinfo{person}{Mark Edmonds}, \bibinfo{person}{Song-Chun Zhu}, {and}
+  \bibinfo{person}{Yixin Zhu}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{ACRE: Abstract Causal REasoning Beyond Covariation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2103.14232}.
+
+
+\bibitem[Zhang et~al\mbox{.}(2023a)]%
+        {coela}
+\bibfield{author}{\bibinfo{person}{Hongxin Zhang}, \bibinfo{person}{Weihua Du},
+  \bibinfo{person}{Jiaming Shan}, \bibinfo{person}{Qinhong Zhou},
+  \bibinfo{person}{Yilun Du}, \bibinfo{person}{Joshua~B. Tenenbaum},
+  \bibinfo{person}{Tianmin Shu}, {and} \bibinfo{person}{Chuang Gan}.}
+  \bibinfo{year}{2023}\natexlab{a}.
+\newblock \bibinfo{title}{Building Cooperative Embodied Agents Modularly with
+  Large Language Models}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2307.02485}.
+
+
+\bibitem[Zhang et~al\mbox{.}(2025)]%
+        {worldinworld}
+\bibfield{author}{\bibinfo{person}{Jiahan Zhang}, \bibinfo{person}{Muqing
+  Jiang}, \bibinfo{person}{Nanru Dai}, \bibinfo{person}{Taiming Lu},
+  \bibinfo{person}{Arda Uzunoglu}, \bibinfo{person}{Shunchi Zhang},
+  \bibinfo{person}{Yana Wei}, \bibinfo{person}{Jiahao Wang},
+  \bibinfo{person}{Vishal~M. Patel}, \bibinfo{person}{Paul~Pu Liang},
+  \bibinfo{person}{Daniel Khashabi}, \bibinfo{person}{Cheng Peng},
+  \bibinfo{person}{Rama Chellappa}, \bibinfo{person}{Tianmin Shu},
+  \bibinfo{person}{Alan Yuille}, \bibinfo{person}{Yilun Du}, {and}
+  \bibinfo{person}{Jieneng Chen}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{World-in-World: World Models in a Closed-Loop World}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2510.18135}.
+
+
+\bibitem[Zhang et~al\mbox{.}(2024a)]%
+        {mfeetp}
+\bibfield{author}{\bibinfo{person}{Min Zhang}, \bibinfo{person}{Xian Fu},
+  \bibinfo{person}{Jianye Hao}, \bibinfo{person}{Peilong Han},
+  \bibinfo{person}{Hao Zhang}, \bibinfo{person}{Lei Shi},
+  \bibinfo{person}{Hongyao Tang}, {and} \bibinfo{person}{Yan Zheng}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \bibinfo{title}{MFE-ETP: A Comprehensive Evaluation Benchmark for
+  Multi-modal Foundation Models on Embodied Task Planning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2407.05047}.
+
+
+\bibitem[Zhang et~al\mbox{.}(2023b)]%
+        {lohoravens}
+\bibfield{author}{\bibinfo{person}{Shengqiang Zhang}, \bibinfo{person}{Philipp
+  Wicke}, \bibinfo{person}{Lutfi~Kerem Senel}, \bibinfo{person}{Luis
+  Figueredo}, \bibinfo{person}{Abdeldjallil Naceri}, \bibinfo{person}{Sami
+  Haddadin}, \bibinfo{person}{Barbara Plank}, {and} \bibinfo{person}{Hinrich
+  Schutze}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \bibinfo{title}{LoHoRavens: A Long-Horizon Language-Conditioned
+  Benchmark for Robotic Tabletop Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2310.12020}.
+
+
+\bibitem[Zhang et~al\mbox{.}(2024b)]%
+        {vlabench}
+\bibfield{author}{\bibinfo{person}{Shiduo Zhang}, \bibinfo{person}{Zhe Xu},
+  \bibinfo{person}{Peiju Liu}, \bibinfo{person}{Xiaopeng Yu},
+  \bibinfo{person}{Yuan Li}, \bibinfo{person}{Qinghui Gao},
+  \bibinfo{person}{Zhaoye Fei}, \bibinfo{person}{Zhangyue Yin},
+  \bibinfo{person}{Zuxuan Wu}, \bibinfo{person}{Yu-Gang Jiang}, {and}
+  \bibinfo{person}{Xipeng Qiu}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \bibinfo{title}{VLABench: A Large-Scale Benchmark for
+  Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning
+  Tasks}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2412.18194}.
+
+
+\bibitem[Zheng et~al\mbox{.}(2025)]%
+        {vbench20}
+\bibfield{author}{\bibinfo{person}{Dian Zheng}, \bibinfo{person}{Ziqi Huang},
+  \bibinfo{person}{Hongbo Liu}, \bibinfo{person}{Kai Zou},
+  \bibinfo{person}{Yinan He}, \bibinfo{person}{Fan Zhang},
+  \bibinfo{person}{Lulu Gu}, \bibinfo{person}{Yuanhan Zhang},
+  \bibinfo{person}{Jingwen He}, \bibinfo{person}{Wei-Shi Zheng},
+  \bibinfo{person}{Yu Qiao}, {and} \bibinfo{person}{Ziwei Liu}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{VBench-2.0: Advancing Video Generation Benchmark
+  Suite for Intrinsic Faithfulness}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2503.21755}.
+
+
+\bibitem[Zheng et~al\mbox{.}(2022)]%
+        {vlmbench}
+\bibfield{author}{\bibinfo{person}{Kaizhi Zheng}, \bibinfo{person}{Xiaotong
+  Chen}, \bibinfo{person}{Odest~Chadwicke Jenkins}, {and}
+  \bibinfo{person}{Xin~Eric Wang}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{VLMbench: A Compositional Benchmark for
+  Vision-and-Language Manipulation}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2206.08522}.
+
+
+\bibitem[Zheng et~al\mbox{.}(2024)]%
+        {contphy}
+\bibfield{author}{\bibinfo{person}{Zhicheng Zheng}, \bibinfo{person}{Xin Yan},
+  \bibinfo{person}{Zhenfang Chen}, \bibinfo{person}{Jingzhou Wang},
+  \bibinfo{person}{Qin Zhi~Eddie Lim}, \bibinfo{person}{Joshua~B. Tenenbaum},
+  {and} \bibinfo{person}{Chuang Gan}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{ContPhy: Continuum Physical Concept Learning and
+  Reasoning from Videos}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2402.06119}.
+
+
+\bibitem[Zhu et~al\mbox{.}(2020)]%
+        {robosuite}
+\bibfield{author}{\bibinfo{person}{Yuke Zhu}, \bibinfo{person}{Josiah Wong},
+  \bibinfo{person}{Ajay Mandlekar}, \bibinfo{person}{Roberto Martin-Martin},
+  \bibinfo{person}{Abhishek Joshi}, \bibinfo{person}{Kevin Lin},
+  \bibinfo{person}{Abhiram Maddukuri}, \bibinfo{person}{Soroush Nasiriany},
+  {and} \bibinfo{person}{Yifeng Zhu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{robosuite: A Modular Simulation Framework and
+  Benchmark for Robot Learning}.
+\newblock
+\newblock
+\newblock
+\shownote{arXiv:2009.12293}.
+
+
+\end{thebibliography}

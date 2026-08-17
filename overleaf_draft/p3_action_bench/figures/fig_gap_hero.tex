@@ -1,0 +1,38 @@
+% Figure 1 (thesis hero). Three evaluation lanes converge on the empty cell. Counts are the real
+% catalogue tallies (open 43, closed 113, bridge 4; only 11 of 160 build an explicit contrast).
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+ lane/.style={draw=hidden-draw, rounded corners, align=center, font=\small,
+              minimum height=15mm, text width=38mm, inner sep=4pt},
+ gap/.style={draw=secE!65!black, line width=1.4pt, rounded corners, align=center, font=\small,
+             fill=secEl, text width=46mm, minimum height=30mm, inner sep=5pt},
+ lbl/.style={font=\scriptsize\itshape, text=BrickRed!78!black},
+ ar/.style={-{Stealth[length=2.6mm]}, darkgray, line width=1pt},
+]
+ \node[lane, fill=secGl] (open)   at (0, 2.9) {\textbf{Open-loop}\\ world-model \& video eval\\ \textbf{43 benchmarks}};
+ \node[lane, fill=leaf-vla] (closed) at (0, 0) {\textbf{Closed-loop}\\ policy \& embodied suites\\ \textbf{113 benchmarks}};
+ \node[lane, fill=leaf-skill] (bridge) at (0,-2.9) {\textbf{Bridge}\\ prediction $\rightarrow$ action\\ \textbf{4 benchmarks}};
+ \node[gap] (gap) at (9.2,0)
+   {\textbf{THE EMPTY CELL}\\[3pt] per-capability\\ \textbf{VLA vs world-model} contrast\\[3pt]
+    {\footnotesize only \textbf{11 of 160} benchmarks (7\%)\\ build it explicitly}};
+ \draw[ar] (open.east)   to[out=0,in=140] node[above,lbl,pos=0.55,sloped]{visual quality $\neq$ task success} (gap.150);
+ \draw[ar] (closed.east) -- node[above,lbl,pos=0.5]{model-agnostic; no prediction ablation} (gap.west);
+ \draw[ar] (bridge.east) to[out=0,in=-140] node[below,lbl,pos=0.55,sloped]{no per-capability VLA head-to-head} (gap.210);
+\end{tikzpicture}
+\caption{\textbf{The question no benchmark answers.} The robot-evaluation landscape splits into three
+lanes: \emph{open-loop} suites (43) score a world model's prediction or generation quality but never
+execute it; \emph{closed-loop} suites (113) score task success but are model-agnostic and never
+build a direct Vision-Language-Action vs world-model contrast; and a handful of \emph{bridges} (4)
+reach executed action yet omit the per-capability head-to-head. The empty cell each lane points to,
+a per-capability contrast that isolates whether prediction earns a closed-loop advantage, is built
+explicitly by only \textbf{11 of 160} benchmarks (7\%). This survey maps the landscape by that
+missing axis (Table~\ref{tab:landscape}).}
+\Description{A diagram with three lane boxes on the left, open-loop world-model evaluation (43
+benchmarks), closed-loop policy and embodied suites (113), and bridge prediction-to-action (4), each
+with an arrow pointing right to a large red box labelled ``the empty cell'': a per-capability
+VLA-versus-world-model contrast built explicitly by only 11 of 160 benchmarks. Arrow labels read
+``visual quality is not task success'', ``model-agnostic, no prediction ablation'', and ``no
+per-capability VLA head-to-head''.}
+\label{fig:gap_hero}
+\end{figure*}

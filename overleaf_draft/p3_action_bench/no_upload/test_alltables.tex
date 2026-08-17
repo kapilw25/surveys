@@ -1,0 +1,33 @@
+\documentclass[acmsmall,nonacm]{acmart}
+\usepackage{tikz}
+\usepackage{forest}
+\useforestlibrary{edges}
+\usepackage{booktabs,array,multirow}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\input{../styles/taxonomy_style.tex}
+\definecolor{ForestGreen}{rgb}{0.13,0.55,0.13}
+\definecolor{BrickRed}{rgb}{0.70,0.13,0.13}
+% mark macros normally defined in the (not-yet-built) main.tex preamble
+\newcommand{\yy}{\textcolor{ForestGreen}{\checkmark}}
+\newcommand{\nn}{\textcolor{BrickRed}{\ensuremath{\times}}}
+\newcommand{\pp}{\textcolor{orange!80!black}{\ensuremath{\sim}}}
+\newcommand{\dm}{\textcolor{gray}{\rule[0.35ex]{0.8em}{0.5pt}}}
+\graphicspath{{../}}
+\settopmatter{printacmref=false}
+\title{P3 all-tables render test}
+\author{t}\affiliation{\institution{t}\country{}}
+\begin{document}
+\input{../tables/tab_survey_compare.tex}
+\input{../tables/tab_compare_main.tex}
+\input{../tables/tab_definitions.tex}
+\input{../tables/tab_compare_capability.tex}
+\input{../tables/tab_wm_senses.tex}
+\input{../tables/tab_capability_matrix.tex}
+\input{../tables/tab_branch_limits.tex}
+\input{../tables/tab_future_metrics.tex}
+\input{../tables/tab_landscape.tex}
+\input{../tables/tab_panel_provenance.tex}
+\input{../tables/tab_results_provenance.tex}
+\input{../tables/tab_collage_provenance.tex}
+\end{document}
