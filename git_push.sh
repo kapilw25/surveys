@@ -77,15 +77,68 @@ if [ -z "$TOKEN" ]; then
     exit 1
 fi
 
-git add .
-git commit -m "$MESSAGE"
+REPO_URL="https://github.com/kapilw25/surveys.git"
 
-# Disable credential helper temporarily and use token directly
-GIT_TERMINAL_PROMPT=0 git -c credential.helper= push https://${USERNAME}:${TOKEN}@github.com/kapilw25/surveys.git main
+# --- Pre-flight: is this token actually usable? -----------------------------
+# The old script pushed first and printed "Pushed as ..." unconditionally, so an
+# expired PAT produced a hard auth failure that still LOOKED like success. Check
+# the credential against GitHub before touching the working tree.
+echo "Checking $ACCOUNT credentials..."
+HTTP=$(curl -s -o /dev/null -w '%{http_code}' -m 15 \
+       -H "Authorization: Bearer $TOKEN" https://api.github.com/user)
+if [ "$HTTP" != "200" ]; then
+    echo "FATAL: the GitHub token for $ACCOUNT is not valid (API returned HTTP $HTTP)."
+    echo "       Nothing was committed or pushed."
+    echo
+    echo "  Fix: generate a new PAT with 'repo' scope at"
+    echo "         https://github.com/settings/tokens"
+    echo "       then update this line in .env (which is gitignored):"
+    if [ "$ACCOUNT" = "Kapil" ]; then
+        echo "         GITHUB_TOKEN_KAPIL=<new token>"
+    else
+        echo "         GITHUB_TOKEN_GAYTRI=<new token>"
+    fi
+    exit 1
+fi
+
+# Warn if the "origin" remote drifted: this script pushes to an explicit URL, so
+# origin is never updated by it and can silently point somewhere else.
+CUR_ORIGIN=$(git remote get-url origin 2>/dev/null || echo "")
+if [ -n "$CUR_ORIGIN" ] && [ "$CUR_ORIGIN" != "$REPO_URL" ]; then
+    echo "WARNING: origin is $CUR_ORIGIN"
+    echo "         but this script pushes to $REPO_URL"
+    echo "         fix with: git remote set-url origin $REPO_URL"
+fi
+
+git add .
+if git diff --cached --quiet; then
+    echo "Nothing staged to commit - pushing any existing unpushed commits."
+else
+    git commit -m "$MESSAGE"
+fi
+
+# Push with the token supplied via a credential helper rather than embedded in
+# the URL, so it never appears in argv (visible to 'ps') or in git's error text.
+echo "Pushing to $REPO_URL as $USERNAME..."
+GH_USER="$USERNAME" GH_TOKEN="$TOKEN" GIT_TERMINAL_PROMPT=0 git \
+    -c credential.helper= \
+    -c credential.helper='!f() { echo "username=${GH_USER}"; echo "password=${GH_TOKEN}"; }; f' \
+    push "$REPO_URL" main
+PUSH_RC=$?
+
+# THE BUG THIS FIXES: the exit code used to be ignored, so "Pushed as ..." and
+# "Done" printed even after a failed push.
+if [ "$PUSH_RC" -ne 0 ]; then
+    echo
+    echo "PUSH FAILED (git exit $PUSH_RC) - your commit is LOCAL ONLY."
+    echo "  unpushed commits: $(git rev-list --count @{u}..HEAD 2>/dev/null || echo '?')"
+    echo "  retry after fixing the cause, or push as the other account."
+    exit "$PUSH_RC"
+fi
 
 echo "Pushed as $ACCOUNT"
 
-# HF upload removed (2026-05-30): this script ONLY pushes code — it never touches HuggingFace,
-# so there is no longer any HF step to skip (the old --code-only flag was therefore removed).
-# HF backup is now a separate, opt-in manual step (run the outputs-upload util directly).
+# HF upload removed (2026-05-30): this script ONLY pushes code - it never touches
+# HuggingFace, so there is no longer any HF step to skip (the old --code-only flag
+# was therefore removed). HF backup is a separate, opt-in manual step.
 echo "Done (code push only)"
