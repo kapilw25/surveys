@@ -1,0 +1,750 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{libero}
+\citation{calvin}
+\citation{rlbench}
+\citation{maniskill2}
+\citation{vbench}
+\citation{evalcrafter}
+\citation{ewmbench}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Predict or Act?} The survey's organising question, posed with real benchmarks. \emph  {Closed-loop} (left): policy and embodied suites score task success by running a policy in the environment. \emph  {Open-loop} (right): world-model and video-generation benchmarks score prediction or generation quality with no action. The centre axis is the question neither pole answers, whether prediction earns a closed-loop advantage, built explicitly by only 11 of 160 benchmarks (Table\nonbreakingspace \ref {tab:landscape}). Every tile is a representative figure from the benchmark's paper and links to it; per-tile provenance is in Table\nonbreakingspace \ref {tab:collage_provenance}. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }}{2}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:corpus_collage}{{1}{2}{\textbf {Predict or Act?} The survey's organising question, posed with real benchmarks. \emph {Closed-loop} (left): policy and embodied suites score task success by running a policy in the environment. \emph {Open-loop} (right): world-model and video-generation benchmarks score prediction or generation quality with no action. The centre axis is the question neither pole answers, whether prediction earns a closed-loop advantage, built explicitly by only 11 of 160 benchmarks (Table~\ref {tab:landscape}). Every tile is a representative figure from the benchmark's paper and links to it; per-tile provenance is in Table~\ref {tab:collage_provenance}. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{2}{section*.3}\protected@file@percent }
+\citation{pos_yangyu}
+\citation{survey_evalembodied}
+\citation{survey_vladata}
+\citation{survey_benchconstruct}
+\citation{survey_rlrepro}
+\citation{survey_wmrobot}
+\citation{survey_embodiedwm}
+\citation{pos_yangyu}
+\citation{survey_embodiedsim}
+\citation{pos_yangyu}
+\citation{pos_yangyu}
+\citation{survey_rlrepro}
+\citation{survey_embodiedsim}
+\citation{survey_evalembodied}
+\citation{survey_vladata}
+\citation{survey_wmrobot}
+\citation{survey_embodiedwm}
+\citation{survey_benchconstruct}
+\citation{pos_yangyu}
+\citation{survey_embodiedsim}
+\citation{survey_rlrepro}
+\citation{pos_yangyu}
+\citation{survey_embodiedsim}
+\citation{survey_rlrepro}
+\citation{pos_yangyu}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The closest benchmark/evaluation surveys as a timeline. Two predate the recent wave, an IEEE\nonbreakingspace TETCI survey of embodied-AI simulators and tasks\nonbreakingspace \citep  {survey_embodiedsim} and a CoRL survey of real-robot RL reproducibility\nonbreakingspace \citep  {survey_rlrepro} (\textcolor {secD!55!black}{amber} = refereed venue); the rest are 2026 preprints on embodied evaluation, VLA data, and world models. None organises the robot-evaluation landscape by evaluation-mode $\times $ capability $\times $ model-family; the sole work reaching the advantage-of-prediction axis is a \emph  {position} paper\nonbreakingspace \citep  {pos_yangyu}. \textbf  {Ours} ($\star $) fills that cell; per-axis coverage is in Table\nonbreakingspace \ref {tab:survey_compare}.\relax }}{3}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:surveys}{{2}{3}{The closest benchmark/evaluation surveys as a timeline. Two predate the recent wave, an IEEE~TETCI survey of embodied-AI simulators and tasks~\cite {survey_embodiedsim} and a CoRL survey of real-robot RL reproducibility~\cite {survey_rlrepro} (\textcolor {secD!55!black}{amber} = refereed venue); the rest are 2026 preprints on embodied evaluation, VLA data, and world models. None organises the robot-evaluation landscape by evaluation-mode $\times $ capability $\times $ model-family; the sole work reaching the advantage-of-prediction axis is a \emph {position} paper~\cite {pos_yangyu}. \textbf {Ours} ($\star $) fills that cell; per-axis coverage is in Table~\ref {tab:survey_compare}.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Related surveys and the empty cell}{3}{subsection.1.1}\protected@file@percent }
+\newlabel{sec:related}{{1.1}{3}{Related surveys and the empty cell}{subsection.1.1}{}}
+\citation{prisma2020}
+\citation{prisma2020}
+\citation{prisma2020}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Topical coverage of the closest benchmark/evaluation surveys versus ours.} \textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\ covered as an organising axis, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\ partial or mentioned in passing, \textcolor {BrickRed}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 56}}\ absent. Axes: \textbf  {$\alpha $} evaluation mode (open- vs closed-loop as the \emph  {primary} axis); \textbf  {$\beta $} capability cuts (hidden-state, counterfactual, long-horizon, social); \textbf  {$\gamma $} capability\nonbreakingspace $\times $\nonbreakingspace model-family cross-tab (direct VLA vs latent / action-conditioned / generative world models under one protocol); \textbf  {$\delta $} behavioural advantage-of-prediction metric (\emph  {assessed, not adopted}; e.g.\ ACTION-ATLAS's World Advantage Score); \textbf  {$\varepsilon $} comprehensive benchmark catalogue. This survey is the only work that covers \textbf  {$\gamma $}, and \textbf  {$\delta $} is otherwise reached only \emph  {partially}, and only by a \emph  {position} paper\nonbreakingspace \citep  {pos_yangyu}, never by a survey. Venues: CoRL, IEEE TETCI; the remaining rows are arXiv or unrefereed preprints (Authorea, Preprints.org).\relax }}{4}{table.caption.4}\protected@file@percent }
+\newlabel{tab:survey_compare}{{1}{4}{\textbf {Topical coverage of the closest benchmark/evaluation surveys versus ours.} \yy \ covered as an organising axis, \pp \ partial or mentioned in passing, \nn \ absent. Axes: \textbf {$\alpha $} evaluation mode (open- vs closed-loop as the \emph {primary} axis); \textbf {$\beta $} capability cuts (hidden-state, counterfactual, long-horizon, social); \textbf {$\gamma $} capability~$\times $~model-family cross-tab (direct VLA vs latent / action-conditioned / generative world models under one protocol); \textbf {$\delta $} behavioural advantage-of-prediction metric (\emph {assessed, not adopted}; e.g.\ ACTION-ATLAS's World Advantage Score); \textbf {$\varepsilon $} comprehensive benchmark catalogue. This survey is the only work that covers \textbf {$\gamma $}, and \textbf {$\delta $} is otherwise reached only \emph {partially}, and only by a \emph {position} paper~\cite {pos_yangyu}, never by a survey. Venues: CoRL, IEEE TETCI; the remaining rows are arXiv or unrefereed preprints (Authorea, Preprints.org).\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Survey methodology and corpus}{4}{section.2}\protected@file@percent }
+\newlabel{sec:method}{{2}{4}{Survey methodology and corpus}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Scope, search, and verification}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Placement, definitions, and the core-versus-appendix rule}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Corpus construction} in the PRISMA 2020 style\nonbreakingspace \citep  {prisma2020}. The left column is the web-search stream behind the landscape corpus (Table\nonbreakingspace \ref {tab:landscape}): five thematic sweeps, de-duplicated by name and arXiv ID, screened to drop datasets and models, and metadata-verified by parallel audit agents. The right column is the venue-targeted and snowball search behind the closest surveys (Table\nonbreakingspace \ref {tab:survey_compare}). Both streams feed the included set. Candidates whose metadata could not be verified were discarded at harvest; their count was not logged, which we state rather than estimate.\relax }}{5}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:prisma}{{3}{5}{\textbf {Corpus construction} in the PRISMA 2020 style~\citep {prisma2020}. The left column is the web-search stream behind the landscape corpus (Table~\ref {tab:landscape}): five thematic sweeps, de-duplicated by name and arXiv ID, screened to drop datasets and models, and metadata-verified by parallel audit agents. The right column is the venue-targeted and snowball search behind the closest surveys (Table~\ref {tab:survey_compare}). Both streams feed the included set. Candidates whose metadata could not be verified were discarded at harvest; their count was not logged, which we state rather than estimate.\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}The corpus at a glance}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Operational definitions used to place each benchmark on the evaluation axes (\S  \ref {sec:method}). They resolve the ambiguous boundary cases: hosting a policy is not the same as \emph  {building} a VLA-vs-world-model contrast ($\gamma $), and an absolute success number is not an advantage-of-prediction measurement ($\delta $) without a matched baseline. \textcolor {magenta!80!black}{\textsf  {open}}\ open-loop, \textcolor {teal!80!black}{\textsf  {closed}}\ closed-loop, \textcolor {violet!80!black}{\textsf  {bridge}}\ bridge.\relax }}{6}{table.caption.7}\protected@file@percent }
+\newlabel{tab:defs}{{2}{6}{Operational definitions used to place each benchmark on the evaluation axes (\S \ref {sec:method}). They resolve the ambiguous boundary cases: hosting a policy is not the same as \emph {building} a VLA-vs-world-model contrast ($\gamma $), and an absolute success number is not an advantage-of-prediction measurement ($\delta $) without a matched baseline. \dopen \ open-loop, \dclosed \ closed-loop, \dbridge \ bridge.\relax }{table.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {The catalogued corpus at a glance.} The survey maps 160 web-verified benchmarks across 4 evaluation lanes, spanning 2017--2026 and totalling 164 references; only 11 build an explicit Vision-Language-Action vs world-model contrast. The bars give benchmarks per capability area, with kindred clusters merged (dexterity into manipulation, vision-language navigation into navigation, theory-of-mind into hidden-state); the twelve areas sum to the 160 works of Table\nonbreakingspace \ref {tab:landscape}. Bars are coloured by the dominant lane of each area (teal policy, blue embodied, purple world-model).\relax }}{6}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:corpus_overview}{{4}{6}{\textbf {The catalogued corpus at a glance.} The survey maps 160 web-verified benchmarks across 4 evaluation lanes, spanning 2017--2026 and totalling 164 references; only 11 build an explicit Vision-Language-Action vs world-model contrast. The bars give benchmarks per capability area, with kindred clusters merged (dexterity into manipulation, vision-language navigation into navigation, theory-of-mind into hidden-state); the twelve areas sum to the 160 works of Table~\ref {tab:landscape}. Bars are coloured by the dominant lane of each area (teal policy, blue embodied, purple world-model).\relax }{figure.caption.8}{}}
+\citation{arnold}
+\citation{bigym}
+\citation{fmb}
+\citation{frankakitchen}
+\citation{furniturebench}
+\citation{grutopia}
+\citation{maniskill2}
+\citation{peract}
+\citation{gembench}
+\citation{libero}
+\citation{roboarena}
+\citation{simpler}
+\citation{thecolosseum}
+\citation{vimabench}
+\citation{cortexbench}
+\citation{genmanip}
+\citation{handoversim}
+\citation{metaworld}
+\citation{robohive}
+\citation{bidexhands}
+\citation{dexart}
+\citation{unidexgrasp}
+\citation{alexaarena}
+\citation{alfred}
+\citation{behavior1k}
+\citation{coela}
+\citation{dialfred}
+\citation{egoplanbench}
+\citation{embodiedbench}
+\citation{crowdnav}
+\citation{habitat30}
+\citation{hunavsim}
+\citation{jrdb}
+\citation{jrdbact}
+\citation{meltingpot}
+\citation{overcookedai}
+\citation{gibsonenv}
+\citation{goatbench}
+\citation{habitat}
+\citation{habitat20}
+\citation{hm3d}
+\citation{igibson}
+\citation{matterport3d}
+\citation{bench2drive}
+\citation{carla}
+\citation{drivearena}
+\citation{metadrive}
+\citation{navsim}
+\citation{nuscenes}
+\citation{waymax}
+\citation{acre}
+\citation{causalcity}
+\citation{causalvqa}
+\citation{causalworld}
+\citation{cophy}
+\citation{craft}
+\citation{filteredcophy}
+\citation{barkour}
+\citation{brax}
+\citation{derl}
+\citation{humanoidbench}
+\citation{isaacgym}
+\citation{leggedgym}
+\citation{cater}
+\citation{devil}
+\citation{evabench}
+\citation{evalcrafter}
+\citation{ewmbench}
+\citation{fetv}
+\citation{ipvbench}
+\citation{storybench}
+\citation{contphy}
+\citation{grasp}
+\citation{intphys}
+\citation{intphys2}
+\citation{phybench}
+\citation{phygenbench}
+\citation{physbench}
+\citation{physicsiq}
+\citation{clevrer}
+\citation{worldprediction}
+\citation{vista}
+\citation{robowmbench}
+\citation{worldinworld}
+\citation{worldarena}
+\citation{calvin}
+\citation{libero}
+\citation{metaworld}
+\citation{maniskill2}
+\citation{simpler}
+\citation{thecolosseum}
+\citation{robocasa}
+\citation{roboarena}
+\citation{gembench}
+\citation{vlabench}
+\citation{habitat30}
+\citation{behavior1k}
+\citation{alfred}
+\citation{teach}
+\citation{robothor}
+\citation{socnavbench}
+\citation{liberomem}
+\citation{vimabench}
+\citation{worldmodelbench}
+\citation{physicsiq}
+\citation{vbench20}
+\citation{worldscore}
+\citation{ewmbench}
+\citation{evabench}
+\citation{worldprediction}
+\citation{physion}
+\citation{physionpp}
+\citation{worldsimbench}
+\citation{worldinworld}
+\citation{robowmbench}
+\citation{worldarena}
+\gdef \LT@i {\LT@entry 
+    {1}{99.60153pt}\LT@entry 
+    {1}{23.83199pt}\LT@entry 
+    {4}{49.31195pt}\LT@entry 
+    {4}{28.20695pt}\LT@entry 
+    {1}{139.00269pt}\LT@entry 
+    {1}{42.79997pt}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Profile of the 160 catalogue benchmarks} (Table\nonbreakingspace \ref {tab:landscape}), re-counted directly from the catalogue. (a)\nonbreakingspace publication year, showing the 2023--2024 surge; (b)\nonbreakingspace evaluation lane (embodied navigation dominates, then policy suites); (c)\nonbreakingspace evaluation mode (closed-loop task success dominates, open-loop prediction is second, only four bridges reach action); (d)\nonbreakingspace whether the benchmark builds a native Vision-Language-Action vs world-model contrast, the survey's organising question: \textbf  {138 of 160 are model-agnostic}, and only \textbf  {11 (7\%)} build the contrast explicitly. Counts are the exact column tallies of Table\nonbreakingspace \ref {tab:landscape}.\relax }}{7}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:corpus_dist}{{5}{7}{\textbf {Profile of the 160 catalogue benchmarks} (Table~\ref {tab:landscape}), re-counted directly from the catalogue. (a)~publication year, showing the 2023--2024 surge; (b)~evaluation lane (embodied navigation dominates, then policy suites); (c)~evaluation mode (closed-loop task success dominates, open-loop prediction is second, only four bridges reach action); (d)~whether the benchmark builds a native Vision-Language-Action vs world-model contrast, the survey's organising question: \textbf {138 of 160 are model-agnostic}, and only \textbf {11 (7\%)} build the contrast explicitly. Counts are the exact column tallies of Table~\ref {tab:landscape}.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}A taxonomy of robot-evaluation benchmarks}{7}{section.3}\protected@file@percent }
+\newlabel{sec:taxonomy}{{3}{7}{A taxonomy of robot-evaluation benchmarks}{section.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \textbf  {Detailed comparison of a representative 31 of the 160 benchmarks} in the landscape (Table\nonbreakingspace \ref {tab:landscape}), grouped by evaluation lane. \textbf  {Eval}: \textcolor {magenta!80!black}{\textsf  {open}}\ open-loop prediction/generation quality, \textcolor {teal!80!black}{\textsf  {closed}}\ closed-loop task success, \textcolor {violet!80!black}{\textsf  {bridge}}\ prediction-to-action bridge. \textbf  {VLA vs WM}: \textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\ native direct-policy vs world-model contrast, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\ partial, \textcolor {gray!65}{\textbf  {-{}-}}\ model-agnostic. Venues are web-verified; ``arXiv'' marks preprint-only works.\relax }}{7}{table.3}\protected@file@percent }
+\newlabel{tab:compare_main}{{3}{7}{A taxonomy of robot-evaluation benchmarks}{table.3}{}}
+\citation{libero}
+\citation{habitat30}
+\citation{worldmodelbench}
+\citation{worldinworld}
+\citation{arnold}
+\citation{peract}
+\citation{fmb}
+\citation{maniskill2}
+\citation{libero}
+\citation{thecolosseum}
+\citation{simpler}
+\citation{vimabench}
+\citation{bidexhands}
+\citation{dexart}
+\citation{unidexgrasp}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Policy suites}{8}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:lane_policy}{{3.1}{8}{Policy suites}{subsection.3.1}{}}
+\citation{liberomem}
+\citation{teach}
+\citation{comphy}
+\citation{bongardhoi}
+\citation{agent}
+\citation{bib}
+\citation{phase}
+\citation{socialai}
+\citation{worldprediction}
+\citation{physion}
+\citation{physionpp}
+\citation{acre}
+\citation{cophy}
+\citation{causalworld}
+\citation{calvin}
+\citation{behavior1k}
+\citation{alfred}
+\citation{alfworld}
+\citation{embodiedbench}
+\citation{partnr}
+\citation{habitat30}
+\citation{socnavbench}
+\citation{meltingpot}
+\citation{smac}
+\citation{crowdnav}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {The world-model-evaluation wave is recent.} Per-year counts of closed-loop task-success benchmarks (green) and open-loop world-model / video-generation benchmarks (magenta) in the catalogue. Closed-loop suites dominate through 2024; in \textbf  {2025 open-loop evaluation overtakes them} (13 vs 6) as the world-model-generation literature arrives. The four prediction-to-action bridges are newer still, all appearing in 2024 or later. Years are the benchmarks' first-release years (2026 is partial and omitted); counts are the tallies of Table\nonbreakingspace \ref {tab:landscape}.\relax }}{9}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:lane_trend}{{6}{9}{\textbf {The world-model-evaluation wave is recent.} Per-year counts of closed-loop task-success benchmarks (green) and open-loop world-model / video-generation benchmarks (magenta) in the catalogue. Closed-loop suites dominate through 2024; in \textbf {2025 open-loop evaluation overtakes them} (13 vs 6) as the world-model-generation literature arrives. The four prediction-to-action bridges are newer still, all appearing in 2024 or later. Years are the benchmarks' first-release years (2026 is partial and omitted); counts are the tallies of Table~\ref {tab:landscape}.\relax }{figure.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Capability matrix, one representative benchmark per evaluation lane. No lane's exemplar builds a native VLA-vs-world-model contrast: policy and embodied suites are model-agnostic (they \emph  {host} any policy), world-model suites score generation quality with no action, and the bridge exemplar reaches closed-loop success but reports only a partial contrast (``visual quality is not task success''). Counterfactual probing is absent throughout. \textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\nonbreakingspace yes, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\nonbreakingspace partial, \textcolor {BrickRed}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 56}}\nonbreakingspace no, \textcolor {gray!65}{\textbf  {-{}-}}\nonbreakingspace n/a; \textcolor {magenta!80!black}{\textsf  {open}}\ open-loop, \textcolor {teal!80!black}{\textsf  {closed}}\ closed-loop, \textcolor {violet!80!black}{\textsf  {bridge}}\ bridge.\relax }}{9}{table.caption.12}\protected@file@percent }
+\newlabel{tab:matrix}{{4}{9}{Capability matrix, one representative benchmark per evaluation lane. No lane's exemplar builds a native VLA-vs-world-model contrast: policy and embodied suites are model-agnostic (they \emph {host} any policy), world-model suites score generation quality with no action, and the bridge exemplar reaches closed-loop success but reports only a partial contrast (``visual quality is not task success''). Counterfactual probing is absent throughout. \yy ~yes, \pp ~partial, \nn ~no, \dm ~n/a; \dopen \ open-loop, \dclosed \ closed-loop, \dbridge \ bridge.\relax }{table.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {A taxonomy of robot-evaluation benchmarks for predictive embodied intelligence} (86 representative benchmarks of the 160 in Table\nonbreakingspace \ref {tab:landscape}). Each sub-family is one cell listing its benchmarks, each with a short statement of what it measures. Benchmarks are grouped by evaluation lane (\S  3.1--\S  3.4) and then by the capability they stress. The lanes run from closed-loop task-success suites to the \emph  {bridge} frontier (shaded), the only lane that turns prediction into executed action, which is the survey's novelty axis. Full per-benchmark detail: Tables\nonbreakingspace \ref {tab:compare_main}, \ref {tab:landscape}.\relax }}{10}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:taxonomy_main}{{7}{10}{\textbf {A taxonomy of robot-evaluation benchmarks for predictive embodied intelligence} (86 representative benchmarks of the 160 in Table~\ref {tab:landscape}). Each sub-family is one cell listing its benchmarks, each with a short statement of what it measures. Benchmarks are grouped by evaluation lane (\S 3.1--\S 3.4) and then by the capability they stress. The lanes run from closed-loop task-success suites to the \emph {bridge} frontier (shaded), the only lane that turns prediction into executed action, which is the survey's novelty axis. Full per-benchmark detail: Tables~\ref {tab:compare_main}, \ref {tab:landscape}.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {Benchmarks across the surveyed corpus.} Representative subject figures from the catalogue, grouped by evaluation lane rather than embodiment: \emph  {closed-loop} task-success suites, \emph  {open-loop} world-model and video-generation evaluation, and the \emph  {prediction-to-action bridges}. Each panel is a live hyperlink to the source paper on arXiv and is annotated with its arXiv id (per-panel figure provenance in Table\nonbreakingspace \ref {tab:panel_provenance}); the figure is vector with photographs embedded at full resolution, so it can be zoomed without pixelation. Only figures that depict the benchmark's task or scene are shown; results and leaderboard figures appear in Figure\nonbreakingspace \ref {fig:results_gallery}. Benchmarks with no locatable subject figure are omitted, not fabricated. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }}{11}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:subject_gallery}{{8}{11}{\textbf {Benchmarks across the surveyed corpus.} Representative subject figures from the catalogue, grouped by evaluation lane rather than embodiment: \emph {closed-loop} task-success suites, \emph {open-loop} world-model and video-generation evaluation, and the \emph {prediction-to-action bridges}. Each panel is a live hyperlink to the source paper on arXiv and is annotated with its arXiv id (per-panel figure provenance in Table~\ref {tab:panel_provenance}); the figure is vector with photographs embedded at full resolution, so it can be zoomed without pixelation. Only figures that depict the benchmark's task or scene are shown; results and leaderboard figures appear in Figure~\ref {fig:results_gallery}. Benchmarks with no locatable subject figure are omitted, not fabricated. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }{figure.caption.13}{}}
+\gdef \LT@ii {\LT@entry 
+    {1}{116.79883pt}\LT@entry 
+    {1}{23.83199pt}\LT@entry 
+    {4}{27.96896pt}\LT@entry 
+    {1}{216.40038pt}\LT@entry 
+    {1}{42.79997pt}}
+\citation{alfred}
+\citation{behavior1k}
+\citation{embodiedbench}
+\citation{habitat30}
+\citation{overcookedai}
+\citation{meltingpot}
+\citation{habitat}
+\citation{hm3d}
+\citation{goatbench}
+\citation{carla}
+\citation{bench2drive}
+\citation{waymax}
+\citation{causalworld}
+\citation{cophy}
+\citation{acre}
+\citation{humanoidbench}
+\citation{barkour}
+\citation{isaacgym}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \textbf  {Capability deep-dive}: the benchmarks that probe each of the $\beta $ capability cuts, and whether each builds a native VLA-vs-world-model contrast. Native contrasts cluster in the hidden-state, theory-of-mind and counterfactual \emph  {reasoning} cuts (LIBERO-Mem, ComPhy, AGENT, BIB, ACRE, CoPhy, CausalWorld); the long-horizon and social \emph  {task-success} cuts are largely model-agnostic (ALFWorld's abstract-to-grounded transfer is the lone partial). \textbf  {Eval}: \textcolor {magenta!80!black}{\textsf  {open}}/\textcolor {teal!80!black}{\textsf  {closed}}. \textbf  {VLA vs WM}: \textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\ native contrast, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\ partial, \textcolor {gray!65}{\textbf  {-{}-}}\ model-agnostic; each cut's header tallies the fraction of its benchmarks that build any (native or partial) contrast.\relax }}{12}{table.5}\protected@file@percent }
+\newlabel{tab:compare_capability}{{5}{12}{Policy suites}{table.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Embodied agents}{12}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:lane_embodied}{{3.2}{12}{Embodied agents}{subsection.3.2}{}}
+\citation{vbench}
+\citation{evalcrafter}
+\citation{ewmbench}
+\citation{evabench}
+\citation{intphys}
+\citation{physbench}
+\citation{phygenbench}
+\citation{physicsiq}
+\citation{clevrer}
+\citation{worldprediction}
+\citation{vista}
+\citation{evalcrafter}
+\citation{fetv}
+\citation{vbench}
+\citation{storybench}
+\citation{devil}
+\citation{t2vcompbench}
+\citation{t2vscore}
+\citation{tcbench}
+\citation{videoscore}
+\citation{ewmbench}
+\citation{vbench20}
+\citation{intphys}
+\citation{physion}
+\citation{grasp}
+\citation{physionpp}
+\citation{contphy}
+\citation{physicsiq}
+\citation{physbench}
+\citation{phybench}
+\citation{intphys2}
+\citation{phygenbench}
+\citation{videophy}
+\citation{videophy2}
+\citation{phyworldbench}
+\citation{ipvbench}
+\citation{cater}
+\citation{clevrer}
+\citation{worldprediction}
+\citation{videocon}
+\citation{videohallucer}
+\citation{vista}
+\citation{evabench}
+\citation{worldmodelbench}
+\citation{worldscore}
+\gdef \LT@iii {\LT@entry 
+    {1}{112.50114pt}\LT@entry 
+    {1}{23.83199pt}\LT@entry 
+    {1}{27.54898pt}\LT@entry 
+    {1}{181.99922pt}\LT@entry 
+    {4}{31.62996pt}\LT@entry 
+    {1}{31.87296pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}World-model evaluation}{13}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:lane_wmeval}{{3.3}{13}{World-model evaluation}{subsection.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {World-model-evaluation deep-dive}: the 34 benchmarks of the world-model-evaluation lane, by sub-type -- the P3 counterpart of the skill-building branch deep-dive. \textbf  {Mode}: \textcolor {teal!72!black}{\textsf  {Gen}}\ evaluates generated video, \textcolor {blue!62!black}{\textsf  {QA}}\ video question-answering, \textcolor {violet!72!black}{\textsf  {Pred}}\ physical prediction. \textbf  {Signal}: \textcolor {black!55}{\textsf  {Auto}}\ computed/learned metric, \textcolor {ForestGreen!88!black}{\textsf  {Acc}}\ accuracy vs ground truth, \textcolor {orange!85!black}{\textsf  {VOE}}\ violation-of-expectation, \textcolor {magenta!72!black}{\textsf  {Human}}\ human study. \textbf  {Physical}: targets physical-law understanding, \textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\ core, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\ adjacent, \textcolor {BrickRed}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 56}}\ general. Generation-quality suites dominate and are physics-agnostic; only the physical-reasoning and physical-commonsense sub-types test physical law, and every lane benchmark scores open-loop, never in a closed loop.\relax }}{13}{table.6}\protected@file@percent }
+\newlabel{tab:compare_wmeval}{{6}{13}{World-model evaluation}{table.6}{}}
+\citation{robowmbench}
+\citation{worldinworld}
+\citation{worldarena}
+\citation{worldsimbench}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Prediction-to-action bridges}{14}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:lane_bridge}{{3.4}{14}{Prediction-to-action bridges}{subsection.3.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {Results reported across the surveyed corpus.} Representative results figures from the catalogue, grouped by type of evidence: \emph  {leaderboard and model-comparison charts}, \emph  {per-dimension radar and multi-metric} plots, and \emph  {distributions and composition}. Each panel is a live hyperlink to the source paper on arXiv and is annotated with its arXiv id (per-panel provenance in Table\nonbreakingspace \ref {tab:results_provenance}); the figure is vector with plots embedded at full resolution. Only results/leaderboard/metric figures are shown; task and scene figures appear in Figure\nonbreakingspace \ref {fig:subject_gallery}. As a benchmark survey the reported evidence is dominated by rankings, radars and distributions rather than training curves, and is sparser than the subject figures, so this gallery is smaller; benchmarks that publish no results figure are omitted, not fabricated. A benchmark may appear more than once when it reports several evidence types. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }}{15}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:results_gallery}{{9}{15}{\textbf {Results reported across the surveyed corpus.} Representative results figures from the catalogue, grouped by type of evidence: \emph {leaderboard and model-comparison charts}, \emph {per-dimension radar and multi-metric} plots, and \emph {distributions and composition}. Each panel is a live hyperlink to the source paper on arXiv and is annotated with its arXiv id (per-panel provenance in Table~\ref {tab:results_provenance}); the figure is vector with plots embedded at full resolution. Only results/leaderboard/metric figures are shown; task and scene figures appear in Figure~\ref {fig:subject_gallery}. As a benchmark survey the reported evidence is dominated by rankings, radars and distributions rather than training curves, and is sparser than the subject figures, so this gallery is smaller; benchmarks that publish no results figure are omitted, not fabricated. A benchmark may appear more than once when it reports several evidence types. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }{figure.caption.14}{}}
+\citation{libero}
+\citation{habitat30}
+\citation{worldmodelbench}
+\citation{worldinworld}
+\citation{calvin}
+\citation{behavior1k}
+\citation{physicsiq}
+\citation{worldsimbench}
+\citation{libero}
+\citation{teach}
+\citation{ewmbench}
+\citation{robowmbench}
+\citation{thecolosseum}
+\citation{robothor}
+\citation{worldprediction}
+\citation{worldarena}
+\citation{roboarena}
+\citation{liberomem}
+\citation{worldmodelbench}
+\citation{worldinworld}
+\citation{simpler}
+\citation{robothor}
+\citation{vbench20}
+\citation{worldarena}
+\citation{pos_yangyu}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Does prediction help acting? The contrast gap}{16}{section.4}\protected@file@percent }
+\newlabel{sec:gap}{{4}{16}{Does prediction help acting? The contrast gap}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}``World model'' is three things, none of them sufficient alone}{16}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Why each lane leaves the contrast unbuilt}{16}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Measuring the advantage: assessed, not adopted}{16}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {The evaluation loop that isolates the advantage of prediction.} A benchmark that can answer ``does world modelling help a robot act'' must run a direct Vision-Language-Action policy \emph  {and} a world-model policy (predict then plan) under one closed loop, then report the closed-loop gain ($\delta $) sliced by capability ($\beta $). Today's suites break this loop in one of two ways: model-agnostic policy suites host a single policy and never build the contrast, while world-model suites score the prediction open-loop and never execute it (\S  \ref {sec:gap}).\relax }}{17}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:eval_loop}{{10}{17}{\textbf {The evaluation loop that isolates the advantage of prediction.} A benchmark that can answer ``does world modelling help a robot act'' must run a direct Vision-Language-Action policy \emph {and} a world-model policy (predict then plan) under one closed loop, then report the closed-loop gain ($\delta $) sliced by capability ($\beta $). Today's suites break this loop in one of two ways: model-agnostic policy suites host a single policy and never build the contrast, while world-model suites score the prediction open-loop and never execute it (\S \ref {sec:gap}).\relax }{figure.caption.15}{}}
+\citation{libero}
+\citation{calvin}
+\citation{worldprediction}
+\citation{liberomem}
+\citation{worldsimbench}
+\citation{worldinworld}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces The term ``world model'' spans two orthogonal axes the literature routinely conflates: a \emph  {representation} axis (what the model is: latent-state dynamics, action-conditioned video, or generative video, a soft boundary since action-conditioned generators straddle WAM and WFM) and a \emph  {role} axis (what it is used for: a neural simulator, or the object a benchmark scores). Columns record whether a sense is \textbf  {act}ion-\textbf  {cond}itioned, is used in a closed \textbf  {loop}, carries a standard evaluation \textbf  {metric}, and is readily \textbf  {VLA-comp}arable under one protocol (\textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\ yes, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\ partial, \textcolor {BrickRed}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 56}}\ no, \textcolor {gray!65}{\textbf  {-{}-}}\ n/a). No single sense is action-conditioned, closed-loop, and VLA-comparable at once, which is why a benchmark that contrasts a world-model policy with a VLA policy per capability (\S  \ref {sec:gap}) is still missing. Evaluation benchmarks score the world model as an \emph  {object}; they are not world models acting as judges.\relax }}{18}{table.caption.16}\protected@file@percent }
+\newlabel{tab:wm_senses}{{7}{18}{The term ``world model'' spans two orthogonal axes the literature routinely conflates: a \emph {representation} axis (what the model is: latent-state dynamics, action-conditioned video, or generative video, a soft boundary since action-conditioned generators straddle WAM and WFM) and a \emph {role} axis (what it is used for: a neural simulator, or the object a benchmark scores). Columns record whether a sense is \textbf {act}ion-\textbf {cond}itioned, is used in a closed \textbf {loop}, carries a standard evaluation \textbf {metric}, and is readily \textbf {VLA-comp}arable under one protocol (\yy \ yes, \pp \ partial, \nn \ no, \dm \ n/a). No single sense is action-conditioned, closed-loop, and VLA-comparable at once, which is why a benchmark that contrasts a world-model policy with a VLA policy per capability (\S \ref {sec:gap}) is still missing. Evaluation benchmarks score the world model as an \emph {object}; they are not world models acting as judges.\relax }{table.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces \textbf  {Evaluation-lane comparison matrix}: the four benchmark lanes on six evaluation axes (loop closure, task horizon, capability breadth, model-family contrast, reproducibility, and characteristic blind spot). Marks grade each lane on the axis (\textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\ favourable, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\ mixed, \textcolor {BrickRed}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 56}}\ weak), with an anchoring benchmark per cell. No lane closes the loop, slices capability, \emph  {and} builds a native VLA-vs-world-model contrast at once; the bridge lane comes closest yet still omits the per-capability VLA head-to-head, which is the empty cell this survey names (\S  \ref {sec:gap}).\relax }}{18}{table.caption.17}\protected@file@percent }
+\newlabel{tab:branch_limits}{{8}{18}{\textbf {Evaluation-lane comparison matrix}: the four benchmark lanes on six evaluation axes (loop closure, task horizon, capability breadth, model-family contrast, reproducibility, and characteristic blind spot). Marks grade each lane on the axis (\yy \ favourable, \pp \ mixed, \nn \^^Mweak), with an anchoring benchmark per cell. No lane closes the loop, slices capability, \emph {and} builds a native VLA-vs-world-model contrast at once; the bridge lane comes closest yet still omits the per-capability VLA head-to-head, which is the empty cell this survey names (\S \ref {sec:gap}).\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}An agenda for advantage-aware evaluation}{18}{section.5}\protected@file@percent }
+\newlabel{sec:future}{{5}{18}{An agenda for advantage-aware evaluation}{section.5}{}}
+\citation{libero}
+\citation{calvin}
+\citation{worldprediction}
+\citation{liberomem}
+\citation{worldsimbench}
+\citation{worldinworld}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces \textbf  {An actionable protocol for the future agenda}: four measurable quantities, their definitions, and concrete testbeds. The first anchors the advantage-of-prediction question ($\delta $) on LIBERO / CALVIN-style suites; the second targets the near-unmeasured counterfactual capability; the third quantifies the prediction-to-action gap the bridges expose; the fourth audits per-capability contrast coverage across the landscape. Each is reported as a distribution or curve, never a single headline number.\relax }}{19}{table.caption.18}\protected@file@percent }
+\newlabel{tab:future_metrics}{{9}{19}{\textbf {An actionable protocol for the future agenda}: four measurable quantities, their definitions, and concrete testbeds. The first anchors the advantage-of-prediction question ($\delta $) on LIBERO / CALVIN-style suites; the second targets the near-unmeasured counterfactual capability; the third quantifies the prediction-to-action gap the bridges expose; the fourth audits per-capability contrast coverage across the landscape. Each is reported as a distribution or curve, never a single headline number.\relax }{table.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textbf  {An actionable evaluation protocol for the future agenda} (Table\nonbreakingspace \ref {tab:future_metrics}). The panels are \emph  {schematic}: they show the axes and the \emph  {target} shape of each measurement, not measured results. (a)\nonbreakingspace a world-model policy should beat a matched direct-VLA baseline in closed-loop success, and the per-capability gap is the advantage of prediction ($\delta $), on LIBERO / CALVIN-style suites run with both families; (b)\nonbreakingspace counterfactual accuracy is near chance today and should rise, on WorldPrediction and occlusion splits; (c)\nonbreakingspace a world model's open-loop quality far exceeds its closed-loop task success, and that gap must be reported, on bridge suites; (d)\nonbreakingspace the fraction of capabilities with a native VLA-vs-world-model contrast is far below target across the landscape.\relax }}{20}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:future_protocol}{{11}{20}{\textbf {An actionable evaluation protocol for the future agenda} (Table~\ref {tab:future_metrics}). The panels are \emph {schematic}: they show the axes and the \emph {target} shape of each measurement, not measured results. (a)~a world-model policy should beat a matched direct-VLA baseline in closed-loop success, and the per-capability gap is the advantage of prediction ($\delta $), on LIBERO / CALVIN-style suites run with both families; (b)~counterfactual accuracy is near chance today and should rise, on WorldPrediction and occlusion splits; (c)~a world model's open-loop quality far exceeds its closed-loop task success, and that gap must be reported, on bridge suites; (d)~the fraction of capabilities with a native VLA-vs-world-model contrast is far below target across the landscape.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Limitations}{20}{section.6}\protected@file@percent }
+\newlabel{sec:limitations}{{6}{20}{Limitations}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{21}{section.7}\protected@file@percent }
+\newlabel{sec:conclusion}{{7}{21}{Conclusion}{section.7}{}}
+\bibstyle{ACM-Reference-Format}
+\bibdata{refs}
+\bibcite{causalworld}{{1}{2020}{{Ahmed et~al\mbox  {.}}}{{}}}
+\bibcite{r2r}{{2}{2017}{{Anderson et~al\mbox  {.}}}{{}}}
+\bibcite{craft}{{3}{2020}{{Ates et~al\mbox  {.}}}{{}}}
+\bibcite{roboarena}{{4}{2025}{{Atreya et~al\mbox  {.}}}{{}}}
+\bibcite{ipvbench}{{5}{2025}{{Bai et~al\mbox  {.}}}{{}}}
+\bibcite{videocon}{{6}{2023}{{Bansal et~al\mbox  {.}}}{{}}}
+\bibcite{videophy}{{7}{2024}{{Bansal et~al\mbox  {.}}}{{}}}
+\bibcite{videophy2}{{8}{2025}{{Bansal et~al\mbox  {.}}}{{}}}
+\bibcite{dexart}{{9}{2023}{{Bao et~al\mbox  {.}}}{{}}}
+\bibcite{cophy}{{10}{2019}{{Baradel et~al\mbox  {.}}}{{}}}
+\bibcite{objectnav}{{11}{2020}{{Batra et~al\mbox  {.}}}{{}}}
+\bibcite{physion}{{12}{2021}{{Bear et~al\mbox  {.}}}{{}}}
+\bibcite{roboagent}{{13}{2023}{{Bharadhwaj et~al\mbox  {.}}}{{}}}
+\bibcite{socnavbench}{{14}{2021}{{Biswas et~al\mbox  {.}}}{{}}}
+\bibcite{intphys2}{{15}{2025}{{Bordes et~al\mbox  {.}}}{{}}}
+\bibcite{storybench}{{16}{2023}{{Bugliarello et~al\mbox  {.}}}{{}}}
+\bibcite{nuscenes}{{17}{2019}{{Caesar et~al\mbox  {.}}}{{}}}
+\bibcite{barkour}{{18}{2023}{{Caluwaerts et~al\mbox  {.}}}{{}}}
+\bibcite{overcookedai}{{19}{2019}{{Carroll et~al\mbox  {.}}}{{}}}
+\bibcite{matterport3d}{{20}{2017}{{Chang et~al\mbox  {.}}}{{}}}
+\bibcite{partnr}{{21}{2024}{{Chang et~al\mbox  {.}}}{{}}}
+\bibcite{handoversim}{{22}{2022}{{Chao et~al\mbox  {.}}}{{}}}
+\bibcite{soundspaces}{{23}{2019}{{Chen et~al\mbox  {.}}}{{}}}
+\@writefile{toc}{\contentsline {section}{References}{22}{section*.21}\protected@file@percent }
+\bibcite{crowdnav}{{24}{2018a}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{worldprediction}{{25}{2025}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{touchdown}{{26}{2018b}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{egoplanbench}{{27}{2023}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{bidexhands}{{28}{2022a}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{comphy}{{29}{2022b}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{embodiedeval}{{30}{2025}{{Cheng et~al\mbox  {.}}}{{}}}
+\bibcite{legent}{{31}{2024}{{Cheng et~al\mbox  {.}}}{{}}}
+\bibcite{bigym}{{32}{2024}{{Chernyadev et~al\mbox  {.}}}{{}}}
+\bibcite{evabench}{{33}{2024}{{Chi et~al\mbox  {.}}}{{}}}
+\bibcite{lotabench}{{34}{2024}{{Choi et~al\mbox  {.}}}{{}}}
+\bibcite{physbench}{{35}{2025}{{Chow et~al\mbox  {.}}}{{}}}
+\bibcite{liberomem}{{36}{2025}{{Chung et~al\mbox  {.}}}{{}}}
+\bibcite{navsim}{{37}{2024}{{Dauner et~al\mbox  {.}}}{{}}}
+\bibcite{robothor}{{38}{2020}{{Deitke et~al\mbox  {.}}}{{}}}
+\bibcite{procthor}{{39}{2022}{{Deitke et~al\mbox  {.}}}{{}}}
+\bibcite{carla}{{40}{2017}{{Dosovitskiy et~al\mbox  {.}}}{{}}}
+\bibcite{worldscore}{{41}{2025}{{Duan et~al\mbox  {.}}}{{}}}
+\bibcite{survey_embodiedsim}{{42}{2022}{{Duan et~al\mbox  {.}}}{{}}}
+\bibcite{jrdbact}{{43}{2021}{{Ehsanpour et~al\mbox  {.}}}{{}}}
+\bibcite{tcbench}{{44}{2024}{{Feng et~al\mbox  {.}}}{{}}}
+\bibcite{causalvqa}{{45}{2025}{{Foss et~al\mbox  {.}}}{{}}}
+\bibcite{brax}{{46}{2021}{{Freeman et~al\mbox  {.}}}{{}}}
+\bibcite{tdwtransport}{{47}{2021}{{Gan et~al\mbox  {.}}}{{}}}
+\bibcite{bib}{{48}{2021}{{Gandhi et~al\mbox  {.}}}{{}}}
+\bibcite{embodiedcity}{{49}{2024b}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{genmanip}{{50}{2025}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{alexaarena}{{51}{2023}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{vista}{{52}{2024a}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{dialfred}{{53}{2022}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{gembench}{{54}{2024}{{Garcia et~al\mbox  {.}}}{{}}}
+\bibcite{cater}{{55}{2019}{{Girdhar and Ramanan}}{{}}}
+\bibcite{arnold}{{56}{2023}{{Gong et~al\mbox  {.}}}{{}}}
+\bibcite{peract2}{{57}{2024}{{Grotz et~al\mbox  {.}}}{{}}}
+\bibcite{phyworldbench}{{58}{2025}{{Gu et~al\mbox  {.}}}{{}}}
+\bibcite{maniskill2}{{59}{2023}{{Gu et~al\mbox  {.}}}{{}}}
+\bibcite{waymax}{{60}{2023}{{Gulino et~al\mbox  {.}}}{{}}}
+\bibcite{frankakitchen}{{61}{2019}{{Gupta et~al\mbox  {.}}}{{}}}
+\bibcite{derl}{{62}{2021}{{Gupta et~al\mbox  {.}}}{{}}}
+\bibcite{videoscore}{{63}{2024}{{He et~al\mbox  {.}}}{{}}}
+\bibcite{furniturebench}{{64}{2023}{{Heo et~al\mbox  {.}}}{{}}}
+\bibcite{survey_wmrobot}{{65}{2026b}{{Hou et~al\mbox  {.}}}{{}}}
+\bibcite{survey_evalembodied}{{66}{2026a}{{Hou et~al\mbox  {.}}}{{}}}
+\bibcite{ewmbench}{{67}{2025}{{Hu et~al\mbox  {.}}}{{}}}
+\bibcite{vbench}{{68}{2023}{{Huang et~al\mbox  {.}}}{{}}}
+\bibcite{rlbench}{{69}{2019}{{James et~al\mbox  {.}}}{{}}}
+\bibcite{filteredcophy}{{70}{2022}{{Janny et~al\mbox  {.}}}{{}}}
+\bibcite{grasp}{{71}{2023}{{Jassim et~al\mbox  {.}}}{{}}}
+\bibcite{bench2drive}{{72}{2024}{{Jia et~al\mbox  {.}}}{{}}}
+\bibcite{robowmbench}{{73}{2026}{{Jiang et~al\mbox  {.}}}{{}}}
+\bibcite{bongardhoi}{{74}{2022b}{{Jiang et~al\mbox  {.}}}{{}}}
+\bibcite{vimabench}{{75}{2022a}{{Jiang et~al\mbox  {.}}}{{}}}
+\bibcite{smartllm}{{76}{2023}{{Kannan et~al\mbox  {.}}}{{}}}
+\bibcite{goatbench}{{77}{2024}{{Khanna et~al\mbox  {.}}}{{}}}
+\bibcite{socialai}{{78}{2021}{{Kovac et~al\mbox  {.}}}{{}}}
+\bibcite{vlnce}{{79}{2020}{{Krantz et~al\mbox  {.}}}{{}}}
+\bibcite{rxr}{{80}{2020}{{Ku et~al\mbox  {.}}}{{}}}
+\bibcite{robohive}{{81}{2023}{{Kumar et~al\mbox  {.}}}{{}}}
+\bibcite{survey_benchconstruct}{{82}{2026}{{Lai et~al\mbox  {.}}}{{}}}
+\bibcite{rgbstacking}{{83}{2021}{{Lee et~al\mbox  {.}}}{{}}}
+\bibcite{meltingpot}{{84}{2021}{{Leibo et~al\mbox  {.}}}{{}}}
+\bibcite{behavior1k}{{85}{2024b}{{Li et~al\mbox  {.}}}{{}}}
+\bibcite{worldmodelbench}{{86}{2025}{{Li et~al\mbox  {.}}}{{}}}
+\bibcite{metadrive}{{87}{2021}{{Li et~al\mbox  {.}}}{{}}}
+\bibcite{simpler}{{88}{2024a}{{Li et~al\mbox  {.}}}{{}}}
+\bibcite{devil}{{89}{2024}{{Liao et~al\mbox  {.}}}{{}}}
+\bibcite{softgym}{{90}{2020}{{Lin et~al\mbox  {.}}}{{}}}
+\bibcite{libero}{{91}{2023c}{{Liu et~al\mbox  {.}}}{{}}}
+\bibcite{evalcrafter}{{92}{2023a}{{Liu et~al\mbox  {.}}}{{}}}
+\bibcite{fetv}{{93}{2023b}{{Liu et~al\mbox  {.}}}{{}}}
+\bibcite{fmb}{{94}{2024}{{Luo et~al\mbox  {.}}}{{}}}
+\bibcite{survey_rlrepro}{{95}{2020}{{Lynnerup et~al\mbox  {.}}}{{}}}
+\bibcite{cortexbench}{{96}{2023}{{Majumdar et~al\mbox  {.}}}{{}}}
+\bibcite{isaacgym}{{97}{2021}{{Makoviychuk et~al\mbox  {.}}}{{}}}
+\bibcite{robomimic}{{98}{2021}{{Mandlekar et~al\mbox  {.}}}{{}}}
+\bibcite{jrdb}{{99}{2019}{{Martin-Martin et~al\mbox  {.}}}{{}}}
+\bibcite{causalcity}{{100}{2021}{{McDuff et~al\mbox  {.}}}{{}}}
+\bibcite{calvin}{{101}{2021}{{Mees et~al\mbox  {.}}}{{}}}
+\bibcite{phygenbench}{{102}{2024}{{Meng et~al\mbox  {.}}}{{}}}
+\bibcite{physicsiq}{{103}{2025}{{Motamed et~al\mbox  {.}}}{{}}}
+\bibcite{robotwin}{{104}{2024}{{Mu et~al\mbox  {.}}}{{}}}
+\bibcite{robocasa}{{105}{2024}{{Nasiriany et~al\mbox  {.}}}{{}}}
+\bibcite{phase}{{106}{2021}{{Netanyahu et~al\mbox  {.}}}{{}}}
+\bibcite{teach}{{107}{2021}{{Padmakumar et~al\mbox  {.}}}{{}}}
+\bibcite{prisma2020}{{108}{2021}{{Page et~al\mbox  {.}}}{{}}}
+\bibcite{hunavsim}{{109}{2023}{{Perez-Higueras et~al\mbox  {.}}}{{}}}
+\bibcite{virtualhome}{{110}{2018}{{Puig et~al\mbox  {.}}}{{}}}
+\bibcite{watchandhelp}{{111}{2020}{{Puig et~al\mbox  {.}}}{{}}}
+\bibcite{habitat30}{{112}{2023}{{Puig et~al\mbox  {.}}}{{}}}
+\bibcite{thecolosseum}{{113}{2024}{{Pumacay et~al\mbox  {.}}}{{}}}
+\bibcite{reverie}{{114}{2019}{{Qi et~al\mbox  {.}}}{{}}}
+\bibcite{worldsimbench}{{115}{2024}{{Qin et~al\mbox  {.}}}{{}}}
+\bibcite{phybench}{{116}{2025}{{Qiu et~al\mbox  {.}}}{{}}}
+\bibcite{hm3d}{{117}{2021}{{Ramakrishnan et~al\mbox  {.}}}{{}}}
+\bibcite{intphys}{{118}{2018}{{Riochet et~al\mbox  {.}}}{{}}}
+\bibcite{leggedgym}{{119}{2021}{{Rudin et~al\mbox  {.}}}{{}}}
+\bibcite{smac}{{120}{2019}{{Samvelyan et~al\mbox  {.}}}{{}}}
+\bibcite{habitat}{{121}{2019}{{Savva et~al\mbox  {.}}}{{}}}
+\bibcite{robovqa}{{122}{2023}{{Sermanet et~al\mbox  {.}}}{{}}}
+\bibcite{humanoidbench}{{123}{2024}{{Sferrazza et~al\mbox  {.}}}{{}}}
+\bibcite{worldarena}{{124}{2026a}{{Shang et~al\mbox  {.}}}{{}}}
+\bibcite{survey_embodiedwm}{{125}{2026b}{{Shang et~al\mbox  {.}}}{{}}}
+\bibcite{igibson}{{126}{2020}{{Shen et~al\mbox  {.}}}{{}}}
+\bibcite{peract}{{127}{2022}{{Shridhar et~al\mbox  {.}}}{{}}}
+\bibcite{alfred}{{128}{2019}{{Shridhar et~al\mbox  {.}}}{{}}}
+\bibcite{alfworld}{{129}{2020}{{Shridhar et~al\mbox  {.}}}{{}}}
+\bibcite{agent}{{130}{2021}{{Shu et~al\mbox  {.}}}{{}}}
+\bibcite{lhvln}{{131}{2024}{{Song et~al\mbox  {.}}}{{}}}
+\bibcite{socialgym20}{{132}{2023}{{Sprague et~al\mbox  {.}}}{{}}}
+\bibcite{robosense}{{133}{2024}{{Su et~al\mbox  {.}}}{{}}}
+\bibcite{t2vcompbench}{{134}{2024}{{Sun et~al\mbox  {.}}}{{}}}
+\bibcite{waymoopen}{{135}{2019}{{Sun et~al\mbox  {.}}}{{}}}
+\bibcite{habitat20}{{136}{2021}{{Szot et~al\mbox  {.}}}{{}}}
+\bibcite{sean}{{137}{2020}{{Tsoi et~al\mbox  {.}}}{{}}}
+\bibcite{physionpp}{{138}{2023}{{Tung et~al\mbox  {.}}}{{}}}
+\bibcite{planbench}{{139}{2022}{{Valmeekam et~al\mbox  {.}}}{{}}}
+\bibcite{grutopia}{{140}{2024a}{{Wang et~al\mbox  {.}}}{{}}}
+\bibcite{videohallucer}{{141}{2024b}{{Wang et~al\mbox  {.}}}{{}}}
+\bibcite{survey_vladata}{{142}{2026}{{Wang et~al\mbox  {.}}}{{}}}
+\bibcite{tidybot}{{143}{2023}{{Wu et~al\mbox  {.}}}{{}}}
+\bibcite{t2vscore}{{144}{2024}{{Wu et~al\mbox  {.}}}{{}}}
+\bibcite{gibsonenv}{{145}{2018}{{Xia et~al\mbox  {.}}}{{}}}
+\bibcite{unidexgrasp}{{146}{2023}{{Xu et~al\mbox  {.}}}{{}}}
+\bibcite{embodiedbench}{{147}{2025}{{Yang et~al\mbox  {.}}}{{}}}
+\bibcite{drivearena}{{148}{2024}{{Yang et~al\mbox  {.}}}{{}}}
+\bibcite{homerobotovmm}{{149}{2023}{{Yenamandra et~al\mbox  {.}}}{{}}}
+\bibcite{clevrer}{{150}{2019}{{Yi et~al\mbox  {.}}}{{}}}
+\bibcite{safeagentbench}{{151}{2024}{{Yin et~al\mbox  {.}}}{{}}}
+\bibcite{metaworld}{{152}{2019}{{Yu et~al\mbox  {.}}}{{}}}
+\bibcite{pos_yangyu}{{153}{2026}{{Yu et~al\mbox  {.}}}{{}}}
+\bibcite{ravens}{{154}{2020}{{Zeng et~al\mbox  {.}}}{{}}}
+\bibcite{acre}{{155}{2021}{{Zhang et~al\mbox  {.}}}{{}}}
+\bibcite{coela}{{156}{2023a}{{Zhang et~al\mbox  {.}}}{{}}}
+\bibcite{worldinworld}{{157}{2025}{{Zhang et~al\mbox  {.}}}{{}}}
+\bibcite{mfeetp}{{158}{2024a}{{Zhang et~al\mbox  {.}}}{{}}}
+\bibcite{lohoravens}{{159}{2023b}{{Zhang et~al\mbox  {.}}}{{}}}
+\bibcite{vlabench}{{160}{2024b}{{Zhang et~al\mbox  {.}}}{{}}}
+\bibcite{vbench20}{{161}{2025}{{Zheng et~al\mbox  {.}}}{{}}}
+\bibcite{vlmbench}{{162}{2022}{{Zheng et~al\mbox  {.}}}{{}}}
+\bibcite{contphy}{{163}{2024}{{Zheng et~al\mbox  {.}}}{{}}}
+\bibcite{robosuite}{{164}{2020}{{Zhu et~al\mbox  {.}}}{{}}}
+\citation{arnold}
+\citation{bigym}
+\citation{fmb}
+\citation{frankakitchen}
+\citation{furniturebench}
+\citation{grutopia}
+\citation{maniskill2}
+\citation{peract}
+\citation{peract2}
+\citation{ravens}
+\citation{rgbstacking}
+\citation{rlbench}
+\citation{roboagent}
+\citation{robomimic}
+\citation{robosuite}
+\citation{robotwin}
+\citation{vlmbench}
+\citation{gembench}
+\citation{libero}
+\citation{roboarena}
+\citation{simpler}
+\citation{thecolosseum}
+\citation{vimabench}
+\citation{cortexbench}
+\citation{genmanip}
+\citation{handoversim}
+\citation{metaworld}
+\citation{robohive}
+\citation{bidexhands}
+\citation{dexart}
+\citation{unidexgrasp}
+\citation{calvin}
+\citation{robocasa}
+\citation{vlabench}
+\citation{softgym}
+\citation{alexaarena}
+\citation{alfred}
+\citation{behavior1k}
+\citation{coela}
+\citation{dialfred}
+\citation{egoplanbench}
+\citation{embodiedbench}
+\citation{embodiedcity}
+\citation{embodiedeval}
+\citation{homerobotovmm}
+\citation{legent}
+\citation{lhvln}
+\citation{lohoravens}
+\citation{lotabench}
+\citation{mfeetp}
+\citation{partnr}
+\citation{planbench}
+\citation{safeagentbench}
+\citation{smartllm}
+\citation{tdwtransport}
+\citation{tidybot}
+\citation{virtualhome}
+\citation{watchandhelp}
+\citation{crowdnav}
+\citation{habitat30}
+\citation{hunavsim}
+\citation{jrdb}
+\citation{jrdbact}
+\citation{meltingpot}
+\citation{overcookedai}
+\citation{robosense}
+\citation{sean}
+\citation{smac}
+\citation{socialgym20}
+\citation{socnavbench}
+\citation{gibsonenv}
+\citation{goatbench}
+\citation{habitat}
+\citation{habitat20}
+\citation{hm3d}
+\citation{igibson}
+\citation{matterport3d}
+\citation{objectnav}
+\citation{procthor}
+\citation{robothor}
+\citation{soundspaces}
+\citation{bench2drive}
+\citation{carla}
+\citation{drivearena}
+\citation{metadrive}
+\citation{navsim}
+\citation{nuscenes}
+\citation{waymax}
+\citation{waymoopen}
+\citation{acre}
+\citation{causalcity}
+\citation{causalvqa}
+\citation{causalworld}
+\citation{cophy}
+\citation{craft}
+\citation{filteredcophy}
+\citation{barkour}
+\citation{brax}
+\citation{derl}
+\citation{humanoidbench}
+\citation{isaacgym}
+\citation{leggedgym}
+\citation{agent}
+\citation{bib}
+\citation{phase}
+\citation{socialai}
+\citation{r2r}
+\citation{reverie}
+\citation{rxr}
+\citation{touchdown}
+\citation{vlnce}
+\citation{bongardhoi}
+\citation{comphy}
+\citation{liberomem}
+\citation{teach}
+\citation{robovqa}
+\citation{alfworld}
+\citation{cater}
+\citation{devil}
+\citation{evabench}
+\citation{evalcrafter}
+\citation{ewmbench}
+\citation{fetv}
+\citation{ipvbench}
+\citation{storybench}
+\citation{t2vcompbench}
+\citation{t2vscore}
+\citation{tcbench}
+\citation{vbench}
+\citation{vbench20}
+\citation{videocon}
+\citation{videohallucer}
+\citation{videoscore}
+\citation{worldmodelbench}
+\citation{worldscore}
+\citation{contphy}
+\citation{grasp}
+\citation{intphys}
+\citation{intphys2}
+\citation{phybench}
+\citation{phygenbench}
+\citation{physbench}
+\citation{physicsiq}
+\citation{physion}
+\citation{physionpp}
+\citation{phyworldbench}
+\citation{videophy}
+\citation{videophy2}
+\citation{clevrer}
+\citation{worldprediction}
+\citation{vista}
+\citation{robowmbench}
+\citation{worldinworld}
+\citation{worldarena}
+\citation{worldsimbench}
+\gdef \LT@iv {\LT@entry 
+    {1}{154.50424pt}\LT@entry 
+    {1}{19.85597pt}\LT@entry 
+    {1}{192.89883pt}\LT@entry 
+    {4}{23.60596pt}\LT@entry 
+    {1}{36.39998pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}The full benchmark landscape}{29}{appendix.A}\protected@file@percent }
+\newlabel{app:landscape}{{A}{29}{The full benchmark landscape}{appendix.A}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces \textbf  {The robot-evaluation benchmark landscape: 160 web-verified benchmarks, compared on four axes.} Grouped into four evaluation lanes and sub-grouped by capability. Columns: \textbf  {Year}; \textbf  {Capability} (what the benchmark stresses); \textbf  {Eval} (evaluation mode: open-loop prediction/generation quality, closed-loop task success, or a prediction-to-action bridge); and \textbf  {VLA vs WM} (does the benchmark build a native direct-policy vs world-model contrast: \textcolor {ForestGreen}{{\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 52}}\ explicit, \textcolor {orange!90!black}{\textbf  {\textasciitilde }}\ partial, \textcolor {gray!65}{\textbf  {-{}-}}\ model-agnostic). Every entry is a real, individually citeable benchmark.\relax }}{29}{table.10}\protected@file@percent }
+\newlabel{tab:landscape}{{10}{29}{The full benchmark landscape}{table.10}{}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{6.25499pt}
+\newlabel{tocindent2}{10.34999pt}
+\newlabel{tocindent3}{0pt}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Provenance of the galleries and collage}{32}{appendix.B}\protected@file@percent }
+\newlabel{app:provenance}{{B}{32}{Provenance of the galleries and collage}{appendix.B}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces \textbf  {Per-panel provenance for Figure\nonbreakingspace \ref {fig:subject_gallery}.} Every panel is a real subject/scene figure cropped from the benchmark's own arXiv paper and hyperlinked to its source. Exact figure numbers are given where verified from the paper (e.g.\ Physion Fig.\nonbreakingspace 1); otherwise the teaser-region basis is noted (``rep.\ figure, pp.1--3'' for tiles reused from the collage pool; ``embedded raster, pp.1--8'' for the nine gap tiles hand-picked from per-paper candidate contact sheets after a subject/results/neither classification pass). No figure number is invented. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }}{33}{table.caption.22}\protected@file@percent }
+\newlabel{tab:panel_provenance}{{11}{33}{\textbf {Per-panel provenance for Figure~\ref {fig:subject_gallery}.} Every panel is a real subject/scene figure cropped from the benchmark's own arXiv paper and hyperlinked to its source. Exact figure numbers are given where verified from the paper (e.g.\ Physion Fig.~1); otherwise the teaser-region basis is noted (``rep.\ figure, pp.1--3'' for tiles reused from the collage pool; ``embedded raster, pp.1--8'' for the nine gap tiles hand-picked from per-paper candidate contact sheets after a subject/results/neither classification pass). No figure number is invented. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }{table.caption.22}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces \textbf  {Per-panel provenance for Figure\nonbreakingspace \ref {fig:results_gallery}.} Every panel is a real results/leaderboard/metric plot cropped from the benchmark's own arXiv paper and hyperlinked to its source. Exact figure numbers are given where verified from the paper (e.g.\ WorldArena Fig.\nonbreakingspace 1); otherwise the extraction basis is noted (``embedded raster''). Plots are contain-fitted, not cropped-to-fill, so no bars, axes or radar spokes are cut off. No figure number is invented. A benchmark appears more than once when it reports several evidence types. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }}{34}{table.caption.23}\protected@file@percent }
+\newlabel{tab:results_provenance}{{12}{34}{\textbf {Per-panel provenance for Figure~\ref {fig:results_gallery}.} Every panel is a real results/leaderboard/metric plot cropped from the benchmark's own arXiv paper and hyperlinked to its source. Exact figure numbers are given where verified from the paper (e.g.\ WorldArena Fig.~1); otherwise the extraction basis is noted (``embedded raster''). Plots are contain-fitted, not cropped-to-fill, so no bars, axes or radar spokes are cut off. No figure number is invented. A benchmark appears more than once when it reports several evidence types. Images \textcopyright \ their respective authors, reproduced for scholarly review.\relax }{table.caption.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces \textbf  {Per-tile provenance for Figure\nonbreakingspace \ref {fig:corpus_collage}.} Every tile is a representative figure cropped from the benchmark's own arXiv paper (page/figure noted; ``rep.\ figure'' marks the paper's teaser-region figure on pp.1--3), reproduced for scholarly review and hyperlinked to its source. Images \textcopyright \ their respective authors.\relax }}{34}{table.caption.24}\protected@file@percent }
+\newlabel{tab:collage_provenance}{{13}{34}{\textbf {Per-tile provenance for Figure~\ref {fig:corpus_collage}.} Every tile is a representative figure cropped from the benchmark's own arXiv paper (page/figure noted; ``rep.\^^Mfigure'' marks the paper's teaser-region figure on pp.1--3), reproduced for scholarly review and hyperlinked to its source. Images \textcopyright \ their respective authors.\relax }{table.caption.24}{}}
+\newlabel{TotPages}{{34}{34}{}{page.34}{}}
+\gdef \@abspage@last{34}

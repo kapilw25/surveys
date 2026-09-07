@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@400;700&display=swap');
+  html,body{margin:0;padding:0;background:#fff;}
+  #stage{width:1400px;height:900px;background:#fff;position:relative;}
+  svg{position:absolute;top:0;left:0;}
+  .lbl{position:absolute;font-family:'Kalam',cursive;color:#111;text-align:center;
+       line-height:1.15;pointer-events:none;transform:translate(-50%,-50%);white-space:nowrap;}
+  .hand{font-family:'Gochi Hand',cursive;}
+</style>
+</head>
+<body>
+<div id="stage">
+  <svg id="rc" width="1400" height="900"></svg>
+</div>
+<script src="https://unpkg.com/roughjs@4.6.6/bundled/rough.js"></script>
+<script>
+function ready(cb){ if(document.fonts&&document.fonts.ready){document.fonts.ready.then(()=>setTimeout(cb,250));} else setTimeout(cb,600); }
+ready(function(){
+  const svg = document.getElementById('rc');
+  const rc  = rough.svg(svg);
+  const S = document.getElementById('stage');
+  const INK = '#111';
+  function box(x,y,w,h,opt={}){
+    const o = Object.assign({roughness:2.1,bowing:1.6,stroke:INK,strokeWidth:2.4,fill:'none'},opt);
+    svg.appendChild(rc.rectangle(x,y,w,h,o));
+    return {x,y,w,h,cx:x+w/2,cy:y+h/2};
+  }
+  function label(cx,cy,html,size=25,hand=false){
+    const d=document.createElement('div');
+    d.className='lbl'+(hand?' hand':''); d.style.left=cx+'px'; d.style.top=cy+'px';
+    d.style.fontSize=size+'px'; d.innerHTML=html; S.appendChild(d);
+  }
+  function arrow(x1,y1,x2,y2,opt={}){
+    const o=Object.assign({roughness:2.0,bowing:1.2,stroke:INK,strokeWidth:2.2},opt);
+    svg.appendChild(rc.line(x1,y1,x2,y2,o));
+    const a=Math.atan2(y2-y1,x2-x1),L=16,W=0.42;
+    svg.appendChild(rc.line(x2,y2,x2-L*Math.cos(a-W),y2-L*Math.sin(a-W),o));
+    svg.appendChild(rc.line(x2,y2,x2-L*Math.cos(a+W),y2-L*Math.sin(a+W),o));
+  }
+  function curve(pts,opt={}){
+    const o=Object.assign({roughness:1.8,bowing:1,stroke:'#888',strokeWidth:2},opt);
+    svg.appendChild(rc.curve(pts,o));
+  }
+  function curveArrow(pts,opt={}){
+    curve(pts,opt);
+    const n=pts.length,[x1,y1]=pts[n-2],[x2,y2]=pts[n-1];
+    const a=Math.atan2(y2-y1,x2-x1),L=15,W=0.44;
+    const o=Object.assign({roughness:1.5,stroke:opt.stroke||'#888',strokeWidth:opt.strokeWidth||2},{});
+    svg.appendChild(rc.line(x2,y2,x2-L*Math.cos(a-W),y2-L*Math.sin(a-W),o));
+    svg.appendChild(rc.line(x2,y2,x2-L*Math.cos(a+W),y2-L*Math.sin(a+W),o));
+  }
+
+  // ---- boxes (mirrors fig_eval_loop) ----
+  const vla = box(250,150,220,110);      label(vla.cx,vla.cy,'direct VLA<br>policy',27);
+  const wm  = box(250,540,220,110);      label(wm.cx,wm.cy,'world model:<br>predict &rarr; plan',26);
+  const env = box(590,345,210,120);      label(env.cx,env.cy,'environment<br>(closed loop)',26);
+  const suc = box(880,350,180,110);      label(suc.cx,suc.cy,'task<br>success',27);
+  const adv = box(1130,335,230,140);     label(adv.cx,adv.cy,'advantage of<br>prediction (&delta;)<br>per capability (&beta;)',25);
+
+  // task / scene source (Kalam, non-hand: its slash is unambiguous)
+  label(120,400,'task&nbsp;/&nbsp;scene',26,false);
+
+  // ---- flow arrows ----
+  arrow(175,400,250,205);          // task -> VLA
+  arrow(175,400,250,595);          // task -> WM
+  arrow(470,205,590,380);          // VLA -> env
+  arrow(470,595,590,430);          // WM  -> env
+  arrow(800,405,880,405);          // env -> success
+  arrow(1060,405,1130,405);        // success -> advantage
+
+  // ---- state feedback (grey curved, top + bottom) ----
+  curveArrow([[720,345],[640,120],[430,120],[365,150]],{stroke:'#8a8a8a'});
+  curveArrow([[720,465],[640,690],[430,690],[365,650]],{stroke:'#8a8a8a'});
+  label(560,95,'state feedback',22,true);
+
+  // ---- dashed callout ----
+  svg.appendChild(rc.rectangle(150,720,470,140,{roughness:2.2,stroke:'#7a1f1f',strokeWidth:2,strokeLineDash:[9,7],fill:'none'}));
+  const c=document.createElement('div');
+  c.className='lbl hand'; c.style.left=(150+235)+'px'; c.style.top=(720+70)+'px';
+  c.style.fontSize='23px'; c.style.color='#7a1f1f'; c.style.width='430px'; c.style.whiteSpace='normal';
+  c.innerHTML='model-agnostic suites run ONE branch (no contrast);<br>world-model suites never reach the loop';
+  S.appendChild(c);
+  arrow(360,720,360,655,{stroke:'#7a1f1f',strokeWidth:2,strokeLineDash:[7,6]});
+
+  // ---- legend ----
+  svg.appendChild(rc.line(1120,150,1180,150,{roughness:1.4,stroke:INK,strokeWidth:2.2}));
+  svg.appendChild(rc.line(1178,150,1168,145,{stroke:INK,strokeWidth:2.2}));
+  svg.appendChild(rc.line(1178,150,1168,155,{stroke:INK,strokeWidth:2.2}));
+  label(1250,150,'= flow',20,true);
+  svg.appendChild(rc.line(1120,185,1180,185,{roughness:1.4,stroke:'#8a8a8a',strokeWidth:2.2}));
+  label(1258,185,'= feedback',20,true);
+
+  // title
+  label(700,45,'Does world modelling help a robot act?',30,true);
+});
+</script>
+</body>
+</html>

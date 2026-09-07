@@ -2,9 +2,9 @@
 
 One tweet per figure (Figures 1-11) + a links tweet. **Every figure now has a zoom-tour video** (`figures/<name>_tour.mp4`) plus a looping GIF (`figures/<name>_tour.gif`); the static still (`figures/<name>.png`) is a backup. The GIF is embedded under each tweet so you can eyeball, in Markdown preview, whether the post correlates with its motion.
 
-- **Paper:** "Weights or Skills? A Survey of Robot-Learning Techniques"
-- **Authors:** Gaytri Jena, Kapil Wanaskar, Vinija Jain, Aman Chadha, Vasu Sharma, Amitava Das (Jena et al.)
-- **arXiv:** https://arxiv.org/abs/2608.01851 · **DOI:** 10.5281/zenodo.21764307 · **Site:** https://kapilw25.github.io/surveys/p1_weights_or_skills/
+- Paper: "Weights or Skills? A Survey of Robot-Learning Techniques"
+- Authors: Gaytri Jena, Kapil Wanaskar, Vinija Jain, Aman Chadha, Vasu Sharma, Amitava Das (Jena et al.)
+- arXiv: https://arxiv.org/abs/2608.01851
 
 > Tours were rendered at 600 DPI through the full paper (all citations + section refs resolve), 1920x1080 MP4 (H.264) + 640px GIF. Attach the **MP4** on X / LinkedIn (autoplays; video gets the most reach). Open this file in a Markdown preview (VS Code: `Cmd+Shift+V`) to watch the GIFs loop.
 
