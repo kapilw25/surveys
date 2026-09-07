@@ -60,7 +60,7 @@ USAGE
         #   mv .../survery_paper/robot_skills  .../surveys
         #   cd  .../surveys
         #   bash claude_session.sh --relocate \
-        #        /Users/kapilwanaskar/Downloads/research_projects/survery_paper/robot_skills
+        #        /Users/kapilwanaskar/Downloads/research_projects/surveys
         #   claude --resume
 
     bash claude_session.sh --verify-repo [--deep]
