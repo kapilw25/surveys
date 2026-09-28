@@ -9,7 +9,27 @@ the model gives probability $p$, a fraction $p$ is correct~\citep{guo2017calibra
 policy built on a miscalibrated confidence answers when it should not, or escalates cases it could have
 settled.
 
-For most of the literature, this confidence is estimated \emph{after} the model has been trained. It is
+\input{tables/tab_jev_hf_ecosystem}
+\input{tables/tab_jev_decision_index}
+
+\paragraph{Public typed-decision models.} Tables~\ref{tab:jev_hf_ecosystem} and~\ref{tab:jev_decision_index} record
+two public views of the typed-decision models available on \diDate; every row links to the model, so a reader
+can try one directly. Table~\ref{tab:jev_hf_ecosystem} classifies the \nHF repositories that the
+Hugging Face model search for ``jev'' returns: \nHFNameOnly only share the name, \nHFUnverified could not be
+verified, and \nHFClassified were classified from their model cards and file lists; \nHFTrained contain newly
+trained weights, and general-purpose models with their copies account for \nHFGeneralPct of downloads. A name
+search is a poor census of decision models: of the \nDIOpenWeights open systems with released weights on the
+leaderboard of Table~\ref{tab:jev_decision_index}, it returns \nDIFoundByName. Table~\ref{tab:jev_decision_index}
+lists the top of that leaderboard, the Jev Decision Index~\citep{multimodalart2026jevdi} (\diRelease), which
+scores \nDISystems systems on skill over \nDIBench decision benchmarks and on the calibration of the chosen
+option. Jev, a hosted model from TypeSafe AI released on 15 September 2026~\citep{almeida2026introducing},
+returns a probability for each declared option; it is not one of the \nWorks works in our corpus, and its
+base model is not disclosed. Neither view is peer reviewed, and neither is used to rank the training
+families of Section~\ref{sec:core}.
+
+
+For most of the literature, the confidence of a language model is estimated \emph{after} the model has been
+trained. It is
 read off the model's own token or sequence probabilities, which are well calibrated on multiple-choice
 formats for large pretrained models~\citep{kadavath2022language} but lose calibration after
 post-training~\citep{openai2023gpt4}; it is rescaled by a post-hoc map fitted on held-out
@@ -19,7 +39,6 @@ scale~\citep{xiong2023can}; or it is computed from extra inference, such as the 
 answers or a conformal prediction set~\citep{farquhar2024semantic,campos2024conformal}.
 Figure~\ref{fig:hero_collage} shows examples of each stage, and of training, taken from the papers' own figures.
 
-\input{figures/fig_hero_collage}
 
 A second line of work, most of it from the last three years, puts calibration into training itself. The
 model is fitted to confidence targets or a calibration loss, the reward model in its training loop is
@@ -31,8 +50,11 @@ model's own loss or reward, \nCoreRecent appeared from 2024 to 2026 (\nCoreRecen
 time, models are offered that return, instead of free text, a probability for each option of a set
 declared in advance, so that the decision and its confidence come from one distribution; one such
 hosted model, Jev~\citep{almeida2026introducing}, and the open decision models listed with it on a community
-leaderboard~\citep{multimodalart2026jevdi} are described in Appendix~\ref{app:jev}, and an independent evaluation of it is part of our
+leaderboard~\citep{multimodalart2026jevdi} are listed in Tables~\ref{tab:jev_hf_ecosystem} and~\ref{tab:jev_decision_index}, and an independent evaluation of it is part of our
 corpus~\citep{li2026jev}.
+
+\input{figures/fig_hero_collage}
+
 
 This survey maps calibration-aware decision-making with language models, with the training stage as
 its core. We place each of \nWorks works by the stage at which calibration enters the decision
@@ -68,14 +90,13 @@ read-off after the fact, and only \nCoreTyped of the \nCore training works train
 \subsection{Related surveys and the empty cell}
 \label{sec:related}
 
-Table~\ref{tab:survey_compare} compares the \nSurveysCompared closest prior surveys on seven topics:
+Table~\ref{tab:survey_compare} (Appendix~\ref{app:surveys}) compares the \nSurveysCompared closest prior surveys on seven topics:
 confidence estimation and calibration, calibration-aware training of any kind, reinforcement learning
 whose reward is a calibration or proper-scoring-rule objective, decisions over a predefined option set,
 typed per-option decision outputs, acting on confidence, and hallucination.
 Figure~\ref{fig:survey_timeline} places them on a timeline; \nSurveysRecent of the \nSurveysCompared
 appeared from 2024 onward.
 
-\input{tables/tab_survey_compare}
 
 Calibration and uncertainty are well surveyed, and the stage view itself, which organises methods by
 where the confidence comes from, is established~\citep{li2025survey,shorinwa2025survey}; we use it as

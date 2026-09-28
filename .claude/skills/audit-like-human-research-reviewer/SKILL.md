@@ -87,3 +87,10 @@ One table, most severe first, then a count line: `N artefacts, K CLEAN, M FIX`, 
   slice labels every row from the paper's main text into a per-paper file with a quote
   (literature/contract_labels.tsv, literature/metric_labels.tsv), applied by the build. Rule: the second
   time an audit names rows of one column, stop fixing names and sweep the whole column. Class R3+R5.
+- **2026-09-28, P05, actionable tables buried and reference tables in the body:** the two tables a reader
+  could act on at once (Hugging Face repositories and a leaderboard, every row a link) sat in the last
+  appendix, while five multi-page reference tables interrupted the main text. Check (R13, layout for the
+  reader): hands-on tables (rows the reader can download, call or run) must appear as early as possible,
+  Tables 1-2 near the start of the introduction; any table longer than one page must be in the appendix,
+  numbered by its appendix letter, with a pointer at first mention. FLAG a hands-on table past page 3 or a
+  multi-page table in the main body.

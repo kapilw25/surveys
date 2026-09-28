@@ -15,9 +15,9 @@ B=os.path.join(P,"build"); D=os.path.join(P,"deliverables")
 # 2026-09-27 reviewer round: removed the 52-work representative table and the capability matrix (subsets of the landscape),
 # merged the "senses of confidence" table into the stage table, merged the three provenance tables into one, and moved the
 # two Jev tables to the appendix (A1, A2).
-LONGS=[("table1_p05","1","tables/tab_survey_compare"),("table2_p05","2","tables/tab_definitions"),
-       ("table3_p05","3","tables/tab_compare_s4"),("table5_p05","5","tables/tab_compare_contract"),
-       ("tableC1_p05","C1","tables/tab_landscape")]
+LONGS=[("tableA1_p05","A1","tables/tab_definitions"),("tableB1_p05","B1","tables/tab_survey_compare"),
+       ("tableC1_p05","C1","tables/tab_compare_s4"),("tableD1_p05","D1","tables/tab_compare_contract"),
+       ("tableF1_p05","F1","tables/tab_landscape")]
 MANIFEST=[
  ("fig1_p05","figure","1","figures/fig_hero_collage"),
  ("fig2_p05","figure","2","figures/fig_taxonomy_main"),
@@ -30,11 +30,11 @@ MANIFEST=[
  ("fig9_p05","figure","9","figures/fig_results_gallery"),
  ("fig10_p05","figure","10","figures/fig_decision_loop"),
  ("fig11_p05","figure","11","figures/fig_future_protocol"),
- ("table4_p05","table","4","tables/tab_stage_limits"),
- ("table6_p05","table","6","tables/tab_future_metrics"),
- ("tableB1_p05","table","B1","tables/tab_panel_provenance"),
- ("tableA1_p05","table","A1","tables/tab_jev_hf_ecosystem"),
- ("tableA2_p05","table","A2","tables/tab_jev_decision_index"),
+ ("table1_p05","table","1","tables/tab_jev_hf_ecosystem"),
+ ("table2_p05","table","2","tables/tab_jev_decision_index"),
+ ("table3_p05","table","3","tables/tab_stage_limits"),
+ ("table4_p05","table","4","tables/tab_future_metrics"),
+ ("tableE1_p05","table","E1","tables/tab_panel_provenance"),
 ]
 def latex(job):
     run=lambda c: subprocess.run(c,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)

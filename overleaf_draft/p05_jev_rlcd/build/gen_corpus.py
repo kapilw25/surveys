@@ -181,11 +181,11 @@ def fig4(rows,rep,surv):
  \node[box, text width=31mm, below left=7mm and -33mm of inc] (core) {{\textbf{{Core}}: {core} works with a calibration term in the model's own training loss or reward (S4)}};
  \node[box, text width=31mm, below right=7mm and -33mm of inc] (bg) {{\textbf{{Outside the core}}: {land} works: the landscape of {land-nth} at S0 to S3 and X (Table~\ref{{tab:landscape}}), and {nth} theory and analysis works (Table~\ref{{tab:compare_s4}})}};
  \node[side, right=6mm of id.north east, anchor=north west] (sv) {{\textbf{{Prior surveys}}\\ identified by search: {surv['phase1']}; by citation searching: {surv['audits']}\\ excluded as off-axis (parallel decoding, System~1 vs~2): {surv['offaxis']}\\ compared: {surv['compared']} (Table~\ref{{tab:survey_compare}})}};
- \node[side, below=4mm of sv] (mr) {{\textbf{{Model repositories}} (appendix)\\ Hub model search ``jev'', {pop['board_date']}:\\ returned: {pop['returned']};\\ name-only matches excluded: {pop['name_only']}; unverifiable: {pop['unverifiable']}\\ classified: {pop['included']} (Table~\ref{{tab:jev_hf_ecosystem}})\\[2pt] Jev Decision Index: {pop['board']} systems; ranks 1 to {pop['shown']} shown (Table~\ref{{tab:jev_decision_index}})}};
+ \node[side, below=4mm of sv] (mr) {{\textbf{{Model repositories}} (Section~1)\\ Hub model search ``jev'', {pop['board_date']}:\\ returned: {pop['returned']};\\ name-only matches excluded: {pop['name_only']}; unverifiable: {pop['unverifiable']}\\ classified: {pop['included']} (Table~\ref{{tab:jev_hf_ecosystem}})\\[2pt] Jev Decision Index: {pop['board']} systems; ranks 1 to {pop['shown']} shown (Table~\ref{{tab:jev_decision_index}})}};
  \draw[ar] (id) -- (scr); \draw[ar] (scr) -- (dup); \draw[ar] (dup) -- (inc); \draw[ar] (inc) -- (core); \draw[ar] (inc) -- (bg);
 \end{{tikzpicture}}
 \caption{{\textbf{{Corpus construction flow}}, laid out after PRISMA 2020. The main column counts the primary works; the side boxes
-count the prior surveys and, for the appendix, the model repositories and the leaderboard. Screening counts were not recorded
+count the prior surveys and, for Tables~\ref{{tab:jev_hf_ecosystem}} and~\ref{{tab:jev_decision_index}}, the model repositories and the leaderboard. Screening counts were not recorded
 and are marked rather than estimated. A work is core if and only if a calibration term enters the model's own training loss or
 reward (Table~\ref{{tab:definitions}}); theory and analyses of such training are listed with the core in Table~\ref{{tab:compare_s4}}
 but not counted in it.}}

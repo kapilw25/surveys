@@ -2,7 +2,7 @@
 \label{sec:taxonomy}
 
 The taxonomy of Figure~\ref{fig:taxonomy_main} places each work by \emph{where the calibration signal
-enters the decision pipeline}. Table~\ref{tab:definitions} gives the operational definition of each
+enters the decision pipeline}. Table~\ref{tab:definitions} (Appendix~\ref{app:definitions}) gives the operational definition of each
 stage as a pair: what counts, and the nearest case that does not. Five stages change how the confidence
 is produced: the model's own read-off (S0), a post-hoc map (S1), prompt elicitation (S2), extra
 inference (S3) and training (S4). The consumers (X) use a confidence without changing how it is
@@ -10,17 +10,15 @@ produced, and the theory and analysis works explain when training yields calibra
 rows of the table define the properties recorded for every work: the output contract, the action a
 confidence triggers when it is low, and whether a distribution-free guarantee is stated.
 
-\input{tables/tab_definitions}
 
 \subsection{The core: calibration in the training loss or reward (S4)}
 \label{sec:core}
 
 The \nCore core works share one property: a calibration term enters the model's own loss or reward, so
 that the model itself, and not a map or a procedure around it, is changed towards calibration. We group
-them by \emph{what the training signal scores}. Table~\ref{tab:compare_s4} lists every core work with
+them by \emph{what the training signal scores}. Table~\ref{tab:compare_s4} (Appendix~\ref{app:core}) lists every core work with
 its family, output contract, action, guarantee and metric.
 
-\input{tables/tab_compare_s4}
 
 \paragraph{T1: supervised calibration objectives (\nTOne works).} The model is fitted to confidence
 targets or a calibration loss, without a reward. The oldest works regularise fine-tuning for calibration
@@ -76,8 +74,7 @@ normalisation of GRPO causes overconfidence on stochastic outcomes~\citep{bereke
 \paragraph{Families crossed with the output contract.} The families differ in what they score; they
 also differ in what form the trained confidence takes. Of the \nCore core works, \nCoreScore train a
 single confidence score, \nCoreFree a free-text answer with a hedge or refusal, and \nCoreTyped the
-probability of a typed decision, \coreTypedCalPhrase{} its calibration; \nCoreOther have another
-or an undetermined contract. The typed decision appears only in T1 and T3, and abstention training (T4)
+probability of a typed decision, \coreTypedCalPhrase{} its calibration; \coreOtherPhrase{}. The typed decision appears only in T1 and T3, and abstention training (T4)
 is almost entirely free text:
 
 \begin{center}\footnotesize

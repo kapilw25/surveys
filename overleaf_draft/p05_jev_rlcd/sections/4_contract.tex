@@ -29,7 +29,7 @@ post-hoc map, where the task is classification or multiple choice and the probab
 options is calibrated directly (\nTypedReadPostCal of them report a calibration metric). \typedOtherStages{} The training core is where the typed decision is rarest: only \nCoreTyped of the \nCore core
 works train the probability of a declared option, \coreTypedCalPhrase{} its
 calibration. Nearly all the rest train a stated score (\nCoreScore works) or a free-text answer with a hedge or a
-refusal (\nCoreFree). Table~\ref{tab:compare_contract} lists every typed work and the \nConstrained
+refusal (\nCoreFree). Table~\ref{tab:compare_contract} (Appendix~\ref{app:contract}) lists every typed work and the \nConstrained
 consumers on grammar- or schema-constrained output; the constrained-output works mostly measure
 validity, speed, or accuracy under the constraint.
 
@@ -45,10 +45,9 @@ calibration of the probability it reads decides how well it works.
 interface:
 unstructured state in, a probability per declared option out. The calibration of one such hosted
 model can be checked independently: a third-party evaluation is part of our corpus~\citep{li2026jev},
-and a public leaderboard measures the calibration of its chosen option. Appendix~\ref{app:jev} profiles
-that model and the open decision models listed with it: the
+and a public leaderboard measures the calibration of its chosen option. Tables~\ref{tab:jev_hf_ecosystem} and~\ref{tab:jev_decision_index}
+profile that model and the open decision models listed with it: the
 \nHF repositories that a public model search for its name returns (Table~\ref{tab:jev_hf_ecosystem}),
 and the \nDISystems systems of a community leaderboard~\citep{multimodalart2026jevdi} that scores decision models on skill and on the
 calibration of the chosen option (Table~\ref{tab:jev_decision_index}).
 
-\input{tables/tab_compare_contract}

@@ -229,3 +229,13 @@ state file.
   artifacts (pdf/aux/log/fls/fdb/out/blg/bbl) out of the source tree; the committed eyeball PDF is
   `no_upload/build/main.pdf`. Do NOT upload `.latexmkrc` to Overleaf ($out_dir breaks its preview).
   Commit `figures/img/` (the used tiles) so a `git clean` cannot wipe the figures (it did once).
+- 2026-09-28 (P05, owner review -- reader ACTION first, reference tables last): the tables a reader can
+  act on today (model repositories with Hugging Face links, a leaderboard of downloadable systems) had been
+  parked in the last appendix, after 55 pages. Rule: (1) hands-on tables whose rows link to something the
+  reader can download, call or run go at the START of the introduction as Tables 1 and 2 (page 2 or 3),
+  introduced by a short "try first" paragraph, every row hyperlinked; place their \input BEFORE that
+  paragraph so they float onto the next page instead of being deferred behind Figure 1. (2) Every table
+  longer than one page (a longtable: definitions, survey comparison, per-work matrices) goes to the
+  appendix, one appendix per table, numbered by its appendix letter (A1, B1, ...); the main body keeps only
+  one-page tables and points to the appendix at first mention. build_paper.py fails if a longtable is
+  \input in the main body.
