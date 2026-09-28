@@ -1,0 +1,86 @@
+cite	T	reason
+an2025teaching	T5	reward is a fine-grained semantic confidence signal guiding abstention
+band2024linguistic	T3	RL reward = a simulated reader's forecast accuracy from the stated confidence
+baniharouni2025rewarding	T3	log scoring rule reward on verbalised confidence
+baniharouni2026calibrated	T3	RL calibration reward on report- and sentence-level confidence
+bereket2025uncalibrated	T0	analysis: GRPO normalisation induces overconfidence; no new objective
+blasiok2023when	T0	theory: when proper-loss optimisation yields calibration
+chaudhry2024finetuning	T1	supervised fine-tuning on uncertainty-augmented answers
+che2026abstention	T4	abstention reward; proves collapse and repairs it
+chen2024teaching	T4	trains the model to express its knowledge boundary (refuse) from internal confidence labels
+cheng2024can	T4	Idk refusal data, SFT plus preference optimisation
+cui2026rankingaware	T3	ranking-aware confidence loss inside multimodal RL, scored against correctness
+damani2025beyond	T3	Brier score reward on reasoned confidence
+eikema2025teaching	T1	SFT on hedges matched to sample consistency
+gao2026karl	T4	knowledge-boundary-aware reward for abstention
+guo2026llms	T1	post-trains verbalised confidence and an uncertainty marker on supervised targets
+hager2025uncertainty	T1	SFT on verbalised probabilities distilled from semantic sampling
+han2024enhancing	T1	fine-tunes on records of past correctness
+he2025mmboundary	T5	step-level confidence rewards for reasoning steps
+huang2025efficient	T1	distils self-consistency confidence into a single pass
+jang2025verbalized	T1	SFT on scalar confidence labels
+kalai2023calibrated	T0	theory: calibrated LMs must hallucinate
+kalai2025why	T0	analysis: binary grading rewards guessing
+kale2025knowrl	T3	self-reward scores the model's stated self-knowledge against consensus
+kang2024unfamiliar	T4	the policy is trained on I-don't-know targets (SFT) and with an abstention reward (RL), Sec. 4.2; its reward model is conservative, not calibrated (parity audit round 12)
+kapoor2024large	T1	calibration tuning on graded correct/incorrect answers
+kong2020calibrated	T1	calibration regularisers added to the fine-tuning loss
+krishnan2024enhancing	T1	uncertainty-aware causal LM loss
+leng2024taming	T2	calibrated reward modelling (PPO-M) and reward adjustment (PPO-C)
+li2024know	T4	instruction tuning for knowledge-boundary awareness and refusal
+li2025conftuner	T1	tokenised Brier loss in supervised fine-tuning
+li2026confidence	T3	Brier-style confidence reward in GRPO
+li2026orce	T3	rank-based RL reward aligning confidence order with correctness
+liang2024learning	T4	knowledge-state preference reward for honest refusal
+lin2022teaching	T1	supervised fine-tuning to state calibrated confidence
+liu2024can	T1	self-training on its own consistency signals
+liu2025c2gspg	T3	policy-gradient regulariser aligning sequence confidence with reward
+liu2026reinforcement	T3	preference optimisation ranked by metacognitive feedback on self-judgement
+liu2026think	T3	DPO and RL correcting claim-level stated confidence
+lou2024uncertaintyaware	T2	reward model outputs reward mean and variance
+ma2026decoupling	T3	separate calibration objective with its own advantage in RLVR
+ma2026distributional	T2	calibrates a process reward model's success quantiles
+mohamadi2025honesty	T4	ternary reward with an abstention frontier
+nakkiran2025trained	T0	theory: semantic calibration emerges from next-token loss
+niu2024functionallevel	T1	calibration loss over mixture-of-LoRA experts during PEFT
+pan2026tiar	T4	reweights the abstention advantage in a ternary reward
+pan2026uncertaintyaware	T2	conformal uncertainty for reward models
+park2025know	T2	quantile calibration of process reward models
+singh2026verifiable	T3	verifiable Brier rewards for probabilistic forecasting
+song2025the	T4	restores refusal under reinforcement finetuning with unanswerable data
+song2026delineating	T4	Visual-Idk refusal data, SFT plus preference optimisation
+stengeleskin2024lacie	T3	preference optimisation rewarding confidence a listener accepts only when correct
+steyvers2025generalization	T1	SFT for numeric confidence
+tan2026on	T3	characterises Brier and log-hybrid confidence rewards
+tao2024when	T3	order-preserving reward aligning stated confidence with quality
+turtel2025outcomebased	T3	outcome-based reward on forecast probabilities
+turtel2026how	T3	compares proper scoring rules as terminal RL rewards
+vanniekerk2025posttraining	T3	preference optimisation with the model's own answer confidence as reward
+wang2024blob	T1	Bayesian LoRA fine-tuning for calibration
+wang2026calibrationaware	T3	AUC surrogate for uncertainty-aware advantages in GRPO
+wang2026process	T5	process reward on confidence margins at intermediate steps
+wei2025truthrl	T4	ternary reward: correct, abstain, hallucinate
+wu2025mitigating	T3	strictly proper scoring rule rewards (abstention follows from them)
+xiao2025restoring	T1	calibration-aware fine-tuning with an ECE regulariser
+xiao2026vlcalibration	T3	RL rewarding separate visual and reasoning confidence
+xiaohu2026know	T1	SFT with self-distillation of confidence reliability
+xu2024rejection	T4	reliability reward model for refusing out-of-knowledge questions
+xu2024sayself	T3	RL reward penalising overconfident wrong answers
+xu2026dualstake	T3	confidence-dependent stake rewards
+xuan2026the	T3	RL rewarding accuracy and verbalised calibration
+xue2024ualign	T4	uncertainty features for SFT and PPO to refuse when unsure
+yaldiz2026balancing	T3	calibration-aware RLVR on decision-token probabilities
+yang2023alignment	T4	fine-tuning to answer known questions and decline others
+yang2026scaling	T3	correctness plus calibration reward
+yin2025deliberative	T3	RL under a confidence-reliability constraint
+yu2026calibrating	T5	semantic calibration reward on agreement among rollouts
+zhai2026abstainr1	T4	verifiable reward for explicit abstention
+zhang2023rtuning	T4	refusal-aware SFT data
+zhang2024selfalignment	T1	self-evaluation calibration tuning
+zhang2025direct	T1	DPO toward the model's internal confidence as target
+zhang2025grace	T1	fine-tunes a confidence token
+zhang2025lovec	T3	calibration reward for sentence-level confidence tags
+zhu2026closing	T3	calibration bonus contrasting reflection score with outcome
+zou2025thinking	T3	reward penalising unjustified high confidence
+chuang2024learning	T1	fine-tunes the model to emit a learned confidence token
+jiang2020how	T1	proposes fine-tuning-based calibration that changes the LM's own parameters, Sec. 4.1 (parity audit round 12)

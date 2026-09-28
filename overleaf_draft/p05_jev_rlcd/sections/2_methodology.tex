@@ -1,0 +1,61 @@
+\section{Survey methodology}
+\label{sec:method}
+
+\subsection{Search, deduplication and placement}
+\label{sec:search}
+
+The corpus was built from \nStreams web searches run on \searchDate, one per slice of the pipeline: the
+model's read-off and post-hoc maps (S0 and S1), prompt elicitation (S2), sampling-based and conformal
+methods (two slices of S3), training (S4), the works that act on a confidence or fix the output
+contract (X), and independent evaluations of Jev, a hosted typed-decision model released during the
+search period. The query strings and the number of records screened
+were not recorded; Figure~\ref{fig:prisma} marks those stages as not recorded rather than estimating
+them. Records were matched on arXiv identifier, DOI and normalised title: \nDup duplicates were removed
+and \nMapped records were matched to references already cited and kept, leaving \nWorks works.
+
+\input{figures/fig_prisma}
+
+\paragraph{Placement.} A work is in the corpus when its main contribution meets one of the stage
+definitions of Table~\ref{tab:definitions}: it produces, maps, elicits, samples or trains the confidence
+of a language model (S0 to S4), analyses how training changes calibration, or acts on a confidence or
+fixes the output contract (X). Each work is placed by what its main contribution changes, not by the
+task it is evaluated on, and each training-stage work was assigned to one family by reading it. A work is
+\emph{core} if and only if a calibration term enters the model's own training loss or reward; the
+\nTheory theory and analysis works are listed with the core but not counted in it, and the \nLandscape
+works at the other stages form the landscape (Appendix~\ref{app:landscape}). The per-work fields of
+Tables~\ref{tab:compare_s4} and~\ref{tab:landscape} (output contract, access, samples, guarantee,
+trained, metric, task and action) were recorded for each paper. The fields were checked against the papers in
+several review rounds and corrected where they disagreed, and a value that cannot be
+determined from the paper is marked as such rather than guessed.
+
+\paragraph{Prior surveys.} \nSurveysPhaseOne prior surveys were identified by search and the rest by
+backward citation searching from the surveys found, \nSurveys in all. \nSurveysOffAxis of them, on parallel
+and speculative decoding~\citep{xiao2023survey,li2025surveydiffusion,yu2025discrete,gwak2026accelerating,xia2024unlocking,hu2025speculative,ryu2024closer,zhou2024survey}
+and on fast versus slow reasoning~\citep{li2025system,sui2025stop}, are off the axis of this survey
+and are set aside; the remaining \nSurveysCompared are compared in Table~\ref{tab:survey_compare}. The
+marks for reinforcement learning with a calibration reward were checked in the full text or the full
+reference list of every survey.
+
+\subsection{The corpus at a glance}
+\label{sec:glance}
+
+Figure~\ref{fig:corpus_overview} summarises the corpus and Figure~\ref{fig:corpus_dist} profiles it.
+Extra inference (S3) is the largest stage, with \nSthree works, most of them conformal prediction sets,
+risk control and sampling-based uncertainty; training (S4) follows with \nSfour, and the consumers of a
+confidence (X) with \nX. Most
+methods need the model's logits or weights (\nWhite white-box works against \nBlack that work from text
+alone). Figure~\ref{fig:stage_trend} shows how recent the training stage is: \nCoreRecent of its
+\nCore works appeared from 2024 to 2026 (\nCoreRecentPct), against \nBgRecent of the \nSzeroToSthree works at
+the other stages over the same years (\nBgRecentPct).
+
+\input{figures/fig_corpus_overview}
+\input{figures/fig_corpus_dist}
+\input{figures/fig_stage_trend}
+
+Figures~\ref{fig:method_gallery} and~\ref{fig:results_gallery} show, stage by stage, how the papers
+themselves depict their methods and their results. Panels are chosen by a fixed rule and reproduced only
+from papers whose licence permits reuse; the rule, and each panel's source figure, page and licence, are
+in Table~\ref{tab:panel_provenance} (Appendix~\ref{app:provenance}).
+
+\input{figures/fig_method_gallery}
+\input{figures/fig_results_gallery}

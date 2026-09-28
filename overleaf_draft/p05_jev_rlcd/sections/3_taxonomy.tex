@@ -1,0 +1,122 @@
+\section{A taxonomy of where calibration enters}
+\label{sec:taxonomy}
+
+The taxonomy of Figure~\ref{fig:taxonomy_main} places each work by \emph{where the calibration signal
+enters the decision pipeline}. Table~\ref{tab:definitions} gives the operational definition of each
+stage as a pair: what counts, and the nearest case that does not. Five stages change how the confidence
+is produced: the model's own read-off (S0), a post-hoc map (S1), prompt elicitation (S2), extra
+inference (S3) and training (S4). The consumers (X) use a confidence without changing how it is
+produced, and the theory and analysis works explain when training yields calibration. The last three
+rows of the table define the properties recorded for every work: the output contract, the action a
+confidence triggers when it is low, and whether a distribution-free guarantee is stated.
+
+\input{tables/tab_definitions}
+
+\subsection{The core: calibration in the training loss or reward (S4)}
+\label{sec:core}
+
+The \nCore core works share one property: a calibration term enters the model's own loss or reward, so
+that the model itself, and not a map or a procedure around it, is changed towards calibration. We group
+them by \emph{what the training signal scores}. Table~\ref{tab:compare_s4} lists every core work with
+its family, output contract, action, guarantee and metric.
+
+\input{tables/tab_compare_s4}
+
+\paragraph{T1: supervised calibration objectives (\nTOne works).} The model is fitted to confidence
+targets or a calibration loss, without a reward. The oldest works regularise fine-tuning for calibration
+in and out of distribution~\citep{kong2020calibrated} or teach a model to state a calibrated numeric or
+verbal confidence~\citep{lin2022teaching}. Later work tunes on graded sets of correct and incorrect
+answers~\citep{kapoor2024large}, distils sampling-based uncertainty into a single-pass
+confidence~\citep{hager2025uncertainty,huang2025efficient}, and trains the stated confidence with a
+proper scoring rule as the loss~\citep{li2025conftuner}. One line targets calibration lost elsewhere in
+training: after preference alignment~\citep{xiao2025restoring} or after reinforcement
+learning~\citep{xiaohu2026know}.
+
+\paragraph{T2: reward-model calibration (\nTTwo works).} The calibrated model is a reward model, usually the one in
+the training loop. Calibrated reward modelling counters the overconfidence that preference optimisation
+induces~\citep{leng2024taming}; other works expose the reward model's own uncertainty as a
+variance~\citep{lou2024uncertaintyaware} or calibrate process reward models by quantile regression, here to set inference compute per
+instance~\citep{park2025know}. One reward-model method adds conformal
+bounds~\citep{pan2026uncertaintyaware}; it is the only core work that states a distribution-free
+guarantee.
+
+\paragraph{T3: calibration rewards on the stated confidence (\nTThree works).} A reward or preference
+scores the confidence the model states against the outcome. This is the largest family and, with T5, the newest:
+\nTThreeRecent of its \nTThree works appeared in 2025 or 2026, \nTThreeTwentySix of them in 2026. The
+rewards include the logarithmic scoring rule~\citep{baniharouni2025rewarding}, a Brier term added to the
+correctness reward~\citep{damani2025beyond}, and rewards that let a simulated reader make calibrated
+forecasts~\citep{band2024linguistic}. Later work asks which confidence rewards cannot be
+hacked~\citep{tan2026on}, compares proper scoring rules as terminal rewards for
+forecasters~\citep{turtel2026how}, separates the reasoning and calibration objectives to avoid
+gradient conflict~\citep{ma2026decoupling}, and adjusts the probabilities of decision tokens
+directly~\citep{yaldiz2026balancing}. Ranking-based confidence rewards~\citep{wang2026calibrationaware}
+target discrimination as well as calibration.
+
+\paragraph{T4: abstention and refusal training (\nTFour works).} The signal targets the action: the model
+is trained, by supervision or by reward, to abstain when it does not know. Early work builds refusal-aware
+fine-tuning data from the questions the model gets wrong~\citep{zhang2023rtuning,yang2023alignment}.
+Reinforcement-learning variants use a ternary reward that scores a correct answer above an abstention
+and an abstention above an error~\citep{wei2025truthrl,mohamadi2025honesty}, add clarification after a
+refusal~\citep{zhai2026abstainr1}, or derive the reward from the model's knowledge
+boundary~\citep{gao2026karl}. The family also carries a warning: error-penalised abstention rewards can
+collapse a KL-anchored policy to refusing everything~\citep{che2026abstention}.
+
+\paragraph{T5: process- and meaning-level confidence rewards (\nTFive works).} The confidence reward is
+given per reasoning step~\citep{he2025mmboundary,wang2026process} or over answers that are equivalent in
+meaning~\citep{an2025teaching,yu2026calibrating}, rather than once per final answer.
+
+\paragraph{Theory and analysis (\nTheory works).} These works explain when training yields calibration
+and are not counted in the core. Local optimality of a proper loss implies smooth
+calibration~\citep{blasiok2023when}; a calibrated language model must hallucinate arbitrary facts at a rate close to the
+fraction of such facts seen exactly once in training~\citep{kalai2023calibrated}, and binary-graded training and evaluation
+reward guessing~\citep{kalai2025why}. Calibration that emerges from next-token training can break under
+reinforcement-learning tuning~\citep{nakkiran2025trained}, and the group standard-deviation
+normalisation of GRPO causes overconfidence on stochastic outcomes~\citep{bereket2025uncalibrated}.
+
+\paragraph{Families crossed with the output contract.} The families differ in what they score; they
+also differ in what form the trained confidence takes. Of the \nCore core works, \nCoreScore train a
+single confidence score, \nCoreFree a free-text answer with a hedge or refusal, and \nCoreTyped the
+probability of a typed decision, \coreTypedCalPhrase{} its calibration; \nCoreOther have another
+or an undetermined contract. The typed decision appears only in T1 and T3, and abstention training (T4)
+is almost entirely free text:
+
+\begin{center}\footnotesize
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Family & Score & Free text & Typed & Other & All \\
+\midrule
+T1 supervised calibration objectives & \nTOneScore & \nTOneFree & \nTOneTyped & \nTOneOther & \nTOne \\
+T2 reward-model calibration & \nTTwoScore & \nTTwoFree & \nTTwoTyped & \nTTwoOther & \nTTwo \\
+T3 calibration rewards on the stated confidence & \nTThreeScore & \nTThreeFree & \nTThreeTyped & \nTThreeOther & \nTThree \\
+T4 abstention and refusal training & \nTFourScore & \nTFourFree & \nTFourTyped & \nTFourOther & \nTFour \\
+T5 process- and meaning-level confidence rewards & \nTFiveScore & \nTFiveFree & \nTFiveTyped & \nTFiveOther & \nTFive \\
+\midrule
+All core works & \nCoreScore & \nCoreFree & \nCoreTyped & \nCoreOther & \nCore \\
+\bottomrule
+\end{tabular}\\[2pt]
+{\scriptsize Other: a prediction set, or a contract that could not be determined from the paper.}
+\end{center}
+
+\noindent The action recorded for a
+core work is most often none (\nCoreNoAction works): the trained confidence is reported with the answer,
+and the rule that would act on it is left to the user. Abstention is the exception, because the T4
+family trains the action itself (\nCoreAbstain core works abstain).
+
+\subsection{The background stages and the consumers}
+\label{sec:background}
+
+\input{tables/tab_stage_limits}
+
+The stages outside the core are organised in the existing surveys~\citep{li2025survey,shorinwa2025survey}.
+Table~\ref{tab:stage_limits} compares them with the core on what each yields, costs, guarantees and gets
+wrong, and Table~\ref{tab:landscape} (Appendix~\ref{app:landscape}) lists all \nLandscape works.
+
+
+The read-off (S0, \nSzero works) needs token probabilities; post-hoc maps (S1, \nSone works) add
+temperature scaling, binning~\citep{guo2017calibration} and probes on hidden
+states~\citep{azaria2023internal}; prompt elicitation (S2, \nStwo works) works from text
+alone~\citep{tian2023just}. Extra inference (S3, \nSthree works) samples several answers and measures
+their agreement~\citep{wang2022selfconsistency,farquhar2024semantic}, or calibrates a set or a threshold
+with a conformal or risk-control guarantee~\citep{campos2024conformal}; \nGuarSthree of the \nGuar works
+that state a guarantee sit here. The consumers (X, \nX works) route, defer, abstain, constrain decoding,
+or study how people rely on a stated confidence.

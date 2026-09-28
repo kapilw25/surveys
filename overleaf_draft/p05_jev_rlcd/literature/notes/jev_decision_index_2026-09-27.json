@@ -1,0 +1,5047 @@
+{
+ "source": "https://multimodalart-jev-decision-index.static.hf.space/data/index.json",
+ "generated_utc": "2026-09-27T03:42:13+00:00",
+ "release": "Decision Index 0.2.1",
+ "panel_benchmarks": 38,
+ "requests": 120340,
+ "categories": 5,
+ "calibration_benchmarks": 32,
+ "calibration_sample_one_in": 6,
+ "calibration_note": "32 benchmarks with a per-field right or wrong answer (ToolRet, BRIGHT, RouterBench and ForecastBench excluded), each weighted equally; a 1-in-6 sample of requests; confidence is the probability placed on the chosen option. Rows an entrant trained on count as wrong here too.",
+ "jev_version": "jev-1.13.0",
+ "hardware": "1 x NVIDIA RTX PRO 6000",
+ "systems": [
+  {
+   "name": "Jev (TypeSafe, hosted)",
+   "hosted": true,
+   "skill": 57.91,
+   "ece": 0.074,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0002,
+     "conf": 0.082,
+     "acc": 0.4
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0187,
+     "conf": 0.1649,
+     "acc": 0.0998
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0312,
+     "conf": 0.2424,
+     "acc": 0.2013
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0275,
+     "conf": 0.3493,
+     "acc": 0.3792
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0317,
+     "conf": 0.4512,
+     "acc": 0.3783
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0824,
+     "conf": 0.5464,
+     "acc": 0.4796
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0808,
+     "conf": 0.6436,
+     "acc": 0.5217
+    },
+    {
+     "lo": 0.7,
+     "w": 0.085,
+     "conf": 0.7465,
+     "acc": 0.5904
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1037,
+     "conf": 0.8488,
+     "acc": 0.708
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5388,
+     "conf": 0.9808,
+     "acc": 0.9342
+    }
+   ],
+   "base": null,
+   "kind": "hosted API",
+   "params": null,
+   "weights_url": null,
+   "code_url": null,
+   "link": "https://typesafe.ai/"
+  },
+  {
+   "name": "Surogate Rune 26B-A4B v3 [bf16]",
+   "hosted": false,
+   "skill": 57.44,
+   "ece": 0.1196,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0001,
+     "conf": 0.0918,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0063,
+     "conf": 0.1638,
+     "acc": 0.0665
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0109,
+     "conf": 0.2533,
+     "acc": 0.1317
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0224,
+     "conf": 0.3525,
+     "acc": 0.2547
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0307,
+     "conf": 0.454,
+     "acc": 0.3172
+    },
+    {
+     "lo": 0.5,
+     "w": 0.059,
+     "conf": 0.5486,
+     "acc": 0.422
+    },
+    {
+     "lo": 0.6,
+     "w": 0.055,
+     "conf": 0.6485,
+     "acc": 0.4686
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0684,
+     "conf": 0.7551,
+     "acc": 0.5358
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0918,
+     "conf": 0.8543,
+     "acc": 0.6461
+    },
+    {
+     "lo": 0.9,
+     "w": 0.6553,
+     "conf": 0.9819,
+     "acc": 0.8906
+    }
+   ],
+   "base": "google/gemma-4-26B-A4B-it",
+   "kind": "full fine-tune",
+   "params": 25805936206,
+   "weights_url": "https://huggingface.co/surogate/rune-26b-a4b-GGUF",
+   "code_url": "https://github.com/invergent-ai/surogate",
+   "link": "https://huggingface.co/surogate/rune-26b-a4b-GGUF"
+  },
+  {
+   "name": "Decider chat \u00b7 Gemma-4-31B",
+   "hosted": false,
+   "skill": 57.33,
+   "ece": 0.0471,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0007,
+     "conf": 0.0908,
+     "acc": 0.0511
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0074,
+     "conf": 0.1552,
+     "acc": 0.1275
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0164,
+     "conf": 0.2571,
+     "acc": 0.1647
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0302,
+     "conf": 0.3557,
+     "acc": 0.2335
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0488,
+     "conf": 0.4538,
+     "acc": 0.3905
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0689,
+     "conf": 0.5529,
+     "acc": 0.5073
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0853,
+     "conf": 0.651,
+     "acc": 0.5212
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1592,
+     "conf": 0.7577,
+     "acc": 0.6701
+    },
+    {
+     "lo": 0.8,
+     "w": 0.3135,
+     "conf": 0.848,
+     "acc": 0.8283
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2696,
+     "conf": 0.9374,
+     "acc": 0.9216
+    }
+   ],
+   "base": "google/gemma-4-31B",
+   "kind": "inference technique",
+   "params": 32682372656,
+   "weights_url": null,
+   "code_url": "https://github.com/Mapika/decider",
+   "link": "https://github.com/Mapika/decider"
+  },
+  {
+   "name": "AutoJev-27B",
+   "hosted": false,
+   "skill": 56.4,
+   "ece": 0.0178,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.008,
+     "conf": 0.0763,
+     "acc": 0.2394
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0312,
+     "conf": 0.1521,
+     "acc": 0.219
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0333,
+     "conf": 0.2529,
+     "acc": 0.2714
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0422,
+     "conf": 0.351,
+     "acc": 0.3724
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0538,
+     "conf": 0.4507,
+     "acc": 0.4205
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1138,
+     "conf": 0.5491,
+     "acc": 0.5165
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1021,
+     "conf": 0.6481,
+     "acc": 0.6122
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1086,
+     "conf": 0.7501,
+     "acc": 0.7242
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1218,
+     "conf": 0.8513,
+     "acc": 0.8502
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3852,
+     "conf": 0.9626,
+     "acc": 0.9602
+    }
+   ],
+   "base": "Qwen/Qwen3.8-27B",
+   "kind": "full fine-tune",
+   "params": 27781427952,
+   "weights_url": "https://huggingface.co/denis-pplx/autojev-27b",
+   "code_url": "https://github.com/denis-pplx/autojev",
+   "link": "https://huggingface.co/denis-pplx/autojev-27b"
+  },
+  {
+   "name": "simple-jev \u00b7 Qwen3.8-27B (featherless)",
+   "hosted": false,
+   "skill": 55.74,
+   "ece": 0.113,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0045,
+     "conf": 0.0736,
+     "acc": 0.0638
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0112,
+     "conf": 0.1491,
+     "acc": 0.1851
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0127,
+     "conf": 0.2513,
+     "acc": 0.2158
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0275,
+     "conf": 0.3543,
+     "acc": 0.3127
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0461,
+     "conf": 0.4542,
+     "acc": 0.3266
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0789,
+     "conf": 0.5525,
+     "acc": 0.446
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0686,
+     "conf": 0.65,
+     "acc": 0.4865
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0789,
+     "conf": 0.7502,
+     "acc": 0.5498
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0913,
+     "conf": 0.8558,
+     "acc": 0.6403
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5804,
+     "conf": 0.9836,
+     "acc": 0.8975
+    }
+   ],
+   "base": "Qwen/Qwen3.8-27B",
+   "kind": "inference technique",
+   "params": 27781427952,
+   "weights_url": null,
+   "code_url": "https://github.com/featherless-ai/simple-jev",
+   "link": "https://github.com/featherless-ai/simple-jev"
+  },
+  {
+   "name": "Jebadiah 27B",
+   "hosted": false,
+   "skill": 54.67,
+   "ece": 0.014,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0171,
+     "conf": 0.0755,
+     "acc": 0.0734
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0317,
+     "conf": 0.1452,
+     "acc": 0.1556
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0272,
+     "conf": 0.2541,
+     "acc": 0.2635
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0472,
+     "conf": 0.3499,
+     "acc": 0.3063
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0542,
+     "conf": 0.4522,
+     "acc": 0.4446
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1048,
+     "conf": 0.5474,
+     "acc": 0.4994
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0954,
+     "conf": 0.6503,
+     "acc": 0.6122
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1192,
+     "conf": 0.7518,
+     "acc": 0.757
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1555,
+     "conf": 0.8537,
+     "acc": 0.8579
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3478,
+     "conf": 0.9561,
+     "acc": 0.9588
+    }
+   ],
+   "base": "Qwen/Qwen3.8-27B",
+   "kind": "LoRA",
+   "params": 27781427952,
+   "weights_url": "https://huggingface.co/frontier-infra/jebadiah-27b",
+   "code_url": "https://github.com/getainode/jebadiah",
+   "link": "https://huggingface.co/frontier-infra/jebadiah-27b"
+  },
+  {
+   "name": "reflex 27B [FP8 \u00b7 wide choice]",
+   "hosted": false,
+   "skill": 52.16,
+   "ece": 0.0242,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0026,
+     "conf": 0.0819,
+     "acc": 0.1104
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0152,
+     "conf": 0.1597,
+     "acc": 0.2007
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0259,
+     "conf": 0.2518,
+     "acc": 0.2239
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0504,
+     "conf": 0.3503,
+     "acc": 0.3233
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0712,
+     "conf": 0.4535,
+     "acc": 0.3707
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1404,
+     "conf": 0.5491,
+     "acc": 0.5409
+    },
+    {
+     "lo": 0.6,
+     "w": 0.128,
+     "conf": 0.6498,
+     "acc": 0.6055
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1149,
+     "conf": 0.7502,
+     "acc": 0.7531
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1266,
+     "conf": 0.8519,
+     "acc": 0.8307
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3249,
+     "conf": 0.9635,
+     "acc": 0.9461
+    }
+   ],
+   "base": "Qwen/Qwen3.8-27B",
+   "kind": "inference technique",
+   "params": 27781427952,
+   "weights_url": null,
+   "code_url": "https://github.com/kshetrajna12/reflex",
+   "link": "https://github.com/kshetrajna12/reflex"
+  },
+  {
+   "name": "Decider chat \u00b7 Qwen3.6-27B",
+   "hosted": false,
+   "skill": 51.35,
+   "ece": 0.0209,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0178,
+     "conf": 0.0629,
+     "acc": 0.1578
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0226,
+     "conf": 0.1531,
+     "acc": 0.1685
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0328,
+     "conf": 0.2495,
+     "acc": 0.2453
+    },
+    {
+     "lo": 0.3,
+     "w": 0.05,
+     "conf": 0.3558,
+     "acc": 0.3247
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0754,
+     "conf": 0.4503,
+     "acc": 0.4396
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1335,
+     "conf": 0.5491,
+     "acc": 0.5344
+    },
+    {
+     "lo": 0.6,
+     "w": 0.133,
+     "conf": 0.6521,
+     "acc": 0.6622
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1458,
+     "conf": 0.7518,
+     "acc": 0.7561
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1809,
+     "conf": 0.8513,
+     "acc": 0.8858
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2083,
+     "conf": 0.9442,
+     "acc": 0.9741
+    }
+   ],
+   "base": "Qwen/Qwen3.6-27B",
+   "kind": "inference technique",
+   "params": 27781427952,
+   "weights_url": null,
+   "code_url": "https://github.com/Mapika/decider",
+   "link": "https://github.com/Mapika/decider"
+  },
+  {
+   "name": "Winnow-12B [Q8_0]",
+   "hosted": false,
+   "skill": 50.02,
+   "ece": 0.1679,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0035,
+     "conf": 0.0806,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0152,
+     "conf": 0.1522,
+     "acc": 0.1179
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0227,
+     "conf": 0.2538,
+     "acc": 0.1849
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0276,
+     "conf": 0.3543,
+     "acc": 0.2116
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0335,
+     "conf": 0.4537,
+     "acc": 0.2994
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0578,
+     "conf": 0.5508,
+     "acc": 0.435
+    },
+    {
+     "lo": 0.6,
+     "w": 0.054,
+     "conf": 0.6514,
+     "acc": 0.4727
+    },
+    {
+     "lo": 0.7,
+     "w": 0.076,
+     "conf": 0.7509,
+     "acc": 0.4814
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1041,
+     "conf": 0.8558,
+     "acc": 0.553
+    },
+    {
+     "lo": 0.9,
+     "w": 0.6056,
+     "conf": 0.976,
+     "acc": 0.8306
+    }
+   ],
+   "base": "google/gemma-4-12B",
+   "kind": "LoRA",
+   "params": 11959730224,
+   "weights_url": "https://huggingface.co/EldanRing/Winnow-12B",
+   "code_url": "https://github.com/EldanRing/winnow-inference",
+   "link": "https://huggingface.co/EldanRing/Winnow-12B"
+  },
+  {
+   "name": "JoshuaSP diffusiongemma (open-jev)",
+   "hosted": false,
+   "skill": 49.47,
+   "ece": 0.2155,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.002,
+     "conf": 0.0894,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0148,
+     "conf": 0.1478,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0121,
+     "conf": 0.2486,
+     "acc": 0.0881
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0154,
+     "conf": 0.3542,
+     "acc": 0.1417
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0191,
+     "conf": 0.4495,
+     "acc": 0.1841
+    },
+    {
+     "lo": 0.5,
+     "w": 0.037,
+     "conf": 0.5496,
+     "acc": 0.4329
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0384,
+     "conf": 0.6459,
+     "acc": 0.4039
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0435,
+     "conf": 0.7526,
+     "acc": 0.4219
+    },
+    {
+     "lo": 0.8,
+     "w": 0.067,
+     "conf": 0.8528,
+     "acc": 0.5294
+    },
+    {
+     "lo": 0.9,
+     "w": 0.7507,
+     "conf": 0.9878,
+     "acc": 0.7837
+    }
+   ],
+   "base": "google/diffusiongemma-26B-A4B-it",
+   "kind": "inference technique",
+   "params": 25823778864,
+   "weights_url": null,
+   "code_url": "https://github.com/JoshuaSP/open-jev",
+   "link": "https://github.com/JoshuaSP/open-jev"
+  },
+  {
+   "name": "Jevfire",
+   "hosted": false,
+   "skill": 49.37,
+   "ece": 0.0521,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0169,
+     "conf": 0.171,
+     "acc": 0.0521
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0335,
+     "conf": 0.2552,
+     "acc": 0.1665
+    },
+    {
+     "lo": 0.3,
+     "w": 0.045,
+     "conf": 0.3573,
+     "acc": 0.2594
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0687,
+     "conf": 0.4518,
+     "acc": 0.4308
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1472,
+     "conf": 0.5496,
+     "acc": 0.5063
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1004,
+     "conf": 0.6485,
+     "acc": 0.5991
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1045,
+     "conf": 0.7494,
+     "acc": 0.7231
+    },
+    {
+     "lo": 0.8,
+     "w": 0.105,
+     "conf": 0.8542,
+     "acc": 0.7528
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3788,
+     "conf": 0.9739,
+     "acc": 0.9302
+    }
+   ],
+   "base": "Qwen/Qwen3.8-27B",
+   "kind": "inference technique",
+   "params": 27781427952,
+   "weights_url": null,
+   "code_url": "https://github.com/kikoncuo/jevfire",
+   "link": "https://github.com/kikoncuo/jevfire"
+  },
+  {
+   "name": "Decider 35B-A3B [NVFP4]",
+   "hosted": false,
+   "skill": 47.11,
+   "ece": 0.0226,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0446,
+     "conf": 0.0708,
+     "acc": 0.0496
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0314,
+     "conf": 0.1412,
+     "acc": 0.1385
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0297,
+     "conf": 0.2567,
+     "acc": 0.3389
+    },
+    {
+     "lo": 0.3,
+     "w": 0.063,
+     "conf": 0.3522,
+     "acc": 0.3491
+    },
+    {
+     "lo": 0.4,
+     "w": 0.073,
+     "conf": 0.449,
+     "acc": 0.4597
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1323,
+     "conf": 0.5494,
+     "acc": 0.5848
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1206,
+     "conf": 0.6518,
+     "acc": 0.6765
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1057,
+     "conf": 0.7497,
+     "acc": 0.7962
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1065,
+     "conf": 0.8493,
+     "acc": 0.8918
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2932,
+     "conf": 0.9704,
+     "acc": 0.9742
+    }
+   ],
+   "base": "Qwen/Qwen3.5-35B-A3B-Base",
+   "kind": "full fine-tune",
+   "params": 35951822704,
+   "weights_url": "https://huggingface.co/Mapika/decider-35b-a3b-nvfp4",
+   "code_url": null,
+   "link": "https://huggingface.co/Mapika/decider-35b-a3b-nvfp4"
+  },
+  {
+   "name": "JPT-9B",
+   "hosted": false,
+   "skill": 46.89,
+   "ece": 0.0773,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0283,
+     "conf": 0.0775,
+     "acc": 0.045
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0278,
+     "conf": 0.1411,
+     "acc": 0.116
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0188,
+     "conf": 0.255,
+     "acc": 0.1374
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0319,
+     "conf": 0.3484,
+     "acc": 0.3028
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0543,
+     "conf": 0.4553,
+     "acc": 0.3276
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0939,
+     "conf": 0.5475,
+     "acc": 0.4734
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0999,
+     "conf": 0.6509,
+     "acc": 0.5436
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1056,
+     "conf": 0.755,
+     "acc": 0.6422
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1439,
+     "conf": 0.8559,
+     "acc": 0.7612
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3956,
+     "conf": 0.966,
+     "acc": 0.9107
+    }
+   ],
+   "base": "Qwen/Qwen3.5-9B-Base",
+   "kind": "LoRA",
+   "params": 9653104368,
+   "weights_url": "https://huggingface.co/kirp/jpt-9b",
+   "code_url": "https://github.com/tic-top/llm2jev",
+   "link": "https://huggingface.co/kirp/jpt-9b"
+  },
+  {
+   "name": "Decision 1.0 Lux",
+   "hosted": false,
+   "skill": 43.49,
+   "ece": 0.076,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0454,
+     "conf": 0.0528,
+     "acc": 0.171
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0161,
+     "conf": 0.1402,
+     "acc": 0.1256
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0165,
+     "conf": 0.253,
+     "acc": 0.3295
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0403,
+     "conf": 0.3551,
+     "acc": 0.2816
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0532,
+     "conf": 0.4524,
+     "acc": 0.3299
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1179,
+     "conf": 0.5502,
+     "acc": 0.4866
+    },
+    {
+     "lo": 0.6,
+     "w": 0.109,
+     "conf": 0.6513,
+     "acc": 0.5688
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1113,
+     "conf": 0.7501,
+     "acc": 0.6423
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1229,
+     "conf": 0.8538,
+     "acc": 0.7504
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3675,
+     "conf": 0.9655,
+     "acc": 0.9153
+    }
+   ],
+   "base": "Qwen/Qwen3.5-9B-Base",
+   "kind": "head / adapter",
+   "params": 9653104368,
+   "weights_url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Lux-9B",
+   "code_url": null,
+   "link": "https://huggingface.co/llm-semantic-router/Decision-1.0-Lux-9B"
+  },
+  {
+   "name": "Xor",
+   "hosted": false,
+   "skill": 41.48,
+   "ece": 0.0149,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0001,
+     "conf": 0.0999,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0105,
+     "conf": 0.1611,
+     "acc": 0.1752
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0202,
+     "conf": 0.25,
+     "acc": 0.243
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0465,
+     "conf": 0.3535,
+     "acc": 0.2913
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0642,
+     "conf": 0.4506,
+     "acc": 0.3605
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1549,
+     "conf": 0.5488,
+     "acc": 0.53
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1471,
+     "conf": 0.6513,
+     "acc": 0.6501
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1426,
+     "conf": 0.7497,
+     "acc": 0.7482
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1517,
+     "conf": 0.8494,
+     "acc": 0.8602
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2622,
+     "conf": 0.9533,
+     "acc": 0.9572
+    }
+   ],
+   "base": "Qwen/Qwen3.6-35B-A3B",
+   "kind": "full fine-tune",
+   "params": 35951822704,
+   "weights_url": "https://huggingface.co/juspay/xor",
+   "code_url": null,
+   "link": "https://huggingface.co/juspay/xor"
+  },
+  {
+   "name": "Decider 4B",
+   "hosted": false,
+   "skill": 40.7,
+   "ece": 0.0837,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0381,
+     "conf": 0.0703,
+     "acc": 0.0666
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0214,
+     "conf": 0.1363,
+     "acc": 0.1303
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0163,
+     "conf": 0.2568,
+     "acc": 0.2542
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0444,
+     "conf": 0.3544,
+     "acc": 0.2521
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0582,
+     "conf": 0.4494,
+     "acc": 0.3416
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1145,
+     "conf": 0.5487,
+     "acc": 0.471
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1007,
+     "conf": 0.6494,
+     "acc": 0.5228
+    },
+    {
+     "lo": 0.7,
+     "w": 0.101,
+     "conf": 0.752,
+     "acc": 0.6267
+    },
+    {
+     "lo": 0.8,
+     "w": 0.12,
+     "conf": 0.8523,
+     "acc": 0.7324
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3853,
+     "conf": 0.9716,
+     "acc": 0.9095
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "full fine-tune",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/Mapika/decider-4b",
+   "code_url": "https://github.com/Mapika/decider",
+   "link": "https://huggingface.co/Mapika/decider-4b"
+  },
+  {
+   "name": "Jev-Omni",
+   "hosted": false,
+   "skill": 40.53,
+   "ece": 0.161,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0172,
+     "conf": 0.0763,
+     "acc": 0.0247
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0431,
+     "conf": 0.1469,
+     "acc": 0.0401
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0309,
+     "conf": 0.2471,
+     "acc": 0.1333
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0367,
+     "conf": 0.353,
+     "acc": 0.2692
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0414,
+     "conf": 0.4507,
+     "acc": 0.2998
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0749,
+     "conf": 0.5541,
+     "acc": 0.3944
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0764,
+     "conf": 0.649,
+     "acc": 0.4738
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0725,
+     "conf": 0.7527,
+     "acc": 0.5175
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0979,
+     "conf": 0.8536,
+     "acc": 0.577
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5091,
+     "conf": 0.9796,
+     "acc": 0.8357
+    }
+   ],
+   "base": "google/gemma-4-12B",
+   "kind": "LoRA + head",
+   "params": 11959730224,
+   "weights_url": "https://huggingface.co/akhilaaa3/Jev-Omni",
+   "code_url": null,
+   "link": "https://huggingface.co/akhilaaa3/Jev-Omni"
+  },
+  {
+   "name": "djev",
+   "hosted": false,
+   "skill": 40.28,
+   "ece": 0.2124,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0031,
+     "conf": 0.1634,
+     "acc": 0.0371
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0141,
+     "conf": 0.258,
+     "acc": 0.1395
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0258,
+     "conf": 0.3538,
+     "acc": 0.1978
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0362,
+     "conf": 0.4563,
+     "acc": 0.2261
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0682,
+     "conf": 0.549,
+     "acc": 0.4223
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0757,
+     "conf": 0.6528,
+     "acc": 0.4607
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0773,
+     "conf": 0.7524,
+     "acc": 0.4869
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1148,
+     "conf": 0.8541,
+     "acc": 0.5321
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5849,
+     "conf": 0.9774,
+     "acc": 0.7767
+    }
+   ],
+   "base": "google/diffusiongemma-26B-A4B-it",
+   "kind": "inference technique",
+   "params": 25823778864,
+   "weights_url": null,
+   "code_url": "https://github.com/Davipar/djev-dev",
+   "link": "https://github.com/Davipar/djev-dev"
+  },
+  {
+   "name": "Winnow-E4B [Q8_0]",
+   "hosted": false,
+   "skill": 39.89,
+   "ece": 0.058,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0284,
+     "conf": 0.063,
+     "acc": 0.0211
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0309,
+     "conf": 0.1529,
+     "acc": 0.132
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0331,
+     "conf": 0.2598,
+     "acc": 0.2652
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0523,
+     "conf": 0.3491,
+     "acc": 0.2461
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0502,
+     "conf": 0.4511,
+     "acc": 0.3741
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1308,
+     "conf": 0.5503,
+     "acc": 0.4842
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1353,
+     "conf": 0.6511,
+     "acc": 0.5491
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1184,
+     "conf": 0.7494,
+     "acc": 0.6597
+    },
+    {
+     "lo": 0.8,
+     "w": 0.137,
+     "conf": 0.8518,
+     "acc": 0.799
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2836,
+     "conf": 0.9583,
+     "acc": 0.9358
+    }
+   ],
+   "base": "google/gemma-4-E4B",
+   "kind": "LoRA",
+   "params": 7996156490,
+   "weights_url": "https://huggingface.co/EldanRing/Winnow-E4B",
+   "code_url": "https://github.com/EldanRing/winnow-inference",
+   "link": "https://huggingface.co/EldanRing/Winnow-E4B"
+  },
+  {
+   "name": "Hopper",
+   "hosted": false,
+   "skill": 39.67,
+   "ece": 0.0828,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0005,
+     "conf": 0.0948,
+     "acc": 0.0707
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0181,
+     "conf": 0.1695,
+     "acc": 0.1063
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0372,
+     "conf": 0.2517,
+     "acc": 0.1168
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0466,
+     "conf": 0.3533,
+     "acc": 0.2106
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0658,
+     "conf": 0.4557,
+     "acc": 0.2813
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1034,
+     "conf": 0.5487,
+     "acc": 0.479
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1156,
+     "conf": 0.6518,
+     "acc": 0.5189
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1183,
+     "conf": 0.7519,
+     "acc": 0.6223
+    },
+    {
+     "lo": 0.8,
+     "w": 0.2245,
+     "conf": 0.8541,
+     "acc": 0.7661
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2699,
+     "conf": 0.9338,
+     "acc": 0.9372
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "LoRA",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/HopitAI/hopper",
+   "code_url": "https://github.com/hopit-ai/hopper",
+   "link": "https://huggingface.co/HopitAI/hopper"
+  },
+  {
+   "name": "Bespoke Nimble 9B v2",
+   "hosted": false,
+   "skill": 39.57,
+   "ece": 0.024,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0464,
+     "conf": 0.066,
+     "acc": 0.1059
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0274,
+     "conf": 0.1453,
+     "acc": 0.2065
+    },
+    {
+     "lo": 0.2,
+     "w": 0.032,
+     "conf": 0.2583,
+     "acc": 0.3046
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0625,
+     "conf": 0.3532,
+     "acc": 0.3399
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0698,
+     "conf": 0.4535,
+     "acc": 0.4014
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1575,
+     "conf": 0.5492,
+     "acc": 0.5765
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1215,
+     "conf": 0.6511,
+     "acc": 0.6422
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1332,
+     "conf": 0.7523,
+     "acc": 0.7196
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1762,
+     "conf": 0.8557,
+     "acc": 0.8434
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1736,
+     "conf": 0.9348,
+     "acc": 0.9201
+    }
+   ],
+   "base": "Qwen/Qwen3.5-9B-Base",
+   "kind": "LoRA",
+   "params": 9653104368,
+   "weights_url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v2",
+   "code_url": "https://github.com/bespokelabsai/nimble",
+   "link": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v2"
+  },
+  {
+   "name": "JevK5",
+   "hosted": false,
+   "skill": 38.81,
+   "ece": 0.0268,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0023,
+     "conf": 0.0875,
+     "acc": 0.0664
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0343,
+     "conf": 0.1567,
+     "acc": 0.088
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0361,
+     "conf": 0.2467,
+     "acc": 0.1751
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0639,
+     "conf": 0.3512,
+     "acc": 0.2823
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0757,
+     "conf": 0.4509,
+     "acc": 0.3824
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1489,
+     "conf": 0.5467,
+     "acc": 0.5456
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1424,
+     "conf": 0.6469,
+     "acc": 0.6422
+    },
+    {
+     "lo": 0.7,
+     "w": 0.124,
+     "conf": 0.7492,
+     "acc": 0.7103
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1642,
+     "conf": 0.8497,
+     "acc": 0.8333
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2081,
+     "conf": 0.9474,
+     "acc": 0.9291
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "LoRA",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/alibiserikbay/JevK5",
+   "code_url": "https://github.com/allebee/jevk5",
+   "link": "https://huggingface.co/alibiserikbay/JevK5"
+  },
+  {
+   "name": "lev",
+   "hosted": false,
+   "skill": 38.54,
+   "ece": 0.0638,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.032,
+     "conf": 0.0479,
+     "acc": 0.078
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0261,
+     "conf": 0.1494,
+     "acc": 0.1772
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0256,
+     "conf": 0.2554,
+     "acc": 0.2821
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0595,
+     "conf": 0.3597,
+     "acc": 0.3631
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0724,
+     "conf": 0.4517,
+     "acc": 0.4413
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1393,
+     "conf": 0.5441,
+     "acc": 0.5627
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0971,
+     "conf": 0.6497,
+     "acc": 0.5451
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1044,
+     "conf": 0.7524,
+     "acc": 0.6601
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1592,
+     "conf": 0.8537,
+     "acc": 0.735
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2842,
+     "conf": 0.9513,
+     "acc": 0.8839
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "LoRA + head",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/interfaze-ai/lev",
+   "code_url": "https://github.com/Abhinavexists/lev",
+   "link": "https://huggingface.co/interfaze-ai/lev"
+  },
+  {
+   "name": "Kev 9B",
+   "hosted": false,
+   "skill": 38.48,
+   "ece": 0.1378,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0133,
+     "conf": 0.0886,
+     "acc": 0.0389
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0322,
+     "conf": 0.138,
+     "acc": 0.0733
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0163,
+     "conf": 0.2498,
+     "acc": 0.1809
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0303,
+     "conf": 0.3541,
+     "acc": 0.2577
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0371,
+     "conf": 0.4538,
+     "acc": 0.3623
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0938,
+     "conf": 0.5482,
+     "acc": 0.4134
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0732,
+     "conf": 0.65,
+     "acc": 0.4996
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0892,
+     "conf": 0.7519,
+     "acc": 0.5815
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1137,
+     "conf": 0.8548,
+     "acc": 0.6541
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5008,
+     "conf": 0.9772,
+     "acc": 0.8454
+    }
+   ],
+   "base": "Qwen/Qwen3.5-9B-Base",
+   "kind": "LoRA + head",
+   "params": 9653104368,
+   "weights_url": "https://huggingface.co/jaredpalmer/kev-9b",
+   "code_url": "https://github.com/jaredpalmer/kev",
+   "link": "https://huggingface.co/jaredpalmer/kev-9b"
+  },
+  {
+   "name": "Intern-Decision-4B",
+   "hosted": false,
+   "skill": 37.81,
+   "ece": 0.0278,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0193,
+     "conf": 0.0783,
+     "acc": 0.0288
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0374,
+     "conf": 0.1445,
+     "acc": 0.1325
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0286,
+     "conf": 0.2507,
+     "acc": 0.2472
+    },
+    {
+     "lo": 0.3,
+     "w": 0.048,
+     "conf": 0.3511,
+     "acc": 0.3018
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0715,
+     "conf": 0.4555,
+     "acc": 0.4349
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1605,
+     "conf": 0.5478,
+     "acc": 0.5165
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1491,
+     "conf": 0.6497,
+     "acc": 0.631
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1475,
+     "conf": 0.751,
+     "acc": 0.703
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1634,
+     "conf": 0.8534,
+     "acc": 0.8175
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1746,
+     "conf": 0.9434,
+     "acc": 0.9339
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "full fine-tune",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/internlm/Intern-Decision-4B",
+   "code_url": "https://github.com/internlm/Intern-Decision",
+   "link": "https://huggingface.co/internlm/Intern-Decision-4B"
+  },
+  {
+   "name": "razorback16 openjev diffusiongemma (NVFP4, vLLM) [one read, NVFP4]",
+   "hosted": false,
+   "skill": 37.25,
+   "ece": 0.232,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0026,
+     "conf": 0.1666,
+     "acc": 0.081
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0139,
+     "conf": 0.2539,
+     "acc": 0.1579
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0206,
+     "conf": 0.3586,
+     "acc": 0.1896
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0336,
+     "conf": 0.4503,
+     "acc": 0.2936
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0698,
+     "conf": 0.5486,
+     "acc": 0.3721
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0679,
+     "conf": 0.6504,
+     "acc": 0.455
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0784,
+     "conf": 0.7516,
+     "acc": 0.4817
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1138,
+     "conf": 0.8561,
+     "acc": 0.5411
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5996,
+     "conf": 0.9795,
+     "acc": 0.7474
+    }
+   ],
+   "base": "google/diffusiongemma-26B-A4B-it",
+   "kind": "inference technique",
+   "params": 25823778864,
+   "weights_url": null,
+   "code_url": "https://github.com/vllm-project/vllm/pull/57250",
+   "link": "https://github.com/vllm-project/vllm/pull/57250"
+  },
+  {
+   "name": "NeoHorse-Jev-4B",
+   "hosted": false,
+   "skill": 36.75,
+   "ece": 0.1039,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0413,
+     "conf": 0.0732,
+     "acc": 0.0537
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0279,
+     "conf": 0.1459,
+     "acc": 0.1244
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0236,
+     "conf": 0.2574,
+     "acc": 0.174
+    },
+    {
+     "lo": 0.3,
+     "w": 0.051,
+     "conf": 0.3549,
+     "acc": 0.3136
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0671,
+     "conf": 0.454,
+     "acc": 0.3694
+    },
+    {
+     "lo": 0.5,
+     "w": 0.103,
+     "conf": 0.5488,
+     "acc": 0.4829
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1012,
+     "conf": 0.652,
+     "acc": 0.5617
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1072,
+     "conf": 0.7506,
+     "acc": 0.634
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1342,
+     "conf": 0.8512,
+     "acc": 0.6751
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3435,
+     "conf": 0.9667,
+     "acc": 0.8483
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "head / adapter",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B",
+   "code_url": "https://github.com/TokenRhythm/NeoHorse/tree/main/jev",
+   "link": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B"
+  },
+  {
+   "name": "Solomon v1.1",
+   "hosted": false,
+   "skill": 36.43,
+   "ece": 0.0807,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0046,
+     "conf": 0.1867,
+     "acc": 0.3613
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0128,
+     "conf": 0.2605,
+     "acc": 0.2044
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0956,
+     "conf": 0.3491,
+     "acc": 0.4359
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0721,
+     "conf": 0.4484,
+     "acc": 0.5093
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1317,
+     "conf": 0.5513,
+     "acc": 0.5625
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1045,
+     "conf": 0.6462,
+     "acc": 0.621
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0818,
+     "conf": 0.751,
+     "acc": 0.653
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1018,
+     "conf": 0.8521,
+     "acc": 0.7032
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3952,
+     "conf": 0.97,
+     "acc": 0.8706
+    }
+   ],
+   "base": "Qwen/Qwen3.8-27B",
+   "kind": "head / adapter",
+   "params": 27781427952,
+   "weights_url": "https://huggingface.co/DoccyHealth/Solomon",
+   "code_url": null,
+   "link": "https://huggingface.co/DoccyHealth/Solomon"
+  },
+  {
+   "name": "Kev 4B",
+   "hosted": false,
+   "skill": 34.64,
+   "ece": 0.1756,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0123,
+     "conf": 0.0808,
+     "acc": 0.0527
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0158,
+     "conf": 0.1418,
+     "acc": 0.1444
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0172,
+     "conf": 0.2604,
+     "acc": 0.1604
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0396,
+     "conf": 0.3554,
+     "acc": 0.1695
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0528,
+     "conf": 0.4513,
+     "acc": 0.2605
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0863,
+     "conf": 0.5466,
+     "acc": 0.4282
+    },
+    {
+     "lo": 0.6,
+     "w": 0.08,
+     "conf": 0.6493,
+     "acc": 0.4725
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0861,
+     "conf": 0.7496,
+     "acc": 0.5142
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1154,
+     "conf": 0.8536,
+     "acc": 0.6469
+    },
+    {
+     "lo": 0.9,
+     "w": 0.4947,
+     "conf": 0.9784,
+     "acc": 0.8012
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "LoRA + head",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/jaredpalmer/kev-4b",
+   "code_url": "https://github.com/jaredpalmer/kev",
+   "link": "https://huggingface.co/jaredpalmer/kev-4b"
+  },
+  {
+   "name": "Decision 1.0 Nox",
+   "hosted": false,
+   "skill": 34.36,
+   "ece": 0.1399,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0151,
+     "conf": 0.0815,
+     "acc": 0.0522
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0338,
+     "conf": 0.1409,
+     "acc": 0.0761
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0178,
+     "conf": 0.2536,
+     "acc": 0.1859
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0389,
+     "conf": 0.3575,
+     "acc": 0.2254
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0589,
+     "conf": 0.4526,
+     "acc": 0.3511
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1039,
+     "conf": 0.5463,
+     "acc": 0.4772
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0958,
+     "conf": 0.6505,
+     "acc": 0.534
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0947,
+     "conf": 0.7505,
+     "acc": 0.583
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1156,
+     "conf": 0.8519,
+     "acc": 0.6398
+    },
+    {
+     "lo": 0.9,
+     "w": 0.4255,
+     "conf": 0.9737,
+     "acc": 0.8181
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "head / adapter",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Nox",
+   "code_url": null,
+   "link": "https://huggingface.co/llm-semantic-router/Decision-1.0-Nox"
+  },
+  {
+   "name": "Jobe",
+   "hosted": false,
+   "skill": 32.35,
+   "ece": 0.1232,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.099,
+     "conf": 0.0569,
+     "acc": 0.2647
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0443,
+     "conf": 0.1358,
+     "acc": 0.4986
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0211,
+     "conf": 0.2494,
+     "acc": 0.4015
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0406,
+     "conf": 0.3549,
+     "acc": 0.2825
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0547,
+     "conf": 0.4491,
+     "acc": 0.3432
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1407,
+     "conf": 0.5488,
+     "acc": 0.5012
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0933,
+     "conf": 0.6498,
+     "acc": 0.5601
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1043,
+     "conf": 0.7512,
+     "acc": 0.6157
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1017,
+     "conf": 0.8525,
+     "acc": 0.6877
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3003,
+     "conf": 0.9695,
+     "acc": 0.8742
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "inference technique",
+   "params": 4659865088,
+   "weights_url": null,
+   "code_url": "https://github.com/MantisShrimpdev/jobe",
+   "link": "https://github.com/MantisShrimpdev/jobe"
+  },
+  {
+   "name": "mmastrac diffusiongemma (vLLM PR 57250)",
+   "hosted": false,
+   "skill": 32.24,
+   "ece": 0.2019,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0006,
+     "conf": 0.1821,
+     "acc": 0.2358
+    },
+    {
+     "lo": 0.2,
+     "w": 0.008,
+     "conf": 0.2643,
+     "acc": 0.0903
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0199,
+     "conf": 0.3628,
+     "acc": 0.2245
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0327,
+     "conf": 0.459,
+     "acc": 0.2679
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0781,
+     "conf": 0.5493,
+     "acc": 0.3685
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0803,
+     "conf": 0.6521,
+     "acc": 0.4727
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0839,
+     "conf": 0.7504,
+     "acc": 0.5228
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1121,
+     "conf": 0.8526,
+     "acc": 0.5651
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5845,
+     "conf": 0.9804,
+     "acc": 0.7895
+    }
+   ],
+   "base": "google/diffusiongemma-26B-A4B-it",
+   "kind": "inference technique",
+   "params": 25823778864,
+   "weights_url": null,
+   "code_url": "https://github.com/vllm-project/vllm/pull/57250",
+   "link": "https://github.com/vllm-project/vllm/pull/57250"
+  },
+  {
+   "name": "open-jev (pngwn)",
+   "hosted": false,
+   "skill": 29.91,
+   "ece": 0.0589,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.1012,
+     "conf": 0.0513,
+     "acc": 0.2456
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0261,
+     "conf": 0.1465,
+     "acc": 0.294
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0283,
+     "conf": 0.2455,
+     "acc": 0.223
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0438,
+     "conf": 0.3567,
+     "acc": 0.3134
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0789,
+     "conf": 0.4535,
+     "acc": 0.4291
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1897,
+     "conf": 0.5494,
+     "acc": 0.5326
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1517,
+     "conf": 0.6477,
+     "acc": 0.6145
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1188,
+     "conf": 0.7489,
+     "acc": 0.7098
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1173,
+     "conf": 0.8501,
+     "acc": 0.8339
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1442,
+     "conf": 0.9663,
+     "acc": 0.8544
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "LoRA",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer-v2b",
+   "code_url": null,
+   "link": "https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer-v2b"
+  },
+  {
+   "name": "Tev1-4B-experimental",
+   "hosted": false,
+   "skill": 29.24,
+   "ece": 0.104,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0002,
+     "conf": 0.0919,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0124,
+     "conf": 0.1624,
+     "acc": 0.11
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0224,
+     "conf": 0.2506,
+     "acc": 0.1198
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0507,
+     "conf": 0.352,
+     "acc": 0.1994
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0557,
+     "conf": 0.4561,
+     "acc": 0.3715
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1476,
+     "conf": 0.5511,
+     "acc": 0.4759
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1197,
+     "conf": 0.6492,
+     "acc": 0.5373
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1334,
+     "conf": 0.7497,
+     "acc": 0.606
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1248,
+     "conf": 0.8522,
+     "acc": 0.7026
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3331,
+     "conf": 0.9674,
+     "acc": 0.8904
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "full fine-tune",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/togethercomputer/Tev1-4B-experimental",
+   "code_url": "https://github.com/togethercomputer/tev1",
+   "link": "https://huggingface.co/togethercomputer/Tev1-4B-experimental"
+  },
+  {
+   "name": "Decider 2B [FP8]",
+   "hosted": false,
+   "skill": 28.97,
+   "ece": 0.0771,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0516,
+     "conf": 0.0575,
+     "acc": 0.0288
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0298,
+     "conf": 0.1499,
+     "acc": 0.1282
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0273,
+     "conf": 0.2553,
+     "acc": 0.1883
+    },
+    {
+     "lo": 0.3,
+     "w": 0.059,
+     "conf": 0.3525,
+     "acc": 0.2861
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0691,
+     "conf": 0.455,
+     "acc": 0.3442
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1369,
+     "conf": 0.5491,
+     "acc": 0.4997
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1238,
+     "conf": 0.6498,
+     "acc": 0.5915
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1297,
+     "conf": 0.7494,
+     "acc": 0.6396
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1325,
+     "conf": 0.8508,
+     "acc": 0.742
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2403,
+     "conf": 0.9603,
+     "acc": 0.8816
+    }
+   ],
+   "base": "Qwen/Qwen3.5-2B-Base",
+   "kind": "full fine-tune",
+   "params": 2274069824,
+   "weights_url": "https://huggingface.co/Mapika/decider-2b",
+   "code_url": null,
+   "link": "https://huggingface.co/Mapika/decider-2b"
+  },
+  {
+   "name": "openvons",
+   "hosted": false,
+   "skill": 28.42,
+   "ece": 0.3712,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0007,
+     "conf": 0.2424,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0026,
+     "conf": 0.3383,
+     "acc": 0.0431
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0116,
+     "conf": 0.4512,
+     "acc": 0.1647
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0223,
+     "conf": 0.5416,
+     "acc": 0.3145
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0276,
+     "conf": 0.6423,
+     "acc": 0.2856
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0254,
+     "conf": 0.7429,
+     "acc": 0.3081
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0386,
+     "conf": 0.8415,
+     "acc": 0.2981
+    },
+    {
+     "lo": 0.9,
+     "w": 0.8712,
+     "conf": 0.9949,
+     "acc": 0.6276
+    }
+   ],
+   "base": "Qwen/Qwen3-4B-Instruct-2507",
+   "kind": "inference technique",
+   "params": 4022468096,
+   "weights_url": null,
+   "code_url": "https://github.com/genai-craft/openvons",
+   "link": "https://github.com/genai-craft/openvons"
+  },
+  {
+   "name": "this-that 1.2",
+   "hosted": false,
+   "skill": 28.14,
+   "ece": 0.1983,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0119,
+     "conf": 0.0848,
+     "acc": 0.0291
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0334,
+     "conf": 0.1451,
+     "acc": 0.0451
+    },
+    {
+     "lo": 0.2,
+     "w": 0.018,
+     "conf": 0.2502,
+     "acc": 0.1757
+    },
+    {
+     "lo": 0.3,
+     "w": 0.027,
+     "conf": 0.3546,
+     "acc": 0.1461
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0385,
+     "conf": 0.4552,
+     "acc": 0.3002
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0951,
+     "conf": 0.5488,
+     "acc": 0.4085
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0846,
+     "conf": 0.649,
+     "acc": 0.4596
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0916,
+     "conf": 0.7513,
+     "acc": 0.5311
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1132,
+     "conf": 0.8547,
+     "acc": 0.5823
+    },
+    {
+     "lo": 0.9,
+     "w": 0.4868,
+     "conf": 0.9786,
+     "acc": 0.771
+    }
+   ],
+   "base": "Mapika/decider-2b",
+   "kind": "full fine-tune",
+   "params": 1881825088,
+   "weights_url": "https://huggingface.co/flock-io/this-that-model-1.2",
+   "code_url": "https://github.com/FLock-io/this-that-model",
+   "link": "https://huggingface.co/flock-io/this-that-model-1.2"
+  },
+  {
+   "name": "Metask-Jev-4B",
+   "hosted": false,
+   "skill": 26.89,
+   "ece": 0.1035,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0101,
+     "conf": 0.0831,
+     "acc": 0.093
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0252,
+     "conf": 0.1511,
+     "acc": 0.1364
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0293,
+     "conf": 0.2593,
+     "acc": 0.309
+    },
+    {
+     "lo": 0.3,
+     "w": 0.048,
+     "conf": 0.3518,
+     "acc": 0.2295
+    },
+    {
+     "lo": 0.4,
+     "w": 0.056,
+     "conf": 0.4503,
+     "acc": 0.3927
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0939,
+     "conf": 0.5523,
+     "acc": 0.5137
+    },
+    {
+     "lo": 0.6,
+     "w": 0.098,
+     "conf": 0.6512,
+     "acc": 0.5359
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1444,
+     "conf": 0.7533,
+     "acc": 0.5933
+    },
+    {
+     "lo": 0.8,
+     "w": 0.228,
+     "conf": 0.8581,
+     "acc": 0.6833
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2669,
+     "conf": 0.9362,
+     "acc": 0.8817
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "LoRA",
+   "params": 4659865088,
+   "weights_url": "https://huggingface.co/wayfind/metask-jev-4b-policy-mix",
+   "code_url": "https://github.com/metask-ai/metask-jev",
+   "link": "https://huggingface.co/wayfind/metask-jev-4b-policy-mix"
+  },
+  {
+   "name": "SemIf",
+   "hosted": false,
+   "skill": 25.94,
+   "ece": 0.0989,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0004,
+     "conf": 0.1774,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0171,
+     "conf": 0.263,
+     "acc": 0.1845
+    },
+    {
+     "lo": 0.3,
+     "w": 0.057,
+     "conf": 0.3561,
+     "acc": 0.2879
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0706,
+     "conf": 0.4498,
+     "acc": 0.324
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1669,
+     "conf": 0.5495,
+     "acc": 0.5089
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1125,
+     "conf": 0.6493,
+     "acc": 0.5585
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1206,
+     "conf": 0.751,
+     "acc": 0.616
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1155,
+     "conf": 0.8532,
+     "acc": 0.6777
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3393,
+     "conf": 0.9689,
+     "acc": 0.877
+    }
+   ],
+   "base": "Qwen/Qwen3.5-4B-Base",
+   "kind": "inference technique",
+   "params": 4659865088,
+   "weights_url": null,
+   "code_url": "https://github.com/TheoLeeCJ/openjev",
+   "link": "https://github.com/TheoLeeCJ/openjev"
+  },
+  {
+   "name": "Decision 1.0 Sol",
+   "hosted": false,
+   "skill": 25.32,
+   "ece": 0.115,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0513,
+     "conf": 0.0521,
+     "acc": 0.0309
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0128,
+     "conf": 0.1533,
+     "acc": 0.1019
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0245,
+     "conf": 0.2609,
+     "acc": 0.2862
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0651,
+     "conf": 0.3565,
+     "acc": 0.2785
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0866,
+     "conf": 0.4484,
+     "acc": 0.3589
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1641,
+     "conf": 0.5493,
+     "acc": 0.4576
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1379,
+     "conf": 0.6483,
+     "acc": 0.5232
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1114,
+     "conf": 0.7505,
+     "acc": 0.6188
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1139,
+     "conf": 0.8513,
+     "acc": 0.671
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2323,
+     "conf": 0.966,
+     "acc": 0.8272
+    }
+   ],
+   "base": "Qwen/Qwen3.5-2B-Base",
+   "kind": "head / adapter",
+   "params": 2274069824,
+   "weights_url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Sol",
+   "code_url": null,
+   "link": "https://huggingface.co/llm-semantic-router/Decision-1.0-Sol"
+  },
+  {
+   "name": "mini-jev",
+   "hosted": false,
+   "skill": 20.98,
+   "ece": 0.3457,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0008,
+     "conf": 0.2683,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0019,
+     "conf": 0.3573,
+     "acc": 0.081
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0068,
+     "conf": 0.4561,
+     "acc": 0.3247
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0289,
+     "conf": 0.5543,
+     "acc": 0.3071
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0302,
+     "conf": 0.6506,
+     "acc": 0.4033
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0364,
+     "conf": 0.7533,
+     "acc": 0.3752
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0488,
+     "conf": 0.8553,
+     "acc": 0.3883
+    },
+    {
+     "lo": 0.9,
+     "w": 0.8463,
+     "conf": 0.9936,
+     "acc": 0.6475
+    }
+   ],
+   "base": "Qwen/Qwen3-4B-Instruct-2507",
+   "kind": "inference technique",
+   "params": 4022468096,
+   "weights_url": null,
+   "code_url": "https://github.com/r-ms/mini-jev",
+   "link": "https://github.com/r-ms/mini-jev"
+  },
+  {
+   "name": "Bosun v3.1 1.7B",
+   "hosted": false,
+   "skill": 20.1,
+   "ece": 0.1302,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.052,
+     "conf": 0.0413,
+     "acc": 0.0455
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0217,
+     "conf": 0.1502,
+     "acc": 0.1487
+    },
+    {
+     "lo": 0.2,
+     "w": 0.024,
+     "conf": 0.2561,
+     "acc": 0.1817
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0582,
+     "conf": 0.3536,
+     "acc": 0.2656
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0887,
+     "conf": 0.4497,
+     "acc": 0.3267
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1502,
+     "conf": 0.5499,
+     "acc": 0.4454
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1267,
+     "conf": 0.6495,
+     "acc": 0.5456
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1314,
+     "conf": 0.7507,
+     "acc": 0.6153
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1399,
+     "conf": 0.8501,
+     "acc": 0.666
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2071,
+     "conf": 0.9604,
+     "acc": 0.7687
+    }
+   ],
+   "base": "Qwen/Qwen3-1.7B-Base",
+   "kind": "LoRA + head",
+   "params": 1720574976,
+   "weights_url": "https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b",
+   "code_url": "https://github.com/Hanno-Labs/jev-compatible-server",
+   "link": "https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b"
+  },
+  {
+   "name": "Intern-Decision-2B",
+   "hosted": false,
+   "skill": 19.38,
+   "ece": 0.0608,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0269,
+     "conf": 0.0845,
+     "acc": 0.027
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0567,
+     "conf": 0.145,
+     "acc": 0.0571
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0583,
+     "conf": 0.246,
+     "acc": 0.1486
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0778,
+     "conf": 0.3538,
+     "acc": 0.2459
+    },
+    {
+     "lo": 0.4,
+     "w": 0.115,
+     "conf": 0.4514,
+     "acc": 0.4273
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2544,
+     "conf": 0.5451,
+     "acc": 0.5007
+    },
+    {
+     "lo": 0.6,
+     "w": 0.175,
+     "conf": 0.6452,
+     "acc": 0.5615
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1054,
+     "conf": 0.7486,
+     "acc": 0.6834
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0864,
+     "conf": 0.8488,
+     "acc": 0.8061
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0441,
+     "conf": 0.933,
+     "acc": 0.9125
+    }
+   ],
+   "base": "Qwen/Qwen3.5-2B-Base",
+   "kind": "full fine-tune",
+   "params": 2274069824,
+   "weights_url": "https://huggingface.co/internlm/Intern-Decision-2B",
+   "code_url": "https://github.com/internlm/Intern-Decision",
+   "link": "https://huggingface.co/internlm/Intern-Decision-2B"
+  },
+  {
+   "name": "JPT-0.8B",
+   "hosted": false,
+   "skill": 19.22,
+   "ece": 0.0688,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0641,
+     "conf": 0.0755,
+     "acc": 0.0506
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0356,
+     "conf": 0.1462,
+     "acc": 0.1591
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0491,
+     "conf": 0.257,
+     "acc": 0.2267
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0922,
+     "conf": 0.3546,
+     "acc": 0.3448
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1158,
+     "conf": 0.4482,
+     "acc": 0.3676
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1915,
+     "conf": 0.5457,
+     "acc": 0.504
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1441,
+     "conf": 0.6459,
+     "acc": 0.5451
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1183,
+     "conf": 0.7474,
+     "acc": 0.6251
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1019,
+     "conf": 0.8508,
+     "acc": 0.7403
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0875,
+     "conf": 0.9452,
+     "acc": 0.868
+    }
+   ],
+   "base": "Qwen/Qwen3.5-0.8B-Base",
+   "kind": "LoRA",
+   "params": 873438784,
+   "weights_url": "https://huggingface.co/kirp/jpt-0.8b",
+   "code_url": "https://github.com/tic-top/llm2jev",
+   "link": "https://huggingface.co/kirp/jpt-0.8b"
+  },
+  {
+   "name": "Decision 1.0 Eos",
+   "hosted": false,
+   "skill": 18.41,
+   "ece": 0.0833,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0657,
+     "conf": 0.0421,
+     "acc": 0.0519
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0326,
+     "conf": 0.1572,
+     "acc": 0.2009
+    },
+    {
+     "lo": 0.2,
+     "w": 0.046,
+     "conf": 0.2569,
+     "acc": 0.2437
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1082,
+     "conf": 0.3507,
+     "acc": 0.3546
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1115,
+     "conf": 0.4492,
+     "acc": 0.4715
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2028,
+     "conf": 0.5477,
+     "acc": 0.4937
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1497,
+     "conf": 0.6472,
+     "acc": 0.5262
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1084,
+     "conf": 0.7474,
+     "acc": 0.5391
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0951,
+     "conf": 0.8494,
+     "acc": 0.6787
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0799,
+     "conf": 0.9473,
+     "acc": 0.8244
+    }
+   ],
+   "base": "Qwen/Qwen3.5-0.8B-Base",
+   "kind": "head / adapter",
+   "params": 873438784,
+   "weights_url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Eos-0.8B",
+   "code_url": null,
+   "link": "https://huggingface.co/llm-semantic-router/Decision-1.0-Eos-0.8B"
+  },
+  {
+   "name": "Kev 0.8B",
+   "hosted": false,
+   "skill": 14.6,
+   "ece": 0.0743,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0623,
+     "conf": 0.0427,
+     "acc": 0.0714
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0563,
+     "conf": 0.1391,
+     "acc": 0.2258
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0462,
+     "conf": 0.2587,
+     "acc": 0.2172
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1142,
+     "conf": 0.3517,
+     "acc": 0.3847
+    },
+    {
+     "lo": 0.4,
+     "w": 0.095,
+     "conf": 0.4494,
+     "acc": 0.4564
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2086,
+     "conf": 0.5478,
+     "acc": 0.5181
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1457,
+     "conf": 0.6468,
+     "acc": 0.5718
+    },
+    {
+     "lo": 0.7,
+     "w": 0.125,
+     "conf": 0.7491,
+     "acc": 0.598
+    },
+    {
+     "lo": 0.8,
+     "w": 0.093,
+     "conf": 0.8453,
+     "acc": 0.689
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0537,
+     "conf": 0.9347,
+     "acc": 0.7352
+    }
+   ],
+   "base": "Qwen/Qwen3.5-0.8B-Base",
+   "kind": "LoRA + head",
+   "params": 873438784,
+   "weights_url": "https://huggingface.co/jaredpalmer/kev-0.8b",
+   "code_url": "https://github.com/jaredpalmer/kev",
+   "link": "https://huggingface.co/jaredpalmer/kev-0.8b"
+  },
+  {
+   "name": "Bosun v3.1 0.6B",
+   "hosted": false,
+   "skill": 14.32,
+   "ece": 0.1419,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0561,
+     "conf": 0.0453,
+     "acc": 0.0512
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0272,
+     "conf": 0.1506,
+     "acc": 0.1913
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0276,
+     "conf": 0.2547,
+     "acc": 0.2614
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0891,
+     "conf": 0.3548,
+     "acc": 0.2501
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1046,
+     "conf": 0.4491,
+     "acc": 0.3119
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1894,
+     "conf": 0.5505,
+     "acc": 0.4418
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1705,
+     "conf": 0.6471,
+     "acc": 0.5073
+    },
+    {
+     "lo": 0.7,
+     "w": 0.132,
+     "conf": 0.7465,
+     "acc": 0.5471
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1027,
+     "conf": 0.8495,
+     "acc": 0.598
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1006,
+     "conf": 0.9495,
+     "acc": 0.7503
+    }
+   ],
+   "base": "Qwen/Qwen3-0.6B-Base",
+   "kind": "LoRA + head",
+   "params": 596049920,
+   "weights_url": "https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b",
+   "code_url": "https://github.com/Hanno-Labs/jev-compatible-server",
+   "link": "https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b"
+  },
+  {
+   "name": "Tev1-0.8B-experimental",
+   "hosted": false,
+   "skill": 12.85,
+   "ece": 0.1257,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0025,
+     "conf": 0.1873,
+     "acc": 0.0958
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0409,
+     "conf": 0.2605,
+     "acc": 0.1139
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0888,
+     "conf": 0.3533,
+     "acc": 0.269
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1141,
+     "conf": 0.4501,
+     "acc": 0.354
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2462,
+     "conf": 0.5522,
+     "acc": 0.463
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1575,
+     "conf": 0.6467,
+     "acc": 0.525
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1341,
+     "conf": 0.7483,
+     "acc": 0.6048
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0969,
+     "conf": 0.8523,
+     "acc": 0.6472
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1189,
+     "conf": 0.9528,
+     "acc": 0.7778
+    }
+   ],
+   "base": "Qwen/Qwen3.5-0.8B-Base",
+   "kind": "full fine-tune",
+   "params": 873438784,
+   "weights_url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental",
+   "code_url": "https://github.com/togethercomputer/tev1",
+   "link": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental"
+  },
+  {
+   "name": "Intern-Decision-0.8B",
+   "hosted": false,
+   "skill": 11.94,
+   "ece": 0.0255,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0489,
+     "conf": 0.0817,
+     "acc": 0.0267
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0995,
+     "conf": 0.1444,
+     "acc": 0.0845
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0566,
+     "conf": 0.2589,
+     "acc": 0.2427
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1324,
+     "conf": 0.3555,
+     "acc": 0.3671
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1541,
+     "conf": 0.4474,
+     "acc": 0.4403
+    },
+    {
+     "lo": 0.5,
+     "w": 0.3364,
+     "conf": 0.5396,
+     "acc": 0.5602
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1191,
+     "conf": 0.6397,
+     "acc": 0.6686
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0387,
+     "conf": 0.7381,
+     "acc": 0.7769
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0132,
+     "conf": 0.8369,
+     "acc": 0.9399
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0012,
+     "conf": 0.9138,
+     "acc": 1.0
+    }
+   ],
+   "base": "Qwen/Qwen3.5-0.8B-Base",
+   "kind": "full fine-tune",
+   "params": 873438784,
+   "weights_url": "https://huggingface.co/internlm/Intern-Decision-0.8B",
+   "code_url": "https://github.com/internlm/Intern-Decision",
+   "link": "https://huggingface.co/internlm/Intern-Decision-0.8B"
+  },
+  {
+   "name": "MoJev",
+   "hosted": false,
+   "skill": 11.69,
+   "ece": 0.1246,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.1468,
+     "conf": 0.0384,
+     "acc": 0.2167
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0221,
+     "conf": 0.1534,
+     "acc": 0.2875
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0311,
+     "conf": 0.2622,
+     "acc": 0.2293
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1171,
+     "conf": 0.3556,
+     "acc": 0.3627
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1222,
+     "conf": 0.4463,
+     "acc": 0.3855
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2171,
+     "conf": 0.5477,
+     "acc": 0.5239
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1458,
+     "conf": 0.6463,
+     "acc": 0.5669
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0917,
+     "conf": 0.7464,
+     "acc": 0.5235
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0617,
+     "conf": 0.8488,
+     "acc": 0.462
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0443,
+     "conf": 0.943,
+     "acc": 0.3776
+    }
+   ],
+   "base": "Qwen/Qwen3.5-0.8B-Base",
+   "kind": "head / adapter",
+   "params": 873438784,
+   "weights_url": "https://huggingface.co/MoLeMo-Lab/mojev",
+   "code_url": "https://github.com/MoLeMo-Lab/mojev",
+   "link": "https://huggingface.co/MoLeMo-Lab/mojev"
+  },
+  {
+   "name": "GLiNER2.5-Decide",
+   "hosted": false,
+   "skill": 11.21,
+   "ece": 0.0884,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0728,
+     "conf": 0.0668,
+     "acc": 0.0955
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0602,
+     "conf": 0.1395,
+     "acc": 0.1625
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0435,
+     "conf": 0.269,
+     "acc": 0.2737
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1254,
+     "conf": 0.3513,
+     "acc": 0.3479
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1185,
+     "conf": 0.443,
+     "acc": 0.458
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2637,
+     "conf": 0.5461,
+     "acc": 0.5565
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1213,
+     "conf": 0.6415,
+     "acc": 0.6031
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0781,
+     "conf": 0.746,
+     "acc": 0.4909
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0623,
+     "conf": 0.8508,
+     "acc": 0.4376
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0541,
+     "conf": 0.9493,
+     "acc": 0.4055
+    }
+   ],
+   "base": "fastino/gliner2-large-v1",
+   "kind": "full fine-tune",
+   "params": 486444053,
+   "weights_url": "https://huggingface.co/fastino/GLiNER2.5-Decide",
+   "code_url": "https://github.com/fastino-ai/GLiNER2",
+   "link": "https://huggingface.co/fastino/GLiNER2.5-Decide"
+  },
+  {
+   "name": "Lavoir",
+   "hosted": false,
+   "skill": 8.69,
+   "ece": 0.1492,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.1235,
+     "conf": 0.0513,
+     "acc": 0.076
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0391,
+     "conf": 0.1438,
+     "acc": 0.2767
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0404,
+     "conf": 0.2665,
+     "acc": 0.2049
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0964,
+     "conf": 0.3502,
+     "acc": 0.3113
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0943,
+     "conf": 0.4522,
+     "acc": 0.367
+    },
+    {
+     "lo": 0.5,
+     "w": 0.191,
+     "conf": 0.548,
+     "acc": 0.4736
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1314,
+     "conf": 0.6494,
+     "acc": 0.4856
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0976,
+     "conf": 0.7483,
+     "acc": 0.4891
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0862,
+     "conf": 0.849,
+     "acc": 0.5201
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1001,
+     "conf": 0.9559,
+     "acc": 0.5835
+    }
+   ],
+   "base": "answerdotai/ModernBERT-large",
+   "kind": "full fine-tune",
+   "params": 395881664,
+   "weights_url": "https://huggingface.co/moganai/lavoir",
+   "code_url": "https://github.com/moganai/lavoir",
+   "link": "https://huggingface.co/moganai/lavoir"
+  },
+  {
+   "name": "jeff",
+   "hosted": false,
+   "skill": 8.04,
+   "ece": 0.0969,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.1485,
+     "conf": 0.037,
+     "acc": 0.2279
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0306,
+     "conf": 0.146,
+     "acc": 0.1938
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0665,
+     "conf": 0.2737,
+     "acc": 0.2396
+    },
+    {
+     "lo": 0.3,
+     "w": 0.2018,
+     "conf": 0.3492,
+     "acc": 0.3442
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1022,
+     "conf": 0.4394,
+     "acc": 0.4299
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2356,
+     "conf": 0.5454,
+     "acc": 0.4335
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1335,
+     "conf": 0.646,
+     "acc": 0.5012
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0683,
+     "conf": 0.7403,
+     "acc": 0.5444
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0129,
+     "conf": 0.8286,
+     "acc": 0.549
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0002,
+     "conf": 0.9121,
+     "acc": 0.0968
+    }
+   ],
+   "base": "knowledgator/gliformer-large-v1",
+   "kind": "inference technique",
+   "params": 575683963,
+   "weights_url": null,
+   "code_url": "https://github.com/logan-markewich/jeff",
+   "link": "https://github.com/logan-markewich/jeff"
+  },
+  {
+   "name": "CLM-v0.1-8B",
+   "hosted": false,
+   "skill": 7.4,
+   "ece": 0.3227,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0011,
+     "conf": 0.0925,
+     "acc": 0.0332
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0361,
+     "conf": 0.1671,
+     "acc": 0.05
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0512,
+     "conf": 0.242,
+     "acc": 0.0698
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0707,
+     "conf": 0.361,
+     "acc": 0.1182
+    },
+    {
+     "lo": 0.4,
+     "w": 0.068,
+     "conf": 0.4559,
+     "acc": 0.2311
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1531,
+     "conf": 0.5496,
+     "acc": 0.39
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1268,
+     "conf": 0.6502,
+     "acc": 0.4558
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1105,
+     "conf": 0.7488,
+     "acc": 0.4026
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1121,
+     "conf": 0.8508,
+     "acc": 0.4863
+    },
+    {
+     "lo": 0.9,
+     "w": 0.2704,
+     "conf": 0.966,
+     "acc": 0.4149
+    }
+   ],
+   "base": "Qwen/Qwen3-8B-Base",
+   "kind": "full fine-tune",
+   "params": 8190735360,
+   "weights_url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+   "code_url": "https://github.com/Contrastive-LM/CLM",
+   "link": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B"
+  },
+  {
+   "name": "GLiNER 2.5 base",
+   "hosted": false,
+   "skill": 6.76,
+   "ece": 0.367,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.027,
+     "conf": 0.0695,
+     "acc": 0.0399
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0237,
+     "conf": 0.1434,
+     "acc": 0.0624
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0384,
+     "conf": 0.2599,
+     "acc": 0.1158
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0535,
+     "conf": 0.3519,
+     "acc": 0.1868
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0752,
+     "conf": 0.4511,
+     "acc": 0.2538
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1161,
+     "conf": 0.5481,
+     "acc": 0.3745
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0964,
+     "conf": 0.6486,
+     "acc": 0.3657
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0901,
+     "conf": 0.7499,
+     "acc": 0.4141
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1095,
+     "conf": 0.8516,
+     "acc": 0.4291
+    },
+    {
+     "lo": 0.9,
+     "w": 0.3702,
+     "conf": 0.9716,
+     "acc": 0.4011
+    }
+   ],
+   "base": null,
+   "kind": "full fine-tune",
+   "params": 193581591,
+   "weights_url": "https://huggingface.co/fastino/gliner2.5-base-v1",
+   "code_url": null,
+   "link": "https://huggingface.co/fastino/gliner2.5-base-v1"
+  },
+  {
+   "name": "LFM2.5-2.6B-RLCD",
+   "hosted": false,
+   "skill": 6.76,
+   "ece": 0.2545,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0001,
+     "conf": 0.0821,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0102,
+     "conf": 0.1744,
+     "acc": 0.0494
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0546,
+     "conf": 0.2555,
+     "acc": 0.0885
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0881,
+     "conf": 0.3505,
+     "acc": 0.1509
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1035,
+     "conf": 0.4478,
+     "acc": 0.2711
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1837,
+     "conf": 0.5506,
+     "acc": 0.4199
+    },
+    {
+     "lo": 0.6,
+     "w": 0.136,
+     "conf": 0.6498,
+     "acc": 0.4539
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1393,
+     "conf": 0.7478,
+     "acc": 0.4475
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1117,
+     "conf": 0.8491,
+     "acc": 0.4569
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1729,
+     "conf": 0.9643,
+     "acc": 0.5483
+    }
+   ],
+   "base": "LiquidAI/LFM2.5-2.6B-Base",
+   "kind": "full fine-tune",
+   "params": 2697198592,
+   "weights_url": "https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD",
+   "code_url": null,
+   "link": "https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD"
+  },
+  {
+   "name": "Decision 1.0 Kai",
+   "hosted": false,
+   "skill": 6.52,
+   "ece": 0.1851,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.049,
+     "conf": 0.0757,
+     "acc": 0.0629
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0376,
+     "conf": 0.1449,
+     "acc": 0.1564
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0639,
+     "conf": 0.258,
+     "acc": 0.1166
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0884,
+     "conf": 0.3503,
+     "acc": 0.2687
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1358,
+     "conf": 0.4521,
+     "acc": 0.3118
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2279,
+     "conf": 0.5472,
+     "acc": 0.4418
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1515,
+     "conf": 0.6454,
+     "acc": 0.4314
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1061,
+     "conf": 0.7507,
+     "acc": 0.392
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0983,
+     "conf": 0.8473,
+     "acc": 0.4744
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0414,
+     "conf": 0.9317,
+     "acc": 0.5086
+    }
+   ],
+   "base": "jhu-clsp/mmBERT-base",
+   "kind": "head / adapter",
+   "params": 307797035,
+   "weights_url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Kai",
+   "code_url": null,
+   "link": "https://huggingface.co/llm-semantic-router/Decision-1.0-Kai"
+  },
+  {
+   "name": "Laya",
+   "hosted": false,
+   "skill": 6.04,
+   "ece": 0.1402,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0485,
+     "conf": 0.0771,
+     "acc": 0.0455
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0375,
+     "conf": 0.1433,
+     "acc": 0.1199
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0673,
+     "conf": 0.2665,
+     "acc": 0.1752
+    },
+    {
+     "lo": 0.3,
+     "w": 0.2026,
+     "conf": 0.3479,
+     "acc": 0.2867
+    },
+    {
+     "lo": 0.4,
+     "w": 0.108,
+     "conf": 0.4446,
+     "acc": 0.3428
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2027,
+     "conf": 0.5458,
+     "acc": 0.4187
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1071,
+     "conf": 0.6457,
+     "acc": 0.4688
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0765,
+     "conf": 0.7488,
+     "acc": 0.503
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0755,
+     "conf": 0.8519,
+     "acc": 0.5633
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0742,
+     "conf": 0.9455,
+     "acc": 0.6364
+    }
+   ],
+   "base": null,
+   "kind": "full fine-tune",
+   "params": 421293830,
+   "weights_url": "https://huggingface.co/convaiinnovations/laya",
+   "code_url": "https://github.com/NandhaKishorM/laya",
+   "link": "https://huggingface.co/convaiinnovations/laya"
+  },
+  {
+   "name": "Julia 1",
+   "hosted": false,
+   "skill": 5.54,
+   "ece": 0.4197,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0047,
+     "conf": 0.1592,
+     "acc": 0.1205
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0139,
+     "conf": 0.2533,
+     "acc": 0.1083
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0319,
+     "conf": 0.3527,
+     "acc": 0.1378
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0522,
+     "conf": 0.4533,
+     "acc": 0.2241
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0987,
+     "conf": 0.549,
+     "acc": 0.3663
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1025,
+     "conf": 0.6506,
+     "acc": 0.3412
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1133,
+     "conf": 0.7511,
+     "acc": 0.3826
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1439,
+     "conf": 0.8525,
+     "acc": 0.386
+    },
+    {
+     "lo": 0.9,
+     "w": 0.4389,
+     "conf": 0.9705,
+     "acc": 0.4236
+    }
+   ],
+   "base": "jhu-clsp/mmBERT-small",
+   "kind": "full fine-tune",
+   "params": 140908331,
+   "weights_url": "https://huggingface.co/SupersonicLabs/Julia-1",
+   "code_url": null,
+   "link": "https://huggingface.co/SupersonicLabs/Julia-1"
+  },
+  {
+   "name": "system-one-gemma",
+   "hosted": false,
+   "skill": 5.07,
+   "ece": 0.2387,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0429,
+     "conf": 0.0656,
+     "acc": 0.0395
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0155,
+     "conf": 0.1554,
+     "acc": 0.0865
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0652,
+     "conf": 0.2645,
+     "acc": 0.0665
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1053,
+     "conf": 0.3525,
+     "acc": 0.2187
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1291,
+     "conf": 0.4511,
+     "acc": 0.2903
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2205,
+     "conf": 0.5478,
+     "acc": 0.3956
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1573,
+     "conf": 0.6462,
+     "acc": 0.3549
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1126,
+     "conf": 0.7462,
+     "acc": 0.3527
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0829,
+     "conf": 0.8484,
+     "acc": 0.4576
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0688,
+     "conf": 0.9534,
+     "acc": 0.479
+    }
+   ],
+   "base": "google/gemma-3-270m",
+   "kind": "LoRA + head",
+   "params": 268098176,
+   "weights_url": null,
+   "code_url": "https://github.com/akash-kamat/system-one-gemma",
+   "link": "https://github.com/akash-kamat/system-one-gemma"
+  },
+  {
+   "name": "Decision 1.0 Lex",
+   "hosted": false,
+   "skill": 4.54,
+   "ece": 0.1688,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.1389,
+     "conf": 0.0454,
+     "acc": 0.1321
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0287,
+     "conf": 0.1415,
+     "acc": 0.1728
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0481,
+     "conf": 0.2734,
+     "acc": 0.1954
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1292,
+     "conf": 0.3543,
+     "acc": 0.2983
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1236,
+     "conf": 0.4453,
+     "acc": 0.3381
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2062,
+     "conf": 0.5478,
+     "acc": 0.4438
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1487,
+     "conf": 0.6462,
+     "acc": 0.4167
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1042,
+     "conf": 0.7466,
+     "acc": 0.4101
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0572,
+     "conf": 0.8426,
+     "acc": 0.3539
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0152,
+     "conf": 0.9203,
+     "acc": 0.0621
+    }
+   ],
+   "base": "jhu-clsp/mmBERT-base",
+   "kind": "head / adapter",
+   "params": 307797035,
+   "weights_url": "https://huggingface.co/llm-semantic-router/decision-1.0-lex",
+   "code_url": null,
+   "link": "https://huggingface.co/llm-semantic-router/decision-1.0-lex"
+  },
+  {
+   "name": "GLiNER 2.5 multilingual",
+   "hosted": false,
+   "skill": 4.26,
+   "ece": 0.2538,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0026,
+     "conf": 0.0847,
+     "acc": 0.087
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0197,
+     "conf": 0.1554,
+     "acc": 0.026
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0689,
+     "conf": 0.2672,
+     "acc": 0.1579
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1963,
+     "conf": 0.3512,
+     "acc": 0.2351
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1475,
+     "conf": 0.4483,
+     "acc": 0.236
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1399,
+     "conf": 0.5477,
+     "acc": 0.3913
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1128,
+     "conf": 0.6491,
+     "acc": 0.423
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1006,
+     "conf": 0.7438,
+     "acc": 0.4335
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0743,
+     "conf": 0.851,
+     "acc": 0.3654
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1373,
+     "conf": 0.964,
+     "acc": 0.4188
+    }
+   ],
+   "base": null,
+   "kind": "full fine-tune",
+   "params": 287355159,
+   "weights_url": "https://huggingface.co/fastino/gliner2.5-multi-v1",
+   "code_url": null,
+   "link": "https://huggingface.co/fastino/gliner2.5-multi-v1"
+  },
+  {
+   "name": "GLiNER 2.5 small",
+   "hosted": false,
+   "skill": 3.82,
+   "ece": 0.1608,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.1181,
+     "conf": 0.0403,
+     "acc": 0.0428
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0513,
+     "conf": 0.1456,
+     "acc": 0.0889
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0621,
+     "conf": 0.2701,
+     "acc": 0.2529
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1322,
+     "conf": 0.3482,
+     "acc": 0.2965
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1097,
+     "conf": 0.4512,
+     "acc": 0.3645
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1733,
+     "conf": 0.5477,
+     "acc": 0.4706
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1355,
+     "conf": 0.6408,
+     "acc": 0.3792
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0768,
+     "conf": 0.7485,
+     "acc": 0.4508
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0614,
+     "conf": 0.8481,
+     "acc": 0.3855
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0795,
+     "conf": 0.9583,
+     "acc": 0.4541
+    }
+   ],
+   "base": null,
+   "kind": "full fine-tune",
+   "params": 73881879,
+   "weights_url": "https://huggingface.co/fastino/gliner2.5-small-v1",
+   "code_url": null,
+   "link": "https://huggingface.co/fastino/gliner2.5-small-v1"
+  },
+  {
+   "name": "Qwen-2.5-1B-RLCD",
+   "hosted": false,
+   "skill": 3.78,
+   "ece": 0.2052,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.1428,
+     "conf": 0.0392,
+     "acc": 0.0474
+    },
+    {
+     "lo": 0.1,
+     "w": 0.01,
+     "conf": 0.1432,
+     "acc": 0.1705
+    },
+    {
+     "lo": 0.2,
+     "w": 0.019,
+     "conf": 0.2576,
+     "acc": 0.121
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0613,
+     "conf": 0.3546,
+     "acc": 0.2552
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1033,
+     "conf": 0.4547,
+     "acc": 0.3506
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1708,
+     "conf": 0.5484,
+     "acc": 0.4176
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1227,
+     "conf": 0.6483,
+     "acc": 0.4143
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1501,
+     "conf": 0.7495,
+     "acc": 0.475
+    },
+    {
+     "lo": 0.8,
+     "w": 0.094,
+     "conf": 0.8516,
+     "acc": 0.4813
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1261,
+     "conf": 0.9578,
+     "acc": 0.5039
+    }
+   ],
+   "base": "Qwen/Qwen2.5-1.5B",
+   "kind": "inference technique",
+   "params": 1543714304,
+   "weights_url": null,
+   "code_url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
+   "link": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD"
+  },
+  {
+   "name": "Lumma-Fev-0.6B",
+   "hosted": false,
+   "skill": 2.97,
+   "ece": 0.2357,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0649,
+     "conf": 0.0577,
+     "acc": 0.0217
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0344,
+     "conf": 0.139,
+     "acc": 0.0954
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0249,
+     "conf": 0.252,
+     "acc": 0.1879
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0696,
+     "conf": 0.3589,
+     "acc": 0.2749
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1227,
+     "conf": 0.4518,
+     "acc": 0.3012
+    },
+    {
+     "lo": 0.5,
+     "w": 0.1668,
+     "conf": 0.5486,
+     "acc": 0.4053
+    },
+    {
+     "lo": 0.6,
+     "w": 0.1348,
+     "conf": 0.6485,
+     "acc": 0.4017
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0968,
+     "conf": 0.7481,
+     "acc": 0.4402
+    },
+    {
+     "lo": 0.8,
+     "w": 0.1008,
+     "conf": 0.8516,
+     "acc": 0.4409
+    },
+    {
+     "lo": 0.9,
+     "w": 0.1844,
+     "conf": 0.9622,
+     "acc": 0.5415
+    }
+   ],
+   "base": "FrontiersMind/Lumma-0.6B-Base",
+   "kind": "LoRA",
+   "params": 649281964,
+   "weights_url": "https://huggingface.co/FrontiersMind/Lumma-fev-0.6b",
+   "code_url": null,
+   "link": "https://huggingface.co/FrontiersMind/Lumma-fev-0.6b"
+  },
+  {
+   "name": "Verdict",
+   "hosted": false,
+   "skill": 1.87,
+   "ece": 0.154,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0151,
+     "conf": 0.0763,
+     "acc": 0.0637
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0148,
+     "conf": 0.1474,
+     "acc": 0.1513
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0319,
+     "conf": 0.2639,
+     "acc": 0.1987
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1264,
+     "conf": 0.3563,
+     "acc": 0.2337
+    },
+    {
+     "lo": 0.4,
+     "w": 0.1942,
+     "conf": 0.4526,
+     "acc": 0.3511
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2984,
+     "conf": 0.5445,
+     "acc": 0.3913
+    },
+    {
+     "lo": 0.6,
+     "w": 0.2431,
+     "conf": 0.6472,
+     "acc": 0.4543
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0557,
+     "conf": 0.7378,
+     "acc": 0.453
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0191,
+     "conf": 0.8387,
+     "acc": 0.4591
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0013,
+     "conf": 0.9127,
+     "acc": 0.332
+    }
+   ],
+   "base": "knowledgator/gliclass-modern-base-v2.0",
+   "kind": "full fine-tune",
+   "params": 151378176,
+   "weights_url": "https://huggingface.co/heman10x/rlcd-modernbert-151m",
+   "code_url": "https://github.com/Heman10x-NGU/Verdict-open-jev",
+   "link": "https://huggingface.co/heman10x/rlcd-modernbert-151m"
+  },
+  {
+   "name": "Lumma-Fev-0.1B",
+   "hosted": false,
+   "skill": 1.78,
+   "ece": 0.1574,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0.0374,
+     "conf": 0.0794,
+     "acc": 0.0565
+    },
+    {
+     "lo": 0.1,
+     "w": 0.073,
+     "conf": 0.1357,
+     "acc": 0.097
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0329,
+     "conf": 0.2606,
+     "acc": 0.1588
+    },
+    {
+     "lo": 0.3,
+     "w": 0.1038,
+     "conf": 0.3572,
+     "acc": 0.2015
+    },
+    {
+     "lo": 0.4,
+     "w": 0.147,
+     "conf": 0.4502,
+     "acc": 0.2854
+    },
+    {
+     "lo": 0.5,
+     "w": 0.2484,
+     "conf": 0.5457,
+     "acc": 0.4538
+    },
+    {
+     "lo": 0.6,
+     "w": 0.158,
+     "conf": 0.6465,
+     "acc": 0.4805
+    },
+    {
+     "lo": 0.7,
+     "w": 0.1074,
+     "conf": 0.7464,
+     "acc": 0.4738
+    },
+    {
+     "lo": 0.8,
+     "w": 0.0662,
+     "conf": 0.8472,
+     "acc": 0.5215
+    },
+    {
+     "lo": 0.9,
+     "w": 0.0259,
+     "conf": 0.931,
+     "acc": 0.5406
+    }
+   ],
+   "base": "FrontiersMind/Nandi-Mini-150M",
+   "kind": "full fine-tune",
+   "params": 153412928,
+   "weights_url": "https://huggingface.co/FrontiersMind/Lumma-fev-0.1b",
+   "code_url": null,
+   "link": "https://huggingface.co/FrontiersMind/Lumma-fev-0.1b"
+  },
+  {
+   "name": "LFM2.5-350M-RLCD",
+   "hosted": false,
+   "skill": 1.38,
+   "ece": 0.5681,
+   "rel": [
+    {
+     "lo": 0.0,
+     "w": 0,
+     "conf": null,
+     "acc": null
+    },
+    {
+     "lo": 0.1,
+     "w": 0.0003,
+     "conf": 0.192,
+     "acc": 0.5766
+    },
+    {
+     "lo": 0.2,
+     "w": 0.0075,
+     "conf": 0.262,
+     "acc": 0.0486
+    },
+    {
+     "lo": 0.3,
+     "w": 0.0186,
+     "conf": 0.3519,
+     "acc": 0.0377
+    },
+    {
+     "lo": 0.4,
+     "w": 0.0316,
+     "conf": 0.4506,
+     "acc": 0.0665
+    },
+    {
+     "lo": 0.5,
+     "w": 0.0821,
+     "conf": 0.5496,
+     "acc": 0.2987
+    },
+    {
+     "lo": 0.6,
+     "w": 0.0851,
+     "conf": 0.6515,
+     "acc": 0.3012
+    },
+    {
+     "lo": 0.7,
+     "w": 0.0945,
+     "conf": 0.7502,
+     "acc": 0.2712
+    },
+    {
+     "lo": 0.8,
+     "w": 0.119,
+     "conf": 0.8504,
+     "acc": 0.2794
+    },
+    {
+     "lo": 0.9,
+     "w": 0.5614,
+     "conf": 0.9815,
+     "acc": 0.2961
+    }
+   ],
+   "base": null,
+   "kind": "full fine-tune",
+   "params": 354483968,
+   "weights_url": "https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD",
+   "code_url": null,
+   "link": "https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD"
+  }
+ ]
+}

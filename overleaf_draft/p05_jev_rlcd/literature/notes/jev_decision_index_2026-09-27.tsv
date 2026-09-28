@@ -1,0 +1,69 @@
+name	skill	raw	ece	lat	cov	kind	base	params	repo	code
+Jev (TypeSafe, hosted)	57.91	68.09	0.074	524.1	1.0	hosted API	closed			
+Surogate Rune 26B-A4B v3 [bf16]	57.44	67.3	0.1196	120.5	0.76	full fine-tune	google/gemma-4-26B-A4B-it	25805936206	surogate/rune-26b-a4b-GGUF	https://github.com/invergent-ai/surogate
+Decider chat · Gemma-4-31B	57.33	67.22	0.0471	108.5	0.76	inference technique	google/gemma-4-31B	32682372656		https://github.com/Mapika/decider
+AutoJev-27B	56.4	66.89	0.0178	101.4	0.76	full fine-tune	Qwen/Qwen3.8-27B	27781427952	denis-pplx/autojev-27b	https://github.com/denis-pplx/autojev
+simple-jev · Qwen3.8-27B (featherless)	55.74	66.26	0.113	373.0	0.76	inference technique	Qwen/Qwen3.8-27B	27781427952		https://github.com/featherless-ai/simple-jev
+Jebadiah 27B	54.67	65.62	0.014	110.4	0.76	LoRA	Qwen/Qwen3.8-27B	27781427952	frontier-infra/jebadiah-27b	https://github.com/getainode/jebadiah
+reflex 27B [FP8 · wide choice]	52.16	63.84	0.0242	108.3	0.76	inference technique	Qwen/Qwen3.8-27B	27781427952		https://github.com/kshetrajna12/reflex
+Decider chat · Qwen3.6-27B	51.35	63.06	0.0209	83.6	0.76	inference technique	Qwen/Qwen3.6-27B	27781427952		https://github.com/Mapika/decider
+Winnow-12B [Q8_0]	50.02	61.91	0.1679	72.5	0.76	LoRA	google/gemma-4-12B	11959730224	EldanRing/Winnow-12B	https://github.com/EldanRing/winnow-inference
+JoshuaSP diffusiongemma (open-jev)	49.47	61.28	0.2155	260.4	0.76	inference technique	google/diffusiongemma-26B-A4B-it	25823778864		https://github.com/JoshuaSP/open-jev
+Jevfire	49.37	61.63	0.0521	89.6	0.76	inference technique	Qwen/Qwen3.8-27B	27781427952		https://github.com/kikoncuo/jevfire
+Decider 35B-A3B [NVFP4]	47.11	59.72	0.0226	101.4	0.76	full fine-tune	Qwen/Qwen3.5-35B-A3B-Base	35951822704	Mapika/decider-35b-a3b-nvfp4	
+JPT-9B	46.89	59.23	0.0773	148.6	0.76	LoRA	Qwen/Qwen3.5-9B-Base	9653104368	kirp/jpt-9b	https://github.com/tic-top/llm2jev
+Decision 1.0 Lux	43.49	57.43	0.076	51.0	0.76	head / adapter	Qwen/Qwen3.5-9B-Base	9653104368	llm-semantic-router/Decision-1.0-Lux-9B	
+Xor	41.48	53.34	0.0149	139.9	0.6927	full fine-tune	Qwen/Qwen3.6-35B-A3B	35951822704	juspay/xor	
+Decider 4B	40.7	55.45	0.0837	12.6	0.76	full fine-tune	Qwen/Qwen3.5-4B-Base	4659865088	Mapika/decider-4b	https://github.com/Mapika/decider
+Jev-Omni	40.53	53.5	0.161	54.9	0.76	LoRA + head	google/gemma-4-12B	11959730224	akhilaaa3/Jev-Omni	
+djev	40.28	53.36	0.2124	84.4	0.76	inference technique	google/diffusiongemma-26B-A4B-it	25823778864		https://github.com/Davipar/djev-dev
+Winnow-E4B [Q8_0]	39.89	54.84	0.058	45.0	0.76	LoRA	google/gemma-4-E4B	7996156490	EldanRing/Winnow-E4B	https://github.com/EldanRing/winnow-inference
+Hopper	39.67	54.31	0.0828	23.3	0.76	LoRA	Qwen/Qwen3.5-4B-Base	4659865088	HopitAI/hopper	https://github.com/hopit-ai/hopper
+Bespoke Nimble 9B v2	39.57	53.61	0.024	77.3	0.76	LoRA	Qwen/Qwen3.5-9B-Base	9653104368	bespokelabs/Bespoke-Nimble-9B-v2	https://github.com/bespokelabsai/nimble
+JevK5	38.81	53.68	0.0268	22.0	0.76	LoRA	Qwen/Qwen3.5-4B-Base	4659865088	alibiserikbay/JevK5	https://github.com/allebee/jevk5
+lev	38.54	53.16	0.0638	70.8	0.76	LoRA + head	Qwen/Qwen3.5-4B-Base	4659865088	interfaze-ai/lev	https://github.com/Abhinavexists/lev
+Kev 9B	38.48	54.04	0.1378	51.4	0.76	LoRA + head	Qwen/Qwen3.5-9B-Base	9653104368	jaredpalmer/kev-9b	https://github.com/jaredpalmer/kev
+Intern-Decision-4B	37.81	52.99	0.0278	44.2	0.76	full fine-tune	Qwen/Qwen3.5-4B-Base	4659865088	internlm/Intern-Decision-4B	https://github.com/internlm/Intern-Decision
+razorback16 openjev diffusiongemma (NVFP4, vLLM) [one read, NVFP4]	37.25	50.9	0.232	37.7	0.76	inference technique	google/diffusiongemma-26B-A4B-it	25823778864		https://github.com/vllm-project/vllm/pull/57250
+NeoHorse-Jev-4B	36.75	52.73	0.1039	49.0	0.76	head / adapter	Qwen/Qwen3.5-4B-Base	4659865088	TokenRhythm/NeoHorse-Jev-4B	https://github.com/TokenRhythm/NeoHorse/tree/main/jev
+Solomon v1.1	36.43	47.98	0.0807	223.9	0.6037	head / adapter	Qwen/Qwen3.8-27B	27781427952	DoccyHealth/Solomon	
+Kev 4B	34.64	50.99	0.1756	52.1	0.76	LoRA + head	Qwen/Qwen3.5-4B-Base	4659865088	jaredpalmer/kev-4b	https://github.com/jaredpalmer/kev
+Decision 1.0 Nox	34.36	50.99	0.1399	53.2	0.76	head / adapter	Qwen/Qwen3.5-4B-Base	4659865088	llm-semantic-router/Decision-1.0-Nox	
+Jobe	32.35	48.67	0.1232	53.5	0.76	inference technique	Qwen/Qwen3.5-4B-Base	4659865088		https://github.com/MantisShrimpdev/jobe
+mmastrac diffusiongemma (vLLM PR 57250)	32.24	45.72	0.2019	126.7	0.6927	inference technique	google/diffusiongemma-26B-A4B-it	25823778864		https://github.com/vllm-project/vllm/pull/57250
+open-jev (pngwn)	29.91	45.67	0.0589	112.3	0.76	LoRA	Qwen/Qwen3.5-4B-Base	4659865088	pngwn/system-one-qwen3.5-4b-scorer-v2b	
+Tev1-4B-experimental	29.24	44.66	0.104	35.8	0.6909	full fine-tune	Qwen/Qwen3.5-4B-Base	4659865088	togethercomputer/Tev1-4B-experimental	https://github.com/togethercomputer/tev1
+Decider 2B [FP8]	28.97	45.85	0.0771	8.1	0.76	full fine-tune	Qwen/Qwen3.5-2B-Base	2274069824	Mapika/decider-2b	
+openvons	28.42	45.65	0.3712	21.2	0.76	inference technique	Qwen/Qwen3-4B-Instruct-2507	4022468096		https://github.com/genai-craft/openvons
+this-that 1.2	28.14	44.86	0.1983	44.3	0.76	full fine-tune	Mapika/decider-2b	1881825088	flock-io/this-that-model-1.2	https://github.com/FLock-io/this-that-model
+Metask-Jev-4B	26.89	42.77	0.1035	57.3	0.6927	LoRA	Qwen/Qwen3.5-4B-Base	4659865088	wayfind/metask-jev-4b-policy-mix	https://github.com/metask-ai/metask-jev
+SemIf	25.94	42.21	0.0989	113.1	0.6863	inference technique	Qwen/Qwen3.5-4B-Base	4659865088		https://github.com/TheoLeeCJ/openjev
+Decision 1.0 Sol	25.32	43.88	0.115	38.1	0.76	head / adapter	Qwen/Qwen3.5-2B-Base	2274069824	llm-semantic-router/Decision-1.0-Sol	
+mini-jev	20.98	37.45	0.3457	66.9	0.6927	inference technique	Qwen/Qwen3-4B-Instruct-2507	4022468096		https://github.com/r-ms/mini-jev
+Bosun v3.1 1.7B	20.1	40.1	0.1302	40.3	0.76	LoRA + head	Qwen/Qwen3-1.7B-Base	1720574976	Hanno-Labs/bosun-v3.1-1.7b	https://github.com/Hanno-Labs/jev-compatible-server
+Intern-Decision-2B	19.38	37.45	0.0608	33.5	0.76	full fine-tune	Qwen/Qwen3.5-2B-Base	2274069824	internlm/Intern-Decision-2B	https://github.com/internlm/Intern-Decision
+JPT-0.8B	19.22	38.65	0.0688	117.5	0.76	LoRA	Qwen/Qwen3.5-0.8B-Base	873438784	kirp/jpt-0.8b	https://github.com/tic-top/llm2jev
+Decision 1.0 Eos	18.41	37.81	0.0833	39.7	0.7599	head / adapter	Qwen/Qwen3.5-0.8B-Base	873438784	llm-semantic-router/Decision-1.0-Eos-0.8B	
+Kev 0.8B	14.6	35.36	0.0743	41.6	0.76	LoRA + head	Qwen/Qwen3.5-0.8B-Base	873438784	jaredpalmer/kev-0.8b	https://github.com/jaredpalmer/kev
+Bosun v3.1 0.6B	14.32	35.07	0.1419	38.7	0.76	LoRA + head	Qwen/Qwen3-0.6B-Base	596049920	Hanno-Labs/bosun-v3.1-0.6b	https://github.com/Hanno-Labs/jev-compatible-server
+Tev1-0.8B-experimental	12.85	32.37	0.1257	28.5	0.6909	full fine-tune	Qwen/Qwen3.5-0.8B-Base	873438784	togethercomputer/Tev1-0.8B-experimental	https://github.com/togethercomputer/tev1
+Intern-Decision-0.8B	11.94	32.68	0.0255	33.7	0.76	full fine-tune	Qwen/Qwen3.5-0.8B-Base	873438784	internlm/Intern-Decision-0.8B	https://github.com/internlm/Intern-Decision
+MoJev	11.69	31.39	0.1246	46.4	0.76	head / adapter	Qwen/Qwen3.5-0.8B-Base	873438784	MoLeMo-Lab/mojev	https://github.com/MoLeMo-Lab/mojev
+GLiNER2.5-Decide	11.21	32.35	0.0884	23.3	0.76	full fine-tune	fastino/gliner2-large-v1	486444053	fastino/GLiNER2.5-Decide	https://github.com/fastino-ai/GLiNER2
+Lavoir	8.69	30.12	0.1492	20.0	0.7594	full fine-tune	answerdotai/ModernBERT-large	395881664	moganai/lavoir	https://github.com/moganai/lavoir
+jeff	8.04	28.91	0.0969	21.8	0.76	inference technique	knowledgator/gliformer-large-v1	575683963		https://github.com/logan-markewich/jeff
+CLM-v0.1-8B	7.4	27.94	0.3227	46.8	0.76	full fine-tune	Qwen/Qwen3-8B-Base	8190735360	Contrastive-LM/CLM-v0.1-8B	https://github.com/Contrastive-LM/CLM
+GLiNER 2.5 base	6.76	28.71	0.367	14.1	0.7599	full fine-tune		193581591	fastino/gliner2.5-base-v1	
+LFM2.5-2.6B-RLCD	6.76	28.22	0.2545	39.3	0.7406	full fine-tune	LiquidAI/LFM2.5-2.6B-Base	2697198592	monotykamary/LFM2.5-2.6B-RLCD	
+Decision 1.0 Kai	6.52	27.37	0.1851	30.4	0.7595	head / adapter	jhu-clsp/mmBERT-base	307797035	llm-semantic-router/Decision-1.0-Kai	
+Laya	6.04	27.53	0.1402	5.8	0.7594	full fine-tune		421293830	convaiinnovations/laya	https://github.com/NandhaKishorM/laya
+Julia 1	5.54	28.01	0.4197	5.8	0.7595	full fine-tune	jhu-clsp/mmBERT-small	140908331	SupersonicLabs/Julia-1	
+system-one-gemma	5.07	25.36	0.2387	31.9	0.76	LoRA + head	google/gemma-3-270m	268098176		https://github.com/akash-kamat/system-one-gemma
+Decision 1.0 Lex	4.54	26.12	0.1688	29.8	0.7595	head / adapter	jhu-clsp/mmBERT-base	307797035	llm-semantic-router/decision-1.0-lex	
+GLiNER 2.5 multilingual	4.26	26.2	0.2538	14.0	0.7599	full fine-tune		287355159	fastino/gliner2.5-multi-v1	
+GLiNER 2.5 small	3.82	25.99	0.1608	13.6	0.7599	full fine-tune		73881879	fastino/gliner2.5-small-v1	
+Qwen-2.5-1B-RLCD	3.78	24.34	0.2052	43.8	0.76	inference technique	Qwen/Qwen2.5-1.5B	1543714304		https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD
+Lumma-Fev-0.6B	2.97	24.02	0.2357	21.3	0.7599	LoRA	FrontiersMind/Lumma-0.6B-Base	649281964	FrontiersMind/Lumma-fev-0.6b	
+Verdict	1.87	12.94	0.154	11.4	0.3069	full fine-tune	knowledgator/gliclass-modern-base-v2.0	151378176	heman10x/rlcd-modernbert-151m	https://github.com/Heman10x-NGU/Verdict-open-jev
+Lumma-Fev-0.1B	1.78	22.07	0.1574	20.9	0.7112	full fine-tune	FrontiersMind/Nandi-Mini-150M	153412928	FrontiersMind/Lumma-fev-0.1b	
+LFM2.5-350M-RLCD	1.38	22.92	0.5681	26.7	0.76	full fine-tune		354483968	notnotsamuel/LFM2.5-350M-RLCD	

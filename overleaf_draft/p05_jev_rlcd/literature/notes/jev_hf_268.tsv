@@ -1,0 +1,269 @@
+model	created	jev_related	category	application	language	task_tag	base_model	downloads	likes	decision_index	di_ece	weight_files
+chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF	2026-09-21	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	Qwen/Qwen3.5-2B-Base	5971	14			yes
+alibiserikbay/JevK5	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	Qwen/Qwen3.5-4B	5525	13	38.81	0.0268	yes
+com-kotobalabs/open-jev-deberta-v3-large	2026-09-18	yes	General-purpose typed-decision model	general typed-decision model (encoder cross-scorer)		text-classification	microsoft/deberta-v3-large	2441	69			yes
+chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	Qwen/Qwen3.5-2B-Base	915	0			yes
+lostargon/Tiny-Jev	2026-09-21	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3-0.6B	719	4			yes
+alibiserikbay/JevK5-9B	2026-09-25	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	Qwen/Qwen3.5-9B	624	1			yes
+wayfind/metask-jev-4b-policy-mix	2026-09-21	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-4B	596	1	26.89	0.1035	yes
+mobarmg/jev-schema-scorer-deberta-v3-large	2026-09-17	yes	General-purpose typed-decision model	general typed-decision model (encoder cross-scorer)		text-classification	microsoft/deberta-v3-large	493	7			yes
+alibiserikbay/JevK5-2B	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	Qwen/Qwen3.5-2B	465	1			yes
+kushalpatil/jevify-gemma4-e4b	2026-09-20	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		image-text-to-text	google/gemma-4-E4B-it	288	0			yes
+TokenRhythm/NeoHorse-Jev-4B	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	TokenRhythm/NeoHorse-1-4B	230	18	36.75	0.1039	yes
+vagmi/jev-lite	2026-09-19	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	google/gemma-4-E4B-it	190	5			yes
+kushalpatil/jevify-gemma4-26b-a4b	2026-09-20	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		image-text-to-text	google/gemma-4-26B-A4B-it	171	2			yes
+autotrust/JEV-9B	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-9B	141	8			yes
+chaoliangUNSW/Jev-Style-0.8B-Decision-v3	2026-09-24	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-0.8B	133	3			yes
+lostargon/Tiny-Jev-1.7B	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3-1.7B	104	0			yes
+tianxinwei/JevAny-27B-RLCR	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		reinforcement-learning	Qwen/Qwen3.8-27B	63	1			yes
+tianxinwei/JevAny-27B-SFT	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			Qwen/Qwen3.8-27B	55	1			yes
+jsaurabh/qwen3.5-9b-jev-data-mix-v2	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-9B	52	0			yes
+Raymond1122/metask-jev-4b-policy-mix	2026-09-21	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-4B	49	0			yes
+leobitz/jev-berta-base-zeroshot-classifier	2026-09-24	yes	General-purpose typed-decision model	general typed-decision model (encoder cross-scorer)		zero-shot-classification	microsoft/deberta-v3-base	48	3			yes
+jaswanthsanjay88/jev-0.5b	2026-09-19	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			Qwen/Qwen2.5-0.5B	37	0			yes
+autotrust/JEV-27B	2026-09-25	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.8-27B	34	3			yes
+DawoodKMasood/jev-gemma-3-270m	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	google/gemma-3-270m-it	33	1			yes
+alibiserikbay/JevK5-Lite	2026-09-25	yes	General-purpose typed-decision model	general typed-decision model (encoder cross-scorer)		zero-shot-classification	microsoft/deberta-v3-large	32	0			yes
+kushalpatil/jevify-gemma4-26b-a4b-lora	2026-09-20	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	google/gemma-4-26B-A4B-it	31	0			yes
+CaoHaoWei/Jev-LCT-Qwen2.5-1.5B	2026-09-25	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification		30	0			yes
+kushalpatil/jevify-gemma4-e4b-lora	2026-09-20	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	google/gemma-4-E4B-it	27	0			yes
+VTXAI/VTX-JEV-1	2026-09-24	yes	General-purpose typed-decision model	tiny from-scratch typed-decision model (<100M)		feature-extraction		22	2			yes
+CaoHaoWei/Jev-LCT-Qwen2.5-0.5B	2026-09-25	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification		22	0			yes
+lokinfey/Qwen3_5_0.8B_jev	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-0.8B	20	0			yes
+sunziqin/millennium-jev-1.5b	2026-09-25	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		zero-shot-classification	Qwen/Qwen2.5-1.5B-Instruct	18	0			yes
+sunziqin/millennium-jev-0.5b	2026-09-25	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		zero-shot-classification	Qwen/Qwen2.5-0.5B-Instruct	16	0			yes
+SargeDev/Jev_Qwen3.8-27B	2026-09-24	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			huihui-ai/Huihui-Qwen3.8-27B-abliterated	10	0			yes
+CaoHaoWei/Jev-LCT-Qwen3-8B	2026-09-26	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification		5	0			yes
+soyrsoyr/jev-playground-rlcd	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (encoder cross-scorer)		text-classification	MoritzLaurer/deberta-v3-large-zeroshot-v2.0	4	0			yes
+ZefanCai/Open-Jev-9B	2026-09-20	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			Qwen/Qwen3.5-9B	0	43			yes
+ZefanCai/Open-Jev-2B	2026-09-20	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			Qwen/Qwen3.5-2B	0	10			yes
+gopalanj/jevons-lfm25-1.2b-systemone	2026-09-20	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-generation	LiquidAI/LFM2.5-1.2B-Instruct	0	0			yes
+ZefanCai/Open-Jev-27B-v1.1	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			Qwen/Qwen3.8-27B	0	10			yes
+ait-hf/certus-jev-like-v0007	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen2.5-1.5B-Instruct	0	1			yes
+sshalimov04/open-jev-base	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (encoder cross-scorer)		text-classification	jhu-clsp/mmBERT-small	0	0			yes
+vigneshlabs/ballot-jev-0.5b	2026-09-22	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		zero-shot-classification	Qwen/Qwen2.5-0.5B	0	0			yes
+xuhaodev/Qwen3-1.7B-Jev	2026-09-23	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3-1.7B	0	0			yes
+Quazim0t0/Byrne-Jev-79M	2026-09-24	yes	General-purpose typed-decision model	tiny from-scratch typed-decision model (<100M)				0	1			yes
+guoan1/jev-qwen35-08b	2026-09-24	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			Qwen/Qwen3.5-0.8B-Base	0	1			yes
+shgao/rsi-jev-v1.0-qwen3.5-0.8b	2026-09-24	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-0.8B-Base	0	0			yes
+shgao/rsi-jev-v1.0-qwen3.5-2b	2026-09-24	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-2B-Base	0	0			yes
+joyfox/Qwen3.5-0.8B-JEV	2026-09-24	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)			Qwen/Qwen3.5-0.8B	0	0			yes
+shgao/rsi-jev-v2.0-qwen3.5-2b	2026-09-26	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-2B-Base	0	1			yes
+ali-rehman-ML/modern-bert-jev	2026-09-26	yes	General-purpose typed-decision model	general typed-decision model (encoder cross-scorer)		multiple-choice	answerdotai/ModernBERT-base	0	0			yes
+jaluus/jevpertus-v1.5-8B	2026-09-26	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		multiple-choice	swiss-ai/Apertus-v1.5-8B	0	0			yes
+jaluus/jevpertus-8B-Instruct-2509	2026-09-26	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		multiple-choice	swiss-ai/Apertus-8B-Instruct-2509	0	0			yes
+chaoliangUNSW/Jev-Style-2B-Decision-v3	2026-09-27	yes	General-purpose typed-decision model	general typed-decision model (decoder LLM + head/LoRA)		text-classification	Qwen/Qwen3.5-2B	0	1			yes
+guanxuyu/visual-jev-4b-answer-sft	2026-09-23	yes	Multimodal / vision decisions	vision decisions (image + typed questions)		image-text-to-text	Qwen/Qwen3-VL-4B-Instruct	466	2			yes
+akhilaaa3/Jev-Omni	2026-09-20	yes	Multimodal / vision decisions	multimodal decisions (text, image, audio, video)		text-classification	google/gemma-4-12B-it	128	257	40.53	0.161	yes
+SeanLiu/Jev-Vision	2026-09-21	yes	Multimodal / vision decisions	vision decisions (image + typed questions)			Qwen/Qwen3-VL-8B-Instruct	0	0			yes
+Fr0zencr4nE/jev-spatial	2026-09-24	yes	Multimodal / vision decisions	spatial reasoning decisions (images)			allenai/Molmo2-ER	0	1			yes
+divyanshx11/JEVision	2026-09-24	yes	Multimodal / vision decisions	vision decisions (image + typed questions)			Qwen/Qwen3.5-0.8B-Base	0	1			yes
+argos1111/modernbert-ja-310m-jev	2026-09-19	yes	Language-specific decisions	Japanese typed decisions	ja	text-classification	sbintuitions/modernbert-ja-310m	929	15			yes
+fukayatti0/jev-japanese-judgment	2026-09-23	yes	Language-specific decisions	Japanese typed decisions	ja		LiquidAI/LFM2.5-1.2B-JP-202606	67	0			yes
+fukayatti0/jev-japanese-judgment-v2	2026-09-25	yes	Language-specific decisions	Japanese typed decisions	ja		LiquidAI/LFM2.5-1.2B-JP-202606	14	0			yes
+wwydmanski/bielik-minitron-jev-v0.1	2026-09-23	yes	Language-specific decisions	Polish typed decisions (any2jev)	pl	text-classification	speakleash/Bielik-Minitron-7B-v3.0-Instruct	0	0			yes
+wwydmanski/bielik-minitron-jev-v0.2	2026-09-23	yes	Language-specific decisions	Polish typed decisions (any2jev)	pl	text-classification	speakleash/Bielik-Minitron-7B-v3.0-Instruct	0	0			yes
+atmaneayoub/jev-ar	2026-09-24	yes	Agents, tools and safety	Gulf-Arabic intent routing for RAG (application over language; card gated, read from public metadata)	ar	zero-shot-classification	jhu-clsp/mmBERT-base	0	3			yes
+wwydmanski/bielik-minitron-jev-v0.3	2026-09-24	yes	Language-specific decisions	Polish typed decisions (any2jev)	pl	text-classification	speakleash/Bielik-Minitron-7B-v3.0-Instruct	0	0			yes
+nouton/jev-ru-4b-lora-v2	2026-09-25	yes	Language-specific decisions	Russian, Ukrainian and Belarusian typed decisions	ru;uk;be		Qwen/Qwen3.5-4B	0	0			yes
+sdmlai/nano-jev	2026-09-25	yes	Domain application	RAG: typed decisions inside retrieval pipelines		text-classification	microsoft/MiniLM-L12-H384-uncased	42	0			yes
+guzus/jev-nyotti	2026-09-22	yes	Domain application	trading: imitate a BTC trader's execution actions	ko		Qwen/Qwen3.5-4B	26	0			yes
+Nebulaw1/jev-qwen3.5-4b-legal-lora	2026-09-20	yes	Domain application	legal: finite-choice Chinese legal judgments	zh	text-generation	Qwen/Qwen3.5-4B-Base	25	0			yes
+mogita/jev-decider-qwen3-4b	2026-09-21	yes	Domain application	finance: bank-transaction budget category		text-classification	Qwen/Qwen3-4B	23	1			yes
+asjson/jevson-4b-01	2026-09-23	yes	Domain application	extraction: JSON-Schema record with per-field probability		text-classification	Qwen/Qwen3-4B	22	0			yes
+Nebulaw1/jev-qwen3.5-0.8b-legal-lora	2026-09-20	yes	Domain application	legal: finite-choice Chinese legal judgments	zh	text-generation	Qwen/Qwen3.5-0.8B-Base	14	0			yes
+kokuren/jp-sns-jev7-estimator	2026-09-18	yes	Domain application	social media: Japanese SNS 7-axis scoring	ja	text-classification	line-corporation/line-distilbert-base-japanese	0	0			yes
+Jeuner/jev-maboto	2026-09-22	yes	Domain application	retail: supermarket offers into 13 product groups	de		mlx-community/Qwen3-1.7B-4bit	0	0			yes
+guzus/jev-nyotti-action	2026-09-23	yes	Domain application	trading: imitate a BTC trader's execution actions	ko			0	0			no
+wendellperbar/serigy-jev	2026-09-24	yes	Domain application	moderation: PT-BR fake-news detection	pt	text-classification	AIInstituteLNCC/manaca-1b-base	0	3			yes
+aimeigaoshou/agent-jev	2026-09-21	yes	Agents, tools and safety	agents: coding-completion control decisions			Qwen/Qwen3-0.6B	715	33			yes
+samatv256/mini-Jev	2026-09-21	yes	Agents, tools and safety	agents: tool selection and routing			Qwen/Qwen3-0.6B	197	16			yes
+AndeyTait/JevForge-0.8B	2026-09-19	yes	Agents, tools and safety	agents: structured web-action decisions		text-classification	Qwen/Qwen3.5-0.8B	71	0			yes
+NAME0x0/Jevlet	2026-09-25	yes	Agents, tools and safety	computer use: command plus on-screen state		text-classification	BAAI/bge-small-en-v1.5	13	0			yes
+nicolasembleton/mini-jev-minicpm5-2b-shell-safety-phase1b-merged	2026-09-24	yes	Agents, tools and safety	agents: shell-command safety (allow / warn / block)		text-classification	openbmb/MiniCPM5-2B	9	0			yes
+SargeDev/jev-gate-student-b	2026-09-21	yes	Agents, tools and safety	agents: memory-relevance gating (distilled from Jev API)				0	0			yes
+JonusNattapong/jev-my-bro-th960	2026-09-22	yes	Agents, tools and safety	agents: Thai agent and tool governance	th	text-classification	convaiinnovations/laya-multilingual	0	0			yes
+JonusNattapong/jev-my-bro-th1200	2026-09-23	yes	Agents, tools and safety	agents: Thai agent and tool governance	th	text-classification	convaiinnovations/laya-multilingual	0	0			yes
+nicolasembleton/mini-jev-minicpm5-2b-function-router-v0-choice-onnx	2026-09-27	yes	Agents, tools and safety	agents: tool selection and routing			openbmb/MiniCPM5-2B	0	1			yes
+SUPER321/jevflash-doom-basic-0.6b	2026-09-23	yes	Games and control	games: Doom action scoring		text-generation	Qwen/Qwen3-0.6B-Base	153	0			yes
+bzantium/gemma-3-270m-jev	2026-09-23	yes	Games and control	games: Maze and ViZDoom action scoring		text-classification	google/gemma-3-270m-it	2	0			yes
+bzantium/gemma-3-270m-jev-mlx	2026-09-23	yes	Games and control	games: Maze and ViZDoom action scoring			google/gemma-3-270m-it	1	0			yes
+lewislululu/jevon	2026-09-19	yes	Games and control	games: grid navigation (from scratch, 20M)		reinforcement-learning		0	6			yes
+zwh20081/hoi4-jevai	2026-09-25	yes	Games and control	games: Hearts of Iron IV AI strategy mod			com-kotobalabs/open-jev-deberta-v3-large	0	0			yes
+HIT-TMG/JevEmbed-KaLM-Embedding-V2.5	2026-09-25	yes	Embeddings for Jev-style tasks	embeddings trained on Jev-style questions (JevEmbed-Data)		feature-extraction	KaLM-Embedding/KaLM-embedding-multilingual-mini-instruct-v2.5	142	1			yes
+HIT-TMG/JevEmbed-Qwen3-Embedding-0.6B	2026-09-26	yes	Embeddings for Jev-style tasks	embeddings trained on Jev-style questions (JevEmbed-Data)		feature-extraction	Qwen/Qwen3-Embedding-0.6B	87	1			yes
+DKNTZMN/gan8-vs-jev	2026-09-23	yes	Research and ablation checkpoints	mechanism experiment: GAN8 vs Jev interface				79	1			yes
+abidlabs/jev-typed-decisions-causal-0.6b	2026-09-21	yes	Research and ablation checkpoints	reproduction: cached causal typed scorer			Qwen/Qwen3-0.6B-Base	66	0			yes
+Praveenrajus/jevify-qwen3.5-2b-readout-full-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-2B	22	0			yes
+Praveenrajus/jevify-qwen3.5-2b-readout-full	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-2B	19	0			yes
+Praveenrajus/jevify-qwen3.5-4b-readout-full	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-4B	13	0			yes
+Praveenrajus/jevify-qwen3.5-4b-readout-full-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-4B	13	0			yes
+azharmo/build-jev-from-scratch	2026-09-20	yes	Research and ablation checkpoints	toy reconstruction of the System One interface		text-classification		0	1			yes
+Praveenrajus/jevify-qwen3.5-4b	2026-09-21	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers		text-classification	Qwen/Qwen3.5-4B	0	0			yes
+Praveenrajus/jevify-qwen3.5-2b	2026-09-21	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers		text-classification	Qwen/Qwen3.5-2B	0	0			yes
+abidlabs/jev-typed-decisions-causal-0.6b-smoke	2026-09-21	yes	Research and ablation checkpoints	reproduction: cached causal typed scorer				0	0			yes
+mchen04/jev-local-lab-decision-heads	2026-09-21	yes	Research and ablation checkpoints	hobby: small decision heads on a Mac mini		text-classification	mlx-community/Qwen2.5-1.5B-Instruct-4bit	0	0			yes
+mchen04/jevlite-decision-heads	2026-09-21	yes	Research and ablation checkpoints	hobby: small decision heads on a Mac mini		text-classification	mlx-community/Qwen2.5-0.5B-Instruct-4bit	0	0			yes
+Praveenrajus/jevify-qwen3-vl-2b	2026-09-21	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3-VL-2B-Instruct	0	0			no
+Praveenrajus/jevify-qwen3.5-4b-t2	2026-09-22	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers		text-classification	Qwen/Qwen3.5-4B	0	0			yes
+Praveenrajus/jevify-qwen3-vl-2b-t2	2026-09-22	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3-VL-2B-Instruct	0	0			yes
+Praveenrajus/jevify-qwen3.5-4b-t2-lowlr	2026-09-22	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers		text-classification	Qwen/Qwen3.5-4B	0	0			yes
+JonesLin/next-jev-stage1-cot	2026-09-23	yes	Research and ablation checkpoints	architecture study: recurrent latent workspace, CoT loss			Qwen/Qwen3.5-0.8B	0	0			yes
+JonesLin/next-jev-stage2-last-loop	2026-09-23	yes	Research and ablation checkpoints	architecture study: recurrent latent workspace, CoT loss			Qwen/Qwen3.5-0.8B	0	0			yes
+CaoHaoWei/Jev-LCT-Adapters	2026-09-25	yes	Research and ablation checkpoints	looped calibration adapters and post-hoc mappers		text-classification		0	1			yes
+Praveenrajus/jevify-qwen3.5-4b-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-4B	0	0			yes
+Praveenrajus/jevify-qwen3.5-4b-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-4B	0	0			yes
+Praveenrajus/jevify-qwen3.5-4b-base-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-4B-Base	0	0			yes
+Praveenrajus/jevify-gemma-4-e4b-it-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			google/gemma-4-E4B-it	0	0			yes
+Praveenrajus/jevify-qwen3.5-2b-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-2B	0	0			yes
+Praveenrajus/jevify-qwen3.5-2b-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-2B	0	0			yes
+Praveenrajus/jevify-qwen3.5-2b-base-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-2B-Base	0	0			yes
+Praveenrajus/jevify-qwen3.5-4b-base-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-4B-Base	0	0			yes
+Praveenrajus/jevify-qwen3.5-9b-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-9B	0	0			yes
+Praveenrajus/jevify-gemma-4-e4b-it-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			google/gemma-4-E4B-it	0	0			yes
+JonesLin/next-jev-stage1-last-block	2026-09-25	yes	Research and ablation checkpoints	architecture study: recurrent latent workspace, CoT loss			Qwen/Qwen3.5-0.8B	0	0			yes
+Praveenrajus/jevify-qwen3.5-2b-base-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-2B-Base	0	0			yes
+Praveenrajus/jevify-gemma-4-e4b-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			google/gemma-4-E4B	0	0			yes
+JonesLin/next-jev-stage2-last-block	2026-09-25	yes	Research and ablation checkpoints	architecture study: recurrent latent workspace, CoT loss			Qwen/Qwen3.5-0.8B	0	0			yes
+OniReimu/Edge-Computing-JEV-classifiers	2026-09-25	yes	Research and ablation checkpoints	paper artefact: DistilBERT reference classifiers (edge computing)		text-classification	distilbert/distilbert-base-uncased	0	0			yes
+Praveenrajus/jevify-qwen3.5-9b-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			Qwen/Qwen3.5-9B	0	0			yes
+Praveenrajus/Llama-3.1-Tulu-3-8B-DPO-jevify-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			allenai/Llama-3.1-Tulu-3-8B-DPO	0	0			yes
+Praveenrajus/Llama-3.1-Tulu-3-8B-DPO-jevify-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			allenai/Llama-3.1-Tulu-3-8B-DPO	0	0			yes
+Praveenrajus/Llama-3.1-Tulu-3-8B-SFT-jevify-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			allenai/Llama-3.1-Tulu-3-8B-SFT	0	0			yes
+Praveenrajus/Llama-3.1-Tulu-3-8B-SFT-jevify-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			allenai/Llama-3.1-Tulu-3-8B-SFT	0	0			yes
+Praveenrajus/jevify-smollm3-3b-sft-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			HuggingFaceTB/SmolLM3-3B-checkpoints	0	0			yes
+Praveenrajus/jevify-smollm3-3b-sft-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			HuggingFaceTB/SmolLM3-3B-checkpoints	0	0			yes
+Praveenrajus/jevify-smollm3-3b-apo-readout	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			HuggingFaceTB/SmolLM3-3B-checkpoints	0	0			yes
+Praveenrajus/jevify-smollm3-3b-apo-readout-coh	2026-09-25	yes	Research and ablation checkpoints	ablation series: readout fine-tuning, coherence penalty, tiers			HuggingFaceTB/SmolLM3-3B-checkpoints	0	0			yes
+ryandcunha/mmbu-jev-qwen3-0.6b-closed	2026-09-25	yes	Research and ablation checkpoints	study: closed-set vs free-text training		text-classification	Qwen/Qwen3-0.6B	0	0			yes
+ryandcunha/mmbu-jev-qwen3-0.6b-freetext	2026-09-25	yes	Research and ablation checkpoints	study: closed-set vs free-text training		text-classification	Qwen/Qwen3-0.6B	0	0			yes
+ajh-code/Jev-Bonsai-Compass	2026-09-24	yes	General-purpose typed-decision model	Ternary Bonsai 2 27B with a decision adapter further trained by the author (NOTICE: local decision-preservation and fast-route experiments)		text-classification	prism-ml/Ternary-Bonsai-2-27B-gguf	41	0			yes
+WIlfLin/JEV-Qwen3.5-9B-Base-NVFP4	2026-09-22	yes	Copy, port or package (no new training)	NVFP4 base weights unchanged, with a choice runtime		text-classification	ig1/Qwen3.5-9B-NVFP4	37	0			yes
+ohtaman/jev-gemma-4-E2B-it-choice-64	2026-09-22	yes	Copy, port or package (no new training)	ONNX export of gemma-4-E2B-it restricted to choice tokens; card: no weights fine-tuned		text-classification	google/gemma-4-E2B-it	32	0			yes
+WIlfLin/JEV-Qwen3.5-0.8B-Base	2026-09-22	yes	Copy, port or package (no new training)	re-upload of Qwen3.5-0.8B weights with a choice runtime; card: before task-specific post-training		text-classification	Qwen/Qwen3.5-0.8B	28	0			yes
+SargeDev/jev-distill-corpus	2026-09-18	yes	No newly trained model (recipe, runtime, code or data)	dataset uploaded as a model repo (233 MB jsonl)				0	0			no
+Meanblock/JEV-CPU	2026-09-19	yes	No newly trained model (recipe, runtime, code or data)	code-only CPU runtime of SemIf (weights pulled from upstream)		zero-shot-classification	Qwen/Qwen3-0.6B	0	45			no
+NicolaiMTLassen/bonzi-1.7b-v1-jev	2026-09-20	yes	No newly trained model (recipe, runtime, code or data)	recipe and measurement only, no weights (Bonsai as decision function)		text-classification	prism-ml/Bonsai-1.7B-gguf	0	1			no
+NicolaiMTLassen/bonzi-27b-v2-jev	2026-09-20	yes	No newly trained model (recipe, runtime, code or data)	recipe and measurement only, no weights (Bonsai as decision function)		text-classification	prism-ml/Ternary-Bonsai-2-27B-gguf	0	1			no
+NicolaiMTLassen/bonzi-4b-v1-jev	2026-09-20	yes	No newly trained model (recipe, runtime, code or data)	recipe and measurement only, no weights (Bonsai as decision function)		text-classification	prism-ml/Bonsai-4B-gguf	0	0			no
+NicolaiMTLassen/bonzi-8b-v1-jev	2026-09-20	yes	No newly trained model (recipe, runtime, code or data)	recipe and measurement only, no weights (Bonsai as decision function)		text-classification	prism-ml/Bonsai-8B-gguf	0	0			no
+NicolaiMTLassen/bonzi-27b-v1-jev	2026-09-20	yes	No newly trained model (recipe, runtime, code or data)	recipe and measurement only, no weights (Bonsai as decision function)		text-classification	prism-ml/Bonsai-27B-gguf	0	0			no
+NicolaiMTLassen/bonzi-8b-ternary-v1-jev	2026-09-20	yes	No newly trained model (recipe, runtime, code or data)	recipe and measurement only, no weights (Bonsai as decision function)		text-classification	prism-ml/Ternary-Bonsai-8B-gguf	0	0			no
+WIlfLin/JEV-Qwen3.8-27B-NVFP4-Runtime	2026-09-22	yes	No newly trained model (recipe, runtime, code or data)	runtime plus an output head sliced from the unchanged model		text-classification	RadixArk/Qwen3.8-27B-NVFP4	0	0			yes
+WIlfLin/JEV-Qwen3.8-Flash-Next-Linear-Runtime	2026-09-22	yes	No newly trained model (recipe, runtime, code or data)	runtime plus an output head sliced from the unchanged model		visual-question-answering	primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8	0	0			yes
+dr3x1/jevsec-002	2026-09-27	yes	No newly trained model (recipe, runtime, code or data)	card only, weights not uploaded (security triage)			XHToken/Spark-X2.5-4B	0	0			no
+chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16	2026-09-21	yes	Copy, port or package (no new training)	MLX of Jev-Style v1		text-generation	Qwen/Qwen3.5-2B-Base	4013	2			yes
+mradermacher/jevify-gemma4-e4b-GGUF	2026-09-20	yes	Copy, port or package (no new training)	GGUF of kushalpatil/jevify-gemma4-e4b			kushalpatil/jevify-gemma4-e4b	2998	2			yes
+alibiserikbay/JevK5-GGUF	2026-09-23	yes	Copy, port or package (no new training)	GGUF of JevK5 (4B, 9B, 2B)			alibiserikbay/JevK5	2584	1			yes
+mradermacher/jevify-gemma4-26b-a4b-GGUF	2026-09-20	yes	Copy, port or package (no new training)	GGUF of kushalpatil/jevify-gemma4-26b-a4b			kushalpatil/jevify-gemma4-26b-a4b	1972	0			yes
+Reza2kn/Jev-Omni-Q4_K_M-GGUF	2026-09-23	yes	Copy, port or package (no new training)	GGUF of akhilaaa3/Jev-Omni			akhilaaa3/Jev-Omni	1612	4			yes
+TokenRhythm/NeoHorse-Jev-4B-GGUF	2026-09-24	yes	Copy, port or package (no new training)	GGUF of TokenRhythm/NeoHorse-Jev-4B		text-classification	TokenRhythm/NeoHorse-Jev-4B	1114	3			yes
+chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF	2026-09-23	yes	Copy, port or package (no new training)	GGUF of Jev-Style v2		text-generation	chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2	1108	5			yes
+chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16	2026-09-23	yes	Copy, port or package (no new training)	MLX of Jev-Style v2		text-generation	chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2	1059	0			yes
+chaoliangUNSW/Jev-Style-0.8B-Decision-v3-GGUF	2026-09-24	yes	Copy, port or package (no new training)	GGUF of Jev-Style v3 0.8B		text-classification	chaoliangUNSW/Jev-Style-0.8B-Decision-v3	659	8			yes
+onnx-community/open-jev-deberta-v3-large-ONNX	2026-09-20	yes	Copy, port or package (no new training)	ONNX of com-kotobalabs/open-jev-deberta-v3-large		text-classification	microsoft/deberta-v3-large	463	0			yes
+Ruiruiz30/Jev-Omni-MLX-4bit	2026-09-23	yes	Copy, port or package (no new training)	MLX 4-bit of akhilaaa3/Jev-Omni		image-text-to-text	akhilaaa3/Jev-Omni	336	1			yes
+killkli/open-jev-laya-multilingual-onnx	2026-09-23	yes	Copy, port or package (no new training)	browser ONNX of convaiinnovations Laya multilingual				219	1			yes
+ramgpt/Jev_Qwen3.8-27B-GGUF	2026-09-24	yes	Copy, port or package (no new training)	GGUF of SargeDev/Jev_Qwen3.8-27B			SargeDev/Jev_Qwen3.8-27B	154	0			yes
+nicolasembleton/mini-jev-minicpm5-2b-shell-safety-phase1b-onnx	2026-09-24	yes	Copy, port or package (no new training)	ONNX of mini-Jev shell-safety		text-classification	openbmb/MiniCPM5-2B	88	0			yes
+argos1111/sarashina2.2-vision-3b-mmproj-jev-f16	2026-09-21	yes	Copy, port or package (no new training)	mmproj conversion of Sarashina2.2 Vision for Jev Local (Japanese)			sbintuitions/sarashina2.2-vision-3b	41	0			yes
+SargeDev/jev-gate-student-b-merged	2026-09-21	yes	Copy, port or package (no new training)	merged weights of SargeDev/jev-gate-student-b			Qwen/Qwen2.5-0.5B-Instruct	37	0			yes
+rAVEUK/open-jev-deberta-v3-large	2026-09-20	yes	Copy, port or package (no new training)	mirror of com-kotobalabs/open-jev-deberta-v3-large		text-classification	microsoft/deberta-v3-large	35	0			yes
+top7777/jev-schema-scorer-deberta-v3-large	2026-09-22	yes	Copy, port or package (no new training)	mirror of mobarmg/jev-schema-scorer-deberta-v3-large		text-classification	microsoft/deberta-v3-large	19	0			yes
+liodon-ai/JevK5-FP8	2026-09-25	yes	Copy, port or package (no new training)	FP8 of alibiserikbay/JevK5		text-generation	alibiserikbay/JevK5	19	0			yes
+SargeDev/Jev_Qwen3.8-27B-NVFP4-FP8	2026-09-24	yes	Copy, port or package (no new training)	NVFP4/FP8 of SargeDev/Jev_Qwen3.8-27B			SargeDev/Jev_Qwen3.8-27B	13	0			yes
+MissingPackage/jev-d-0.4b-onnx	2026-09-21	yes	Copy, port or package (no new training)	ONNX of convaiinnovations Laya (typed decisions)		feature-extraction	convaiinnovations/laya-typed-decisions	0	0			yes
+gionebeats/Open-Jev-2B	2026-09-22	yes	Copy, port or package (no new training)	mirror of ZefanCai/Open-Jev-2B			Qwen/Qwen3.5-2B	0	0			yes
+FrenchCastle/jev-solomon-MLX-8-bit	2026-09-22	yes	Copy, port or package (no new training)	MLX 8-bit of Solomon (DoccyHealth)		text-classification	FrenchCastle/Solomon-MLX-bf16	0	0			yes
+0xSojalSec/Jev-Omni	2026-09-23	yes	Copy, port or package (no new training)	mirror of akhilaaa3/Jev-Omni		text-classification	google/gemma-4-12B-it	0	0			yes
+junetask/Open-Jev-9B	2026-09-23	yes	Copy, port or package (no new training)	mirror of ZefanCai/Open-Jev-9B			Qwen/Qwen3.5-9B	0	0			yes
+chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX	2026-09-24	yes	Copy, port or package (no new training)	MLX of Jev-Style v3 0.8B		text-classification	chaoliangUNSW/Jev-Style-0.8B-Decision-v3	0	1			yes
+Rydward98/Jev-Omni	2026-09-24	yes	Copy, port or package (no new training)	mirror of akhilaaa3/Jev-Omni		text-classification	google/gemma-4-12B-it	0	0			yes
+ai-ecoverse/jev-omni.js	2026-09-24	yes	Copy, port or package (no new training)	browser WebGPU export of akhilaaa3/Jev-Omni		image-text-to-text	akhilaaa3/Jev-Omni	0	0			yes
+prithivMLmods/JEV-9B-GGUF	2026-09-26	yes	Copy, port or package (no new training)	GGUF of autotrust/JEV-9B		text-classification	autotrust/JEV-9B	0	2			yes
+ngquocvinh/Jev-Omni-GGUF	2026-09-26	yes	Copy, port or package (no new training)	GGUF of akhilaaa3/Jev-Omni		text-classification	akhilaaa3/Jev-Omni	0	1			yes
+maxious/JevK5-Lite-onnx	2026-09-26	yes	Copy, port or package (no new training)	ONNX of alibiserikbay/JevK5-Lite		zero-shot-classification	alibiserikbay/JevK5-Lite	0	0			yes
+nicolasembleton/mini-jev-minicpm5-2b-shell-safety-phase1b-choice-onnx	2026-09-26	yes	Copy, port or package (no new training)	choice-only ONNX of mini-Jev shell-safety			nicolasembleton/mini-jev-minicpm5-2b-shell-safety-phase1b-merged	0	0			yes
+mradermacher/JEV-9B-GGUF	2026-09-26	yes	Copy, port or package (no new training)	GGUF of autotrust/JEV-9B		text-generation	autotrust/JEV-9B	0	0			yes
+chaoliangUNSW/Jev-Style-2B-Decision-v3-GGUF	2026-09-27	yes	Copy, port or package (no new training)	GGUF of Jev-Style v3 2B		text-classification	chaoliangUNSW/Jev-Style-2B-Decision-v3	0	1			yes
+chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX	2026-09-27	yes	Copy, port or package (no new training)	MLX of Jev-Style v3 2B		text-classification	chaoliangUNSW/Jev-Style-2B-Decision-v3	0	0			yes
+canbingol/jev-mmlu-classifier	2026-09-25	yes	Unverifiable (empty, no card, or gated)	gated, manual approval; files show a Gemma-3 backbone plus a custom Jev layer		feature-extraction		18	0			yes
+xiq/xiq-vl-jev	2026-09-21	yes	Unverifiable (empty, no card, or gated)	empty repo (only .gitattributes)				0	0			no
+marcmagn1/jev-08b-typed-r1	2026-09-21	yes	Unverifiable (empty, no card, or gated)	empty repo (only .gitattributes)				0	0			no
+Omarmahmoud83/jevlite	2026-09-22	yes	Unverifiable (empty, no card, or gated)	weights only (596 MB jevlite.pt), no card				0	0			yes
+rdxtremity/jev-reranking	2026-09-20	no	Not Jev-style (name only)	product search query encoders (EN+AR fashion); card never mentions Jev	en;ar			0	0			yes
+jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit	2026-07-25	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations		text-generation	utter-project/EuroLLM-1.7B-Instruct	1289	0			
+bigfat/jeven_loras	2026-05-07	no	Name clash, predates Jev (2026-09-15)	image generation (Stable Diffusion, LoRA)		text-to-image	Qwen/Qwen-Image-2512	174	0			
+bwang0911/jev2-legal	2024-11-06	no	Name clash, predates Jev (2026-09-15)	classification, QA and embeddings		sentence-similarity	sentence-transformers/all-mpnet-base-v2	112	1			
+Jevvan123/Gemma_Quantize_into_GGUF-File	2024-03-21	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				61	0			
+jevonmao/llama31-8b-poker-mix-v1-step10k	2026-06-03	no	Name clash, predates Jev (2026-09-15)	poker LLM (GTO heads-up hold'em, Llama-3.1-8B)		text-generation	meta-llama/Llama-3.1-8B-Instruct	38	0			
+JeverlinRamos/modeloQANoticiasDominicanas	2026-07-28	no	Name clash, predates Jev (2026-09-15)	classification, QA and embeddings		question-answering	Lisibonny/modelo_qa_beto_squad_es_pdqa	38	1			
+jeveuxaider/missions-report-camembert	2023-02-10	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers		text-classification		35	0			
+jevolo/gpt2-Q4_K_M-GGUF	2024-10-29	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations			openai-community/gpt2	27	0			
+jevtor/aave-finetuned	2024-12-11	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations			meta-llama/Meta-Llama-3-8B-Instruct	25	1			
+Jevanleeuwen/mae-experiment	2026-08-27	no	Name clash, predates Jev (2026-09-15)	vision, 3D, robotics and self-supervised research				24	0			
+huggingtweets/jeveuxrien95	2022-03-02	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations		text-generation		23	0			
+Jevvan123/Gemma_finetuned_model	2024-03-10	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations		text-generation		17	0			
+jevinruv/tinyllama-colorist-v0	2025-03-31	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations		text-generation		17	0			
+jeveuxaider/activity-classifier	2022-11-17	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers		text-classification		15	1			
+donoway/GSM8K-Binary_Llama-3.2-1B-jevfwxa5	2025-08-18	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations		text-generation	meta-llama/Llama-3.2-1B	15	0			
+jevonmao/llama31-8b-gtow-lora-v4-postflop-step1050	2026-05-24	no	Name clash, predates Jev (2026-09-15)	poker LLM (GTO heads-up hold'em, Llama-3.1-8B)		text-generation		13	0			
+jevonmao/llama31-8b-gtow-lora	2026-05-20	no	Name clash, predates Jev (2026-09-15)	poker LLM (GTO heads-up hold'em, Llama-3.1-8B)		text-generation	meta-llama/Llama-3.1-8B-Instruct	12	0			
+jevtor/testing	2024-12-03	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				11	0			
+jevonmao/llama31-8b-gtow-qdora-v4-postflop-step750	2026-05-24	no	Name clash, predates Jev (2026-09-15)	poker LLM (GTO heads-up hold'em, Llama-3.1-8B)		text-generation		11	0			
+jevonmao/llama31-8b-gtow-qdora-v4-postflop	2026-05-25	no	Name clash, predates Jev (2026-09-15)	poker LLM (GTO heads-up hold'em, Llama-3.1-8B)		text-generation		9	0			
+Jevvan123/New_adapter_finetunegemma	2024-03-13	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations			google/gemma-2b-it	8	0			
+jEVVB/dillyg	2022-10-05	no	Name clash, predates Jev (2026-09-15)	image generation (Stable Diffusion, LoRA)		text-to-image		7	0			
+jevon11/my_awesome_model	2024-05-25	no	Name clash, predates Jev (2026-09-15)	classification, QA and embeddings		text-classification		7	0			
+Jevgenija/qa_tutorial_model	2023-11-01	no	Name clash, predates Jev (2026-09-15)	classification, QA and embeddings		question-answering		6	0			
+Jevvan123/Mixtral_finetuned_newmodel	2024-03-13	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations			mistralai/Mistral-7B-Instruct-v0.1	6	0			
+jevonmao/llama31-8b-gtow-lora-v3	2026-05-23	no	Name clash, predates Jev (2026-09-15)	poker LLM (GTO heads-up hold'em, Llama-3.1-8B)				6	0			
+jeveuxaider/jva-missions-report-v2	2023-05-02	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers		text-classification		5	0			
+aleksandar-jevtic-robco/act-2026-03-03_pika-test-bracket-insertion	2026-03-11	no	Name clash, predates Jev (2026-09-15)	vision, 3D, robotics and self-supervised research		robotics		5	0			
+jevanse/DepoReporter1	2026-07-19	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				5	0			
+jevonmao/llama31-8b-gtow-lora-v2	2026-05-20	no	Name clash, predates Jev (2026-09-15)	poker LLM (GTO heads-up hold'em, Llama-3.1-8B)				4	0			
+jeveuxaider/jva-structure-report	2024-12-20	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers				3	0			
+jeveuxaider/jva-mission-report	2024-12-20	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers				3	0			
+Jeverett2727/gpt2-wikitext2	2026-03-30	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				3	0			
+martineux/jevo3	2025-09-11	no	Name clash, predates Jev (2026-09-15)	image generation (Stable Diffusion, LoRA)		text-to-image		1	0			
+jevlogin/test	2022-09-27	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+jEVVB/dreamSD	2022-10-05	no	Name clash, predates Jev (2026-09-15)	image generation (Stable Diffusion, LoRA)				0	0			
+jeveloper/sd-v1-4	2022-11-23	no	Name clash, predates Jev (2026-09-15)	image generation (Stable Diffusion, LoRA)				0	0			
+jevenzh/whisper-small-zhhk	2023-01-01	no	Name clash, predates Jev (2026-09-15)	speech recognition				0	0			
+jeveuxaider/sentence-camembert-base	2023-03-14	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers				0	0			
+jeveuxaider/jva-organization-report	2023-03-29	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers		text-classification		0	0			
+Jevalent/daisybeta	2023-04-10	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations		text-generation		0	0			
+JeVa1/your-model-name	2023-06-01	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+filler5736/jevilmodel600	2023-06-24	no	Name clash, predates Jev (2026-09-15)	game character / voice models ('Jevil' of Deltarune and similar)				0	0			
+jevaniu/asfa	2023-07-03	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+jevaniu/ewqasdquie2qaaxxq3acdfhtuk876tfd	2023-07-22	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Nuser84/Jeverlyn_Lora	2023-10-03	no	Name clash, predates Jev (2026-09-15)	image generation (Stable Diffusion, LoRA)				0	0			
+MrSpringtroll/jevil	2023-11-10	no	Name clash, predates Jev (2026-09-15)	game character / voice models ('Jevil' of Deltarune and similar)				0	0			
+jeveuxaider/jva-structure-report-v2	2023-12-28	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers		text-classification		0	0			
+jeveuxaider/jva-mission-report-v2	2023-12-28	no	Name clash, predates Jev (2026-09-15)	French volunteering platform (JeVeuxAider) report classifiers		text-classification		0	0			
+ZakiGamingYT50/Model-Suara-Mantan-Rakkison-JeVe	2024-01-22	no	Name clash, predates Jev (2026-09-15)	game character / voice models ('Jevil' of Deltarune and similar)				0	0			
+Jevvan123/llma_2	2024-03-06	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations			NousResearch/Llama-2-7b-chat-hf	0	1			
+jeverze/tester5214587	2024-03-12	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+jeverze/5487465	2024-03-12	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Jevan315/ZakkGPT	2024-05-11	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				0	0			
+jevon11/qqqqq	2024-05-25	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Thatsnazzyartist22/Jevil	2024-07-02	no	Name clash, predates Jev (2026-09-15)	game character / voice models ('Jevil' of Deltarune and similar)				0	0			
+Jevanii12/memecoin-guru	2025-02-05	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				0	0			
+Homiebear/JevilDeltarune	2025-03-29	no	Name clash, predates Jev (2026-09-15)	game character / voice models ('Jevil' of Deltarune and similar)				0	0			
+Jevvan123/sentimentmodel	2025-04-29	no	Name clash, predates Jev (2026-09-15)	classification, QA and embeddings				0	0			
+pieceofdust/Jevster	2025-05-11	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+featherless-ai-quants/jevinruv-tinyllama-colorist-v0-GGUF	2025-06-30	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				0	0			
+jev-aleks/SceneDINO	2025-06-30	no	Name clash, predates Jev (2026-09-15)	vision, 3D, robotics and self-supervised research		image-to-3d		0	1			
+toxic1228/Jev	2025-07-31	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+helsonlin/Jevet	2025-08-12	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Jevintanjh/simisai-cv	2025-08-17	no	Name clash, predates Jev (2026-09-15)	vision, 3D, robotics and self-supervised research				0	0			
+JevinGill/blockassist	2025-10-10	no	Name clash, predates Jev (2026-09-15)	vision, 3D, robotics and self-supervised research				0	0			
+jevertton/teste	2025-12-02	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Robertp423/Qwen3-VL-32B-Jevum	2025-12-29	no	Name clash, predates Jev (2026-09-15)	personal LLM fine-tunes and quantizations				0	0			
+Sarah20284/omega_jevgy	2026-01-19	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Mariamgathigia1/JEVzNaz4	2026-01-30	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Jevxis/Helena	2026-02-23	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Jevxis/nora_person	2026-02-26	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+jevuf/my-voice-dataset	2026-06-02	no	Name clash, predates Jev (2026-09-15)	game character / voice models ('Jevil' of Deltarune and similar)				0	0			
+jeviljester/Verity	2026-08-13	no	Name clash, predates Jev (2026-09-15)	test, empty or unidentifiable repos				0	0			
+Jevanleeuwen/paper_005974006_self_supervised	2026-08-23	no	Name clash, predates Jev (2026-09-15)	vision, 3D, robotics and self-supervised research				0	0			

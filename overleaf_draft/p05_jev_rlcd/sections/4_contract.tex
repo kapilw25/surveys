@@ -1,0 +1,54 @@
+\section{The output contract and the decision loop}
+\label{sec:contract}
+
+A confidence is useful to software only if a rule can read it and act. Figure~\ref{fig:decision_loop}
+draws the loop that this requires. A decision model receives a state and a \emph{declared} set of
+options, assigns a probability to every option in one query, and passes the probabilities to an explicit
+action policy. The five stages of the taxonomy differ in where calibration enters this loop; the output
+contract determines how directly a rule can act on the result.
+
+\input{figures/fig_decision_loop}
+
+We record five contracts, the form of the output that a confidence is attached to
+(Figure~\ref{fig:corpus_dist}b). With a \emph{typed decision}, the options are declared before
+inference and the model assigns a probability to each, so that the decision and its confidence come
+from the same distribution and the action policy can read the probability directly. A \emph{set}
+returns several options with a coverage target. With \emph{constrained output}, decoding is restricted
+to a grammar or schema; this fixes the form of the answer but not the judgement behind it, and it yields
+no confidence of its own. A \emph{score} is one confidence number per answer, stated by the model, read
+off its token probabilities or estimated by a separate model. With \emph{free text}, the answer is
+free text or a label with no per-answer probability, any confidence is a verbal hedge, an abstention, or
+the agreement of several sampled answers, and the answer must be parsed before a rule can use it. A
+probability that the model writes out as text, even for a declared outcome, is a score, not a typed
+decision. \contractUnknownPhrase{}
+
+\paragraph{Where the typed decision lives.} \nContractTyped works attach the confidence to a typed
+decision, and \nTypedCal of them report a calibration metric (ECE, Brier score, NLL or a reliability
+diagram) in the main text. Most sit at the earliest stages: \nTypedReadPost at the read-off and the
+post-hoc map, where the task is classification or multiple choice and the probability over the declared
+options is calibrated directly (\nTypedReadPostCal of them report a calibration metric). \typedOtherStages{} The training core is where the typed decision is rarest: only \nCoreTyped of the \nCore core
+works train the probability of a declared option, \coreTypedCalPhrase{} its
+calibration. Nearly all the rest train a stated score (\nCoreScore works) or a free-text answer with a hedge or a
+refusal (\nCoreFree). Table~\ref{tab:compare_contract} lists every typed work and the \nConstrained
+consumers on grammar- or schema-constrained output; the constrained-output works mostly measure
+validity, speed, or accuracy under the constraint.
+
+\paragraph{What the confidence triggers.} Across the corpus, most works stop at the confidence: for
+\nActNoAction of the \nWorks works no rule or trained behaviour acts on it. Where one does, the
+low-confidence action is to abstain (\nActAbstain works), to hand the case off to another model or a
+person (\nActHandOff), to return a prediction set (\nActSet), to filter the output (\nActFilter), to
+spend more computation (\nActAdapt), or to trigger retrieval (\nActRetrieve). The threshold policy of
+Figure~\ref{fig:decision_loop} therefore has to be supplied by whoever deploys the model, and the
+calibration of the probability it reads decides how well it works.
+
+\paragraph{Hosted and open decision models.} Some models are now offered with a typed-decision
+interface:
+unstructured state in, a probability per declared option out. The calibration of one such hosted
+model can be checked independently: a third-party evaluation is part of our corpus~\citep{li2026jev},
+and a public leaderboard measures the calibration of its chosen option. Appendix~\ref{app:jev} profiles
+that model and the open decision models listed with it: the
+\nHF repositories that a public model search for its name returns (Table~\ref{tab:jev_hf_ecosystem}),
+and the \nDISystems systems of a community leaderboard~\citep{multimodalart2026jevdi} that scores decision models on skill and on the
+calibration of the chosen option (Table~\ref{tab:jev_decision_index}).
+
+\input{tables/tab_compare_contract}

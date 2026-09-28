@@ -1,0 +1,98 @@
+\section{Introduction}
+\label{sec:intro}
+
+A language model that automates a step in a program has to do more than produce a good answer. It has
+to say how likely that answer is to be right, in a form that the program can act on: answer when the
+probability is high, and abstain or hand the case to another model or a person when it is not. The rule
+is only as good as the number it reads. A confidence is \emph{calibrated} when, among the cases to which
+the model gives probability $p$, a fraction $p$ is correct~\citep{guo2017calibration}; a threshold
+policy built on a miscalibrated confidence answers when it should not, or escalates cases it could have
+settled.
+
+For most of the literature, this confidence is estimated \emph{after} the model has been trained. It is
+read off the model's own token or sequence probabilities, which are well calibrated on multiple-choice
+formats for large pretrained models~\citep{kadavath2022language} but lose calibration after
+post-training~\citep{openai2023gpt4}; it is rescaled by a post-hoc map fitted on held-out
+data~\citep{guo2017calibration}; it is requested in words or numbers through the
+prompt~\citep{tian2023just}, where stated confidences cluster near the top of the
+scale~\citep{xiong2023can}; or it is computed from extra inference, such as the agreement of sampled
+answers or a conformal prediction set~\citep{farquhar2024semantic,campos2024conformal}.
+Figure~\ref{fig:hero_collage} shows examples of each stage, and of training, taken from the papers' own figures.
+
+\input{figures/fig_hero_collage}
+
+A second line of work, most of it from the last three years, puts calibration into training itself. The
+model is fitted to confidence targets or a calibration loss, the reward model in its training loop is
+calibrated, or a reinforcement-learning reward scores the stated confidence against the outcome with a
+proper scoring rule~\citep{baniharouni2025rewarding,damani2025beyond}, rewards abstention when the
+model does not know~\citep{wei2025truthrl}, or scores confidence per reasoning
+step~\citep{wang2026process}. Of the \nCore works in our corpus that put a calibration term into the
+model's own loss or reward, \nCoreRecent appeared from 2024 to 2026 (\nCoreRecentPct). At the same
+time, models are offered that return, instead of free text, a probability for each option of a set
+declared in advance, so that the decision and its confidence come from one distribution; one such
+hosted model, Jev~\citep{almeida2026introducing}, and the open decision models listed with it on a community
+leaderboard~\citep{multimodalart2026jevdi} are described in Appendix~\ref{app:jev}, and an independent evaluation of it is part of our
+corpus~\citep{li2026jev}.
+
+This survey maps calibration-aware decision-making with language models, with the training stage as
+its core. We place each of \nWorks works by the stage at which calibration enters the decision
+pipeline (Table~\ref{tab:definitions}), organise the \nCore training-stage works by what the training
+signal scores, and classify every work by the \emph{output contract} its confidence is attached to:
+a typed decision with a probability per declared option, a prediction set, constrained output, a single
+confidence score, or free text. The two classifications meet in one finding: of the \nContractTyped works
+that attach the confidence to a typed decision, most calibrate a classifier or a multiple-choice
+read-off after the fact, and only \nCoreTyped of the \nCore training works train one
+(Section~\ref{sec:contract}).
+
+\paragraph{Contributions.} This survey offers the following.
+\begin{itemize}
+  \item A \textbf{stage taxonomy} of \nWorks works (Figure~\ref{fig:taxonomy_main} shows \nTaxShown of them), with operational
+        placement rules (Table~\ref{tab:definitions}) and a per-work record of stage, output contract,
+        access, guarantee, metric and action (Tables~\ref{tab:compare_s4} and~\ref{tab:landscape}).
+  \item A \textbf{typology of calibration training}: the \nCore training-stage works in five families
+        by what the training signal scores (Section~\ref{sec:core}, Table~\ref{tab:compare_s4}), and
+        what each stage yields, costs and guarantees (Table~\ref{tab:stage_limits}).
+  \item A \textbf{coverage comparison} with the \nSurveysCompared closest prior surveys
+        (Table~\ref{tab:survey_compare}, Figure~\ref{fig:survey_timeline}), and a profile of the corpus
+        (Figures~\ref{fig:corpus_overview} to~\ref{fig:results_gallery}), every gallery panel
+        traced to its source figure and licence (Table~\ref{tab:panel_provenance}).
+  \item An analysis of the \textbf{output contract and the decision loop} (Section~\ref{sec:contract},
+        Figure~\ref{fig:decision_loop}, Table~\ref{tab:compare_contract}).
+  \item A \textbf{measurable agenda}: seven quantities with named public testbeds
+        (Table~\ref{tab:future_metrics}), with the calibration of the decision itself measured for the
+        \nDISystems systems of a public leaderboard (Figure~\ref{fig:future_protocol}).
+\end{itemize}
+
+\input{figures/fig_taxonomy_main}
+
+\subsection{Related surveys and the empty cell}
+\label{sec:related}
+
+Table~\ref{tab:survey_compare} compares the \nSurveysCompared closest prior surveys on seven topics:
+confidence estimation and calibration, calibration-aware training of any kind, reinforcement learning
+whose reward is a calibration or proper-scoring-rule objective, decisions over a predefined option set,
+typed per-option decision outputs, acting on confidence, and hallucination.
+Figure~\ref{fig:survey_timeline} places them on a timeline; \nSurveysRecent of the \nSurveysCompared
+appeared from 2024 onward.
+
+\input{tables/tab_survey_compare}
+
+Calibration and uncertainty are well surveyed, and the stage view itself, which organises methods by
+where the confidence comes from, is established~\citep{li2025survey,shorinwa2025survey}; we use it as
+the frame for the background stages and credit it there. The training stage is the thinner cell. Only
+\nRLRFull surveys give full coverage to reinforcement learning with a calibration reward, and each is
+scoped to one slice: \citet{li2025survey} to the 2024 methods, \citet{xu2026llm} to forecasting, where
+it organises calibration training by reward and maps forecast forms to proper scores, and
+\citet{lin2026uncertainty} to agents, where it splits rewards by their target. \citet{ulmer2025anthropomimetic}
+labels papers by the register of the confidence, numeric or verbal, and by how it is elicited: by prompting,
+supervised fine-tuning or reinforcement learning. What none of the \nSurveys
+surveys we identified does is organise calibration training \emph{across domains} by what the training signal scores,
+or cross that typology with the output contract the confidence is trained into; no survey cites more
+than one of the \nCoreFourteen general-domain calibration-training works from 2025 and 2026 that anchor
+our core (marked in Table~\ref{tab:compare_s4}). Two recent non-survey works come closest: an application
+paper that compares reinforcement-learning training paradigms by their signal source for one
+domain~\citep{barbosa2026calibrated}, and a position paper that groups ternary-reward abstention works, three of them in
+our core, in one row~\citep{ravikumar2026missing}; neither proposes a typology of training signals or an output contract. Typed per-option decision output is the emptiest column of Table~\ref{tab:survey_compare}:
+no survey covers it in full.
+
+\input{figures/fig_survey_timeline}

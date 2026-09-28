@@ -1,0 +1,38 @@
+\section{A measurable agenda}
+\label{sec:future}
+
+Comparing the families of Section~\ref{sec:core} is hard: their works are trained on different base
+models and data, report different metrics, and attach the confidence to different
+contracts. Table~\ref{tab:future_metrics} proposes seven quantities, each with a definition and a named
+public testbed, that would make them comparable, and names the stage or family each one stresses.
+
+\input{tables/tab_future_metrics}
+
+\paragraph{Calibration of the decision itself.} The first quantity, decision ECE, measures the
+calibration of the probability a model assigns to the option it chooses within a declared set, rather
+than of a free-text answer. It is the main quantity for the training stage, and it is the one quantity
+that this survey measures across many systems. Panels (a) and (d) of Figure~\ref{fig:future_protocol}
+report it from a community leaderboard of decision models, the Jev Decision
+Index~\citep{multimodalart2026jevdi} (\diRelease, a single snapshot of \diDate,
+not peer reviewed), which scores \nDISystems systems on skill over \nDIBench decision benchmarks and on
+expected calibration error over a 1-in-\nDIOneIn sample of \nDICalBench of them. Skill and calibration
+separate on this board: the system ranked first on skill, Jev (\diTopSkill, against \diSecondSkill for the next;
+a single point estimate), is not the best calibrated, and
+\nDILowerECE of the \nDIOpen open systems have a lower ECE (Table~\ref{tab:jev_decision_index}). The
+board reports point estimates without uncertainty intervals and records no cost per decision, so it
+measures the first quantity only.
+
+\input{figures/fig_future_protocol}
+
+\paragraph{Acting on the confidence.} Selective risk and escalation regret measure what the confidence
+buys once a rule acts on it: the error that remains after abstaining below a
+threshold~\citep{geifman2017selective}, and the extra cost of escalating to a larger model when a
+cheaper policy would reach the same accuracy~\citep{hu2024routerbench}. Panels (b) and (c) of
+Figure~\ref{fig:future_protocol} draw their target shapes; they are not measured results.
+
+\paragraph{Shift, contract and guarantee.} The shift calibration gap asks whether a map or a trained
+confidence stays calibrated on subjects it was not fitted on~\citep{shen2024thermometer}. The contract
+cost asks what a constrained or typed output costs in accuracy relative to free
+generation~\citep{geng2025jsonschemabench,tam2024speak}. Guarantee tightness asks how large a prediction
+set must be to reach a target coverage. The last quantity, a comparison of the five training families on
+the same base model and data, is the controlled experiment that would say which training signal to prefer.

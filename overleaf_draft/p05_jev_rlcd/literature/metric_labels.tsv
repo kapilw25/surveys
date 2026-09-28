@@ -1,0 +1,407 @@
+cite	metric	families	location	evidence
+guo2017calibration	multiple	ECE,NLL	Table 1; Fig 1; Fig 3	Figure 3. Test error and NLL of a 110-layer ResNet ... NLL can be used to indirectly measure model calibration.
+kull2019beyond	multiple	ECE,NLL	Tables 1-4; Fig 1; Fig 3	Table 3: Scores and ranking of calibration methods for cw-ECE. Table 4: ... for log-loss.
+kumar2019verified	multiple	ECE,Brier	Fig 2; Fig 3b	mean-squared error—also known as the Brier score ... (b) Tradeoff between calibration and MSE.
+gupta2021distribution	ECE	ECE	Fig 1; Fig 3 (validity plots, l1-ECE)	An illustrative validity plot ... The l1-ECE estimate is roughly 0.023.
+desai2020calibration	ECE	ECE	Tables 2-3; Figs 1-2	Table 2: Out-of-the-box calibration results for indomain (SNLI, QQP, SWAG) and out-of-domain
+zhao2021calibrate	none	none	Table 1; Figs 1-8	Table 1. Contextual calibration improves accuracy across a range of tasks.
+kadavath2022language	multiple	ECE,Brier,AUROC	Sec 3-5 figures (calibration charts, Brier, AUROC)	Brier scores combine the discriminative power of self-evaluation with calibration
+kumar2019calibration	ECE	ECE	Tables 1-3; Figs 1-4	Figure 1: Reliability Plots for various baseline models on the test sets along with their ECE values
+wang2020inference	ECE	ECE	Figs 1, 3, 9; Table 3	Figure 3: Reliability diagrams on (a) En-Jp and (b) Zh-En datasets.
+ott2018analyzing	other	other	Fig 7; Fig 8 (set-level calibration)	Figure 8. Matching distributions at the set level using 200 beam search hypotheses
+xiao2022uncertainty	multiple	ECE,selective	Fig 1; Fig 2; Fig 3	ELECTRA stands out due to its lowest scores in ECE, prediction error, and RPP.
+chen2022close	ECE	ECE	Tables 1-2; Figs 2-6	For calibration evaluation, we report ECE
+zhu2023calibration	ECE	ECE	Fig 2; Figs 3-5	Figure 2: Reliability diagram for a Pythia-70m model.
+openai2023gpt4	ECE	ECE	Fig 8	Figure 8. Left: Calibration plot of the pre-trained GPT-4 model on a subset of the MMLU dataset.
+si2022reexamining	ECE	ECE	Tables 1-2; Figs 2-3 (ECE, ICE, MacroCE)	Table 1 compares calibration results under ECE
+ahuja2022calibration	ECE	ECE	Tables 1-3	Table 3: Calibration Errors (El∈L0 [ECE(l)]) for XLM-R and mBERT on using different methods for calibration.
+dan2021effects	ECE	ECE	Table 1, Fig. 1 (ACL Anthology) (parity audit round 14)	ECE in Table 1 and reliability diagrams in Fig. 1
+plaut2024probabilities	multiple	ECE,AUROC	Table 1; Table 2; Fig 2	Figure 2: Left: The calibration curve for each model. Most models exhibit clear overconfidence
+spiess2024calibration	multiple	ECE,Brier	Tables III-IV; Figs 2-3	TABLE III: Calibration measured as raw, non-scaled Brier Score (B), Skill Score (SS), and Expected Calibration Error (ECE)
+wang2024my	none	none	Tables 2-4	Table 4: Answer consistency (first-token/text output) under different levels of instruction constraints.
+xiao2021hallucination	other	other	Table 1; Table 2	Table 2: Pearson correlation coefficients between hallucination and epistemic/aleatoric uncertainty
+stengeleskin2022calibrated	ECE	ECE	Figs 1-2, 4; Table 2	Table 2: Sequence-level ECE for representative models
+zhang2023study	ECE	ECE	Tables 1-4; Fig 2	Figure 2: Reliability plots and confidence histograms of LLaMA models on 4-shot learning tasks.
+li2023large	multiple	ECE,NLL	Table 2; Figs 2-3	yields increased ECE along with higher NLL and lower IE scores as shown in Table 2
+lovering2024language	other	other	Table 4; Table 5; Table 6 (WD, RE, Spearman)	Wasserstein Distance (WD): To measure cali-
+huang2026investigating	ECE	ECE	Table 1; Fig 2	Using smoothing can reduce calibration error (ECE and RMS) for all model/dataset combinations
+sanzguerrero2026large	multiple	ECE,Brier	Tables 1-2; Fig 4	Table 2: ECE and Brier score on MMLU when explicitly asking for confidence
+joshi2025calibration	ECE	ECE	Fig 1; Fig 3	models show ... model calibration scores (ECE and MCE)
+stolfo2024confidence	other	other	Figs 2-5 (entropy, loss change)	Figure 4: Examples of Neuron Activity in Language Models. (a) Change in loss after ablation of
+proskurina2026are	ECE	ECE	Table 4	Table 4: Expected Calibration Error (ECE) for paired base and instruction-tuned models across benchmarks.
+burns2022discovering	other	other	Table 1; Figs 2-3 (probe accuracy)	Table 1: Accuracy of each method and model averaged across all prompts and dataset
+azaria2023internal	AUROC	AUROC	Tables 1-4 (accuracy, AUC)	Model Accuracy AUC ... last-layer 0.6187 0.7587
+chwang2023androids	other	other	Table 5; Fig 3 (detection F1)	Response-level Classification. F1 is the harmonic mean
+slobodkin2023curious	other	other	Tables 2, 4; Figs 3, 6 (F1)	Table 2: F1 scores over the (un)answerability classification
+gottesman2024estimating	other	other	Table 2; Table 3	Table 3: Correlation with FActScore for KEEN OEG
+orgad2024llms	AUROC	AUROC	Fig 2; Table 1; Table 2	Table 1: Comparison of error detection techniques using AUC metric, across different models and
+ji2024llm	other	other	Table 2; Fig 4 (F1/ACC of hallucination-risk classifier)	predicted, we utilize F1 and Accuracy to measure
+liu2023cognitive	ECE	ECE	Fig 2 (calibration plot)	Figure 2: Calibration of GPT-J queries and probes. Each point represents a group of predictions
+lu2026diagnosing	AUROC	AUROC	Fig 2; Fig 3; Fig 4; Table 1	Curves show the AUC for ranking C (wrong/self-endorsed) above B
+mahaut2024factual	other	other	Fig 2; Fig 3; Table 3 (AUPRC); Spearman in Sec 5	Figure 3: AUPRC scores on PopQA dataset; P (IK).
+holtzman2021surface	none	none	Table 1 (accuracy only)	Table 1: Comparison of scoring algorithms when using GPT-3 for zero-shot inference on multiple choice questions.
+han2022prototypical	none	none	Table 1 (accuracy only)	Table 1: Performance comparisons among the conventional approach (GPT; Brown et al. 2020),
+fei2023mitigating	none	none	Table 1; Table 2; Fig 5-7 (Macro-F1, label bias)	Table 1: Average Macro-F1 scores on TweetEval-hate
+zhou2023batch	none	none	Table 2; Table 3 (accuracy only)	Table 2 | Accuracy (%) on natural language classification tasks with 1-shot PaLM 2-S and PaLM 2-L
+jiang2023generative	none	none	Fig 1; Fig 3 (Macro-F1 and class-discrimination AUROC)	In multiple-class case, we use macro one-to-one AUROC
+abbas2024enhancing	ECE	ECE	Table 2	Table 2: Expected Calibration Error (ECE) comparison
+zheng2023large	none	none	Fig 3; Fig 4; Fig 5 (selection bias, accuracy)	Figure 4: Debiasing results (0-shot, averaged over all the 20 LLMs) under varying computational costs
+liusie2023mitigating	none	none	Table 1; Fig 2; Fig 3 (accuracy only)	Table 1: Average dataset accuracy and standard deviations, over all prompts and label words.
+reif2024beyond	none	none	Fig 2; Fig 3; Table 1 (performance, label bias)	Figure 2: Performance (higher is better) and label bias metrics (lower is better) for Llama-2 pretrained and
+cho2024token	none	none	Fig 4; Fig 6 (Macro-F1)	Figure 4: The classification performance (Macro F1(%)) of 6 models averaged on 10 datasets.
+gundem2025boosting	none	none	Fig 3 (Macro-F1)	Figure 3. Average Macro-F1 scores for five methods across 9 datasets and 3 LLMs
+shen2024thermometer	multiple	ECE,NLL,Brier	Table 1; Table 2 (ECE, TL-ECE, MCE, NLL, Brier); Fig 3	Table 1. LLaMA-2-Chat 7B Average Calibration Performance on MMLU
+xie2024calibrating	multiple	ECE,Brier	Table 1	three benchmarks in terms of ECE and Brier Score
+luo2025your	multiple	ECE,Brier,selective	Table 1-3 (ECE, MCE, AECE, Brier); Fig 5	Figure 5: Selective classification accuracy on MedMCQA across different models.
+luo2026unlocking	multiple	ECE,Brier	Table 1 (ECE, MCE, ACE, Brier); Table 2	ECE (%) MCE (%) ACE (%) Brier
+ulmer2024calibrating	multiple	ECE,Brier,AUROC	Table 3; Fig 4 (reliability diagrams)	Method Success Brier↓ ECE↓ smECE↓ AUROC↑
+liu2023litcab	multiple	ECE,Brier,selective	Table 1 (ECE, Brier, acc@q, cov@p); Fig 4	Figure 4: Bar charts of averaged acc@50, ECE, and Brier score of popular LMs
+liu2024enhancing	multiple	ECE,Brier	Table 2 (ECE, Brier)	In addition to ECE, we use Brier Score to mea-
+liu2024uncertainty	AUROC	AUROC	Table 1; Table 2; Table 3	Table 2: Out-of-sample AUROC performance for benchmarks and our methods on the MMLU dataset.
+beigi2024internalinspector	ECE	ECE	Table 1	Table 1: Comparison with baseline confidence estimation methods. Best results are highlighted in bold.
+khanmohammadi2025calibrating	multiple	ECE,Brier,AUROC	Table 1	Method ECE ↓ BRIER ↓ ACC ↑ AUCPR ↑ AUROC ↑
+radharapu2025calibrating	ECE	ECE	Table 1-3 (Kuiper/ECE); Fig 2 (reliability diagrams)	Table 1: Calibration on Preference Policy Evaluation (PPE) datasets measured by Kuiper/ECE (lower is better).
+detommaso2024multicalibration	multiple	ECE,Brier	Table 1 (gASCE); Table 2 (MSE = Brier); Fig 2	Table 2. MSE and accuracy metrics are presented for all methods across various datasets
+liu2024calibration	ECE	ECE	Table 1-3; Fig 2 (reliability diagrams)	Table 1: ECE (%) ↓ performances of prompt and response classification on existing public benchmarks.
+zhang2021knowing	selective	selective	Table 3-5 (risk-coverage area named AUROC; Cov@Acc=80%)	We plot risk versus coverage graph, and measure the area under the curve, i.e., AUROC
+ye2021can	multiple	selective,AUROC	Table 1; Table 3; Table 6; Fig 3 (area under coverage-F1); Table 2 (NLI AUC)	use the area under coverage-F1 curve (AUC) to evaluate the calibration performance
+dong2018confidence	selective	selective	Table 2-4 (Spearman); Fig 3 (F1 vs proportion kept)	Figure 3: Confidence scores are used as threshold to filter out uncertain test examples.
+dhuliawala2022calibration	multiple	ECE,selective	Table 1; Fig 3; Table 2; Fig 4-5	Table 1: Values in % ECE ... Table 2: Area under Risk-Coverage curve.
+mielke2020reducing	multiple	ECE,NLL	Table 2	Comparison of different calibrators via Expected Calibration Error (ECE), Maximum Calibration Error (MCE), and (Average) Negative Log Likelihood
+tian2023just	multiple	ECE,Brier,selective	Tables 1-5	Method ECE ↓ ECE-t ↓ BS-t ↓ AUC ↑ ; AUC = area under curve of selective accuracy and coverage
+xiong2023can	multiple	ECE,AUROC	Table 2; Table 3; Fig 2-3	Vanilla Verbalized Confidence ... ECE > 0.25, AUROC, AUPRC-Positive, AUPRC-Negative < 0.6
+zhou2023navigating	ECE	ECE	Sec 6; Fig 4	we evaluate the expected calibration error (ECE) and find poor values ranging from 0.50 to 0.30
+yona2024can	other	other	Table 1; Fig 3-4	State of the art models struggle at faithfully communicating uncertainty: cMFG results
+tanneru2023quantifying	other	other	Fig 4-7	Verbalized explanation confidence of Token Importance and CoT explanations on three math word
+groot2024overconfidence	ECE	ECE	Table 1; Table 3; Fig 4-7	Summary table for the NLP tasks, presenting mean accuracy, mean confidence, ECE, and NCE.
+ni2024when	other	other	Table 2; Table 3; Fig 2	Model Unc-rate Accuracy Conserv. Overconf. Alignment
+yang2024on	ECE	ECE	Fig 3; Fig 4; Fig 5	Figure 3: Calibration per dataset and model. The metric ECE is defined in Equation (1)
+zhao2024fact	ECE	ECE	Tables 1-3, 5; Fig 4	Table 1: Expected Calibration Error (ECE) and Macro-average Calibration Error (MacroCE)
+wang2024calibrating	multiple	ECE,NLL	Tables 3-5; Fig 4	Datasets ACC NLL ECE MCE
+pawitan2024confidence	ECE	ECE	Fig 3; Table 1	Accuracy ... as a function of token probability ... dashed red lines ... are lines of identity
+sun2025large	ECE	ECE	Fig 1; Table 1-2	Panel A shows the relationship between accuracy and confidence for GPT models
+chhikara2025mind	ECE	ECE	Table 2; Table 3; Fig 2-3	Figure 2: Reliability diagrams (RDs) showing calibration performance in N and D settings
+liu2025revisiting	ECE	ECE	Table 1; Table 2	I-AvgECE In-domain Average ECE ... NumECE Numerical ECE measures the overall
+lee2024are	none	none	Tables 2-4; Fig 2	We employ two main evaluation metrics, an existing one—accuracy—and a novel one—Verdict Switch Rate.
+belem2024perceptions	other	other	Tables 1-3; Fig 5, 7	The primary quality metric that we propose is Proportional Agreement (PA).
+tang2024an	other	other	Fig 1-4	A heat map displaying the Kullback-Leibler (KL) divergence between various comparison pairs on 17 words
+rivera2024combining	multiple	ECE,Brier	Tables 1-5; Fig 4	Method ECE Brier Score
+wei2024measuring	ECE	ECE	Fig 2	Left: Calibration of language models based on their stated confidence, uniformly binned into 15 intervals.
+ren2023self	multiple	AUROC,selective	Table 1; Table 2; Fig 3	Accuracy Calibration-AUC Selective-AUC
+yin2023do	other	other	Fig 2-6	we adopt the F1 score as a measure of [self-knowledge]
+kumar2024confidence	other	other	Table 1; Fig 5-6	Alignment evaluation using Spearman's rank correlation coefficient.
+sun2024confidence	multiple	ECE,AUROC	Table 3; Table 4	confidence estimation quality (AUC and ECE)
+li2024confidence	other	other	Fig 2; Fig 3	A confusion matrix for the confident and unconfident sets by Consistency Checking method
+liu2025metafaith	other	other	Table 3; Table 4; Table 5	Faithful calibration of LLMs across datasets and uncertainty elicitation prompts, measured via cMFG.
+ghafouri2024epistemic	other	other	Table 2; Fig 3	Spearman correlation between internal certainty, objective and subjective assertiveness
+sicilia2024accounting	Brier	Brier	Tables 1-2, 7-8	Result Table 1 and Table 2 show Brier Score Bias
+sileo2022probing	none	none	Table 1	Test accuracy percentage of different models over the 3 WEP-understanding tasks.
+yoon2025reasoning	multiple	ECE,Brier,AUROC	Tables 1-4; Fig 2-3	Model Acc. ECE ↓ Brier ↓ AUROC ↑
+mei2025reasoning	ECE	ECE	Fig 3; Fig 4; Fig 5; Fig 7	Figure 3 summarizes the ECE, MCE, accuracy, and completion rate of each model
+ni2024are	other	other	Tables 1-4	Correlation coefficients between LLMs' confidence and their QA performance.
+singh2023the	other	other	Table 1; Fig 2-5	Table 1: Calibration of Confidence to Competence Across Various Large Language Models (LLMs)
+li2024think	multiple	AUROC,ECE,selective	Table 2; Table 4; Fig 5	Additionally, we use the Expected Calibration Error (ECE) to evaluate the calibration
+huang2024calibrating	multiple	ECE,selective	Table 1; Table 2; Fig 3	Table 1: Calibration Performance Comparison Among Different Confidence Elicitation Methods Across Four Tasks
+xue2024mlingconf	multiple	AUROC,ECE	Table 4; Fig 4	Table 4: Experimental results of AUROC (ARC.) and ECE of three confidence estimation methods
+wang2025calibrating	multiple	ECE,Brier,AUROC	Table 1; Table 2; Table 3	We evaluate Expected Calibration Error (ECE), Brier score (BS), and area under the ROC curve (AUC).
+tao2025can	multiple	ECE,AUROC	Table 2; Table 3; Fig 4	Table 2: Confidence estimation performance across models and datasets, evaluated with ECE↓ (Excl.) and AUROC↑ (Incl.).
+liu2026can	other	other	Table 1; Fig 3-5	MAC: The MIC-accuracy correlation measures the cross-dataset association between a model's MIC values and accuracy.
+ffrenchconstant2026confidencebench	Brier	Brier	Fig 1; Fig 3 (ECE/smECE only in appendix)	Figure 1: Brier score vs. accuracy (3-run means).
+tian2025overconfidence	multiple	ECE,Brier,NLL	Table 1; Table 4	Model Acc ↑ ECE ↓ ACE ↓ Brier Score ↓ MCE ↓ NLL ↓ TH Score ↑
+hsiao2026rethinking	ECE	ECE	Table 2; Table 3; Fig 2	our prompts substantially reduce calibration error (AECE
+wang2025let	multiple	AUROC,Brier,ECE	Table 1-4; Fig 2-4	worse calibration (higher Brier and ECE scores).
+obadinma2025on	other	other	Table 2; Table 4; Fig 3 (Brier/AUROC only in appendix)	we can observe significant differences in Δ Aff. Cf. post attack (up to 70%)
+yu2025uncertainty	multiple	ECE,AUROC	Table 2; Table 3; Fig 3	Figure 3. ECE and AUROC across Models and Execution Policies.
+zhou2025steerconf	multiple	ECE,AUROC	Table 1; Table 2; Table 3	across ECE, AUROC, PR-N, and PR-P metrics
+naderi2025evaluating	multiple	Brier,AUROC,ECE	Fig 4; Fig 5; Fig 6	Fig. 4. The performance of LLMs on accuracy (a), Brier score (b), AUC-ROC (c), and ECE
+marashian2026speaking	ECE	ECE	Table 3; Fig 2 (AUROC only in appendix)	Table 3: Results for error calibration on the test set. All the numbers report the ECE score (lower is better).
+cacioli2026verbal	AUROC	AUROC	Fig 2; Sec 3.2	Figure 2: Type-2 AUROC2 by model and condition (bootstrap 95% CI).
+kumaran2026how	multiple	ECE,AUROC	Sec 1/5 text; Fig 6	Gemma was reasonably well calibrated (ECE = 0.12, AUROC = 0.71)
+yang2026the	multiple	AUROC,ECE	Table 2; Table 3; Fig 6	AUROC↑ ECE↓ TGS-self↑ TGS-pair↑ AUROC↑ ECE↓ TGS-self↑ TGS-pair↑
+tao2025revisiting	multiple	ECE,AUROC	Fig 1; Fig 2; Fig 4-7	Figure 1: AUROC vs. ECE across various LLMs, evaluated using Linguistic Verbal Uncertainty
+yang2024confidence	multiple	ECE,Brier	Table 1	Method ECE↓ Brier↓ ECE↓ Brier↓ ECE↓ Brier↓
+ferrer2026when	multiple	ECE,Brier,AUROC,selective	Table 1; Table 2; Fig 1	Dataset Method Acc ECE Brier AUC Cov@10%
+kossen2024semantic	AUROC	AUROC	Fig 2-8; Tab 1-2	Figure 6: SEPs predict model hallucinations better than accuracy probes when generalizing to unseen
+fadeeva2024factchecking	AUROC	AUROC	Table 1; Table 3; Fig 3	Table 1: ROC-AUC of claim-level UQ methods with FactScore labels as the ground truth (English).
+bakman2024mars	AUROC	AUROC	Table 1-4; Fig 4	Table 1: AUROC performance of UE methods in various datasets with different pre-trained LLMs.
+zhang2023enhancing	other	other	Table 1	AUC-PR is adopted as the performance metric for sentence-level hallucination detection.
+su2024unsupervised	AUROC	AUROC	Table 2	HELM Sentence Level AUC HELM Passage Level AUC
+du2024haloscope	AUROC	AUROC	Table 1-4; Fig 3	All values are percentages (AUROC).
+li2025language	multiple	AUROC,ECE	Table 1; Table 2; Fig 3	Higher AUROC is better; ECE the opposite.
+vazhentsev2025efficient	AUROC	AUROC	Table 1; Table 2; Fig 4 (ROC-AUC only in appendix)	Table 1. Mean PRR↑ across tasks for the evaluated LLMs.
+zong2026icalm	multiple	selective,ECE,Brier	Table 2; Table 3; Fig 3; Fig 5	Model Method Coverage FARanswered ↓ ECR CAR J abs ↑
+badhe2026silent	multiple	ECE,Brier	Table 1; Fig (calibration curve)	Model Dataset Method ECE ↓ Brier ↓ AUROC ↑ F1 ↑
+zhang2024calibrating	ECE	ECE	Tables 1-4; Fig 6	Figure 6: Reliability diagrams of Baichuan2-13B-Chat on ARC-Challenge.
+kuhn2023semantic	AUROC	AUROC	Figs 1-3	semantic entropy has a significantly higher AUROC than entropy in sequence-probabilityspace
+farquhar2024semantic	multiple	AUROC,selective	Fig 2; Methods	we evaluate two main metrics. First, the widely used area under the receiver operating characteristic (AUROC)
+manakul2023selfcheckgpt	other		Table 2; Fig 5	Table 2: AUC-PR for sentence-level detection tasks.
+lin2023generating	multiple	AUROC,selective	Tables 1-2; Fig 3	Table 1: AUARC when using U (x) to predict expected accuracy.
+nikitin2024kernel	multiple	AUROC,selective	Table 1; Fig 3	Table 1: Detailed experimental results for Llama 2 70B Chat and Falcon 40B Instruct.
+chen2024inside	AUROC	AUROC	Tables 1-2	Table 1: Hallucination detection performance evaluation of different methods on four QA tasks. AUROC (AUC) and Pearson
+duan2023shifting	AUROC	AUROC	Table 1; Fig 4	Table 1: Uncertainty quantification AUROCs of TOKENSAR, SENTSAR, SAR
+wang2022selfconsistency	other		Fig 5	Figure 5: The consistency is correlated with model’s accuracy.
+zhang2024luq	selective	selective	Tables 1, 3	Table 3: Selective question answering results on FACT S CORE -B IO
+jiang2024graphbased	AUROC	AUROC	Table 2	We assess the AUROC (ROC) and AUPRC-Negative (PRC) to compare baselines
+qiu2024semantic	AUROC	AUROC	Table 1; Figs 1-2	Table 1: Performance of different uncertainty/confidence metrics across various LLMs and datasets CoQA AUROC
+aichberger2024improving	AUROC	AUROC	Table 1; Fig 3	Table 1: AUROC using different uncertainty measures as a score to distinguish between correct and incorrect answers.
+fadeeva2023lmpolygraph	AUROC	AUROC	Tables 2-3	Table 2: PRR↑ for the Vicuna model with ROUGE-L and BERTScore
+vashurin2024benchmarking	multiple	AUROC,Brier	Figs 1-4; Tables 4-5	Figure 4: MSE↓ between AlignScore and confidence scores obtained by various normalization methods.
+malinin2020uncertainty	AUROC	AUROC	Table 2	Table 2: Sequence-level Error Detection % Prediction Rejection Ratio in Beam-Search decoding.
+cole2023selectively	multiple	ECE,AUROC,selective	Tables 1-4; Figs 3-4	Coverage@Acc While ECE and ROC-AUC assess absolute and relative calibration
+hou2023decomposing	AUROC	AUROC	Sec 5 table	We report the area under the receiver operator characteristic curve (AUROC)
+zhang2023sac3	AUROC	AUROC	Tables 2, 4	Table 2: AUROC on classification QA tasks
+chen2023quantifying	AUROC	AUROC	Table 1	Table 1: AUROC achieved by different confidence scoring methods across various datasets.
+grewal2024improving	AUROC	AUROC	Figs 1-3	we use the Area Under the Receiver Operating Characteristic curve (AUROC) as our primary evaluation metric.
+ao2024css	multiple	AUROC,selective	Tables 1-3; Fig 2	Table 2: Results of AUROC with Rouge-L score as the correctness criterion
+da2024llm	multiple	AUROC,selective	Figs 3-4	Figure 3: The comparison between D-UE and baseline method on AUARC
+mundler2023selfcontradictory	other		Tables 3-4	Table 3: Results of using the same aLM (ChatGPT in this case) to detect and mitigate selfcontradictions
+cohen2023lm	other		Tables 4-6	Table 4: Precision (P), Recall (R), and F1 scores for LM V LM
+becker2024cycles	multiple	ECE,AUROC,selective	Fig 2; Table 2	confidence score metrics (in particular AURC and AUROC) over baselines
+zhao2023knowing	other		Table 3; Fig 3	Table 3: The PR-AUC of different methods for ChatGPT
+wang2024wordsequence	AUROC	AUROC	Tables 1-3	We employ the widely used area under the receiver operating characteristic (AUROC) curve
+yadkori2024believe	selective	selective	Figs 5-6	recall is the percentage of queries where the method does not abstain, and precision is the percentage of correct
+friel2023chainpoll	AUROC	AUROC	Tables 1, 3-4; Fig 1	Table 4: Closed-domain hallucination detection performance on RealHall Closed
+lyu2024calibrating	multiple	Brier,selective	Tables 1-2; Figs 3-7	Table 1: Consistency metrics result in better Brier Scores than baselines
+zhang2024atomic	multiple	ECE,Brier,AUROC	Tables 1-4; Fig 2	Figure 2: Comparison of atomic level and responselevel calibration for ECE and Brier Score.
+huang2023look	AUROC	AUROC	Table V	AUC scores for detecting erroneous code generated by LLMs.
+fomicheva2020unsupervised	other		Tables 2, 4	Table 2: Pearson (r) correlation between unsupervised QE indicators and human DA judgments.
+nguyen2025beyond	AUROC	AUROC	Figs 2-4	Figure 3: Average PRR score of Phi-3-mini
+ma2025semantic	AUROC	AUROC	Tables 1-2	Table 1: Uncertainty estimation performance on OpenQA Datasets.
+yang2024just	multiple	ECE,Brier,AUROC	Tables 2-8; Fig 2	Figure 2: The behavior of the Accuracy, ECE, TACE, Brier, and AUROC
+gao2024spuq	ECE	ECE	Fig 3; Table 3	Table 3: ECE on the XSUM summarization task.
+agrawal2023language	multiple	AUROC,selective	Figs 5-6	Figure 6: False discovery rate (FDR) vs. fraction of references preserved
+li2025semantic	AUROC	AUROC	Table 2	Table 2: Internal uncertainty: Accuracy, F1, and AUROC on TriviaQA and SQuAD.
+huang2024uncertainty	AUROC	AUROC	Figs 3-4; Tables 2-3	Figure 3: Top: AUROCs of uncertainty/confidence measures with various thresholds.
+ling2024uncertainty	AUROC	AUROC	Tables 1-2	Table 2: Comparison of AUROC in misclassificatin rate on E MOTION dataset
+sharma2025assessing	other		Tables 2-3	Table 2: Correlation Results — Pearson coefficient (p-value)
+ciosek2025hallucination	AUROC	AUROC	Table 1; Figs 1-4	Table 1: Measured AUROC for a fixed budget of N = 2 and N = 5 samples per prompt.
+tan2025too	AUROC	AUROC	Tables 2, 4	Table 2: AUROC of error detection methods.
+zhang2024vluncertainty	other		Sec 4 tables	The reported results are hallucination detection accuracy.
+fan2026iuq	AUROC	AUROC	Tables 2, 4; Fig 4	Table 2: AUROCs of the uncertainty quantification metrics across models of diverse sizes.
+zhao2025sese	multiple	AUROC,selective	Tables 1-2	we assess two primary metrics: Area Under the Receiver Operating Characteristic curve (AUROC) and Area Under the Rejection Accuracy Curve
+he2026using	AUROC	AUROC	Tables 2-3, 6	Table 6: Robustness to fuzz-input seeds: AUROC, Pearson, and Spearman
+bouchard2026functional	AUROC	AUROC	Tables 2-4	Table 2: Code correctness AUROC on LiveCodeBench (Python).
+kruse2025simple	multiple	ECE,Brier,AUROC	Tables 1-3	Table 3: AUROC, ECE, and Brier Score across clinical prediction tasks.
+hamidieh2026complementing	multiple	AUROC,selective	Figs 3-7; Table 1	Figure 7: Risk–coverage analysis shows that TU consistently improves selective prediction
+sun2026efficient	AUROC	AUROC	Tables 1-2; Fig 2	Table 1: AUROC for hallucination detection on open-form QA datasets
+fisch2020efficient	coverage	coverage	Table 1; Figs 2-3	Each line shows the empirical accuracy (Acc.) and the (raw) size of the prediction set
+fisch2021fewshot	coverage	coverage	Fig 4	Few-shot CP results as a function of
+schuster2021consistent	coverage	coverage	Fig 3; Table 3	While both our CP-based methods give valid consistencies (above diagonal)
+angelopoulos2021learn	coverage	coverage	Figs 3-6, 9	Figure 3: Numerical results of our multi-label classification procedure. The risk is plotted
+dey2021conformal	coverage	coverage	Figs 8, 14	Figure 8: Coverage of conformal prediction sets for POS prediction
+schuster2022confident	other		Fig 3; Table 2	Figure 3: Validation empirical performance-efficiency tradeoffs for different confidence measures
+angelopoulos2022conformal	coverage	coverage	Figs 1-4	Figure 1: FNR control in tumor segmentation.
+choubey2022conformal	coverage	coverage	Figs 1-2; Table 1	Figure 1: Coverage of CP-predicted label sets
+kumar2023conformal	coverage	coverage	Figs 3, 6-8	Figure 3: Desired coverage is achieved for all subjects.
+ravfogel2023conformal	coverage	coverage	Figs 2-4	Figure 2: Effective accuracy when using nucleus sampling with p = 0.9
+quach2023conformal	coverage	coverage	Fig 2	Figure 2: Conformal sampling results for
+zerva2023conformalizing	coverage	coverage	Tables 1, 3-4; Figs 2, 5-7	Table 1: Coverage percentage for α = 0.1 over different uncertainty methods.
+lee2023selective	coverage	coverage	Table 1; Fig 3	Table 1: Comparison results of semi-supervised methods.
+li2023traq	coverage	coverage	Figs 3-5, 7	Figure 3: Retriever and generator coverage rates on the BioASQ dataset.
+ren2023robots	coverage	coverage	Figs 3-4; Tables 1-2	Figure 4: Comparison of task success rate vs average prediction set size
+deutschmann2023conformal	coverage	coverage	Tables 1-2; Fig 2	Table 1: We report the conditional coverage and mean absolute error
+wang2023conformal	coverage	coverage	Table 1	Table 1. Comparison of mission success and user help rates for HERACLEs and KnowNo
+zollo2023prompt	coverage	coverage	Figs 8-9; Table 3	Figure 8: Derived bounds and observed mean error rate for pass@10
+ye2024benchmarking	multiple	ECE,coverage	Tables 1-5	Table 3: Comparison among conformal prediction (CP), entropy (Entropy), and maximal predicted probability
+kang2024crag	coverage	coverage	Figs 3-6	Figure 3: Conformal generation risk α̂rag and empirical risk
+kostumov2024uncertaintyaware	multiple	ECE,coverage	Tables I-II	TABLE II ECE AND MCE VALUES OF VLM S
+liang2024introspective	coverage	coverage	Table 1; Fig 4	Figure 4: Variation of different performance metrics with respect to the Target Success Rate (TSR).
+mohri2024language	coverage	coverage	Figs 3-4	Figure 3: Target vs. empirical factuality.
+ulmer2024nonexchangeable	coverage	coverage	Tables 1-2; Figs 2-3	Table 1: Coverage results for the de → en and ja → en MT tasks.
+wang2024probabilistically	coverage	coverage	Sec V-A	we investigate if we can achieve desired mission success rate 1 − α.
+ren2024explore	other		Figs 7, 9	Fig. 9: Normalized time step taken vs. success rate using varying threshold
+su2024api	coverage	coverage	Tables 1-2; Figs 3-7	Figure 3: FreqOnly has the largest APSS and the most conservative ECR.
+abbasiyadkori2024mitigating	coverage	coverage	Figs 1-2	Figure 1: Abstention rates vs. average test losses on the Temporal Sequences dataset
+gui2024conformal	coverage	coverage	Figs 3-7	Figure 3: Realized FDR (blue) and power (red) for conformal alignment
+jazbec2024fast	multiple	Brier,coverage	Figs 1-3, 6; Table 1	Figure 1: Accuracy and Brier score [13] across
+cherian2024large	coverage	coverage	Figs 2-4	the left panel of Figure 2 verifies that the level-adaptive probabilities we report are empirically well-calibrated.
+wang2024conu	multiple	AUROC,coverage	Tables 1-2; Figs 1-2	Table 1: Performance comparison (AUROC) of uncertainty quantification
+jung2024trust	multiple	ECE,AUROC,coverage	Table 1; Figs 2-4	Figure 2: Reliability plot for confidence estimation methods
+liu2024multigroup	multiple	ECE,Brier,coverage	Tables 1-2; Fig 1	Figure 1: For each target coverage, we run conformal methods
+kladny2024conformal	coverage	coverage	Table 1	Table 1: Quantitative Evaluations.
+wang2024sample	coverage	coverage	Figs 2, 5-6; Table 1	Figure 2: Results of the EER metric at various risk levels.
+zhang2024conformal	coverage	coverage	Figs 2-3	Figure 2: Prediction set coverage rates for the question answering task
+kaur2024addressing	multiple	selective,coverage	Tables 1-2; Figs 1-2	Table 1: AUARC (↑) results in comparison to Kuhn et al.
+vishwakarma2024prune	coverage	coverage	Table 1	Table 1: Average set sizes and coverage rates (in percentages)
+chen2025conformal	coverage	coverage	Figs 4-5	realized CVaR vs. α (row 2)
+jiang2025conformal	coverage	coverage	Fig 3	the prediction risk on the test set falls within the conformal guarantee region
+tayebati2025learning	multiple	ECE,AUROC,selective,coverage	Figs 1-3; Tables	assessed across datasets using AUROC (Hallucination Detection) and AUARC (UncertaintyGuided Selective Generation).
+kaur2025empirical	none		Tables 1-2	Table 1: CLM results (accuracies in %) on StepGame task
+ke2025correctness	multiple	AUROC,coverage	Figs 2-4; Tables 1-3	Table 3: Results of the AUROC metric.
+shahrokhi2025conformal	coverage	coverage	Figs 1, 3-4	Figure 3: Results comparing GPS and CLM on different datasets
+sundarsingh2025conformalnl2ltl	coverage	coverage	Sec V	ConformalNL2LTL can achieve user-specified translation success rates while maintaining low help rates
+wang2025sconu	coverage	coverage	Figs 1, 3; Table 2	Table 2: The EMR results obtained from 100 trials on the MMLU-Pro dataset.
+doula2025safepath	coverage	coverage	Table 1; Fig 2	using Deviation from Target Coverage (DTC), set size (SS) and Human Delegation Rate
+rubintoles2025conformal	coverage	coverage	Fig 4	achieving coherent factuality across target coverage levels.
+feng2025response	coverage	coverage	Figs 2-3	empirical factuality levels (bottom) for target factuality levels
+lee2025online	coverage	coverage	Figs 3-5	Figure 5: FDRt and Inefft for ExAUL under an adaptive adversarial environment
+noorani2025conformal	coverage	coverage	Table 1; Fig 2	Table 1: Comparison of nominal coverage, empirical coverage
+overman2025conformal	coverage	coverage	Table 1; Figs 1-2	while always respecting the α-level guardrail budget.
+chan2025conformal	coverage	coverage	Fig 3	Right column: Desired (dashed) and empirical (solid) coverage of C-IP.
+yang2025conformal	multiple	AUROC,coverage	Table 1; Figs 1-3	frequency-based methods yield AUROC values essentially equivalent to logit-based counterparts in Table 1.
+ye2025conformal	coverage	coverage	Table 1; Figs 1-3	Table 1: Average Error Rate for Different Datasets and Models
+kuwahara2025document	coverage	coverage	Figs 2-3; Table 2	Figure 2: User-specified target coverage 1-α versus average empirical coverage
+sheng2025analyzing	coverage	coverage	Tables 1-2; Fig 2	Table 1: Interval width and coverage on SummEval
+huang2025reliable	multiple	ECE,coverage	Figs 4-12	Fig. 5: Reliability diagram for the Bayesian WideResNet-402 cloud model
+wang2025safer	coverage	coverage	Figs 2-6; Table 1	Figure 2: Empirical miscoverage rates under different sampling budgets.
+wang2026conformal	coverage	coverage	Fig 4	Figure 4. Empirical verification of risk control.
+zhang2026commcp	none		Figs 3, 5	Fig. 3. The diagrams of SC vs. NTC on our MM-EQA dataset.
+feng2026cora	other		Tables 1-2; Fig 2	Phone-Harm (Harm-150) MobileRisk GAR↑ IF1↑ mHR↓ OIR↓ Acc↑ Prec↑ Rec↑ F1↑ FPR↓
+emmenegger2026conformal	coverage	coverage	Fig 1	Figure 1 shows the empirical risk obtained versus the desired
+liu2023geval	other		Tables 1-3	Table 1: Summary-level Spearman (ρ) and Kendall-Tau (τ ) correlations
+jiang2020how	ECE	ECE	Tables 4-7; Fig 1	we use the accuracy and ECE to measure the calibration performance; Figure 1: Reliability diagram of the T5 model
+lin2022teaching	multiple	ECE,Brier	Table 1; Fig 4-5 (MSE and MAD calibration error)	Table 1: Calibration scores on evaluation sets
+zhou2024relying	other	other	Fig 5; Table 1 (reliance/epistemic-marker rates)	Participant results in the calibrated, overconfident, and underconfident settings
+kim2024im	other	other	Table 1; Fig 2 (participant reliance and confidence)	Exploratory analysis of over- and underreliance
+steyvers2024what	multiple	ECE,AUROC	Fig 2-3 (ECE and AUC)	Calibration error and discrimination for model confidence and human confidence
+zhou2024rel	other	other	Tables 2-4	Reliance rate (%) of weakened strengtheners
+rathi2025humans	other	other	Table 3	Overconfidence rates on MMLU questions, human reliance rates on strengtheners
+villavicencio2026not	other	other	Fig 4; Table 1 (user reliance/confidence DVs)	reduced users' confidence in their own answers
+wang2026are	multiple	ECE,Brier,selective	Table 1 (ECE-10, Brier Score, AUARC)	We report both Calibration metrics and Decision-Making metrics
+kong2020calibrated	ECE	ECE	Table 1; Fig 1; Table 2 (Table 2 uses NBAUCC, not AUROC)	Table 1: ECE and accuracy (in percentage)
+zhang2024selfalignment	multiple	ECE,AUROC	Sec 5.2; Fig 5	AUROC for the discrimination task across five MCQA tasks; Figure 5: Calibration curves
+han2024enhancing	ECE	ECE	Table 2; Fig 3	Expected Calibration Error (ECE)... Pearson Correlation Coefficient (r)
+stengeleskin2024lacie	multiple	ECE,AUROC	Table 1	ECE bins confidence scores...; AUROC measures the tradeoff between true acceptances and false acceptances
+kapoor2024large	multiple	ECE,AUROC	Fig 3; Table 1	Figure 3: (Left) ECE and AUROC on both multiple choice (MC) and open-ended (OE) MMLU
+wang2024blob	multiple	ECE,NLL	Table 1	Table 1 shows the performance of BLoB compared to the baselines, including ACC, ECE, and NLL
+chaudhry2024finetuning	multiple	ECE,Brier	Figs 4-6	Expected Calibration Error (ECE) and Brier Score are reported at the top of each plot.
+niu2024functionallevel	ECE	ECE	Tables 1-3	UQ4CT consistently achieves the lowest ECE across benchmarks
+liu2024can	AUROC	AUROC	Table 1 (ACL Anthology) (parity audit round 14)	Table 1 reports AUROC
+krishnan2024enhancing	multiple	ECE,AUROC,selective	Tables 1-2; Fig 2	AUROC (Hallucination detection); AUARC (Uncertainty-guided selective generation); Expected Calibration Error (ECE)
+huang2025efficient	multiple	ECE,AUROC	Table 1 (ECE, AUC columns)	Self-Calibration results across both in-domain and out-of domain datasets
+hager2025uncertainty	multiple	AUROC,ECE	Tables 1-3; Fig 2 (reliability plot)	Binned AUROC and accuracy metrics; Figure 2: Average accuracy within each confidence bin
+xiao2025restoring	ECE	ECE	Table 2; Fig 3	calibration performance (conf-ECE, cw-ECE) and Accuracy; Figure 3: Calibration Plots
+he2025mmboundary	ECE	ECE	Table 1	We present the ECE and MECE results in Table 1 and the AUROC results in Appendix (Table 8)
+jang2025verbalized	multiple	ECE,Brier,AUROC	Table 1; Fig 4 (columns ECE, BS, AUROC)	Table 1: Calibration results ...
+li2025conftuner	multiple	ECE,AUROC	Tables 1-2; Fig 3	Table 1: ECE scores of all the methods; Table 2: AUROC scores of all the methods.
+steyvers2025generalization	multiple	ECE,AUROC	Table 1; Figs 3-4 (ECE)	Metacognitive Discrimination: AUC; Calibration diagrams for fine-tuned and baseline models
+zhang2025grace	multiple	ECE,Brier,AUROC	Table 1	GrACE outperforms ... Apricot by 3.9%, 2.5%, and 5.0% in terms of ECE, Brier and AUROC.
+eikema2025teaching	other	other	Tables 2-3	Faithfulness (cMFG) on PopQA for three instruction-tuned LLMs
+zhang2025direct	other	other	Table 1; Sec 4.3 (mean abs. verbalized-minus-internal gap, not ECE)	We use Spearman's Rank Correlation Coefficient ...
+xiaohu2026know	multiple	ECE,AUROC	Tables 1-2; Fig 1	SFT improved average confidence-correctness AUROC from 0.806 to 0.879 and reduced calibration error
+guo2026llms	multiple	ECE,Brier	Table 3 (columns Brier, ECE)	Panel A evaluates verbalized confidence; OConf is the percentage of wrong answers
+band2024linguistic	ECE	ECE	Figs 3-5	Accuracy-ECE Frontier for Question-Answering ... significantly better reader ECE
+tao2024when	ECE	ECE	Fig 2(a); Tables 1-2 (Tables 1-2 use Pearson/Spearman)	PreApproach provides better calibration (lower ECE)
+xu2024sayself	ECE	ECE	Table 1	We show the ECE results (Table 1) and the AUROC results (Table 5 in the Appendix)
+baniharouni2025rewarding	multiple	ECE,AUROC	Tables 1-5; Fig 4	We report our results using the Expected Calibration Error (ECE) and ... (AUROC) metric.
+zhang2025lovec	multiple	ECE,Brier	Table 2	(1) Brier Score (BS) ..., (2) ECE-M ... for calibration under soft labels, and (3) Spearman Correlation
+turtel2025outcomebased	multiple	ECE,Brier	Fig 1; Table 1	Mean soft-Brier score (accuracy, left) and mean expected calibration error (ECE, right) for each training algorithm
+damani2025beyond	multiple	ECE,Brier,AUROC	Table 1 (ECE, Brier, AUROC columns)	Accuracy and calibration metrics for models trained on HotpotQA and Big-Math
+vanniekerk2025posttraining	ECE	ECE	Tables 1-2	Expected Calibration Error (ECE)
+yin2025deliberative	other	other	Table 1	Reliability (Rel.): A simplified binary calibration metric analogous to ECE ...; False-Certain Rate (FC%)
+bereket2025uncalibrated	multiple	ECE,AUROC	Table 1; Fig 2 (ECE, AUROC columns)	To measure calibration, we visualize reliability plots and compute the Expected Calibration Error
+liu2025c2gspg	multiple	ECE,Brier	Tables 3, 5; Fig 4	we measure its calibration by computing the Brier Score (BS) ... and the Expected Calibration Error (ECE)
+kale2025knowrl	other	other	Tables 1-2	Results of intrinsic evaluation of self-knowledge boundary consistency for KnowRL across iterations
+zou2025thinking	multiple	ECE,Brier	Sec 5.2 inline table; Table 3 (Base/Ours ECE, Brier)	We compute Expected Calibration Error (ECE) and Brier Score to quantify confidence alignment ... we find:
+wu2025mitigating	multiple	ECE,Brier,NLL,AUROC	Tables 1-4; Figs 4-5 (plus smECE)	Confidence AUC ...; Brier Score ...; Negative Log-Likelihood (NLL) of correctness outcomes
+yaldiz2026balancing	ECE	ECE	Tables 1, 4; Fig 1	Performance (accuracy) and calibration (ECE) metrics for base, SFT, and GRPO models.
+xuan2026the	multiple	ECE,Brier,AUROC	Table 2	(2) Expected Calibration Error (ECE) ... (3) Brier Score ... and (4) AUROC
+baniharouni2026calibrated	multiple	ECE,AUROC	Tables 1-2; Fig 2	Table 2: Sentence-level evaluation results. ECE and AUROC assess calibration and discriminative power
+ma2026decoupling	multiple	ECE,AUROC	Tables 1-3; Fig 3	We report Accuracy (Acc) for reasoning performance, ECE, PCE and AUROC for calibration estimation.
+li2026confidence	multiple	ECE,Brier,AUROC	Tables 1-2 (plus ECE columns)	AUROC: Measures how well confidence scores distinguish correct answers from errors; Brier Score
+wang2026process	multiple	ECE,coverage	Table 1; Figs 3-4, 6	we report Expected Calibration Error (ECE)...; Risk control on AMC with LTT ... target-to-realized accuracy curve
+xiao2026vlcalibration	multiple	ECE,AUROC	Tables 1-3; Fig 4	We report the average Accuracy, AUROC, and ECE across all 12 evaluation benchmarks
+wang2026calibrationaware	multiple	AUROC,selective	Figs 1, 3-4	calibration (measured by AUC-mean); Precision-Coverage curves of our method and all baselines
+liu2026think	multiple	ECE,Brier,AUROC	Tables 1-3	we report Expected Calibration Error (ECE), Brier score (Brier), and Area Under the ROC Curve (AUROC)
+yu2026calibrating	multiple	ECE,AUROC	Table 1; Figs 3-4	CSR reduces ECE by up to 42% and improves AUROC by up to 16% over the base model
+li2026orce	multiple	ECE,selective	Tables 1-5 (AURC, E-AURC columns)	For calibration, we use Expected Calibration Error (ECE) ... failure prediction
+cui2026rankingaware	multiple	ECE,Brier	Table 1; Figs 3-4	The pairwise corruption loss (+Pair) substantially reduces ECE and Brier score
+liu2026reinforcement	Brier	Brier	Table 1 (reliability diagram is expressed-vs-intrinsic, not vs correctness)	Table 1 columns cMFG*, Acc, BS
+zhu2026closing	selective	selective	Tables 1-2; Fig 5 (plus over/underconfidence rate, Chow score)	selective prediction accuracy, the expected correctness over the committed set
+singh2026verifiable	multiple	ECE,Brier	Tables 3-4; Figs 5-6	Table 4: Held-out 2024 Brier and ECE for static-feature forecasters.
+tan2026on	multiple	ECE,Brier,AUROC	Figs 2-4	Figure 3: Brier score, ECE (10 bins) and Calibration bias statistics; Figure 2: Accuracy, AUROC and Brier-1
+yang2026scaling	multiple	ECE,AUROC	Tables 1-2 (ECE and AUROC columns)	Table 1: ... results across in-domain test set, Agieval, and MMLU
+turtel2026how	multiple	ECE,Brier,NLL,AUROC	Table 2; Fig 2 (log score; calibration curves)	The Brier-trained model has the lowest observed Brier score and highest AUC-ROC
+xu2026dualstake	multiple	ECE,Brier,AUROC	Fig 2; Tables 1-3 (BS columns in tables)	we compare the ECE and AUC of these two confidence signals
+leng2024taming	multiple	ECE,AUROC	Tables 1, 4	We consider three evaluation metrics: Expected Calibrated Error (ECE), Area Under the ROC Curve (AUC)
+lou2024uncertaintyaware	selective	selective	Fig 3(d)	(d) URM and URME's evaluation accuracy when uncertainty is within the threshold.
+park2025know	multiple	ECE,Brier	Table 1; Fig 3 (Brier, PosBrier, AdaptiveCE)	Table 1: Calibration error before and after applying our calibration-via-finetuning method
+ma2026distributional	multiple	ECE,Brier	Table 1	Calibration metrics (Brier, PosBrier, ECE, WQL; all lower is better) for Base, OT, and QR
+pan2026uncertaintyaware	selective	selective	Table 1	R2@50, MSE@50, MAE@50 ... evaluate point prediction quality on samples with lower estimated uncertainty
+zhang2023rtuning	other	other	Tables 1-2 (ECE only in appendix Table 16)	R-Tuning outperforms Vanilla in terms of the AP score
+yang2023alignment	other	other	Tables 3-4 (honesty metrics: prudence, over-conservativeness, honesty score)	we present prudence score
+cheng2024can	other	other	Table 1; Fig 2 (IK-IK / IK-IDK / TRUTHFUL rates)	Knowledge quadrants of AI assistants on the Idk dataset
+liang2024learning	other	other	Fig 2; Table 2	Accuracy of knowledge state probing across different models with different internal representations
+xu2024rejection	other	other	Tables 1-2	Prec: precision. Acc: accuracy. Truth: Truthfulness. Rely: reliability
+kang2024unfamiliar	other	other	Figs 2-5 (hedging toward constant prediction)	Prediction behavior of models finetuned with SFT ... as inputs become more unfamiliar
+chen2024teaching	other	other	Tables 1, 3; Fig 4	Table 3: Knowledge awareness metrics.
+li2024know	other	other	Tables 1-2	Accuracies (in %) on known and unknown questions ... QA uncertainty recognition benchmark
+xue2024ualign	AUROC	AUROC	Fig 5; Table 1 (Table 1: Prec., Truth.)	Figure 5: Results of AUORC of several uncertainty estimation methods on TVQA
+song2025the	other	other	Table 2; Fig 2	The table presents refusal rates (higher is better) on three unanswerable datasets
+wei2025truthrl	other	other	Table 1; Figs 4, 6 (Fig 6 groups outputs by confidence interval; no calibration metric)	We report the truthfulness score ...
+an2025teaching	other	other	Table 3 (reliability; helpfulness; truthfulness)	we propose, defined as the harmonic mean of and
+mohamadi2025honesty	other	other	Figs 1, 6-7 (rates rise)	As training penalty increases, models trade coverage for safety: correct rates decrease while abstention
+zhai2026abstainr1	other	other	Fig 1; Tables 1-3	U-Ref: Refusal rate on unanswerable questions.
+gao2026karl	other	other	Tables 1-3; Fig 5	Early training dynamics of Correct (green) and Abstain (gray) response proportions
+song2026delineating	other	other	Tables 1-3	The Prompting baseline ... achieves a high IK-IK rate (45.8) but a negligible IK-IDK rate (1.8)
+pan2026tiar	other	other	Tables 2-4	Abstention F1, Recall, Precision, and Accuracy across six AbstentionBench categories
+che2026abstention	Brier	Brier	Fig 4(b); Table 2	the report channel moves opposite to the gate: coverage, accuracy, Brier, jointly (Figure 4b)
+blasiok2023when	none	none	Figs 1-2 (theory; no empirical metric)	Schematic depiction of the loss landscape of a proper loss
+kalai2023calibrated	none	none	Fig 1 (theory; no own measurement)	GPT-4 calibration curves ... (OpenAI, 2023, Figure 8, reprinted with permission)
+kalai2025why	none	none	Fig 2 (theory)	GPT-4 calibration histograms ... (OpenAI, 2023a, Figure 8, reprinted with permission)
+nakkiran2025trained	ECE	ECE	Figs 1-7 (main figures; smECE defined in appendix)	Overlaid reliability diagrams evaluating semantic calibration
+chen2023frugalgpt	none	none	Table 3; Fig 5 (cost/accuracy only)	Accuracy and cost tradeoffs achieved by FrugalGPT
+aggarwal2023automix	none	none	Fig 4; Table 1	we compare cost-quality curves of various methods and also evaluate them using a newly proposed ibc metric
+ong2024routellm	none	none	Tables 1-6 (quality)	we define the average performance gap recovered (APGR) as an overall measure of the router's
+chuang2024learning	multiple	ECE,Brier,AUROC	Table 2; Fig 3 (ECE, BS)	Table 2: Calibration metrics and routing rates of Self-REF and baselines; Figure 3: ROC curves
+bouchard2026is	other	other	Fig 2; Table 2 (benefit-AUROC only in appendix)	Escalation benefit as a function of the cheap model's confidence score
+ding2024hybrid	none	none	Fig 5; Tables 1, 3 (routers; correlations are between quality metrics)	Error-cost tradeoffs achieved by for different performance gaps
+gupta2024language	none	none	Table 1; Figs 3, 6 (cascade quality vs deferral rate)	Table showing area under the deferral curve (AUC-DF)
+yue2023large	other	other	Fig 4 (separates easy/hard)	Average consistency scores ... a higher average consistency score indicates our decision-maker
+hu2024routerbench	none	none	Figs 3-6 (AIQ)	Total Cost vs. Performance for eleven models and KNN, MLP, and Zero routers
+varshney2022model	none	none	Tables 2-3; Figs 2, 4 (area under accuracy-computation cost curve)	Comparing AUC values of different cascading methods
+ramirez2024optimising	none	none	Tables 1-4 (area under accuracy-budget curve)	Accuracy (AUC) for the three LLM model pairs
+zellinger2025rational	ECE	ECE	Tables 1-2 (AUC is error-cost; Kendall correlations)	%Corr is the percentage of correct answers, %ECE is the expected calibration error
+narasimhan2024faster	none	none	Figs 1-3; Table 2	Plots of quality vs. rejection rate for methods that interleave Gemma 2B with Gemma 27B
+jitkrittum2023when	none	none	Figs 1-3 (calibration plots only in Appendix D)	Test accuracy vs deferral rate of the post-hoc approaches
+soiffer2025semantic	none	none	Tables 1-2; Fig 2 (quality vs deferral rate)	AUC-DF values demonstrate that semantic deferral achieves near-dominance
+fanconi2025cascaded	none	none	Fig 3; Table 1; Fig 4 (no calibration metric)	Cost-Accuracy Trade-off for Calibrated Verification Methods; Calibrated IBC Scores
+wu2025from	other	other	Fig 2(a); Tables 3-4	Accuracy as a function of the confidence threshold for the base Weak LLM ... confidence histograms
+kondadadi2026l2dclinical	none	none	Tables 1-3 (F1 and deferral rate only)	L2D-Clinical achieves the best F1 (0.980)
+kamath2020selective	selective	selective	Tables 1-2; Fig 2 (plus Cov@Acc)	We plot risk versus coverage and evaluate on the area under this curve (AUC)
+feng2024dont	ECE	ECE	Table 3; Table 1	Table 3: Abstain estimated calibration error (ECE) of approaches with Mistral-7B, the lower the better.
+tomani2024uncertaintybased	multiple	AUROC,selective	Tables 1-3; Fig 3 (Tables: AUROCs)	This figure shows Accuracy-Rejection Curves (ARCs) for correctness and safety and a ROC curve
+kirichenko2025abstentionbench	other	other	Figs 3-7	Abstention recall and response correctness exhibit variable degree of correlation on different datasets.
+srinivasan2024selective	multiple	ECE,selective	Tables 1-2; Fig 3 (coverage, risk)	Metric results as percentages on the A-OKVQA task at two risk tolerance levels; Figure 3: Calibration curves
+aggarwal2023lets	none	none	Table 1; Figs 3-5	Adaptive-Consistency achieves a significant reduction in the number of generations, with a negligible impact on accuracy.
+li2024escape	none	none	Tables 1-6 (average actual number of generated samples; cost/accuracy only)	Accuracy (%) and across six reasoning benchmarks
+damani2024learning	multiple	ECE,NLL	Fig 3; Table 1 (cross-entropy)	compares predicted marginal reward predictors to ground-truth values, alongside calibration curves; Table 1: ... lower loss
+fu2025deep	other	other	Fig 2; Table 1	Confidence distributions for correct vs. incorrect reasoning traces across different metrics.
+yang2025dynamic	other	other	Fig 8; Table 1 (confidence-triggered exits)	Early-exit rates and accuracy of early-exited samples of DEER
+jiang2023active	none	none	Tables 1-6; Figs 4-5 (task metrics only)	We report the primary metric for each dataset: EM for 2WikiMultihopQA, StrategyQA
+taubenfeld2025confidence	multiple	ECE,Brier	Table 3 (ECE-t, Brier-t, WQD)	Comparison of different confidence extraction methods in terms of between-question and within-question
+wang2023large	none	none	Tables 2, 4-5	Accuracy and kappa correlation coefficient of different methods and annotators with the final voting human annotations
+liu2023calibrating	none	none	Tables 1-5 (evaluator-human agreement, not confidence)	Summary-level Spearman and Kendall correlations of aspects on NewsRoom
+lee2025how	coverage	coverage	Table 1; Fig 5(b)	Empirical coverage of the 95% confidence intervals in (8) and average interval lengths for Chatbot Arena win-rate estimates.
+si2023large	other	other	Fig 9 (Sec 6.3) (user confidence)	We plot their average confidence on correct and wrong judgments in Figure 9
+geng2025jsonschemabench	none	none	Tables 2, 4-5 (schema-support coverage, efficiency; no confidence metric)	Coverage of all the frameworks on JSONSchemaBench
+tam2024speak	none	none	Tables 1-3; Figs 2-6 (accuracy and parse errors only)	Parsing error percentage across different models
+willard2023efficient	none	none	Fig 1 (method/efficiency paper; no confidence metric)	FSM masking for the regular expression
+dong2024xgrammar	none	none	Tables 1-4; Figs 9-10 (efficiency and syntactic correctness only)	Per token mask generation latency
+ugare2024syncode	none	none	Tables 1-5	Number of programs with syntax errors for standard and SynCode generation
+beurerkellner2024guiding	none	none	Tables 2-4 (accuracy and throughput)	Task Accuracy of different constrained decoding methods on GSM8K ...
+park2024grammaraligned	none	none	Figs 6-7 (KL/distribution fidelity, not confidence)	Expectations of ... vs. expectations after 2,000 samples. Proximity to the diagonal
+geng2023grammarconstrained	none	none	Tables 1-5	Main results for closed information extraction ... precision, recall, and F1-score
+scholak2021picard	none	none	Tables 1-2; Figs 1, 3	exact-set-match accuracy (EM) and execution accuracy
+poesia2022synchromesh	none	none	Table 2; Fig 4	(a) Accuracy and (b) validity of Codex predictions with and without Synchromesh
+beurerkellner2022prompting	none	none	Table 3 (accuracy/cost)	Average performance statistics (over queries) for constrained LMQL chain-of-thought decoding
+koo2024automatabased	none	none	Tables 1-3 (system/efficiency paper; no confidence metric)	A sampling of available extensions
+park2025flexible	none	none	Table 1	Offline and online processing times.
+geng2024sketchguided	none	none	Tables 1-5	triplet-based precision, recall, and F1-score (micro-averaged, with bootstrapped 95% confidence intervals)
+mundler2025typeconstrained	none	none	Tables 2-3	Number of instances with compiler errors ...; pass@1 of unconstrained generation (Vanilla) and type constraining
+banerjee2025crane	none	none	Tables 1-2; Fig 3 (accuracy)	Comparison of CRANE and baselines with different models on GSM-Symbolic
+lew2023sequential	none	none	Fig 4 (likelihood of samples; no confidence metric)	Results of SMC steering on the prompt intersection task
+loula2025syntactic	other	other	Table 3	Pearson correlation between relative particle weights and accuracy scores for all weighted methods.
+reddy2026hidden	none	none	Fig 5; Fig 9 (not tied to correctness)	Distribution of response confidence scores ... mean confidence of 0.527 compared to CD's 0.393
+li2025adaptrack	none	none	Tables 1-4 (EM, pass@k, KL to oracle)	Comparison of KL divergence of different methods on DSL datasets
+shorten2024structuredrag	none	none	Figs 1, 3-4	we achieve an average response format success rate of 82.55%
+xia2024fofo	none	none	Table 4 (format-following scores)	Main Results
+tang2023strucbench	none	none	Tables 2-3	Automated evaluation results on the test set, involving five types of previous metrics and four proposed ones
+yang2025structeval	none	none	Table 6	Main evaluation results of StructEval
+singh2026structured	none	none	Tables 2, 4-6; Fig 2	JSON Pass Rate (black) vs Value Accuracy (purple) in percentages across all 21 evaluated models
+lee2026format	none	none	Tables 2-5; Fig 2	Format tax across open-weight models: accuracy change from freeform baseline (%).
+fan2026capacity	none	none	Tables 1-11; Figs 1-3	Accuracy (%) on GSM8K (easy, single run) and MATH-Hard Level 5
+galeone2026when	none	none	Tables 1-4; Figs 2-6	NAIVE baseline: task accuracy vs. output accuracy across models and datasets.
+wang2025slot	none	none	Table 1	Average percentage schema accuracy and content similarity of different base and fine-tuned LLMs.
+wang2024look	none	none	Tables 1, 4-5; Figs 2-6 (accuracy, selection bias, answer entropy)	Mismatch rate of first token probabilities and text outputs
+li2026jev	multiple	ECE,AUROC	Figs 3, 5 (max probability)	Bottom: reliability curves ...; AUROC of against JEV's correctness

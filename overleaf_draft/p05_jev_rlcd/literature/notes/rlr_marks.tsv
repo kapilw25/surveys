@@ -1,0 +1,50 @@
+id	mark	evidence
+A1	.	full text checked, no match (SLiC-HF and Mielke 2022 linguistic calibration only; no RL with a calibration reward)
+A2	.	full text checked, no match (supervised uncertainty fine-tuning only)
+A3	~	Sec 4 verbalised confidence: "A line of existing work [199, 226] utilizes reinforcement learning" (SaySelf, Tao 2024 CONQORD RLHF reward, Band 2024, LACIE); Sec 7.2.3 "other proper-scoring rules ... Reinforcement learning ... to produce realistic confidence estimates" (one paragraph, not a subsection)
+A4	.	full text checked, no match (only "RLHF pushes LLMs to be over-confident", Kadavath 2022)
+A5	.	full text checked, no match (only "UQ methods can be used as reward models" in the conclusion)
+A6	.	full text checked, no match for a calibration reward; RL section covers confidence as an intrinsic reward (RLSF, confidence maximisation) and uncertainty inside reward models, not a calibration objective
+A7	.	full text checked, no match (Brier as a metric only)
+A8	Y	Sec 4.2 "Reinforcement Learning" subsection: Xu 2024 SaySelf "utilize PPO and design a reward function that encourages high confidence in correct responses and low confidence in incorrect ones"; Band 2024 "predictive log-likelihood of the listener ... as a reward and employ PPO"; LACIE DPO; Cheng 2024 IDK preference RL (2024 methods only)
+A9	Y	Sec 8.3 "Uncertainty-Aware Training and Distillation" + 8.3.1 "Uncertainty in Reward Shaping and Process Supervision": Band 2024, SaySelf, Leng 2024, Zhou 2026 (2606.06976) RL that "penalize[s] confident errors ... align step confidence with tool-call success", Pan 2026 TIAR abstention advantage; frames verbal-confidence training as the Brier proper scoring rule
+A10	~	Sec 4.2 "Fine-tuning for Calibration": cites Tao 2024 (CONQORD, RL confidence-quality reward; described as instruction tuning) and Stengel-Eskin 2024 LACIE
+A11	~	Intro: "reinforcement learning techniques (Band et al., 2024)" in a list of white-box calibration processes
+A12	~	Table II fine-tuning row lists "Decision-based RL [179]" (Band 2024), SaySelf, LACIE; no dedicated discussion
+A13	.	full text checked, no match
+A14	.	full text checked, no match (RLHF discussed as an uncertainty source only)
+B1	~	Sec on medical applications: LA-CDM (Bani-Harouni 2025, arXiv:2506.13474) "combined supervised fine-tuning with RL to balance diagnostic accuracy, uncertainty calibration, and decision efficiency" (passing mention)
+B2	.	full text checked, no match for a calibration reward (RLSF builds preferences from self-confidence; one line that RL can degrade calibration)
+B3	.	full text checked, no match ("calibration reward function" used in the rationality-coefficient sense)
+B4	.	full text checked, no match (0 hits for "calibrat")
+C1	.	full text checked, no match
+C2	.	full text checked, no match
+C3	.	full text checked, no match
+C4	.	full text checked, no match
+C5	.	full text checked, no match
+C6	.	full text checked, no match
+C7	.	full text checked, no match
+C8	.	full text checked, no match
+D1	.	full text checked, no match (RLHF-induced judge overconfidence noted, no method)
+D2	~	Sec 3.3 Reliability: "Xu et al. (2024d) propose SaySelf ... group-based calibration training" (SaySelf's PPO calibration reward not described)
+D3	.	full text checked, no match ("LACIE" hits are the substring of "fallacies"; overconfidence bias of judges only)
+E1	.	full text checked, no match
+E2	.	full text checked, no match (cites self-calibration for test-time scaling, a distillation method)
+F1	~	Sec 3 alignment stage: LACIE "casts confidence calibration as a preference optimization problem"; Zhang 2024c Self-Alignment for Factuality "improve calibration via DPO"
+F2	.	full text checked, no match
+F3	.	full text checked, no match (Zenodo PDF; deferral threshold calibration only)
+F4	.	full text checked, no match (bandit and RL routers, no confidence-calibration reward)
+F5	~	Sec 5 calibration: cites MMBoundary [8] (arXiv:2505.23224, RL stage with confidence-calibration rewards) and Prompt4Trust [62] (arXiv:2507.09279, RL prompt policy with calibration reward); neither RL component is described
+G1	.	full text checked, no match
+G2	~	round 4: full Crossref reference list (270 refs) includes SaySelf (PPO confidence reward); no dedicated subsection
+H1	.	full text checked, no match
+H2	.	round 4: full Crossref reference list (218 refs) has conformal abstention only, no calibration-reward RL
+NEW1	.	Oh 2026, arXiv:2602.05073 (ACL 2026), not in the 40: full text checked, no match
+NEW2	.	Xia (B.) 2026, arXiv:2604.23505, not in the 40: full text checked, no match (reward-model uncertainty used to filter feedback only)
+NEW3	~	Liu (G. K.-M.) 2026, arXiv:2607.11881, not in the 40: Sec 5-6 "use of metacognitive accuracy as an additional training signal during RL" (RLMF, arXiv:2606.32032); Leng 2024 cited as a cause of overconfidence only
+NEW4	.	Sun 2026, arXiv:2604.20166, not in the 40: full text checked, no match (calibrated trust, not model training)
+A19	Y	round 3-5: Sec 4.2 and Table 3 cover calibration-reward RL for forecasting; only general-domain entry is RLCR
+A20	~	round 3: Table 6 labels 2024 RL methods (LACIE, Band 2024, SaySelf, Leng 2025) by register; no 2025-26 synthesis
+A21	.	round 4: full Crossref reference list (152 refs): ConfTuner (SFT) only, no calibration-reward RL
+A22	.	round 4: full Crossref reference list (171 refs): uncertainty-penalised RLHF ensembles and R-Tuning, no calibration reward
+G3	~	round 3: v3 has one sentence on calibration-reward RL, citing RLCR

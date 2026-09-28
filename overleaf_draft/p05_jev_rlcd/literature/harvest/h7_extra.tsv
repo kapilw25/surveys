@@ -1,0 +1,2 @@
+key	title	first_author	n_authors	year	month	venue	arxiv	doi	stage	family	output_contract	access	samples	guarantee	trained	metric	task	action	contribution	fig_method	fig_reliability
+li2026jev	JEV-as-a-Judge: Accept When Confident, Escalate When Unsure	Yubo Li	4	2026	9	arXiv	2609.26550		X	judge calibration	typed-decision	black	no	no	no	other	judging	escalate	Third-party evaluation of a decision-only (System-One) judge against sixteen generative and reward-model judges; a confidence-triggered escalation cascade retains 99% of the comparator accuracy at lower cost		

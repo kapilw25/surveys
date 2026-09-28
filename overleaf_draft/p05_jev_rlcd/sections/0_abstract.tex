@@ -1,0 +1,22 @@
+\begin{abstract}
+A language model that is to act, and not only to converse, must state how likely each of its answers is
+to be right, and software must be able to act on that number: answer, abstain, or hand the case off.
+Calibration research long treated this confidence as something estimated after the fact, from token
+probabilities, a post-hoc map, a prompted self-report or repeated sampling. Mostly since 2024, a second line
+of work puts calibration into training itself, as a supervised objective or as a reward. This survey maps
+both, with the training stage as its core. We collect \nWorks primary works and place each by
+the stage at which calibration enters the decision pipeline: the model's own read-off, a post-hoc map,
+prompt elicitation, extra inference, or training, plus the works that act on a confidence or fix the
+output contract. The \nCore training-stage works, \nCoreRecent of them from 2024 to 2026, are organised
+by what the training signal scores, in five families: supervised calibration objectives, reward-model
+calibration, calibration rewards on the stated confidence, abstention and refusal training, and
+process- and meaning-level confidence rewards. Every work is also classified by the output contract its
+confidence is attached to. A typed decision, a probability for each declared
+option, is common at the read-off and post-hoc stages, but only \nCoreTyped of the \nCore training works train
+one; nearly all the rest train a stated score or a free-text hedge or refusal. Of the
+\nSurveysCompared closest prior surveys, none organises calibration training across domains by what the
+training signal scores, and none crosses that typology with the output contract. We close with seven
+measurable quantities, each tied to a public testbed, and report the first of them, the calibration of
+the decision itself, for Jev, a hosted typed-decision model, and \nDIOpen open decision models on a public
+leaderboard.
+\end{abstract}

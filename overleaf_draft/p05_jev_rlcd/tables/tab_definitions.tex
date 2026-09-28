@@ -1,0 +1,29 @@
+% Operational definitions used to place each work. Hand-authored; every citation is a corpus or refs.bib key.
+% A longtable: taller than one acmsmall page, so it breaks across pages (paper build, 2026-09-27).
+{\footnotesize\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.17\textwidth}
+                   >{\raggedright\arraybackslash}p{0.43\textwidth}
+                   >{\raggedright\arraybackslash}p{0.34\textwidth}@{}}
+\caption{\textbf{Operational definitions used to place each work.} The stages (S0 to S4, plus the consumers X; theory and analysis works are listed but sit outside the core) are defined by
+\emph{where the calibration signal enters the decision pipeline}, so a work is placed by what its main contribution
+changes, not by the task it is evaluated on. The first row defines a term, not an inclusion rule: works that report
+only discrimination are included and marked by their metric. The last three rows define properties recorded for every work: the Contract, Action and Guar.\ columns
+of Tables~\ref{tab:compare_s4} and~\ref{tab:landscape}, where Action records what the rule or trained behaviour does when the confidence is low.}
+\label{tab:definitions}\\
+\toprule \textbf{Construct} & \textbf{Counts if and only if\ldots} & \textbf{Does not count} \\ \midrule \endfirsthead
+\multicolumn{3}{@{}l}{\emph{Table~\thetable, continued}}\\ \toprule \textbf{Construct} & \textbf{Counts if and only if\ldots} & \textbf{Does not count} \\ \midrule \endhead
+\bottomrule \endfoot
+Calibrated confidence & the confidence is scored against empirical accuracy with a calibration metric (ECE, Brier, NLL or a reliability diagram) & a confidence that is only reported, or only used to rank answers (AUROC measures discrimination, not calibration) \\
+\midrule
+\textcolor{stS0txt}{\textbf{S0}} read-off & the confidence is the model's own token or sequence probability, unchanged & any map applied on top, including a probe on the hidden states (S1) \\
+\textcolor{stS1txt}{\textbf{S1}} post-hoc map & a map fitted on held-out data~\citep{guo2017calibration}, on top of the read-off, as a probe on the hidden states of the frozen model, or as an auxiliary model reading the input and output text, or a fixed map (such as pooling the probability of synonymous labels or reweighting token probabilities), changes the confidence but not the model's parameters & re-training or fine-tuning the model (S4) \\
+\textcolor{stS2txt}{\textbf{S2}} prompt elicitation & the model is asked, in its input, to state a confidence in words or numbers~\citep{tian2023just}; a method whose main contribution is the prompt stays here even if it also aggregates several prompted answers & a confidence computed outside the model's own text (S0, S3) \\
+\textcolor{stS3txt}{\textbf{S3}} extra inference & the confidence needs extra inference, repeated sampling or perturbation (including internal-state signals compared across samples), or carries a distribution-free calibration: a prediction set or a threshold calibrated by conformal or risk control~\citep{farquhar2024semantic,campos2024conformal} & a single forward pass, read off (S0) or probed (S1) \\
+\textcolor{stS4txt}{\textbf{S4}} training & a calibration term appears in the model's own loss or reward: a confidence target or calibration loss, a calibrated reward model, a calibration reward, an abstention target, or a step- or meaning-level confidence reward (families T1 to T5)~\citep{leng2024taming,baniharouni2025rewarding} & calibration that changes only as a side effect of training for something else; theory and analyses of such training, which are listed separately \\
+\textcolor{stXtxt}{\textbf{X}} consumers and contract & the work uses a confidence to act (abstain, hand off, retrieve, filter, adapt compute, set), fixes the output contract, calibrates a model used as a judge against human labels, studies how people rely on a model's output or its stated confidence, or evaluates or benchmarks confidence-based abstention, without changing how the confidence is produced & a work whose main contribution is the confidence itself (S0 to S4) \\
+\textcolor{stTHtxt}{\textbf{Theory}} and analysis & the work analyses when or why training changes calibration, without proposing a training objective & a training method, even one motivated by such analysis (S4) \\
+\midrule
+Typed decision output & the options are declared before inference and the model assigns a probability to each option, so the decision and its confidence come from the same distribution & a single output generated under a grammar or schema (constrained output); free text parsed after the fact \\
+Action policy & an explicit rule, or a behaviour the model is trained into (such as refusing when unsure), maps the confidence to an action: answer when it is high; when it is low, abstain, hand the case off to another model or a human (which the papers call routing, cascading, deferral or escalation), trigger retrieval, filter the output (remove, rewrite or revise low-confidence claims, or keep the most confident of several sampled answers), adapt compute (keep sampling, reasoning, querying or exploring, or spend a larger budget; the same rule stops early when the confidence is high), or return a prediction set & a confidence reported with the answer or displayed to a person, with no rule or trained behaviour attached, or a selective-prediction curve reported only as an evaluation (recorded as none; the Metric column records the metrics of the main text) \\
+Coverage guarantee & the method states a finite-sample, distribution-free bound, such as conformal coverage of at least $1-\alpha$~\citep{campos2024conformal} & good empirical calibration on a benchmark, without a stated bound \\
+\end{longtable}}

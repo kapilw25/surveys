@@ -1,0 +1,342 @@
+{
+ "A1": {
+  "date": "2023-11-14",
+  "first": "Jiahui Geng",
+  "n": 6,
+  "oa_title": "A Survey of Confidence Estimation and Calibration in Large Language Models",
+  "source": "openalex:10.48550/arXiv.2311.08298"
+ },
+ "A2": {
+  "date": "2025-03-20",
+  "first": "Xiaoou Liu",
+  "n": 6,
+  "oa_title": "Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey",
+  "source": "openalex:10.48550/arXiv.2503.15850"
+ },
+ "A3": {
+  "date": "2024-12-07",
+  "first": "Ola Shorinwa",
+  "n": 5,
+  "oa_title": "A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions",
+  "source": "openalex:10.48550/arXiv.2412.05563"
+ },
+ "A4": {
+  "date": "2025-01-01",
+  "first": "Zhiqiu Xia",
+  "n": 4,
+  "oa_title": "A Survey of Uncertainty Estimation Methods on Large Language Models",
+  "source": "openalex:10.18653/v1/2025.findings-acl.1101"
+ },
+ "A5": {
+  "date": "2025-10-14",
+  "first": "Sungmin Kang",
+  "n": 5,
+  "source": "arxiv-api:2510.12040 (session-verified)"
+ },
+ "A6": {
+  "date": "2026-01-22",
+  "first": "Jiaxin Zhang",
+  "n": 7,
+  "oa_title": "From Passive Metric to Active Signal: The Evolving Role of Uncertainty Quantification in Large Language Models",
+  "source": "openalex:10.48550/arXiv.2601.15690"
+ },
+ "A7": {
+  "date": "2023-08-02",
+  "first": "Cheng Wang",
+  "n": 1,
+  "oa_title": "Calibration in Deep Learning: A Survey of the State-of-the-Art",
+  "source": "openalex:10.48550/arXiv.2308.01222"
+ },
+ "B1": {
+  "date": "2025-09-10",
+  "first": "Kaiyan Zhang",
+  "n": 39,
+  "oa_title": "A Survey of Reinforcement Learning for Large Reasoning Models",
+  "source": "openalex:10.48550/arXiv.2509.08827"
+ },
+ "B2": {
+  "date": "2025-09-20",
+  "first": "Keliang Liu",
+  "n": 10,
+  "oa_title": "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle",
+  "source": "openalex:10.48550/arXiv.2509.16679"
+ },
+ "B3": {
+  "date": "2023-12-22",
+  "first": "Timo Kaufmann",
+  "n": 4,
+  "oa_title": "A Survey of Reinforcement Learning from Human Feedback",
+  "source": "openalex:10.48550/arXiv.2312.14925"
+ },
+ "B4": {
+  "date": "2026-04-19",
+  "first": "Zhiyin Yu",
+  "n": 20,
+  "oa_title": "A Survey of Reinforcement Learning for Large Language Models under Data Scarcity: Challenges and Solutions",
+  "source": "openalex:10.48550/arXiv.2604.17312"
+ },
+ "C1": {
+  "date": "2022-04-20",
+  "first": "Yisheng Xiao",
+  "n": 7,
+  "oa_title": "A Survey on Non-Autoregressive Generation for Neural Machine Translation and Beyond",
+  "source": "openalex:10.48550/arXiv.2204.09269"
+ },
+ "C2": {
+  "date": "2025-08-14",
+  "first": "Li, Tianyi",
+  "n": 4,
+  "oa_title": "A Survey on Diffusion Language Models",
+  "source": "openalex:10.48550/arXiv.2508.10875"
+ },
+ "C3": {
+  "date": "2025-06-16",
+  "first": "Runpeng Yu",
+  "n": 3,
+  "oa_title": "Discrete Diffusion in Large Language and Multimodal Models: A Survey",
+  "source": "openalex:10.48550/arXiv.2506.13759"
+ },
+ "C4": {
+  "date": "2026-07-14",
+  "first": "Daehoon Gwak",
+  "n": 4,
+  "source": "arxiv-api:2607.12829 (session-verified)"
+ },
+ "C5": {
+  "date": "2024-01-15",
+  "first": "Heming Xia",
+  "n": 9,
+  "oa_title": "Unlocking Efficiency in Large Language Model Inference: A Comprehensive Survey of Speculative Decoding",
+  "source": "openalex:10.48550/arXiv.2401.07851"
+ },
+ "C6": {
+  "date": "2025-02-27",
+  "first": "Yi Hu",
+  "n": 6,
+  "oa_title": "Speculative Decoding and Beyond: An In-Depth Survey of Techniques",
+  "source": "openalex:10.48550/arXiv.2502.19732"
+ },
+ "C7": {
+  "date": "2024-11-20",
+  "first": "Hyun Gon Ryu",
+  "n": 2,
+  "oa_title": "Closer Look at Efficient Inference Methods: A Survey of Speculative Decoding",
+  "source": "openalex:10.48550/arXiv.2411.13157"
+ },
+ "C8": {
+  "date": "2024-04-22",
+  "first": "Zixuan Zhou",
+  "n": 15,
+  "oa_title": "A Survey on Efficient Inference for Large Language Models",
+  "source": "openalex:10.48550/arXiv.2404.14294"
+ },
+ "D1": {
+  "date": "2024-11-23",
+  "first": "Jiawei Gu",
+  "n": 16,
+  "oa_title": "A Survey on LLM-as-a-Judge",
+  "source": "openalex:10.48550/arXiv.2411.15594"
+ },
+ "D2": {
+  "date": "2024-11-25",
+  "first": "Dawei Li",
+  "n": 13,
+  "oa_title": "From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge",
+  "source": "openalex:10.48550/arXiv.2411.16594"
+ },
+ "D3": {
+  "date": "2024-12-07",
+  "first": "Haitao Li",
+  "n": 8,
+  "oa_title": "LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods",
+  "source": "openalex:10.48550/arXiv.2412.05579"
+ },
+ "E1": {
+  "date": "2025-02-24",
+  "first": "Zhongzhi Li",
+  "n": 21,
+  "oa_title": "From System 1 to System 2: A Survey of Reasoning Large Language Models",
+  "source": "openalex:10.48550/arXiv.2502.17419"
+ },
+ "E2": {
+  "date": "2025-03-20",
+  "first": "Sui, Yang",
+  "n": 12,
+  "oa_title": "Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models",
+  "source": "openalex:10.48550/arXiv.2503.16419"
+ },
+ "F1": {
+  "date": "2024-07-25",
+  "first": "Bingbing Wen",
+  "n": 7,
+  "oa_title": "Know Your Limits: A Survey of Abstention in Large Language Models",
+  "source": "openalex:10.48550/arXiv.2407.18418"
+ },
+ "F2": {
+  "date": "2021-07-23",
+  "first": "Kilian Hendrickx",
+  "n": 5,
+  "oa_title": "Machine Learning with a Reject Option: A survey",
+  "source": "openalex:10.48550/arXiv.2107.11277"
+ },
+ "F3": {
+  "date": "2025-12-01",
+  "first": "Strong, Joshua",
+  "n": 5,
+  "oa_title": "Learning to Defer: A Survey",
+  "source": "openalex:10.5281/zenodo.17843044"
+ },
+ "F4": {
+  "date": "2026-02-23",
+  "first": "Yasmin Moslem",
+  "n": 2,
+  "oa_title": "Dynamic Model Routing and Cascading for Efficient LLM Inference: A Survey",
+  "source": "openalex:10.48550/arXiv.2603.04445"
+ },
+ "G1": {
+  "date": "2023-11-09",
+  "first": "Lei Huang",
+  "n": 11,
+  "oa_title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+  "source": "openalex:10.48550/arXiv.2311.05232"
+ },
+ "G2": {
+  "date": "2026-04-02",
+  "first": "Aisha Alansari",
+  "n": 2,
+  "oa_title": "Large language models hallucination: A comprehensive survey",
+  "source": "openalex:10.1016/j.cosrev.2026.100970"
+ },
+ "H1": {
+  "date": "2024-05-03",
+  "first": "Margarida M. Campos",
+  "n": 5,
+  "oa_title": "Conformal Prediction for Natural Language Processing: A Survey",
+  "source": "openalex:10.48550/arXiv.2405.01976"
+ },
+ "H2": {
+  "date": "2026-08-27",
+  "first": "Alice E. Ashby",
+  "n": 3,
+  "oa_title": "Uncertainty-aware large language models: a scoping review of conformal prediction methods",
+  "source": "openalex:10.1098/rsta.2026.0061"
+ },
+ "A8": {
+  "date": "2024-09-27",
+  "first": "Siheng Li",
+  "n": 15,
+  "oa_title": "A Survey on the Honesty of Large Language Models",
+  "source": "openalex:10.48550/arXiv.2409.18786"
+ },
+ "A9": {
+  "date": "2026-09-07",
+  "first": "Moule Lin",
+  "n": 7,
+  "oa_title": "Uncertainty Quantification for LLM Agents: A Taxonomy, an Evaluation Protocol, and an Empirical Study",
+  "source": "openalex:10.48550/arXiv.2609.07395"
+ },
+ "A10": {
+  "date": "2024-12-17",
+  "first": "Moxin Li",
+  "n": 8,
+  "oa_title": "Knowledge Boundary of Large Language Models: A Survey",
+  "source": "openalex:10.48550/arXiv.2412.12472"
+ },
+ "A11": {
+  "date": "2024-12-17",
+  "first": "Xie, Liangru",
+  "n": 10,
+  "oa_title": "A Survey of Calibration Process for Black-Box LLMs",
+  "source": "openalex:10.48550/arXiv.2412.12767"
+ },
+ "A12": {
+  "date": "2025-04-25",
+  "first": "Toghrul Abbasli",
+  "n": 8,
+  "source": "arxiv abs page 2504.18346 (verified via WebFetch 2026-09-26)"
+ },
+ "A13": {
+  "date": "2024-10-20",
+  "first": "Huang, Hsiu-Yuan",
+  "n": 5,
+  "oa_title": "A Survey of Uncertainty Estimation in LLMs: Theory Meets Practice",
+  "source": "openalex:10.48550/arXiv.2410.15326"
+ },
+ "A14": {
+  "date": "2024-10-26",
+  "first": "Mohammad Beigi",
+  "n": 12,
+  "oa_title": "Rethinking the Uncertainty: A Critical Review and Analysis in the Era of Large Language Models",
+  "source": "openalex:10.48550/arXiv.2410.20199"
+ },
+ "F5": {
+  "date": "2026-08-17",
+  "first": "Abderrahmene Boudiaf",
+  "n": 3,
+  "oa_title": "Uncertainty-Aware Decision Making in Multimodal Large Language Models",
+  "source": "openalex:10.48550/arXiv.2608.17084"
+ },
+ "A15": {
+  "date": "2026-02-04",
+  "first": "Changdae Oh",
+  "n": 11,
+  "oa_title": "Uncertainty Quantification in LLM Agents: Foundations, Emerging Challenges, and Opportunities",
+  "source": "openalex:10.48550/arXiv.2602.05073"
+ },
+ "A16": {
+  "date": "2026-04-26",
+  "first": "Boming Xia",
+  "n": 6,
+  "oa_title": "Uncertainty Propagation in LLM-Based Systems",
+  "source": "openalex:10.48550/arXiv.2604.23505"
+ },
+ "A17": {
+  "date": "2026-07-13",
+  "first": "G. Liu",
+  "n": 6,
+  "oa_title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+  "source": "openalex:10.48550/arXiv.2607.11881"
+ },
+ "A18": {
+  "date": "2026-04-22",
+  "first": "Xin Sun",
+  "n": 12,
+  "oa_title": "Trust Stack for Mental Health AI: A Survey of Calibration across Human, Interaction, and AI Layers",
+  "source": "openalex:10.48550/arXiv.2604.20166"
+ },
+ "A19": {
+  "date": "2026-08-24",
+  "first": "Xiaogang Xu",
+  "n": 15,
+  "oa_title": "LLM-based Agents for Forecasting and Prediction: Methods, Training, Evaluation, and Applications",
+  "source": "openalex:10.48550/arXiv.2608.23058"
+ },
+ "A20": {
+  "date": "2025-07-11",
+  "first": "Dennis Ulmer",
+  "n": 4,
+  "oa_title": "Anthropomimetic Uncertainty: What Verbalized Uncertainty in Language Models is Missing",
+  "source": "arxiv-abs:2507.10587 (verified citation_date and authors on the arXiv abstract page)"
+ },
+ "A21": {
+  "date": "2026-01-01",
+  "first": "Min-Ling Zhang",
+  "n": 2,
+  "oa_title": "Uncertainty Calibration in Deep Learning: Methods, Emerging Challenges, and LLM Frontiers",
+  "source": "openalex:10.1007/s11390-026-6426-z"
+ },
+ "A22": {
+  "date": "2025-12-19",
+  "first": "Jianfeng He",
+  "n": 16,
+  "oa_title": "Survey of uncertainty estimation in LLMs - Sources, methods, applications, and challenges",
+  "source": "openalex:10.1016/j.inffus.2025.104057"
+ },
+ "G3": {
+  "date": "2023-09-03",
+  "first": "Yue Zhang",
+  "n": 16,
+  "oa_title": "Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+  "source": "openalex:10.48550/arXiv.2309.01219"
+ }
+}

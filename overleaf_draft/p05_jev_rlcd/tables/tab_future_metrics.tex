@@ -1,0 +1,28 @@
+% Metric-anchored future agenda. Each metric names a real public testbed.
+\begin{table}[t]
+\centering\footnotesize
+\renewcommand{\arraystretch}{1.18}
+\caption{\textbf{A measurable agenda.} Seven quantities, each with a definition and a named public
+testbed, that together would let calibrated decision models be compared on common ground:
+calibration of the decision itself, safe abstention, cheap escalation, robustness to shift, the cost
+of a typed output contract, the size of a guaranteed set, and a controlled comparison of the training families. Figure~\ref{fig:future_protocol} plots
+measured decision ECE (panels a and d) and the target shapes of selective risk and escalation regret
+(panels b and c).}
+\label{tab:future_metrics}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.16\textwidth}
+                  >{\raggedright\arraybackslash}p{0.36\textwidth}
+                  >{\raggedright\arraybackslash}p{0.25\textwidth}
+                  >{\raggedright\arraybackslash}p{0.15\textwidth}@{}}
+\toprule
+\textbf{Metric} & \textbf{Definition} & \textbf{Instantiation (testbed)} & \textbf{Stresses} \\
+\midrule
+Decision ECE & expected calibration error of the probability assigned to the chosen option within a \emph{declared} option set, rather than of a free-text answer & MMLU as four-way choice~\citep{hendrycks2020measuring}; measured for every system on the Jev Decision Index (Table~\ref{tab:jev_decision_index}) & every stage; the main quantity for S4 \\
+Selective risk (AURC) & area under the risk-coverage curve obtained by abstaining below a confidence threshold~\citep{geifman2017selective} & LM-Polygraph benchmark~\citep{vashurin2024benchmarking} & S3, action policy \\
+Escalation regret & extra cost, relative to the cheapest routing policy that reaches the same accuracy, when escalation to a larger model is triggered by confidence & RouterBench~\citep{hu2024routerbench} & action policy, S1 to S4 \\
+Shift calibration gap & decision ECE on held-out subjects minus decision ECE on the subjects used for calibration or training & MMLU subject split, as in~\citet{shen2024thermometer} & S1, S4 \\
+Contract cost & schema-validity rate together with the accuracy change relative to unconstrained generation & JSONSchemaBench~\citep{geng2025jsonschemabench}; format-restriction study of~\citet{tam2024speak} & output contract \\
+Guarantee tightness & average prediction-set size at a target coverage $1-\alpha$ & multiple-choice sets on MMLU~\citep{hendrycks2020measuring} & S3 (conformal) \\
+Family comparison & decision ECE and accuracy of the five training families (T1 to T5) applied to the same base model and data & MMLU as four-way choice~\citep{hendrycks2020measuring}, with the shared-base entries of the Jev Decision Index (Table~\ref{tab:jev_decision_index}) as a reference & S4 families \\
+\bottomrule
+\end{tabular}
+\end{table}

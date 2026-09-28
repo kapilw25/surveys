@@ -1,0 +1,86 @@
+kind	stage	cite	arxiv	fig	family	first_author	year
+method	S0	lu2026diagnosing	2607.16799	1	self-knowledge probes	Yi-Long Lu	2026
+method	S0	gottesman2024estimating	2406.12673	1	likelihood and logit read-off	Daniela Gottesman	2024
+method	S0	chwang2023androids	2312.17249	1	self-knowledge probes	Sky CH-Wang	2023
+method	S1	luo2026unlocking	2601.04277	1	learned calibrators	Beier Luo	2026
+method	S1	gundem2025boosting	2505.23783	2	prompt and context calibration	Korel Gundem	2025
+method	S1	khanmohammadi2025calibrating	2505.21772	1	probes and learned confidence heads	Reza Khanmohammadi	2025
+method	S1	ulmer2024calibrating	2403.05973	1	learned calibrators	Dennis Ulmer	2024
+method	S1	liusie2023mitigating	2309.04992	1	prompt and context calibration	Adian Liusie	2023
+method	S2	hsiao2026rethinking	2609.10996	1	verbalised numeric confidence	Yu-Chung Hsiao	2026
+method	S2	kumar2024confidence	2405.16282	1	linguistic hedges and epistemic markers	Abhishek Kumar	2024
+method	S2	yang2024confidence	2404.09127	1	introspection, deliberation and task-specific elicitation	Ruixin Yang	2024
+method	S2	villavicencio2026not	2605.28571	3	self-evaluation prompts	Mauricio Villavicencio	2026
+method	S2	yang2026the	2609.18453	5	verbalised numeric confidence	Jisoo Yang	2026
+method	S2	tang2024an	2405.15185	7	linguistic hedges and epistemic markers	Zhisheng Tang	2024
+method	S2	marashian2026speaking	2606.17234	1	verbalised numeric confidence	Ali Marashian	2026
+method	S2	zhao2024fact	2402.17124	2	linguistic hedges and epistemic markers	Xinran Zhao	2024
+method	S3	doula2025safepath	2505.09427	1	conformal prediction sets	Achref Doula	2025
+method	S3	gao2024spuq	2403.02509	2	sampling consistency	Xiang Gao	2024
+method	S3	chen2025conformal	2502.20285	3	risk control and early exit	Catherine Yu-Chi Chen	2025
+method	S3	ma2025semantic	2508.14496	1	semantic entropy and meaning clustering	Huan Ma	2025
+method	S3	fan2026iuq	2604.15109	2	long-form and claim-level	Haozhi Fan	2026
+method	S3	jung2024trust	2407.18370	1	conformal abstention, selection and cascades	Jaehun Jung	2024
+method	S3	jiang2025conformal	2502.19110	2	conformal factuality and claim filtering	Zhengping Jiang	2025
+method	S3	ling2024uncertainty	2402.10189	3	benchmarks and empirical studies	Chen Ling	2024
+method	S4	xu2026dualstake	2609.00935	1	T3	Yinuo Xu	2026
+method	S4	guo2026llms	2604.05306	1	T1	Junyu Guo	2026
+method	S4	gao2026karl	2604.22779	4	T4	Cheng Gao	2026
+method	S4	yu2026calibrating	2605.15588	2	T5	Fengfei Yu	2026
+method	S4	yang2026scaling	2607.01612	1	T3	Xuqing Yang	2026
+method	S4	zhang2025direct	2512.11998	1	T1	Glenn Zhang	2025
+method	S4	song2025the	2505.13988	1	T4	Linxin Song	2025
+method	S4	wang2026process	2604.23333	2	T5	Liaoyaqi Wang	2026
+method	X	wang2025slot	2505.04016	1	constrained decoding	Darren Yow-Bang Wang	2025
+method	X	yang2025dynamic	2504.15895	3	adaptive compute	Chenxu Yang	2025
+method	X	galeone2026when	2605.02363	1	structured-output benchmark	Cosimo Galeone	2026
+method	X	kirichenko2025abstentionbench	2506.09038	1	abstention	Polina Kirichenko	2025
+method	X	soiffer2025semantic	2509.21837	1	routing/cascade	Duncan Soiffer	2025
+method	X	fanconi2025cascaded	2506.11887	2	deferral	Claudio Fanconi	2025
+method	X	banerjee2025crane	2502.09061	2	constrained decoding	Debangshu Banerjee	2025
+method	X	taubenfeld2025confidence	2502.06233	2	adaptive compute	Amir Taubenfeld	2025
+results	S0	stengeleskin2022calibrated	2211.07443	1	empirical studies of read-off calibration	Elias Stengel-Eskin	2022
+results	S0	liu2023cognitive	2312.03729	2	self-knowledge probes	Kevin Liu	2023
+results	S0	sanzguerrero2026large	2606.03437	4	calibration after alignment	Mario Sanz-Guerrero	2026
+results	S0	ahuja2022calibration	2210.12265	1	empirical studies of read-off calibration	Kabir Ahuja	2022
+results	S0	kadavath2022language	2207.05221	4	self-knowledge probes	Saurav Kadavath	2022
+results	S1	luo2026unlocking	2601.04277	5	learned calibrators	Beier Luo	2026
+results	S1	luo2025your	2505.16690	1	scaling and binning	Beier Luo	2025
+results	S1	khanmohammadi2025calibrating	2505.21772	6	probes and learned confidence heads	Reza Khanmohammadi	2025
+results	S1	radharapu2025calibrating	2512.22245	2	learned calibrators	Bhaktipriya Radharapu	2025
+results	S1	xie2024calibrating	2409.19817	2	scaling and binning	Johnathan Xie	2024
+results	S1	ulmer2024calibrating	2403.05973	4	learned calibrators	Dennis Ulmer	2024
+results	S1	kull2019beyond	1910.12656	1	scaling and binning	Meelis Kull	2019
+results	S1	dhuliawala2022calibration	2203.10623	3	learned calibrators	Shehzaad Dhuliawala	2022
+results	S2	hsiao2026rethinking	2609.10996	2	verbalised numeric confidence	Yu-Chung Hsiao	2026
+results	S2	mei2025reasoning	2506.18183	15	introspection, deliberation and task-specific elicitation	Zhiting Mei	2025
+results	S2	ferrer2026when	2603.29559	1	human perception of stated confidence	Robinson Ferrer	2026
+results	S2	marashian2026speaking	2606.17234	2	verbalised numeric confidence	Ali Marashian	2026
+results	S2	yang2024confidence	2404.09127	3	introspection, deliberation and task-specific elicitation	Ruixin Yang	2024
+results	S2	wang2025let	2511.14275	2	verbalised numeric confidence	Ante Wang	2025
+results	S2	tao2025revisiting	2505.23854	3	verbalised numeric confidence	Linwei Tao	2025
+results	S2	yang2024on	2412.14737	5	verbalised numeric confidence	Daniel Yang	2024
+results	S3	ulmer2024nonexchangeable	2402.00707	2	conformal prediction sets	Dennis Ulmer	2024
+results	S3	jiang2025conformal	2502.19110	3	conformal factuality and claim filtering	Zhengping Jiang	2025
+results	S3	wang2026conformal	2602.03814	4	risk control and early exit	Xi Wang	2026
+results	S3	jung2024trust	2407.18370	2	conformal abstention, selection and cascades	Jaehun Jung	2024
+results	S3	wang2022selfconsistency	2203.11171	5	sampling consistency	Xuezhi Wang	2022
+results	S3	li2025language	2503.19168	3	token-level aggregation	Yinghao Li	2025
+results	S3	ye2024benchmarking	2401.12794	13	conformal prediction sets	Fanghua Ye	2024
+results	S3	cherian2024large	2406.09714	8	conformal factuality and claim filtering	John J. Cherian	2024
+results	S4	steyvers2025generalization	2510.05126	3	T1	Mark Steyvers	2025
+results	S4	tan2026on	2607.04332	4	T3	Chee Heng Tan	2026
+results	S4	zhang2025grace	2509.09438	7	T1	Zhaohan Zhang	2025
+results	S4	xiao2026vlcalibration	2604.09529	4	T3	Wenyi Xiao	2026
+results	S4	li2025conftuner	2508.18847	3	T1	Yibo Li	2025
+results	S4	ma2026decoupling	2603.09117	3	T3	Zhengzhao Ma	2026
+results	S4	jang2025verbalized	2506.03723	4	T1	Chaeyun Jang	2025
+results	S4	yaldiz2026balancing	2601.13284	1	T3	Duygu Nur Yaldiz	2026
+results	X	bouchard2026is	2605.06350	4	routing/cascade	Dylan Bouchard	2026
+results	X	fu2025deep	2508.15260	7	adaptive compute	Yichao Fu	2025
+results	X	fanconi2025cascaded	2506.11887	3	deferral	Claudio Fanconi	2025
+results	X	srinivasan2024selective	2402.15610	3	abstention	Tejas Srinivasan	2024
+results	X	galeone2026when	2605.02363	2	structured-output benchmark	Cosimo Galeone	2026
+results	X	soiffer2025semantic	2509.21837	2	routing/cascade	Duncan Soiffer	2025
+results	X	taubenfeld2025confidence	2502.06233	1	adaptive compute	Amir Taubenfeld	2025
+results	X	jitkrittum2023when	2307.02764	1	deferral	Wittawat Jitkrittum	2023

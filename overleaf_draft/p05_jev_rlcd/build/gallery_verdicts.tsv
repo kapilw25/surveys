@@ -1,0 +1,139 @@
+kind	tile	verdict	reason
+method	agrawal2023language_fig1	purge	prompt/text screenshot, not a method schematic
+method	cohen2023lm_fig2	keep	method schematic (cross-examination loop)
+method	huang2024calibrating_fig2	keep	method schematic (self-evaluation + self-consistency to calibration)
+method	kamath2020selective_fig1	purge	dataset/shift setup with example questions, not a method
+method	liu2023calibrating_fig1	purge	busy annotated pipeline, illegible at tile size
+method	scholak2021picard_fig2	keep	method schematic (incremental parse rejects invalid tokens)
+method	schuster2022confident_fig1	purge	busy annotated diagram, illegible at tile size
+method	varshney2022model_fig1	keep	method schematic (confidence-gated model cascade)
+method	wang2022selfconsistency_fig1	keep	method schematic (sample and marginalise reasoning paths)
+results	cole2023selectively_fig3	keep	reliability diagram (accuracy vs confidence)
+results	huang2024uncertainty_fig1	keep-trim	rank-calibration histograms; crop caught one body-text line at top
+results	jitkrittum2023when_fig1	purge	three risk-coverage plots, illegible at tile size
+results	jung2024trust_fig2	purge	crop includes a text table above the plots
+results	li2025language_fig3	keep-trim	grid of calibration plots; rule line artifact at top
+results	schuster2022confident_fig3	purge	plots illegible at tile size
+results	srinivasan2024selective_fig3	keep	reliability curves for three VLMs
+results	varshney2022model_fig2	keep	cost-accuracy curves (accuracy vs FLOPs)
+results	wang2022selfconsistency_fig5	purge	crop cut the axis; partial figure
+results	xiao2021hallucination_fig2	keep	hallucination rate vs predictive uncertainty
+method	band2024linguistic_fig2	keep	method schematic (confidence SFT then decision-based RL)
+method	chaudhry2024finetuning_fig2	keep	method schematic (fine-tuning to emit linguistic uncertainty)
+method	cole2023selectively_fig2	keep	method schematic (sampling repetition, diversity, self-verification)
+method	leng2024taming_fig5	purge	crop cut the left side of the figure
+method	mielke2020reducing_fig1	keep	method schematic (calibrator controls a fine-tuned chatbot)
+method	ren2023self_fig1	purge	crop cut the right side of the figure
+method	xiong2023can_fig1	purge	busy pipeline, illegible at tile size
+method	zhou2023navigating_fig1	keep	method schematic (verbal vs numerical uncertainty injection)
+results	band2024linguistic_fig4	purge	four reliability plots, illegible at tile size
+results	baniharouni2025rewarding_fig4	keep	reliability before vs after Rewarding Doubt training
+results	groot2024overconfidence_fig4	purge	plots illegible at tile size
+results	kalai2023calibrated_fig1	keep	calibration curve before vs after PPO
+results	kong2020calibrated_fig1	keep	reliability diagrams and confidence histograms
+results	lin2022teaching_fig5	keep	calibration scatter for verbalised vs logit confidence
+results	tian2023just_fig1	keep	reliability diagrams for four confidence elicitation methods
+results	xiong2023can_fig2	purge	plots illegible at tile size
+method	aggarwal2023lets_fig1	keep	method schematic (adaptive-consistency stopping)
+method	burns2022discovering_fig1	keep	method schematic (contrast-consistent search)
+method	chwang2023androids_fig1	purge	heatmap of results, not a method schematic
+method	dong2018confidence_fig1	purge	base seq2seq architecture, no confidence mechanism shown
+method	fisch2021fewshot_fig1	keep	method schematic (few-shot conformal prediction sets)
+method	gottesman2024estimating_fig1	keep	method schematic (KEEN knowledge probe)
+method	jiang2023generative_fig2	purge	prompt/text screenshot
+method	kumar2019verified_fig1	purge	small calibrator plots, not a schematic
+method	li2023large_fig1	keep	method schematic (ensemble of prompt variations)
+method	liu2023litcab_fig3	purge	illegible at tile size
+method	schuster2021consistent_fig1	spare	valid schematic; S3 already has 4 method tiles
+method	tang2023strucbench_fig1	purge	icon pipeline, no confidence content
+method	ye2021can_fig1	purge	text-heavy example screenshot
+method	zhu2023calibration_fig1	purge	crop cuts off text
+results	aggarwal2023lets_fig4	spare	valid results plot; X capped at 3
+results	angelopoulos2021learn_fig3	purge	mostly a table, illegible at tile size
+results	angelopoulos2022conformal_fig4	purge	contains a logo; mixed boilerplate
+results	badhe2026silent_fig1	keep	reliability and alignment plots
+results	cherian2024large_fig8	keep	realised vs nominal coverage
+results	desai2020calibration_fig1	keep	reliability curves
+results	dey2021conformal_fig8	purge	crop artefact: bare diagonals and caption fragment
+results	dhuliawala2022calibration_fig3	keep	reliability diagrams
+results	guo2017calibration_fig1	keep	reliability diagrams (LeNet vs ResNet)
+results	huang2026investigating_fig2	purge	mostly a table
+results	jiang2020how_fig1	spare	valid reliability histograms; S0 capped at 3
+results	kull2019beyond_fig1	purge	illegible at tile size
+results	kumar2019calibration_fig1	purge	busy small panels, stray rule at top
+results	li2023large_fig4	spare	valid but small; S0 capped at 3
+results	liu2024calibration_fig2	keep	reliability histograms of guard models
+results	schuster2021consistent_fig3	purge	busy tiny curves
+results	steyvers2024what_fig3	purge	crop includes the running page header
+results	wang2020inference_fig1	keep	reliability diagrams, training vs inference
+method	banerjee2025crane_fig2	purge	prompt/text screenshot
+method	chen2025conformal_fig3	keep	conformal set schematic
+method	doula2025safepath_fig1	keep	uncertainty-aware path pipeline
+method	fan2026iuq_fig2	keep	interrogator/responder schematic
+method	fanconi2025cascaded_fig2	purge	illegible at tile size
+method	galeone2026when_fig1	purge	generic prompt-optimisation pipeline, not about confidence
+method	gao2024spuq_fig2	purge	crop includes page text
+method	gao2026karl_fig4	keep	knowledge-boundary-aware reward schematic
+method	gundem2025boosting_fig2	keep	schematic with pairwise terms
+method	guo2026llms_fig1	keep	uncertainty marker schematic
+method	hsiao2026rethinking_fig1	purge	crop includes a caption line
+method	jiang2025conformal_fig2	purge	illegible at tile size
+method	jung2024trust_fig1	keep	cascaded selective evaluation schematic
+method	khanmohammadi2025calibrating_fig1	keep	perturbation-probe schematic
+method	kumar2024confidence_fig1	keep	internal vs verbalised confidence schematic
+method	ling2024uncertainty_fig3	keep	demonstration-sampling schematic
+method	liusie2023mitigating_fig1	keep	prior normalisation schematic
+method	lu2026diagnosing_fig1	keep	diagnostic schematic
+method	luo2026unlocking_fig1	keep	confidence-drift alignment schematic
+method	ma2025semantic_fig1	purge	busy mix of text and plots
+method	marashian2026speaking_fig1	keep	internal vs verbalised confidence schematic
+method	soiffer2025semantic_fig1	keep	ensemble deferral schematic
+method	song2025the_fig1	purge	reasoning-text screenshot
+method	tang2024an_fig7	purge	prompt templates
+method	taubenfeld2025confidence_fig2	keep	confidence-weighted self-consistency schematic
+method	ulmer2024calibrating_fig1	keep	auxiliary confidence model schematic
+method	villavicencio2026not_fig3	purge	study UI screenshot with running header
+method	wang2025slot_fig1	keep	schema-to-output schematic
+method	wang2026process_fig2	keep	process confidence-margin schematic
+method	xu2026dualstake_fig1	purge	text example with tags
+method	yang2024confidence_fig1	purge	figure cut at the right edge
+method	yang2025dynamic_fig3	purge	figure cut at the right edge
+method	yang2026scaling_fig1	keep	correctness and confidence reward schematic
+method	yang2026the_fig5	purge	benchmark screenshots
+method	yu2026calibrating_fig2	purge	crop includes the running title
+method	zhang2025direct_fig1	purge	top of the figure cut
+method	zhao2024fact_fig2	purge	prompt text
+results	ahuja2022calibration_fig1	keep	reliability diagrams
+results	bouchard2026is_fig4	purge	illegible at tile size
+results	fanconi2025cascaded_fig3	keep	cost-accuracy plots
+results	ferrer2026when_fig1	keep	calibration curves and histograms
+results	fu2025deep_fig7	purge	crop includes a caption line
+results	galeone2026when_fig2	purge	latency vs usability, not calibration
+results	hsiao2026rethinking_fig2	purge	crop includes a caption line
+results	jang2025verbalized_fig4	keep	reliability curve
+results	jiang2025conformal_fig3	purge	illegible at tile size
+results	khanmohammadi2025calibrating_fig6	purge	illegible at tile size
+results	li2025conftuner_fig3	purge	crop mixes a data table with plots
+results	liu2023cognitive_fig2	keep	reliability scatter
+results	luo2025your_fig1	keep	reliability diagrams
+results	luo2026unlocking_fig5	keep	reliability diagrams
+results	ma2026decoupling_fig3	purge	crop includes the running title
+results	marashian2026speaking_fig2	keep	reliability plots
+results	radharapu2025calibrating_fig2	purge	illegible at tile size
+results	sanzguerrero2026large_fig4	keep	reliability curves
+results	soiffer2025semantic_fig2	keep	quality vs latency curves
+results	stengeleskin2022calibrated_fig1	keep	calibration scatter
+results	steyvers2025generalization_fig3	keep	reliability before and after fine-tuning
+results	tan2026on_fig4	keep	calibration curves by reward
+results	tao2025revisiting_fig3	purge	illegible at tile size
+results	taubenfeld2025confidence_fig1	keep	accuracy vs samples
+results	ulmer2024calibrating_fig4	keep	reliability diagrams
+results	ulmer2024nonexchangeable_fig2	keep	coverage vs set size
+results	wang2025let_fig2	keep	reliability diagrams
+results	wang2026conformal_fig4	keep	test risk vs target risk
+results	xiao2026vlcalibration_fig4	purge	crop includes caption text
+results	xie2024calibrating_fig2	purge	illegible at tile size
+results	yaldiz2026balancing_fig1	keep	reliability diagrams by training method
+results	yang2024confidence_fig3	keep	reliability diagrams
+results	ye2024benchmarking_fig13	keep	coverage and set-size curves
+results	zhang2025grace_fig7	keep	reliability diagrams

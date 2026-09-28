@@ -1,0 +1,46 @@
+\section{Hosted and open decision models}
+\label{app:jev}
+
+Jev is a hosted model from TypeSafe AI, released on 15 September 2026~\citep{almeida2026introducing}, that returns a probability for each
+declared option: a typed decision in the sense of Table~\ref{tab:definitions}. This appendix records two
+public views of the models around it, both taken on \diDate. Neither is peer reviewed, and neither is
+used to rank the training families of Section~\ref{sec:core}. Jev itself is not one of the \nWorks works in
+our corpus, and its base model is not disclosed (Table~\ref{tab:jev_decision_index}); this appendix describes
+only its interface and its measured calibration.
+
+Table~\ref{tab:jev_hf_ecosystem} classifies the repositories returned by a public model search for its
+name. Of the \nHF repositories, \nHFNameOnly only share the name, \nHFUnverified could not be verified, and \nHFClassified were classified
+from their model cards and file lists; \nHFTrained contain newly trained weights, and general-purpose
+models with their copies account for \nHFGeneralPct of downloads. A name search is a poor census of
+decision models: of the \nDIOpenWeights open systems with released weights on the leaderboard of
+Table~\ref{tab:jev_decision_index}, it returns \nDIFoundByName.
+
+Table~\ref{tab:jev_decision_index} lists the top of that leaderboard, the Jev Decision
+Index~\citep{multimodalart2026jevdi} (\diRelease), which scores
+\nDISystems systems on skill over \nDIBench decision benchmarks and on the calibration of the chosen
+option; Figure~\ref{fig:future_protocol} plots the same data.
+
+\renewcommand{\thetable}{A\arabic{table}}\setcounter{table}{0}   % Appendix A tables: A1, A2
+\input{tables/tab_jev_hf_ecosystem}
+\input{tables/tab_jev_decision_index}
+
+
+\section{Provenance of the gallery panels}
+\renewcommand{\thetable}{B\arabic{table}}\setcounter{table}{0}   % Appendix B tables: B1
+\label{app:provenance}
+
+Table~\ref{tab:panel_provenance} gives, for every panel of Figures~\ref{fig:hero_collage},
+\ref{fig:method_gallery} and~\ref{fig:results_gallery}, the source figure and page in the cited paper and
+the licence under which it is reproduced, together with the rule by which panels were chosen.
+
+\input{tables/tab_panel_provenance}
+
+\section{The landscape}
+\renewcommand{\thetable}{C\arabic{table}}\setcounter{table}{0}   % Appendix C tables: C1
+\label{app:landscape}
+
+Table~\ref{tab:landscape} lists the \nLandscape works outside the training core, grouped by the stage at
+which calibration enters and then by method family. The \nCore core works and the \nTheory theory and
+analysis works are in Table~\ref{tab:compare_s4}.
+
+\input{tables/tab_landscape}

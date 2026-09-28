@@ -1,0 +1,23 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[acmsmall,screen,nonacm]{acmart}
+% Deliverables render on the target page (ACM small journal format) so sizes and fit match the paper.
+\settopmatter{printacmref=false,printccs=false,printfolios=false}
+\setcopyright{none}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\citestyle{acmauthoryear}
+\title[Jev and Beyond]{Jev and Beyond: A Survey of Calibration-Aware Decision-Making with Language Models}
+\AtBeginDocument{\pagestyle{empty}\thispagestyle{empty}}
+\usepackage{booktabs,array,pifont,longtable,adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes.geometric,positioning,fit,calc,patterns,decorations.pathreplacing}
+\usepackage[edges]{forest}
+\input{../styles/taxonomy_style}
+\usepackage{pgfplots}\pgfplotsset{compat=1.18}
+\newcommand{\yy}{\textcolor{green!55!black}{\ding{51}}}
+\newcommand{\nn}{\textcolor{red!70!black}{\ding{55}}}
+\newcommand{\pp}{\textcolor{orange!85!black}{$\sim$}}
+\newcommand{\ab}{\textcolor{black!30}{--}}
+\newcommand{\qq}{\textcolor{black!45}{?}}
+%STAGE_COLORS%
+\graphicspath{{../}}   % gallery tiles are addressed from the paper root (figures/img/...)
+\usepackage{xr-hyper}

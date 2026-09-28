@@ -1,0 +1,409 @@
+cite	contract	reports_cal	location	evidence
+guo2017calibration	typed	yes	Sec 2 (ECE, reliability diagrams); Table 1 ECE on image and document classification	important for classification models in many applications
+kull2019beyond	typed	yes	Abstract; Sec 5 experiments (confidence-ECE, classwise-ECE, log-loss, Brier)	Class probabilities predicted by most multiclass classifiers are uncalibrated, often tending towards over-confidence
+kumar2019verified	typed	yes	Sec 3-5, Figs 2-3 (binned calibration error)	multiclass calibration experiments on CIFAR-10 and ImageNet
+gupta2021distribution	typed	yes	Sec 1 (binary classification); Sec 4 l1-ECE and validity plots	we study the problem of calibration for binary classification
+desai2020calibration	typed	yes	Sec 3; Tables 2-3 (ECE)	analyze their calibration across three tasks: natural language inference, paraphrase detection, and commonsense reasoning
+jiang2020how	typed	yes	Sec 2.1 (MCQ/extractive over candidates); Sec 3 ECE tables	we calculate the highest-probability answer among the answer candidates
+zhao2021calibrate	typed	no	Sec 2 (label-name probabilities); Secs 4-5 report accuracy only; Sec 4 notes contextual calibration \\\"distinct from statistical calibration\\\"	the probability for each class is given by the probability assigned to its associated label name
+kadavath2022language	score		Abstract; Sec 4 P(True) self-evaluation (headline); Sec 3 MC calibration is secondary	approach self-evaluation on open-ended sampling tasks by asking models to first propose answers, and then to evaluate ... P(True)
+kumar2019calibration	score		Abstract; Sec 3 Fig 1 (token-level weighted ECE on NMT outputs); Sec 5 sequence-level calibration	most modern NMT models are surprisingly miscalibrated even when conditioned on the true previous tokens
+wang2020inference	score		Sec 2-3 (inference-time token confidence with TER labels), Fig 1	(TER) ... to automatically annotate the correctness of generated tokens
+ott2018analyzing	score		Sec 6.1 set-level calibration of beam-hypothesis probabilities, Fig 8	verifies whether the model probability estimates pm match the true data probabilities pd
+xiao2022uncertainty	typed	yes	Abstract; Sec 3.1 (ECE); main result tables	based on three prevalent NLP classification tasks and the setting of domain shift
+chen2022close	typed	yes	Sec 2-3 (ECE, reliability diagram); tasks SST-2, MNLI, news/topic classification	For calibration evaluation, we report ECE
+zhu2023calibration	score		Sec 3 tasks: CLM next-token and fact-generation first-token (2 of 3); MMLU letters is the third	we use Causal Language Modeling (CLM) task ... we designed a facts generation task
+openai2023gpt4	typed	yes	Sec 5 Limitations, Figure 8 calibration plot on MMLU	Calibration plot of the pre-trained GPT-4 model on a subset of the MMLU dataset
+si2022reexamining	score		Sec 3 (retriever-reader span confidence over top spans; ECE vs MacroCE)	apply softmax over C to convert the raw span scores into probabilistic confidence values
+ahuja2022calibration	typed	yes	Sec 3-4, Fig 1 reliability diagrams, ECE per language	4 multilingual classification datasets to study calibration of MMLMs
+dan2021effects	typed	yes	Not on arXiv (ACL Anthology only); not readable under the arxiv.org-only rule; likely classification (typed) but unverified; relabelled (parity audit round 14): ACL Anthology 2021.findings-emnlp.180, softmax classifiers (SNLI, MNLI, CoLA), ECE in Table 1	No arXiv version found by arXiv API title and author search
+plaut2024probabilities	typed	yes	Sec 4, Fig 2 calibration curves and calibration error	their maximum softmax probabilities (MSPs) are consistently miscalibrated on multiple-choice Q&A
+spiess2024calibration	score		Sec 3.B confidence measures (intrinsic sequence probability, reflective verbal)	intrinsic probability, which is calculated by the generative LLM per se, and reflective probability
+wang2024my	typed	no	Sec 3-4: first-token option probabilities vs text answer; no calibration metric in paper	the model is then evaluated by ranking the candidate answers by the log probability of the first token
+xiao2021hallucination	score		Sec 3: token-level predictive entropy of generated captions/data-to-text	predictive uncertainty quantifies the entropy of the token probability distributions a model
+stengeleskin2022calibrated	constrained		Sec 1-3: executable semantic parsing into SQL (Spider/CoSQL) and Lisp-like SMCalFlow programs	In executable semantic parsing, the model generates a program
+zhang2023study	typed	yes	Sec 3 (P(Yes)/P(No), label probs), Table 1 ECE, Fig 2 reliability plots	for binary classification tasks, we filter and extract probabilities P (Yes) and P (No)
+li2023large	typed	yes	Sec 3 (7 classification datasets; ECE), main results tables	We consider 7 classification datasets that cover a range of label numbers
+lovering2024language	typed	no	Sec 3 metrics: probability mass, Wasserstein distance, relative entropy over option tokens; no ECE/Brier/NLL/reliability	Models do not allocate probability mass among valid options in a calibrated manner
+huang2026investigating	typed	yes	Sec 3 (MMLU-ProX, GlobalMMLU option distributions; ECE/RMS), reliability figures	probability distribution over the different options
+sanzguerrero2026large	typed	yes	Sec 3 Table 1 (MMLU option logits; ECE, Brier); Sec 4-5 per-option elicitation	we can directly obtain the probability of each option from the model logits
+joshi2025calibration	typed	yes	Sec 3-4 MMLU 4-option layer-wise ECE/MCE figures	the model performance remains near random (25%, 4-options) for initial layers
+stolfo2024confidence	score		Sec 1-5: next-token output distribution entropy in open text; no answer set; no calibration metric	mechanisms by which large language models (LLMs) represent and regulate uncertainty in next-token predictions
+proskurina2026are	typed	yes	Sec 3 (MCQ likelihood over candidates, ECE); Sec 4 Table 4 ECE	we define the model prediction as the candidate answer with the highest conditional likelihood
+burns2022discovering	typed	no	Sec 2-3 CCS probe on yes/no contrast pairs; results report accuracy only	a method for accurately answering yes-no questions given only unlabeled model activations
+azaria2023internal	typed	no	Sec 3-5 true/false statement classifier on hidden states; accuracy only	train a classifier that outputs the probability that a statement is truthful
+chwang2023androids	score		Sec 3-5 probes on hidden states score span/response-level hallucination of grounded generations	We design probes trained on the internal representations of a transformer language model to predict its hallucinatory behavior
+slobodkin2023curious	free-text		Sec 3 prompts allow answering unanswerable; answerability decoded from first generated token states	top-beam answer with unanswerable
+gottesman2024estimating	score		Sec 3 KEEN probe over subject representation predicts per-entity QA accuracy / FActScore of open generations	KEEN, a simple probe trained over internal subject representations
+orgad2024llms	score		Sec 2-3 probing classifier on exact answer tokens of unrestricted generations predicts correctness	we simulate real-world usage of LLMs by allowing unrestricted answer generation
+ji2024llm	score		Sec 3-4 probing estimator on query internal states predicts hallucination risk before generation	By a probing estimator, we leverage LLM self-assessment
+liu2023cognitive	typed	yes	Sec 3 true/false and SciQ answer verification by queries vs probes; Fig 2 calibration plot	Figure 2: Calibration of GPT-J queries and probes
+lu2026diagnosing	score		Sec 1-3 correctness readouts on model-generated math and factual-recall answers	Hidden-state readouts can predict whether language-model outputs are correct
+mahaut2024factual	typed	no	Sec 4.1.1 P(T) fact verification on T-REx is first main result (Fig 2); P(IK) QA secondary (Table 3); AUPRC only	P (True), which applies to statements
+holtzman2021surface	typed	no	Abstract; Sec 3 PMI_DC rescoring of MC options; results report accuracy only	reweighing each option according to a term that is proportional to its a priori likelihood
+han2022prototypical	typed	no	Abstract; Sec 3 GMM decision boundary over label probabilities; accuracy only	adaptively learn a more robust decision boundary for zero- and few-shot classification
+fei2023mitigating	typed	no	Abstract; Sec 4-5 label-bias calibration for text classification; Macro-F1 only	a typology for three types of label biases in ICL for text classification
+zhou2023batch	typed	no	Abstract; Sec 3-5 batch calibration on classification tasks; accuracy/F1 only	more than 10 natural language understanding and image classification tasks
+jiang2023generative	typed	no	Abstract; Sec 3-4 label-marginal adjustment on 12 text classification tasks; macro-F1 only	calibrate the in-context predictive distribution by adjusting the label marginal
+abbas2024enhancing	typed	yes	Sec 5, Table 2 ECE comparison	LinC achieves lower expected calibration error
+zheng2023large	typed	no	Abstract; Sec 3-4 PriDe on MCQ option-ID probabilities; accuracy/selection bias only	the model a priori assigns more probabilistic mass to specific option ID tokens (e.g., A/B/C/D)
+liusie2023mitigating	typed	no	Abstract; Sec 3-5 prior matching on label-word probabilities; accuracy only	probabilities are reweighted to have a uniform prior over classes
+reif2024beyond	typed	no	Abstract; Sec 3-5 label bias metrics over 279 classification tasks; no ECE/Brier/NLL/reliability	across 279 classification tasks and ten LLMs
+cho2024token	typed	no	Abstract; Sec 3-4 nearest-centroid classification on hidden states; accuracy/F1 only	classification criteria from output probabilities of manually selected label tokens
+gundem2025boosting	typed	no	Abstract; Sec 3-5 per-class affine logit calibration; results report accuracy/F1, no ECE	learns an optimal, per-class affine transformation of LLM's predictive probabilities in the logit space
+shen2024thermometer	typed	yes	Sec 4 MMLU/BIG-bench MCQ answer-token probabilities; free-form QA converted to Yes/No (Sec 4.3); ECE tables	converting the free-form QA problem into a multiple-choice format, by posing a Yes or No
+xie2024calibrating	score		Sec 4 Table 1: TriviaQA and TruthfulQA free responses (2 of 3 benchmarks) plus MMLU MC	We also evaluate on two free response datasets, TriviaQA (Joshi et al., 2017) and TruthfulQA
+luo2025your	typed	yes	Sec 3 MCQA over choices {A,B,C,D}; ECE on MMLU/MedMCQA (open QA is an extension)	Our method primarily targets Multiple-Choice QA (MCQA) and can be extended to open-ended QA
+luo2026unlocking	typed	yes	Sec 3 option probabilities over {A,B,C,D}; Table 1 ECE on MMLU	Table 1: Main evaluation results on MMLU across different LLMs
+ulmer2024calibrating	score		Sec 1-3 auxiliary model predicts confidence from question and answer text only, open-ended QA; harmonised: an auxiliary model gives one confidence score per answer	auxiliary model to infer a LLM's confidence in an open-ended question-answering setting
+liu2023litcab	score		Sec 3 CaT benchmark; sequence/claim confidence from aggregated token probabilities of generations	the output is a sequence of token probabilities, raising the question of how to assess the model's confidence
+liu2024enhancing	score		Sec 3 ActCab linear layer on activations gives one confidence per generated QA answer	trains a linear layer on top of the LM's last-layer activations
+liu2024uncertainty	score		Sec 2-3 supervised regressor predicts quality of the generated response (QA, MCQ, translation)	predicting the quality of the generated response based on the input
+beigi2024internalinspector	score		Sec 3-4 contrastive estimator on internal states outputs one confidence per prediction (QA, CommonsenseQA, reading comprehension)	enhance confidence estimation in LLMs by leveraging contrastive learning on internal states
+khanmohammadi2025calibrating	score		Sec 3 separate classifier on perturbation features predicts answer correctness; MC and open-ended MMLU variants (Table 1)	uses a lightweight classifier to predict answer correctness
+radharapu2025calibrating	score		Sec 3 Brier-trained linear probe on judge hidden states gives one uncertainty per verdict	Brier-score-trained linear probe that produces calibrated uncertainty estimates from reasoning judges
+detommaso2024multicalibration	score		Sec 4.1 initial scores (True/False softmax of a generated answer, inverse perplexity) then multicalibrated	to score the correctness of a generated answer for a specific question
+liu2024calibration	typed	yes	Sec 3 guard models classify prompts/responses as safe/unsafe; ECE throughout	we empirically assess the calibration performance by commonly used expected calibration error (ECE)
+zhang2021knowing	score		Sec 2-3 binary calibrator estimates correctness of span-extraction and generation QA predictions	identifies whether the model's prediction is correct or not
+ye2021can	score		Sec 2-3 separate calibrator predicts correctness of black-box extractive QA and NLI predictions	uses a simple calibrator, in the form of a classifier, to predict whether the base model was correct
+dong2018confidence	constrained		Sec 1-3 confidence for seq2seq semantic parsers producing logical forms or code	text to a formal meaning representation (e.g., logical forms or SQL queries)
+dhuliawala2022calibration	score		Table 1: ODQA systems (generative, span extractor) are 2 of 3; claim verifier third	output: a veracity label for claim verification and an answer span for the QA model
+mielke2020reducing	free-text		Abstract; Sec 3-5 verbalized doubt in chit-chat responses controlled via a correctness calibrator	their verbalized expression of doubt (or confidence) matches the likelihood that the model's responses are factually incorrect
+tian2023just	score		Abstract; Sec 3 open QA (TriviaQA, SciQ, TruthfulQA) with verbalized numeric confidences	verbalized confidences emitted as output tokens are typically better-calibrated than the model's conditional probabilities
+xiong2023can	score		Sec 2-3 verbalized confidence (plus sampling/aggregation) for one answer; CSQA, StrategyQA, GSM8K, etc.	prompting strategies for eliciting verbalized confidence, sampling methods for generating multiple responses, and aggregation techniques
+zhou2023navigating	free-text		Abstract; Sec 3 epistemic markers injected into QA prompts; no confidence attached to answers	inject 50 markers into prompts for question answering
+yona2024can	free-text		Abstract; Sec 3 faithfulness of hedging (decisiveness vs intrinsic confidence) in QA answers	its generated response should reflect this uncertainty by hedging its answer
+tanneru2023quantifying	score		Abstract; Sec 3 verbalized and probing uncertainty scores for generated explanations	prompting the LLM to express its confidence in its explanations
+groot2024overconfidence	score		Abstract; Sec 3 prompted verbalized confidence per answer; NCE metric	estimate their verbalized uncertainty via prompting
+ni2024when	free-text		Sec 3 metrics: responses where the model expresses uncertainty (uncertain rate) on NQ/HotpotQA	the proportion of responses where the model express uncertainty
+yang2024on	score		Abstract; Sec 3 verbalized confidence score as part of output tokens	asking the LLM itself to verbalize its uncertainty with a confidence score as part of its output tokens
+zhao2024fact	score		Sec 3 QA datasets; verbalized confidence scores under prompting strategies; ECE	model verbalized confidence of GPT-3.5 increases when asking the model to
+wang2024calibrating	score		Sec 3 verbalized probability distribution over categorical labels; Sec 5 NLL, ECE, MCE, reliability diagram; relabelled (prose audit round 3, Table 2: text parsed after the fact is not typed): the probability is written as text and parsed	asking the LLM to give a label ... the full probability distribution over labels
+pawitan2024confidence	score		Abstract; Sec 2 BIG-Bench-Hard causal judgment / formal fallacies with self-reported confidence score	quantitatively in terms of self-reported confidence score
+sun2025large	score		Abstract; Sec 2 LLMs answer reasoning problems and state confidence in their answers	We prompt LLMs to answer these problems and assess the confidence in their answers
+chhikara2025mind	score		Sec 3 free-generation and distractor settings both return answer plus one verbalized confidence	let model generate a completion answer and the confidence
+liu2025revisiting	free-text		Abstract; Sec 3 marker confidence = observed accuracy per epistemic marker	Humans typically express confidence through epistemic markers (e.g., fairly confident) instead of numerical values
+lee2024are	free-text		Abstract; Sec 3 EMBER: LLM-judges on outputs carrying epistemic markers	train large language models (LLMs) to generate outputs containing epistemic markers
+belem2024perceptions	free-text		Abstract; Sec 3 LMs map linguistic uncertainty expressions to numerical responses	how language models map linguistic expressions of uncertainty to numerical responses
+tang2024an	free-text		Abstract; Sec 3 numeric readings of words of estimative probability	Words of estimative probability (WEPs), such as maybe or probably not
+rivera2024combining	score		Abstract; Sec 3 verbalized numeric confidence and sample consistency for misinformation predictions	a robust numeric verbalization prompt across single vs. two-step confidence elicitation procedure
+wei2024measuring	score		Sec 4 Measuring calibration: stated confidence (Fig 2 left) and answer frequency for short open answers; headline grading also has not-attempted	directly ask the language model to state its confidence in its answer
+ren2023self	score		Abstract; Sec 3 self-evaluation token scores (multi-way or point-wise) for open generations	we reformulate open-ended generation tasks into token-level prediction tasks
+zhang2024calibrating	typed	yes	Sec 3 sampled frequency distribution over MCQ options plus fidelity chain; Sec 5 ECE, reliability diagrams	we can obtain the frequency distribution Psampled of candidate answers
+yin2023do	free-text		Abstract; Sec 3 detects uncertainty phrasing in responses to unanswerable questions	an automated methodology to detect uncertainty in the responses of these models
+kumar2024confidence	score		Abstract; Sec 3 verbalized certainty ratings compared with answer-token probabilities (CommonsenseQA etc.)	the confidence conveyed in the model's response when explicitly asked about its certainty
+sun2024confidence	constrained		Sec 3 LLM outputs dialogue state slot-value pairs in JSON; confidence per slot-value	instructed the LLM to output in JSON format, using in-context examples
+li2024confidence	free-text		Sec 3 IoE prompt: model keeps answer if very confident, else revises; no numeric confidence	If you are very confident about your answer, maintain your answer. Otherwise, update your answer.
+liu2025metafaith	free-text		Abstract; Sec 3 linguistic uncertainty expressions faithful to intrinsic uncertainty	use linguistic expressions of uncertainty that faithfully reflect their intrinsic uncertainty
+ghafouri2024epistemic	free-text		Abstract; Sec 3 linguistic assertiveness of generated statements vs internal certainty	a model's linguistic assertiveness fails to reflect its true internal certainty
+sicilia2024accounting	score		Sec 3 direct numerical confidence and implicit token probability per answer; Brier score	Direct Numerical Confidence (DNC) is directly sampled from the model's answer tokens
+sileo2022probing	free-text		Abstract; Sec 3 probing LM understanding of words of estimative probability	measure the ability of neural language processing models to capture the consensual probability level associated to each WEP
+yoon2025reasoning	score		Sec 2-3 verbalized confidence (numeric or linguistic phrase) as part of output across six QA datasets	the LLM is prompted to directly express its confidence as a part of their output
+mei2025reasoning	score		Abstract; Sec 3 self-verbalized confidence of reasoning models; ECE	self-verbalized confidence estimates often greater than 85% particularly for incorrect responses
+ni2024are	score		Abstract; Sec 3 probabilistic (token) vs verbalized confidence in a generated factual answer	the probability of the generated tokens or the verbalized confidence as the model's confidence in its response
+singh2023the	score		Abstract; Sec 3 self-assessed confidence ratings compared with actual performance	the alignment between their self-assessed confidence and actual performance
+li2024think	score		Sec 3 Top-K verbalized probabilities over all N answer choices (K=N); Sec 5 Table 2 ECE on IMDB, SNLI, CSQA, etc.; relabelled (prose audit round 3, Table 2: text parsed after the fact is not typed): the probability is written as text and parsed	Provide your N best guesses and the probability that each is correct (0.0 to 1.0)
+huang2024calibrating	score		Sec 3 long-form QA and summarization; confidence elicited by self-consistency and self-evaluation as score distributions	propose two confidence elicitation methods based on self-consistency and self-evaluation
+xue2024mlingconf	score		Sec 3 probability-based, p(True) and self-verbalized confidence per multilingual QA answer	probability-based ... and prompt-based confidence estimations (p(True) ... and selfverbalize
+wang2025calibrating	score		Abstract; Sec 3 verbalized confidence normalized over self-generated distractors plus self-consistency	having the model verbalize its confidence independently across several self-generated distractors
+tao2025can	free-text		Abstract; Sec 3 hedging expressions mapped to confidence by a learned mapper	models express uncertainty through hedging language (e.g., probably, might)
+liu2026can	free-text		Abstract; Sec 3 marker internal confidence for epistemic markers	marker internal confidence (MIC) as the estimated intrinsic confidence a model associates with a specific epistemic marker
+ffrenchconstant2026confidencebench	score		Sec 3 and prompt (App): single letter answer plus one probability of being correct; Brier	You must also give a probability that your answer is correct, as a whole number
+tian2025overconfidence	score		Sec 3 main Table 1 Self-Confidence setting: judge outputs result and one confidence	We prompt the model to output both the result and its confidence
+hsiao2026rethinking	score		Abstract; Sec 3 verbalized confidence as judge soft score vs logprob G-Eval	verbalized confidence is the more subjectivity-robust soft signal
+wang2025let	score		Sec 3-4 verbalized probability distribution over all answers; closed-set MCQ (MedQA, MMLU-Pro, MedXpertQA) is 3 of 5; Table 1 ECE/Brier; relabelled (prose audit round 3, Table 2: text parsed after the fact is not typed): the probability is written as text and parsed	prompt the LLM to predict all possible answers ... and assign confidence
+obadinma2025on	score		Abstract; Sec 3 attacks on verbal confidence scores	attack frameworks targeting verbal confidence scores through both perturbation and jailbreak-based methods
+yu2025uncertainty	score		Abstract; Sec 3 embodied verbalized confidence for Minecraft task outcomes	a framework for embodied verbalized confidence
+zhou2025steerconf	score		Abstract; Sec 3 steered verbalized confidence scores aggregated by consistency	guides LLMs to produce confidence scores in specified directions
+naderi2025evaluating	score		Abstract; Sec 3 MCQ answers with one elicited confidence on 1-10 or 1-100 scales	confidence scales (1-10, 1-100)
+marashian2026speaking	score		Abstract; Sec 3 verbalized per-token confidence for LLM translations vs internal signals	we devise five verbalized methods of extracting an LLM's per-token confidence
+cacioli2026verbal	score		Abstract; Sec 3 numeric (0-100) and categorical verbal confidence on TriviaQA	administered under numeric (0-100) and categorical (10-class) elicitation
+kumaran2026how	score		Abstract; Sec 3 verbal confidence stated as a number or category after answering	prompting LLMs to state their confidence as a number or category
+yang2026the	score		Abstract; Sec 3 verbalized confidence of VLM reasoning trajectories	verbalized confidence is largely trajectory-independent in the VLMs and calibration methods we evaluate
+tao2025revisiting	score		Abstract; Sec 3 MMLU-Pro with three single-pass scalar methods (TPU, NVU, LVU)	three representative black-box single-pass methods
+yang2024confidence	score		Abstract; Sec 3 multi-agent deliberation refines verbalized confidence on generative QA	Collaborative Calibration on generative QA tasks across various domains
+ferrer2026when	score		Abstract; Sec 3 grader predictions with self-reported confidence, self-consistency, token probability	self-reported confidence consistently achieves the best calibration across all conditions
+kossen2024semantic	score		Abstract; Sec 3 linear probe on hidden states of one generation predicts semantic entropy as a scalar	SEPs, which directly approximate SE from the hidden states of a single generation
+fadeeva2024factchecking	score		Abstract; Sec 3 Claim Conditioned Probability: token-probability score per claim in generated biographies	Claim Conditioned Probability (CCP) measures only the uncertainty of a particular claim value expressed by the model
+bakman2024mars	score		Abstract; Sec 3 MARS replaces length-normalized sequence probability as the response score	Meaning-Aware Response Scoring (MARS) as an alternative to length-normalized scoring
+zhang2023enhancing	score		Abstract; Sec 3 reference-free token-probability hallucination score on generated text	a novel reference-free, uncertainty-based method for detecting hallucinations in LLMs
+su2024unsupervised	score		Abstract; Sec 3 MIND classifier on internal states scores hallucination of generated responses in real time	leverages the internal states of LLMs for real-time hallucination detection
+du2024haloscope	score		Abstract; Sec 3 membership score and binary truthfulness classifier over embeddings of generations	an automated membership estimation score for distinguishing between truthful and untruthful generations
+li2025language	score		Abstract; Sec 3 marginal answer-token probability over an attention chain as confidence for reasoning outputs	approximation of the marginal answer token probabilities
+vazhentsev2025efficient	score		Abstract; Sec 3 RAUQ sequence-level uncertainty from attention and token confidence in one pass	producing a sequence-level uncertainty estimate in just a single forward pass
+zong2026icalm	score		Sec 3 model gives factual answer plus verbal confidence score, then answers or abstains	asking the model to provide a verbal confidence score together with its factual answer
+badhe2026silent	typed	yes	Abstract; Sec 4 zero-shot label-restricted classification; ECE and Brier in results	When a model is restricted to a small set of target labels
+kuhn2023semantic	free-text		Abstract; Sec. 3 (free-form QA on TriviaQA/CoQA)	we introduce semantic entropy -- an entropy which incorporates linguistic invariances created by shared meanings
+farquhar2024semantic	free-text		Not on arXiv, not read directly; described in ciosek2025 (arXiv:2504.03579) Sec. 1	the work of Farquhar et al. (2024) used ten generations per prompt
+manakul2023selfcheckgpt	free-text		Abstract; Sec. 5 (WikiBio passages)	if an LLM has knowledge of a given concept, sampled responses are likely to be similar and contain consistent facts
+lin2023generating	free-text		Abstract; Sec. 4 (black-box measures over sampled responses)	a simple measure for the semantic dispersion can be a reliable predictor of the quality of LLM responses
+nikitin2024kernel	free-text		Abstract; Sec. 3	KLE defines positive semidefinite unit trace kernels to encode the semantic similarities of LLM outputs
+chen2024inside	free-text		Abstract; Sec. 3 (EigenScore over sampled responses)	exploits the eigenvalues of responses' covariance matrix to measure the semantic consistency/diversity in the dense embedding space
+duan2023shifting	free-text		Abstract; Sec. 4 (free-form QA)	We evaluate various free-form question-answering tasks, encompassing domains such as reading comprehension, science Q&A, and medical Q&A
+wang2022selfconsistency	free-text		Sec. 3 / Sec. 5 (GSM8K main)	one can use low consistency as an indicator that the model has low confidence
+zhang2024luq	free-text		Abstract; Sec. 3	a series of novel sampling-based UQ approaches specifically designed for long text
+jiang2024graphbased	free-text		Abstract; Sec. 3 (claim-response bipartite graph)	existing uncertainty estimation methods based on the concept of self-consistency can be viewed as using degree centrality
+qiu2024semantic	free-text		Abstract; Sec. 3 (density of response among sampled responses)	four free-form question-answering benchmarks
+aichberger2024improving	free-text		Abstract; Sec. 3	SDLG steers the LLM to generate semantically diverse yet likely alternatives for an initially generated text
+fadeeva2023lmpolygraph	free-text		Abstract; Sec. 3 (UE methods for text generation)	a framework with implementations of a battery of state-of-the-art UE methods for LLMs in text generation tasks
+vashurin2024benchmarking	free-text		Abstract; Sec. 4 (eleven text generation tasks)	offers an environment for controllable and consistent evaluation of novel UQ techniques over various text generation tasks
+malinin2020uncertainty	free-text		Abstract; Sec. 3-5 (ensemble-based sequence measures on WMT, LibriSpeech)	uncertainty estimation for autoregressive structured prediction tasks within a single unified and interpretable probabilistic ensemble-based framework
+cole2023selectively	free-text		Abstract; Sec. 3 (sampling repetition for abstention)	the most reliable approach to decide when to abstain involves quantifying repetition within sampled model outputs
+hou2023decomposing	free-text		Sec. 4.1	Since all the datasets we use are openended ... use the answer frequency to estimate the output distribution
+zhang2023sac3	free-text		Abstract; Sec. 3	semantically equivalent question perturbation and cross-model response consistency checking
+chen2023quantifying	free-text		Abstract; Sec. 3 (observed consistency + self-reflection)	By sampling multiple responses from the LLM and considering the one with the highest confidence score
+grewal2024improving	free-text		Abstract; Sec. 3	leverages semantic embeddings to achieve smoother and more robust estimation of semantic uncertainty in LLMs
+ao2024css	free-text		Abstract; Sec. 4 (selective NLG)	We apply this method to selective NLG, which detects and rejects unreliable generations
+da2024llm	free-text		Abstract; Sec. 3	constructing a directional graph from entailment probabilities
+mundler2023selfcontradictory	free-text		Abstract (open-domain text generation)	Our primary evaluation task is open-domain text generation
+cohen2023lm	free-text		Abstract; Sec. 2 (multi-turn cross-examination)	a multi-turn interaction between the LM that generated the claim and another LM (acting as an examiner)
+becker2024cycles	typed	yes	Sec. 3 Preliminaries; Sec. 4.3, Fig. 2 tables (AURC/AUROC/ECE)	Consider a multiple choice question q ... and a set of possible answers
+zhao2023knowing	free-text		Abstract; Sec. 3	examine the divergencies between the generated answers to identify the questions that the model may generate falsehoods
+wang2024wordsequence	free-text		Abstract; Sec. 4 (five free-form medical QA datasets)	a robust and general uncertainty measure for free-form answers has not been well-established
+yadkori2024believe	free-text		Abstract; Sec. 3-4 (iterative prompting over sampled responses)	This condition can be computed based solely on the output of the model obtained simply by some special iterative prompting
+friel2023chainpoll	free-text		Abstract; Sec. 3 (repeated CoT polling of a judge)	introducing ChainPoll, an innovative hallucination detection method
+lyu2024calibrating	free-text		Abstract; Sec. 3	deriving confidence from the distribution of multiple randomly sampled model generations, via three measures of consistency
+zhang2024atomic	free-text		Sec. 3 (generative vs discriminative, fusion)	propose two novel fusion strategies based on confidence agreement to integrate generative and discriminative confidence
+huang2023look	free-text		Sec. 1-3 (subject tasks: QA, MT, summarization, code generation)	twelve uncertainty estimation methods ... on four NLP tasks and ... two code generation tasks
+fomicheva2020unsupervised	score		Sec. 3.1 (TP); Sec. 3.2 (D-TP)	a simple QE measure based on sequence-level translation probability normalized by length
+nguyen2025beyond	free-text		Abstract; Sec. 3	a simple black-box uncertainty quantification method inspired by nearest neighbor estimates of entropy
+ma2025semantic	free-text		Abstract; Sec. 3	combining semantic clustering with a Boltzmann-inspired energy distribution
+yang2024just	typed	yes	Sec. 3 (MC setting); Tables 2-4 (ECE/TACE/Brier/AUROC)	input query in the form of a multiple choice question ... we will use A as the predicted
+gao2024spuq	free-text		Sec. 2 (aggregation); Sec. 4 datasets (XSUM, CoQA, TruthfulQA, StrategyQA, BoolQ)	aggregation methods ... to derive the confidence score c without necessitating an exact match
+agrawal2023language	free-text		Abstract; Sec. 3 (direct/indirect consistency queries)	identify hallucinated references without ever consulting any external resources, by asking a set of direct or indirect queries
+li2025semantic	free-text		Abstract; Sec. 3	perturbs queries and responses, embeds them in a semantic space, and computes the Gram matrix determinant
+huang2024uncertainty	free-text		Abstract; Sec. 2 (measures U_Ecc, U_Deg, U_EigV, SE, NLL, verbalized) on free-form QA	many uncertainty measures (e.g., semantic entropy and affinity-graph-based measures) have been proposed
+ling2024uncertainty	typed	no	Sec. 3 (label probability matrix); Sec. 4.2 Table 1 (AUPR/AUROC only)	aggregating the token probabilities of M sequences into a distribution of predicted labels
+sharma2025assessing	free-text		Abstract; Sec. 3 (symbolic clustering of sampled programs)	We propose symbolic clustering, a principled alternative based on symbolic execution, enabling precise clustering of semantically equivalent programs
+ciosek2025hallucination	free-text		Abstract; Sec. 3	estimate the semantic entropy ... of the distribution of generated sequences
+tan2025too	free-text		Abstract; Sec. 2 (self-consistent errors across stochastic samples)	LLMs repeatedly generate the same incorrect response across multiple stochastic samples
+zhang2024vluncertainty	free-text		Sec. 3 (semantic clustering); Sec. 4, Table 1 (MM-Vet, LLaVA-Bench free-form first; MMMU, ScienceQA)	we cluster LVLM responses based on their semantic content and then calculate the cluster distribution entropy
+fan2026iuq	free-text		Abstract; Sec. 3	leverages inter-sample consistency and intra-sample faithfulness to quantify the uncertainty in long-form LLM outputs
+zhao2025sese	free-text		Abstract; Sec. 3	SeSE constructs its optimal hierarchical abstraction through an encoding tree with minimal structural entropy
+he2026using	free-text		Abstract; Sec. 1 (sample-based estimators over candidate programs)	Sample-based uncertainty estimators address this by generating multiple candidate programs and measuring their disagreement
+bouchard2026functional	free-text		Abstract (functional entropy over sampled code)	functional entropy, a code-specific analog of semantic entropy
+kruse2025simple	typed	yes	Sec. 2 (label softmax); Table 1, Table 3 (AUROC/ECE/Brier)	Given a binary classification input ... Each output is mapped to a binary label (yes or no)
+hamidieh2026complementing	free-text		Abstract; Sec. 3 (ten long-form tasks)	EU uses only generated text from a small, scale-matched ensemble
+sun2026efficient	free-text		Abstract; Sec. 3	repeatedly sampling from LLMs and quantifying the semantic inconsistency among the generated responses
+portillowightman2023strength	typed	yes	Local copy papers/pw.pdf (TrustNLP 2023, not on arXiv); Sec. 3; Table 1 (ECE, swapped pairs)	We demonstrate these results on ten multiple-choice QA datasets and three models
+tonolini2024bayesian	typed	yes	Local copy papers/ton.pdf (not on arXiv); Abstract; Sec. 3; Table 1 (NLL, AUC, ECE, MCE, Brier)	BayesPE achieves significantly superior uncertainty calibration compared to several baselines over a range of natural language classification tasks
+fisch2020efficient	set		Abstract; Sec. 3	identify a set of promising prediction candidates -- in place of a single prediction
+fisch2021fewshot	set		Abstract; Sec. 3	Conformal prediction identifies a small set of promising output candidates in place of a single prediction
+schuster2021consistent	typed	no	Sec. 3-5; Fig. 3 (IMDB, VitaminC, AG News classification; no ECE/Brier)	evaluate our methods on three classification tasks with varying label space size
+angelopoulos2021learn	set		Abstract; Sec. 1, Sec. 3.1 (multi-label classification FDR control)	false discovery rate control in multi-label classification ... confidence set coverage in classification
+dey2021conformal	set		Abstract; Sec. 3	conformal prediction algorithms return confidence sets (i.e., set-valued predictions)
+schuster2022confident	score		Abstract; Sec. 3-4 (per-token early exit for text generation); relabelled (parity audit round 11): per-token softmax gap or classifier score (Sec. 3.5)	dynamically allocating different amounts of compute per input and generation timestep
+angelopoulos2022conformal	set		Sec. 1-2 (Cλ(x) set of classes; worked examples)	post-process the model's raw outputs into the set of classes with sufficiently high scores
+choubey2022conformal	set		Abstract; Sec. 3	Since a CP generates prediction sets with coverage guarantees, it reduces the number of target labels
+kumar2023conformal	set		Abstract; Sec. 3 (MCQA prediction sets)	explore how conformal prediction can be used to provide uncertainty quantification ... for ... multiple-choice question-answering
+ravfogel2023conformal	set		Abstract; Sec. 3 (next-word prediction sets)	the construction of minimal prediction sets according to a desired confidence level
+quach2023conformal	set		Abstract; Sec. 3	the sampled set returned by our procedure contains at least one acceptable answer with high probability
+zerva2023conformalizing	set		Abstract; Sec. 3 (split conformal intervals for MT quality scores)	conformal prediction, a distribution-free method to obtain confidence intervals with a theoretically established guarantee on coverage
+lee2023selective	free-text		Sec. 1-3 (entailment-aware selective generation with abstention, NQ)	control the FDR-E by abstaining from returning an answer when a GLM is uncertain
+li2023traq	set		Abstract; Sec. 3	constructing prediction sets that are guaranteed to contain the semantically correct response with high probability
+ren2023robots	set		Abstract; Sec. 3 (MCQA over candidate plans, prediction sets)	KnowNo builds on the theory of conformal prediction to provide statistical guarantees on task completion
+deutschmann2023conformal	set		Abstract; Sec. 3	to produce sets of sequences with theoretical coverage guarantees
+wang2023conformal	set		Sec. 1 (CP over LLM action choices; help when non-singleton)	CP constructs on-the-fly prediction sets that contain the correct robot action with user-specified confidence
+zollo2023prompt	free-text		Abstract; Sec. 5 (open-ended chat, summarization, code)	selecting a prompt based on rigorous upper bounds on families of informative risk measures
+ye2024benchmarking	set		Abstract; Sec. 3 (conformal prediction on MC tasks)	a new benchmarking approach for LLMs that integrates uncertainty quantification
+kang2024crag	set		Sec. 4 (constrained generation protocol outputs a generation set)	our generation protocol outputs a set of generations instead of just one
+kostumov2024uncertaintyaware	set		Abstract; Sec. 3 (multiple-choice VQA)	Using conformal prediction as an uncertainty estimation approach
+liang2024introspective	set		Sec. 3 (MCQA formulation; predicted valid option set, conformal)	The robot will request human for help if multiple valid options are included
+mohri2024language	free-text		Abstract; Sec. 3 (back-off: removing claims from one output)	progressively making LM outputs less specific (and expanding the associated uncertainty sets)
+ulmer2024nonexchangeable	set		Abstract; Sec. 3	supplies token-level, calibrated prediction sets equipped with statistical guarantees
+wang2024probabilistically	set		Sec. 1 (MCQA formulation; per-robot prediction sets)	CP enables the design of individual prediction sets for each robot that contain the correct action
+ren2024explore	set		Sec. I; Fig. (multi-step conformal prediction set over answers)	maintain a set of possible answers (prediction set) over time, and stop when the set reduces to a single answer
+su2024api	set		Abstract; Sec. 3	minimizes the size of prediction sets; and (3) ensures a statistical guarantee of the user-defined coverage
+abbasiyadkori2024mitigating	free-text		Abstract; Sec. 3	determining when a large language model (LLM) should abstain from responding
+gui2024conformal	free-text		Abstract (QA and radiology report outputs; alignment predictor thresholded)	selects new units whose predicted alignment scores surpass a data-dependent threshold, certifying their corresponding outputs
+jazbec2024fast	typed	yes	Sec. 3 (max class probability); Sec. 5.1 ImageNet, Fig. 1 (Brier score across exits)	One common choice for classification tasks is the maximum class probability
+cherian2024large	free-text		Abstract; Sec. 2 (claim filtering)	filtering claims from the LLM's original response if a scoring function evaluated on the claim fails to exceed a threshold
+wang2024conu	set		Abstract; Sec. 4	the calibrated prediction sets with small size further highlights the efficiency of our method
+jung2024trust	typed	yes	Sec. 3 (predictive probability of preference); Table 1 (Acc/ECE/AUROC/AUPRC)	we use the likelihood of preference ... the probability assigned by fLM to its predicted label
+liu2024multigroup	free-text		Sec. 1 (claim-level calibration + conformal claim selection on biographies)	selecting a subset of claims that—with high probability—are all
+kladny2024conformal	set		Abstract; Sec. 3	a sequential conformal prediction method producing prediction sets that satisfy a rigorous statistical guarantee
+wang2024sample	set		Abstract; Sec. 3	a novel conformal score to sample response sets of minimum size
+zhang2024conformal	set		Abstract; Sec. 3	modifies existing conformal prediction algorithms to output structured prediction sets that implicitly represent sets of labels
+kaur2024addressing	set		Abstract; Sec. 4 (conformal predictor over semantic clusters)	allowing the model to predict a set of responses instead of a single output
+vishwakarma2024prune	set		Abstract; Sec. 3	generate a prediction set containing the true answer with high probability
+chen2025conformal	free-text		Sec. 2-3 (machine disutility scores e.g. Detoxify on generated responses)	general purpose models, for example, Detoxify [15], have been created to automatically generate disutility measures for LLM outputs
+jiang2025conformal	free-text		Abstract; Sec. 3-4 (claim rewriting)	enables fine-tuning models to perform uncertainty-aware adaptive claim rewriting
+tayebati2025learning	set		Abstract; Sec. 3 (learned CP thresholds; LAC/APS sets)	minimizing prediction set size while maintaining reliable coverage
+kaur2025empirical	set		Abstract; Sec. 3	we apply CLM to generate sets of ASP programs from an LLM
+ke2025correctness	set		Abstract; Sec. 3 (MCQA prediction sets)	reducing average prediction set size with increased risk level
+shahrokhi2025conformal	set		Abstract; Sec. 3	generating valid and small prediction sets by sampling outputs ... from a black-box deep generative model
+sundarsingh2025conformalnl2ltl	set		Abstract; Sec. 3 (open-vocabulary QA with conformal prediction sets)	The primary model answers each QA instance while quantifying uncertainty via conformal prediction
+wang2025sconu	set		Abstract; Sec. 3	unbounded miscoverage rates and unactionable prediction sets
+doula2025safepath	set		Abstract; Sec. 3 (MCQA filtering of candidate paths)	filters out high-risk trajectories while guaranteeing that at least one safe option is included
+rubintoles2025conformal	free-text		Abstract; Sec. 3 (claims on deducibility graph)	applies split conformal prediction to subgraphs within a "deducibility" graph
+feng2025response	free-text		Abstract; Sec. 3 (sub-claim filtering in RAG answers)	statistical guarantees on the quality of refined sub-claims
+lee2025online	free-text		Abstract; Sec. 3	Conformal abstention mitigates this risk by ensuring that the system answers only when confident
+noorani2025conformal	set		Abstract; Sec. 3	prediction sets must be constructed solely from finite queries to a black box generative model
+overman2025conformal	score		Sec. 3-4 (score gap over action set); Sec. 5.1 TruthfulQA MC; App. B.1 prompt; no ECE/Brier; relabelled (prose audit round 3, Table 2: text parsed after the fact is not typed): the confidence is written as text and parsed	Assign a confidence score to each answer choice on a scale from 0 to 1
+chan2025conformal	set		Abstract; Sec. 3 (C-IP uses conformal prediction-set size as uncertainty)	estimate uncertainty based on the average size of conformal prediction sets
+yang2025conformal	set		Abstract; Sec. 3 (MCQA)	leveraging conformal prediction (CP) to ensure provable coverage guarantees
+ye2025conformal	set		Abstract; Sec. 3 (MCQA)	constructing prediction sets via null hypothesis testing
+kuwahara2025document	free-text		Abstract; Sec. 3 (thresholded sentence importance, extractive summary)	By calibrating thresholds on sentence-level importance scores, we enable extractive document summarization
+sheng2025analyzing	set		Abstract; Sec. 3 (conformal prediction intervals for judge ratings)	offering a prediction interval of LLM-based scoring via conformal prediction
+huang2025reliable	set		Abstract; Sec. 3	whenever the edge returns a prediction set, it should contain the true label with a user-specified probability
+wang2025safer	set		Abstract; Sec. 3	filters unreliable distractors from the candidate set for each test data point
+wang2026conformal	score		Sec. 3 (stop-when-confident signal); Sec. 5 (Confidence, EAT signals on AIME/GPQA)	adaptively early stop the reasoning by monitoring a scalar confidence or uncertainty signal computed from the partial trajectory
+zhang2026commcp	set		Sec. IV-B (message generation with conformal prediction)	CP provides statistically guaranteed prediction sets that contain the ground truth with a user-specified probability
+feng2026cora	constrained		Sec. 3 problem setup (CRC execute/abstain on one proposed action; Guardian sigmoid risk); no ECE/Brier	Actions are low-level GUI primitives
+emmenegger2026conformal	free-text		Abstract; Sec. 5 (biography generation, math)	sample from approximations to an LLM posterior, where the conditioning event corresponds to a calibrated, high-scoring region
+liu2023geval	typed	no	Sec. 2 scoring function; Sec. 3 results (Spearman/Kendall correlations only)	using the probabilities of output tokens from LLMs to normalize the scores and take their weighted summation
+lin2022teaching	score		Abstract	the model generates both an answer and a level of confidence (e.g. "90% confidence" or "high confidence")
+zhou2024relying	free-text		Abstract	we investigate how LMs incorporate confidence in responses via natural language
+kim2024im	free-text		Abstract	we examine how different natural language expressions of uncertainty impact participants' reliance, trust, and overall task performance
+steyvers2024what	free-text		Sec. 2 Methodology (users read explanations; MC and short-answer)	participants estimate the probability that the LLM's answer ... is correct based on the explanation
+zhou2024rel	free-text		Abstract	an interaction-centered evaluation framework called Rel-A.I. ... that measures whether humans rely on LLM generations
+rathi2025humans	free-text		Abstract	LLMs are overconfident across languages, frequently generating strengtheners even as part of incorrect responses
+villavicencio2026not	score		Sec. 3.2 Output-Level (all three conditions show numeric scores)	In the output-level uncertainty condition, uncertainty is communicated as a single confidence score for the entire response
+wang2026are	score		Abstract	models are neither cost-aware when articulating their verbal confidence, nor strategically responsive when deciding whether to engage or abstain
+kong2020calibrated	typed	yes	Abstract; metric Sec. 4.4 Table 1 (ECE), Fig. 1 reliability diagrams	outperforms existing calibration methods for text classification in terms of expectation calibration error
+zhang2024selfalignment	score		Sec. 1; Sec. 3 Self-Eval-P(True)/SK-Tuning	encourages an LLM to generate prediction confidence scores pertaining to the factuality of its own generated responses through self-asking
+han2024enhancing	score		Sec. 3 Methods (LePe prompt; one verbal confidence for chosen option)	please select the correct option, and provide your confidence in this answer
+stengeleskin2024lacie	free-text		Abstract	a LACIE-trained model hedges more and implicitly signals certainty when it is correct by using an authoritative tone
+kapoor2024large	score		Sec. 5 (LoRA + Prompt; P(yes) on MC and open-ended MMLU)	we pose classifying correctness as a multiple choice response with two values
+wang2024blob	typed	yes	Sec. 4.1 Settings; Table 1 (ACC, ECE, NLL)	we select the next token logits corresponding to possible answers from each dataset
+chaudhry2024finetuning	free-text		Abstract	fine-tune language models to generate calibrated linguistic expressions of uncertainty
+niu2024functionallevel	typed	yes	Abstract; metric Sec. 5.1 Table 1 (ECE, MC main table)	Across four multiple-choice benchmarks and two open-ended generative QA tasks, UQ4CT reduces Expected Calibration Error (ECE)
+liu2024can	score		not on arXiv (arXiv API title search found no match); not read; relabelled (parity audit round 14): ACL Anthology 2024.emnlp-main.1205, the model states a percentage confidence	No arXiv version located; contract not verified under the arxiv.org-only rule
+krishnan2024enhancing	score		Abstract; Sec. 4.1 Table 1 (token/predictive/semantic entropy); relabelled (parity audit round 11): token entropy or perplexity read off the model	well-calibrated uncertainty quantification in open-ended and free-form natural language generation
+huang2025efficient	score		Abstract	distilling Self-Consistency-derived confidence into the model itself. This enables reliable confidence estimation at test time with one forward pass
+hager2025uncertainty	score		Abstract	we create examples annotated with verbalized probabilities for supervised fine-tuning
+xiao2025restoring	typed	yes	Sec. 3 Preliminaries; metric Sec. 6.1 Table 2 (conf-ECE, cw-ECE), Fig. 1	The calibration error of an LLM is typically evaluated on a multiple-choice question and its corresponding correct answer
+he2025mmboundary	free-text		Sec. 1; Appx. A (five verbal confidence levels)	Our method enables the model to express natural language confidence statement for each generated sentence
+jang2025verbalized	score		Abstract	supervised fine-tuning with scalar confidence labels alone suffices to elicit self-verification behavior
+li2025conftuner	score		Abstract	verbalized confidence: i.e., their expressions of confidence in text form, such as "I am 80% confident that..."
+steyvers2025generalization	score		Abstract	single-question confidence estimation, in which the model reports numeric confidence for one answer
+zhang2025grace	score		Abstract	the model expresses confidence by the similarity between the last hidden state and the embedding of a special token
+eikema2025teaching	free-text		Abstract	augmenting model samples with uncertainty hedges (i.e. verbal cues such as 'possibly' or 'likely')
+zhang2025direct	score		Abstract	align an LLM's verbalized confidence with its internal confidence rather than ground-truth accuracy
+xiaohu2026know	typed	yes	Sec. 3.1 (4 of 7 tasks classification); metric Tables 1-2 (ECE)	normalized confidence score based on output anchor token probabilities: classification labels for structured tasks
+guo2026llms	score		Abstract	For end-of-reasoning self-assessment, we train the model to verbalize a confidence score for its response
+band2024linguistic	free-text		Abstract	long-form generations with confidence statements such as "I estimate a 30% chance of..." or "I am certain that..."
+tao2024when	score		Abstract	the order-preserving reward incentivizes the model to verbalize greater confidence for responses of higher quality
+xu2024sayself	score		Sec. 3.2 (confidence level normalized to [0,1])	LLMs are prompted to produce responses, self-reflective rationales, and confidence levels
+baniharouni2025rewarding	score		Abstract	directly fine-tune LLMs to express calibrated confidence estimates alongside their answers to factual questions
+zhang2025lovec	score		Abstract	trains LLMs to append an on-the-fly numerical confidence score to each generated statement
+turtel2025outcomebased	score		Sec. 2.3 (binary event forecast); metric Sec. 3.1 Table 1, Fig. 1 (Brier, ECE); relabelled (parity audit round 11): the probability is written as text and parsed (Sec. 2.3)	outputs a single probability that the event will occur, and subsequently observes the binary outcome
+damani2025beyond	score		Abstract	LMs generate both predictions and numerical confidence estimates after reasoning
+vanniekerk2025posttraining	score		Sec. 3.1 (answer-span confidence read from token probabilities)	Probability disparity measures the model's certainty by computing the gap between the top two token probabilities
+yin2025deliberative	score		Sec. 2.1 Deliberative Search Framework	<confidence>k</confidence> : Reports confidence level representing the model's certainty about its current answer hypothesis
+bereket2025uncalibrated	score		Abstract; metric Sec. 3.2 Metrics, Table 1 (ECE, reliability plots); relabelled (prose audit round 3, Table 2: text parsed after the fact is not typed): prompt asks for a probability from 1-99 in answer tags, parsed from text (Sec. 3.4)	GRPO induces overconfident probability predictions for binary stochastic outcomes
+liu2025c2gspg	score		Abstract	we define the model confidence for each reasoning problem using the normalized sequence-level probability
+kale2025knowrl	free-text		Sec. 3.2 (feasible/infeasible labels); metrics accuracy and F1 only, Table 2; relabelled: the model emits a feasible/infeasible label; the reward is agreement with the majority label; no per-option probability (prose audit)	The reward is the proportion of outputs agreeing with the majority label
+zou2025thinking	score		Sec. 4 Experimental Setup (output tags)	<confidence>...</confidence> for a scalar confidence score in the range (0.0, 1.0)
+wu2025mitigating	score		Abstract	optimizing strictly proper scoring rules for models to output a calibrated probability of correctness
+yaldiz2026balancing	typed	yes	Abstract; metric Sec. 3.3 Table 1 (ECE), Fig. 1 reliability diagrams	a calibration-aware reinforcement learning formulation that directly adjusts decision-token probabilities
+xuan2026the	score		Abstract	we systematically investigate verbalized calibration in tool-use agents
+baniharouni2026calibrated	score		Abstract	fine-tuning medical LVLMs to produce calibrated verbalized confidence estimates alongside radiology reports
+ma2026decoupling	score		Sec. 1	DCPO requires the model to explicitly verbalize its confidence after reasoning trajectory generation
+li2026confidence	score		Abstract	the model outputs its confidence before answering, interpreting this score as the model's probability of answering the question correctly
+wang2026process	score		Sec. 1 (RLCM overview)	a lightweight probe predicts confidence from the hidden state
+xiao2026vlcalibration	score		Sec. 3; Appx. prompt (0-10 scores in tags)	The LVLM explicitly outputs separate visual and reasoning confidence to derive a holistic confidence
+wang2026calibrationaware	score		Abstract	incorrect responses yield lower perplexity than correct ones, degrading relative calibration
+liu2026think	score		Abstract	structures outputs into atomic claims paired with explicit confidence estimates
+yu2026calibrating	free-text		Abstract	calibrates language models directly in semantic space without a verbalized confidence interface
+li2026orce	score		Abstract	Our method first generates an answer and then estimates confidence conditioned on the fixed question--answer pair
+cui2026rankingaware	score		Sec. 4 experimental setup	a structured chat template that elicits a verbalized scalar confidence alongside the reasoning chain and final answer
+liu2026reinforcement	score		Sec. 1 (stage 1 trains numeric scores; stage 2 maps to hedges)	calibrate the faithfulness of models' self-reported sentence-level confidence scores
+zhu2026closing	score		Sec. 2 (binary reflection score)	We instruct the agent to reflect on environment feedback and generate a binary reflection score
+singh2026verifiable	score		Abstract (binary win outcome); metric Sec. 6 Tables 3-4 (Brier, ECE); relabelled (parity audit round 11): the probability is written as text and parsed	aleatoric forecasting, where the forecast itself is the output and the label is one stochastic outcome
+tan2026on	score		Abstract	trained using reinforcement learning (RL) to simultaneously improve reasoning accuracy and verbalize its confidence
+yang2026scaling	score		Abstract	Utilizing the well-calibrated verbalized confidence from C3RL
+turtel2026how	score		Sec. 3.1 Forecasting Task; metric Sec. 4.1 Table 2 (Brier, log score, ECE); relabelled (parity audit round 11): rewards depend on the parsed probability (Sec. 3.3)	outputs a probability that the event will occur
+xu2026dualstake	score		Abstract	building on the commonly used post-answer verbalized confidence
+leng2024taming	score		Abstract	RLHF tends to lead models to express verbalized overconfidence in their own responses
+lou2024uncertaintyaware	score		Abstract	URM employs a probabilistic value head to capture aleatoric uncertainty
+park2025know	score		Abstract	adjusts PRM outputs to better align with true success probabilities
+ma2026distributional	score		Abstract	estimate a monotonic conditional quantile function over success probabilities estimated by the PRM
+pan2026uncertaintyaware	set		Sec. 2.2 Uncertainty Quantification (conformal interval)	a UQ method augments the RM with a prediction interval that is expected to contain the unobserved ground-truth reward
+zhang2023rtuning	score		Sec. 2.3 Training and Inference	the weighted combination of the probability of uncertainty expression and answer prediction as the confidence value
+yang2023alignment	free-text		Abstract	LLMs proactively refuse to answer questions when they lack knowledge
+cheng2024can	free-text		Abstract	the assistant can refuse to answer most its unknown questions
+liang2024learning	free-text		Abstract	LLMs often fail to express their internal knowledge during generation, leading to factual hallucinations
+xu2024rejection	free-text		Abstract	trains a reliable reward model to encourage the refusal of out-of-knowledge questions
+kang2024unfamiliar	free-text		Abstract	we can influence a model's responses to unfamiliar queries (e.g., say "I don't know")
+chen2024teaching	free-text		Abstract	answering known questions while declining unknown ones
+li2024know	free-text		Abstract	instructing LLMs to acknowledge knowledge limitations by responding with "I don't know" appears promising
+xue2024ualign	free-text		Abstract	confidently answer known questions and refuse unknown questions
+song2025the	free-text		Abstract	standard RFT training could reduce model refusal rates by more than 80%
+wei2025truthrl	free-text		Abstract (ternary reward over free-text answers)	a simple yet effective ternary reward that distinguishes correct answers, hallucinations, and abstentions
+an2025teaching	free-text		Abstract	training the LLM to retain answers within high-confidence clusters and discard those within low-confidence ones
+mohamadi2025honesty	free-text		Abstract (main controlled study on logic puzzles)	ternary rewards (+1 correct, 0 abstention, -λ error) instead of binary
+zhai2026abstainr1	free-text		Abstract	jointly optimizes explicit abstention and semantically aligned post-refusal clarification on unanswerable queries
+gao2026karl	free-text		Abstract	dynamically rewarding correct answers or guided abstention
+song2026delineating	free-text		Abstract	enhance the refusal capability of VLMs when facing such unknown questions
+pan2026tiar	free-text		Abstract	LLM abstention learning, specifically using ternary reward
+che2026abstention	score		Sec. 1 Repair; Sec. 5 Experiments (report-level arm; Brier reported)	Move abstention from the action space to a mandatory confidence report, trained with a strictly proper score
+blasiok2023when	?		Sec. 1 (binary-label predictors; theory only, no reported ECE/Brier/NLL); relabelled: theory of proper-loss optimality; no model output to label (prose audit)	In supervised prediction with binary labels ... we wish to learn a predictor that assigns each [x] a probability
+kalai2023calibrated	free-text		Abstract	hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition
+kalai2025why	free-text		Abstract	producing plausible yet incorrect statements instead of admitting uncertainty
+nakkiran2025trained	free-text		Abstract	when using a certain sampling-based notion of semantic calibration, base LLMs are remarkably well-calibrated
+chen2023frugalgpt	score		Sec. 3 (separate scoring function); harmonised: a scoring function gives one reliability score per answer	The generation scoring function ... generates a reliability score given a query and an answer produced
+aggarwal2023automix	score		Abstract; harmonised: self-verification gives one reliability estimate per answer	a few-shot self-verification mechanism, which estimates the reliability of its own outputs
+ong2024routellm	score		Abstract; harmonised: the router reads one score per query	router models that dynamically select between a stronger and a weaker LLM during inference
+chuang2024learning	score		Abstract	Self-REF introduces confidence tokens into the LLM, from which a confidence score can be extracted
+bouchard2026is	score		Sec. 6.1 Experimental Setup	Confidence scores are white-box log-probability signals ... main-text cascades use mean token negentropy
+ding2024hybrid	score		Abstract; harmonised: the router reads one predicted-difficulty score per query	a router that assigns queries to the small or large model based on the predicted query difficulty
+gupta2024language	score		Abstract; harmonised: a learned deferral rule over token-level uncertainty gives one score per answer	incorporating token-level uncertainty through learned post-hoc deferral rules can significantly outperform such simple aggregation strategies
+yue2023large	free-text		Abstract	we consider the "answer consistency" of the weaker LLM as a signal of the question difficulty
+hu2024routerbench	score		Abstract; relabelled (parity audit round 11): routers read one predicted score (Sec. 5.1-5.2)	a comprehensive dataset comprising over 405k inference outcomes from representative LLMs
+varshney2022model	typed	no	Sec. 1 (MaxProb over classes); no calibration metric reported	uses a threshold over the maximum softmax probability (MaxProb) to decide whether
+ramirez2024optimising	typed	no	Sec. 3.2.2 Margin Sampling; Sec. 4.2 (6 of 9 tasks classification/MC)	The margin between the two most likely classes has been widely regarded as an uncertainty measure
+zellinger2025rational	typed	yes	Sec. 4.1 (MC: max answer-choice prob; NLG: P(Y)); metric Sec. 4.2 Tables 1-2 (ECE)	On multiple-choice tasks, we take the maximum probability among the answer choices
+narasimhan2024faster	score		Abstract; harmonised: the deferral rule reads token probabilities, one score per answer	designing new speculative cascading techniques that implement their deferral rule through speculative execution
+jitkrittum2023when	typed	no	Abstract; no calibration metric reported	One simple deferral rule employs the confidence of the current classifier, e.g., based on the maximum predicted softmax probability
+soiffer2025semantic	free-text		Abstract	semantic agreement -- meaning-level consensus between ensemble outputs -- as a training-free signal for reliable deferral
+fanconi2025cascaded	score		Sec. 4.1 (surrogate token probability)	the model is asked to verify whether a generated response is correct, and we extract the next-token probability
+wu2025from	score		Sec. 3.2 Experimental Settings	We extract the normalized token probability from the LLM's output as confidence score
+kondadadi2026l2dclinical	typed	no	Sec. 3 Method; metrics F1 only	BERT classifies the input text and produces softmax probabilities
+kamath2020selective	score		Abstract; harmonised: a trained calibrator gives one score per answer	we train a calibrator to identify inputs on which the QA model errs, and abstain when it predicts an error
+feng2024dont	free-text		Abstract (MC tasks; abstain decided via other LLMs, no per-option probabilities)	LLMs probing other LLMs for knowledge gaps, either cooperatively or competitively
+tomani2024uncertaintybased	free-text		Sec. 3.1 (NLL, sampled PE/SE) and 3.2 (hedge count)	multiple responses are sampled from the model to estimate the predictive or semantic entropy of the output distribution
+kirichenko2025abstentionbench	free-text		Abstract	require LLMs to reason about uncertainty and selectively abstain -- i.e., refuse to answer definitively
+srinivasan2024selective	score		Sec. 2 Multimodal Selective Prediction	we assume a VLM that can produce both an answer, as well as a confidence score for that answer
+aggarwal2023lets	free-text		Abstract	dynamically adjusts the number of samples per question using a lightweight stopping criterion
+li2024escape	free-text		Sec. 1, Fig. 1	Stop sampling when answers within a window
+damani2024learning	score		Abstract; harmonised: a predictor gives one expected-reward score per query and budget	predicts the distribution of rewards given an input and computation budget
+fu2025deep	score		Sec. 2 (trace-level confidence from token logits)	we employ average trace confidence (also termed self-certainty) as a trace-level quality measure
+yang2025dynamic	score		Sec. 3.2 (trial-answer token probabilities)	The confidence evaluator computes the confidence of the induced trial answer
+jiang2023active	score		Abstract (per-token trigger); harmonised: the trigger reads token probabilities of the upcoming sentence	regenerate the sentence if it contains low-confidence tokens
+taubenfeld2025confidence	score		Abstract; Sec. 4.1 (P(True), verbal)	CISC performs a weighted majority vote based on confidence scores obtained directly from the model
+wang2023large	free-text		Sec. 1-2 evaluation template; relabelled (parity audit round 11): uncertainty is an entropy over sampled verdicts (Sec. 3.3)	Each assistant receives an overall score on a scale of 1 to 10
+liu2023calibrating	score		Appendix prompt templates	Please return your score on how the summary is consistent with the article in the scale of 1 to 5
+lee2025how	free-text		Sec. 1 (binary judge labels; CI on aggregate accuracy); relabelled (parity audit round 11): the judge gives a hard correct/incorrect label with no per-item probability	an LLM may incorrectly label an 'incorrect' response as 'correct'
+si2023large	free-text		Sec. 1	explanations that not only provide an answer (i.e., whether the claim is true or false), but also elucidate
+geng2025jsonschemabench	constrained		Abstract	a benchmark for constrained decoding comprising 10K real-world JSON schemas
+tam2024speak	constrained		Abstract	we evaluate LLMs performance when restricted to adhere to structured formats versus generating free-form responses
+willard2023efficient	constrained		Abstract	guiding text generation with regular expressions and context-free grammars
+dong2024xgrammar	constrained		Abstract	Context-free grammar is a flexible approach to enable structured generation via constrained decoding
+ugare2024syncode	constrained		Abstract	SynCode ensures soundness and completeness with respect to the CFG of a formal language
+beurerkellner2024guiding	constrained		Abstract	DOMINO, that can enforce constraints in a fully subword-aligned fashion
+park2024grammaraligned	constrained		Abstract	in grammar-constrained decoding (GCD), the LLM's output must follow a given grammar
+geng2023grammarconstrained	constrained		Abstract	grammar-constrained decoding (GCD) can be used to control the generation of LMs
+scholak2021picard	constrained		Abstract	a method for constraining auto-regressive decoders of language models through incremental parsing
+poesia2022synchromesh	constrained		Abstract	Constrained Semantic Decoding (CSD): a general framework for constraining the output to a set of valid programs
+beurerkellner2022prompting	constrained		Abstract	LMP allows constraints to be specified over the language model output
+koo2024automatabased	constrained		Abstract	we would ideally constrain the LM to only produce valid output
+park2025flexible	constrained		Abstract	Grammar-constrained decoding (GCD) can guarantee that LLM outputs matches such rules
+geng2024sketchguided	constrained		Abstract	sketch-guided constrained decoding (SGCD), a novel approach to constrained decoding for blackbox LLMs
+mundler2025typeconstrained	constrained		Abstract	a type-constrained decoding approach that leverages type systems to guide code generation
+banerjee2025crane	constrained		Abstract	a reasoning-augmented constrained decoding algorithm, CRANE
+lew2023sequential	constrained		Abstract	enforcing syntactic and semantic constraints on the outputs of LLMs, called sequential Monte Carlo (SMC) steering
+loula2025syntactic	constrained		Abstract	generating text that conforms to syntactic or semantic constraints
+reddy2026hidden	constrained		Abstract	constrained decoding is then applied, conditioned on this draft, to guarantee validity
+li2025adaptrack	constrained		Abstract	By incorporating backtracking into the generation process, AdapTrack avoids distorting the output intent
+shorten2024structuredrag	constrained		Abstract	a benchmark of six tasks designed to assess LLMs' proficiency in following response format instructions
+xia2024fofo	constrained		Abstract	evaluating large language models' (LLMs) ability to follow complex, domain-specific formats
+tang2023strucbench	constrained		Abstract	producing complex, structured tabular data remains challenging
+yang2025structeval	constrained		Abstract	producing both non-renderable (JSON, YAML, CSV) and renderable (HTML, React, SVG) structured formats
+singh2026structured	constrained		Abstract	Each record pairs a natural-language question with a JSON schema that the model must follow
+lee2026format	constrained		Abstract	structured output requirements -- JSON, XML, LaTeX, Markdown -- substantially degrade reasoning and writing performance
+fan2026capacity	constrained		Abstract	Models with sufficient headroom absorb JSON constraints without degradation
+galeone2026when	constrained		Abstract	the output contract is strict (JSON with required fields)
+wang2025slot	free-text		Abstract; relabelled: synced with field_overrides.tsv: the model emits free text; a separate converter produces JSON	transforms unstructured LLM outputs into precise structured formats
+wang2024look	typed	no	Abstract; no calibration metric reported	rank the candidate answers based on the log probability of the first token prediction
+li2026jev	typed	yes	Fig. 1; metric Sec. 4 and Sec. 6 (multiclass Brier, clipped NLL, ten-bin ECE, reliability curves Fig. 3)	JEV directly exposes typed decisions and label probabilities, summarized as confidence

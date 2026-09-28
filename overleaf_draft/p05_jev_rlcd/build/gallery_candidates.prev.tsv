@@ -1,0 +1,41 @@
+kind	stage	cite	arxiv	fig	family	first_author	year
+method	S2	mielke2020reducing	2012.14983	1	linguistic calibration of dialogue hedging	Sabrina J. Mielke	2020
+method	S2	sileo2022probing	2211.03358	1	words of estimative probability probing	Damien Sileo	2022
+method	S2	ren2023self	2312.09300	1	token-level self-evaluation prompts	Jie Ren	2023
+method	S2	xiong2023can	2306.13063	1	confidence elicitation framework (prompt, sampling, aggregation)	Miao Xiong	2023
+method	S2	zhou2023navigating	2302.13439	1	epistemic markers injected into prompts	Kaitlyn Zhou	2023
+method	S3	wang2022selfconsistency	2203.11171	1	self-consistency	Xuezhi Wang	2022
+method	S3	agrawal2023language	2305.18248	1	direct / indirect query consistency	Ayush Agrawal	2023
+method	S3	chen2023quantifying	2308.16175	1	sample consistency plus self-reflection	Jiuhai Chen	2023
+method	S3	cohen2023lm	2305.13281	2	cross-examination	Roi Cohen	2023
+method	S3	cole2023selectively	2305.14613	2	sampling repetition	Jeremy R. Cole	2023
+method	S4	band2024linguistic	2404.00474	2	RL calibration reward	Neil Band	2024
+method	S4	yang2023alignment	2312.07000	1	refusal/abstention tuning	Yuqing Yang	2023
+method	S4	chaudhry2024finetuning	2409.12180	2	calibration fine-tuning	Arslan Chaudhry	2024
+method	S4	leng2024taming	2410.09724	5	reward-model calibration	Jixuan Leng	2024
+method	S4	lin2022teaching	2205.14334	1	verbalised probability via fine-tuning	Stephanie Lin	2022
+method	X	scholak2021picard	2109.05093	2	constrained decoding	Torsten Scholak	2021
+method	X	varshney2022model	2210.05528	1	routing/cascade	Neeraj Varshney	2022
+method	X	schuster2022confident	2207.07061	1	adaptive compute	Tal Schuster	2022
+method	X	kamath2020selective	2006.09462	1	abstention	Amita Kamath	2020
+method	X	liu2023calibrating	2309.13308	1	judge calibration	Yuxuan Liu	2023
+results	S2	kadavath2022language	2207.05221	4	P(True) self-evaluation	Saurav Kadavath	2022
+results	S2	tian2023just	2305.14975	1	verbalised numeric, linguistic and top-k prompting	Katherine Tian	2023
+results	S2	xiong2023can	2306.13063	2	confidence elicitation framework (prompt, sampling, aggregation)	Miao Xiong	2023
+results	S2	groot2024overconfidence	2405.02917	4	verbalised uncertainty evaluation in LLMs and VLMs	Tobias Groot	2024
+results	S2	rivera2024combining	2401.08694	4	verbalised plus sample-consistency hybrid	Mauricio Rivera	2024
+results	S3	xiao2021hallucination	2103.15025	2	token predictive uncertainty	Yijun Xiao	2021
+results	S3	wang2022selfconsistency	2203.11171	5	self-consistency	Xuezhi Wang	2022
+results	S3	cole2023selectively	2305.14613	3	sampling repetition	Jeremy R. Cole	2023
+results	S3	huang2024uncertainty	2404.03163	1	rank-calibration assessment	Xinmeng Huang	2024
+results	S3	li2025language	2503.19168	3	attention-chain token aggregation	Yinghao Li	2025
+results	S4	band2024linguistic	2404.00474	4	RL calibration reward	Neil Band	2024
+results	S4	kong2020calibrated	2010.11506	1	calibration fine-tuning	Lingkai Kong	2020
+results	S4	kalai2023calibrated	2311.14648	1	theory	Adam Tauman Kalai	2023
+results	S4	lin2022teaching	2205.14334	5	verbalised probability via fine-tuning	Stephanie Lin	2022
+results	S4	baniharouni2025rewarding	2503.02623	4	RL calibration reward	David Bani-Harouni	2025
+results	X	varshney2022model	2210.05528	2	routing/cascade	Neeraj Varshney	2022
+results	X	schuster2022confident	2207.07061	3	adaptive compute	Tal Schuster	2022
+results	X	jitkrittum2023when	2307.02764	1	deferral	Wittawat Jitkrittum	2023
+results	X	jung2024trust	2407.18370	2	judge calibration	Jaehun Jung	2024
+results	X	srinivasan2024selective	2402.15610	3	abstention	Tejas Srinivasan	2024

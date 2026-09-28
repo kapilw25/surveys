@@ -1,0 +1,63 @@
+% The mechanism figure: where each stage injects calibration. Laid out at the acmsmall text width (no scaling).
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\small,
+  box/.style={draw=black!55, rounded corners=3pt, align=center, minimum height=13mm,
+              text width=17.5mm, inner sep=2.5pt, fill=white},
+  act/.style={box, text width=13.2mm, minimum height=20.5mm},
+  st/.style={rounded corners=2pt, font=\scriptsize\bfseries, text=white, inner sep=2pt, align=center},
+  ar/.style={-{Stealth[length=2mm]}, black!70, line width=0.8pt}]
+ % ---- main row ----
+ \node[box, text width=17mm] (state)  at (0,0)    {\textbf{state}\\[1pt]{\scriptsize text or program state}};
+ \node[box]                (type)   at (2.6,0)  {\textbf{declared options}\\[1pt]{\scriptsize choice, ordinal scale, yes/no}};
+ \node[box, fill=black!6]  (model)  at (5.2,0)  {\textbf{model}\\[1pt]{\scriptsize one query scores every option}};
+ \node[box]                (prob)   at (7.8,0)  {\textbf{probability per option}\\[1pt]{\scriptsize $p(\text{option}\mid\text{state})$}};
+ \node[box, fill=stX!10, draw=stX!70!black] (policy) at (10.4,0) {\textbf{action policy}\\[1pt]{\scriptsize thresholds $\tau_{\mathrm{lo}}<\tau_{\mathrm{hi}}$}};
+ \draw[ar] (state) -- (type); \draw[ar] (type) -- (model);
+ \draw[ar] (model) -- (prob); \draw[ar] (prob) -- (policy);
+ % ---- actions ----
+ \node[act] (a1) at (8.8,-2.7) {\textbf{answer}\\[1pt]{\scriptsize $p\ge\tau_{\mathrm{hi}}$}};
+ \node[act] (a2) at (10.4,-2.7) {\textbf{hand off}\\[1pt]{\scriptsize to another model or a human,\\ $\tau_{\mathrm{lo}}{\le}p{<}\tau_{\mathrm{hi}}$}};
+ \node[act] (a3) at (12.0,-2.7) {\textbf{abstain}\\[1pt]{\scriptsize $p<\tau_{\mathrm{lo}}$}};
+ \draw[ar] (policy.south) -- (a1.north); \draw[ar] (policy.south) -- (a2.north); \draw[ar] (policy.south) -- (a3.north);
+ % ---- stage tags: where calibration enters ----
+ \node[st, fill=stS2txt] at ($(type.east)!0.5!(model.west)+(0,1.45)$) {S2 prompt\\ elicitation};
+ \draw[stS2, line width=0.7pt] ($(type.east)!0.5!(model.west)+(0,1.12)$) -- ($(type.east)!0.5!(model.west)+(0,0.05)$);
+ \node[st, fill=stS0txt] at ($(model.east)!0.5!(prob.west)+(0,1.45)$) {S0\\ read-off};
+ \draw[stS0, line width=0.7pt] ($(model.east)!0.5!(prob.west)+(0,1.12)$) -- ($(model.east)!0.5!(prob.west)+(0,0.05)$);
+ \node[st, fill=stS1txt] at ($(model.east)!0.5!(prob.west)+(0,-1.5)$) {S1 post-hoc\\ map};
+ \draw[stS1, line width=0.7pt] ($(model.east)!0.5!(prob.west)+(0,-1.17)$) -- ($(model.east)!0.5!(prob.west)+(0,-0.05)$);
+ \node[st, fill=stS3txt] (s3) at ($(model.north)+(0,2.15)$) {S3 extra inference};
+ \draw[-{Stealth[length=2mm]}, stS3, line width=0.8pt] ($(model.north)+(-0.35,0)$) to[out=95,in=-95] ($(s3.south)+(-0.35,0)$);
+ \draw[-{Stealth[length=2mm]}, stS3, line width=0.8pt] ($(s3.south)+(0.35,0)$) to[out=-85,in=85] ($(model.north)+(0.35,0)$);
+ % ---- S4: a calibration term in training (a level return bus from the outcomes) ----
+ \foreach \a in {a1,a2,a3} \draw[stS4, line width=0.9pt, dashed] (\a.south) -- (\a.south |- 0,-3.95);
+ \draw[-{Stealth[length=2.3mm]}, stS4, line width=0.9pt, dashed] (a3.south |- 0,-3.95) -- (model.south |- 0,-3.95) -- (model.south);
+ \node[st, fill=stS4txt, anchor=north] at (8.6,-4.1) {S4 a calibration term enters the training loss or reward};
+ % ---- where free-text pipelines break the loop ----
+ \node[draw=stX!70!black, dashed, rounded corners=3pt, fill=stX!6, text=stX!70!black, align=left,
+       text width=46mm, font=\scriptsize, inner sep=4pt] (brk) at (1.35,-2.7)
+   {\textbf{Where free-text pipelines break the loop:} the answer is a string that must be parsed
+    and validated, and the option set is not enforced.};
+ \draw[-{Stealth[length=2mm]}, stX!70!black, dashed] (brk.north) to[out=70,in=250] (type.south);
+\end{tikzpicture}
+\caption{\textbf{The calibrated decision loop, and where each stage injects calibration.} A decision
+model receives a state and a \emph{declared} option set, scores every option in one query,
+and hands a probability per option to an explicit action policy. The policy drawn here answers when the probability is high,
+hands a less certain case off to another model or a human, and abstains when the probability is low; Table~\ref{tab:definitions}
+lists the other low-confidence actions (trigger retrieval, filter the output, adapt compute, return a prediction set). The
+five stages of the taxonomy differ in where calibration enters: the model's own read-off
+(\textcolor{stS0txt}{\textbf{S0}}), a post-hoc map (\textcolor{stS1txt}{\textbf{S1}}), a prompt that asks for
+confidence (\textcolor{stS2txt}{\textbf{S2}}), extra inference such as sampling or a conformal set
+(\textcolor{stS3txt}{\textbf{S3}}), or a calibration term in the model's own training loss or reward
+(\textcolor{stS4txt}{\textbf{S4}}). The dashed callout marks where free-text generation pipelines break
+the loop (Table~\ref{tab:definitions}). Hosted and open typed-decision models (Tables~\ref{tab:jev_hf_ecosystem} and~\ref{tab:jev_decision_index})
+expose this interface: a state, declared options (a choice among labels, an ordinal scale or yes/no) and a
+probability per option.}
+\Description{A left-to-right pipeline: state, declared options, model, probability per option, action policy. The
+policy branches down to three actions: answer, hand off to another model or a human, and abstain. Coloured tags mark where calibration
+enters: S2 on the prompt arrow, S0 and S1 on the model-to-probability arrow, S3 as a loop around the model, and S4
+as a dashed return path from the actions back into the model. A red dashed note says free-text pipelines break the
+loop because the answer must be parsed and the option set is not enforced.}
+\label{fig:decision_loop}
+\end{figure}

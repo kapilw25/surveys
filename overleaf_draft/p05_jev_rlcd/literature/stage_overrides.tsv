@@ -1,0 +1,5 @@
+arxiv	stage	trained	reason
+2604.03904	S2	no	I-CALM: prompt-level method for black-box LLMs with no retraining (per its abstract; flagged by the S4 harvester)
+2205.14334	S4	yes	Lin et al. 2022 fine-tunes GPT-3 to state calibrated confidence: a supervised confidence target (S4, T1), per Table 3
+2410.13284	S4	yes	Self-REF (Chuang 2024) fine-tunes the LLM itself to emit a confidence token; routing is only its use (reviewer R7, 2026-09-27)
+2012.00955	S4	yes	Jiang et al. 2020 propose fine-tuning-based calibration of the LM itself, Sec. 4.1 (S4, T1; parity audit round 12)
