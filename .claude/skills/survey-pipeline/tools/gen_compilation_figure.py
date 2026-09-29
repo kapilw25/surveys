@@ -46,10 +46,22 @@ def read_panels(path):
 
 FITLABEL = False     # --fit-labels: shrink a label that is wider than its tile (needs \\usepackage{adjustbox})
 FIT = False          # --fit: letterbox the whole source figure on white instead of centre-cropping it
+NATURAL = False      # --natural: trim white margins, keep each figure's own aspect (no letterbox), frame hugs the image
+MAXH = 0.75          # --max-h default
+ASPECTS = {}         # tile path -> width/height after trimming (used by --natural)
+def trim_white(im, thr=245, pad=6):
+    from PIL import ImageChops, Image
+    g = im.convert("L").point(lambda v: 255 if v > thr else 0)
+    bbox = ImageChops.invert(g).getbbox()
+    if not bbox: return im
+    l, t, r, b = bbox
+    return im.crop((max(0, l-pad), max(0, t-pad), min(im.width, r+pad), min(im.height, b+pad)))
 def crop(tile, aspect, out):
     from PIL import Image
     Image.MAX_IMAGE_PIXELS = None
     im = Image.open(tile).convert("RGB"); iw, ih = im.size
+    if NATURAL:
+        im = trim_white(im); im.save(out); ASPECTS[out] = im.width/im.height; return out
     if FIT:              # keep every pixel of the source figure (titles, axes, both halves of a comparison)
         if iw/ih > aspect: cw, ch = iw, int(round(iw/aspect))
         else:              cw, ch = int(round(ih*aspect)), ih
@@ -66,7 +78,7 @@ def prep_tiles(rows, aspect, tiles_out):
     os.makedirs(tiles_out, exist_ok=True)
     m = {}
     for i, r in enumerate(rows):
-        dst = os.path.join(tiles_out, f"tile_{i}.png" if FIT else f"tile_{i}.jpg")
+        dst = os.path.join(tiles_out, f"tile_{i}.png" if (FIT or NATURAL) else f"tile_{i}.jpg")
         m[r["tile"]] = crop(r["tile"], aspect, dst)
     return m
 
@@ -93,6 +105,28 @@ def grid_tex(rows, title, label, subtitle, cols, link, tilemap):
         L.append(f"\\node[anchor=west,text=white,font=\\footnotesize\\bfseries,inner sep=0] at (0.14,{-(y+bh/2):.3f}) {{{g}}};")
         y += bh + gap
         nrows = math.ceil(len(ids)/cols)
+        if NATURAL:                                    # rows as tall as their tallest panel; frames hug each image
+            hmax = tw*MAXH
+            for rr in range(nrows):
+                row = ids[rr*cols:(rr+1)*cols]
+                dims = []
+                for r in row:
+                    a_ = ASPECTS.get(tilemap[r["tile"]], tw/th); w_ = tw; h_ = w_/a_
+                    if h_ > hmax: h_ = hmax; w_ = h_*a_
+                    dims.append((w_, h_))
+                rh = max(h for _, h in dims)
+                ncr = len(row); roff = (cols-ncr)*(tw+gap)/2
+                for cc, (r, (w_, h_)) in enumerate(zip(row, dims)):
+                    x0 = gap + roff + cc*(tw+gap); x = x0 + (tw-w_)/2; ty = y + (rh-h_)
+                    u, im = r["url"], tilemap[r["tile"]]
+                    L.append(f"\\node[anchor=north west,inner sep=0] at ({x:.3f},{-ty:.3f}) {{\\href{{{u}}}{{\\includegraphics[width={w_:.3f}cm]{{{im}}}}}}};")
+                    L.append(f"\\draw[black!35,line width=0.35pt] ({x:.3f},{-ty:.3f}) rectangle ({x+w_:.3f},{-(ty+h_):.3f});")
+                    nm = f"\\adjustbox{{max width={tw-0.06:.3f}cm}}{{{r['name']}}}" if FITLABEL else r['name']
+                    L.append(f"\\node[anchor=north west,text={link},font=\\scriptsize\\bfseries,inner sep=0] at ({x0+0.03:.3f},{-(y+rh+0.05):.3f}) {{\\href{{{u}}}{{{nm}}}}};")
+                    if r["fig"]:
+                        L.append(f"\\node[anchor=north east,text=black!60,font=\\scriptsize,inner sep=0] at ({x0+tw-0.03:.3f},{-(y+rh+0.05):.3f}) {{\\href{{{u}}}{{{r['fig']}}}}};")
+                y += rh + 0.42 + gap
+            continue
         for j, r in enumerate(ids):
             rr, cc = divmod(j, cols)
             ncr = min(cols, len(ids)-rr*cols); roff = (cols-ncr)*(tw+gap)/2
@@ -107,6 +141,78 @@ def grid_tex(rows, title, label, subtitle, cols, link, tilemap):
         y += nrows*(th+lh+gap)
     L += ["\\end{tikzpicture}}", caption(title, label), descr(title), f"\\label{{{label}}}", "\\end{figure*}"]
     return "\n".join(L) + "\n", tw/th
+
+PAGE_H = 0.0         # --page-h: with --natural, split the figure into "(continued)" floats taller than this (cm)
+def natural_grid_tex(rows, title, label, subtitle, cols, link, tilemap):
+    """--natural: trimmed panels at their own aspect, frames hug the image, rows as tall as their tallest panel;
+    split into continued floats at row boundaries when a part would exceed PAGE_H (cm)."""
+    W = 13.8; gap = 0.07; tw = (W-(cols+1)*gap)/cols; th = tw*0.72; bh = 0.5; titleh = 0.58; lh = 0.42
+    groups, order = {}, []
+    for r in rows:
+        groups.setdefault(r["group"], []).append(r)
+        if r["group"] not in order: order.append(r["group"])
+    acc = {g: BAND_COLORS.get(g) or ACCENTS[i % len(ACCENTS)] for i, g in enumerate(order)}
+    items = []                                              # ("band", group) or ("row", group, [(r, w, h)], rh)
+    for g in order:
+        ids = groups[g]; items.append(("band", g))
+        for k in range(0, len(ids), cols):
+            row = []
+            for r in ids[k:k+cols]:
+                a_ = ASPECTS.get(tilemap[r["tile"]], tw/th); w_ = tw; h_ = w_/a_
+                if h_ > tw*MAXH: h_ = tw*MAXH; w_ = h_*a_
+                row.append((r, w_, h_))
+            items.append(("row", g, row, max(h for _, _, h in row)))
+    hts = [bh+gap if it[0] == "band" else it[3]+lh+gap for it in items]
+    def split(limit):                                        # greedy parts under `limit`; a band never ends a part
+        parts, cur, y = [], [], titleh
+        for it, h in zip(items, hts):
+            if cur and y+h > limit:
+                moved = [cur.pop()] if cur[-1][0] == "band" else []
+                parts.append(cur); cur = moved; y = titleh + sum(bh+gap for _ in moved)
+            cur.append(it); y += h
+        parts.append(cur); return parts
+    if PAGE_H:
+        k = len(split(PAGE_H)); lo, hi = titleh, PAGE_H           # fewest parts, then the most even heights
+        for _ in range(40):
+            mid = (lo+hi)/2
+            if len(split(mid)) <= k: hi = mid
+            else: lo = mid
+        parts = split(hi)
+    else:
+        parts = [items]
+    out = []
+    for pi, part in enumerate(parts):
+        ttl = title if pi == 0 else title + " (continued)"
+        L = ["\\begin{figure*}[tp]", "\\centering", "\\resizebox{\\textwidth}{!}{%", "\\begin{tikzpicture}[x=1cm,y=1cm]"]
+        for g in order: L.append(f"\\definecolor{{c{acc[g]}}}{{HTML}}{{{acc[g]}}}")
+        L.append(f"\\fill[black!88] (0,0) rectangle ({W:.3f},{-titleh:.3f});")
+        L.append(f"\\node[anchor=west,text=white,font=\\small\\bfseries,inner sep=0] at (0.14,{-titleh/2:.3f}) {{{ttl}}};")
+        y = titleh
+        for it in part:
+            if it[0] == "band":
+                g = it[1]
+                L.append(f"\\fill[c{acc[g]}] (0,{-y:.3f}) rectangle ({W:.3f},{-(y+bh):.3f});")
+                L.append(f"\\node[anchor=west,text=white,font=\\footnotesize\\bfseries,inner sep=0] at (0.14,{-(y+bh/2):.3f}) {{{g}}};")
+                y += bh+gap; continue
+            _, g, row, rh = it
+            roff = (cols-len(row))*(tw+gap)/2
+            for cc, (r, w_, h_) in enumerate(row):
+                x0 = gap+roff+cc*(tw+gap); x = x0+(tw-w_)/2; ty = y+(rh-h_)
+                u, im = r["url"], tilemap[r["tile"]]
+                L.append(f"\\node[anchor=north west,inner sep=0] at ({x:.3f},{-ty:.3f}) {{\\href{{{u}}}{{\\includegraphics[width={w_:.3f}cm]{{{im}}}}}}};")
+                L.append(f"\\draw[black!35,line width=0.35pt] ({x:.3f},{-ty:.3f}) rectangle ({x+w_:.3f},{-(ty+h_):.3f});")
+                nm = f"\\adjustbox{{max width={tw*0.7:.3f}cm}}{{{r['name']}}}" if FITLABEL else r['name']
+                L.append(f"\\node[anchor=north west,text={link},font=\\scriptsize\\bfseries,inner sep=0] at ({x0+0.03:.3f},{-(y+rh+0.05):.3f}) {{\\href{{{u}}}{{{nm}}}}};")
+                if r["fig"]:
+                    L.append(f"\\node[anchor=north east,text=black!60,font=\\scriptsize,inner sep=0] at ({x0+tw-0.03:.3f},{-(y+rh+0.05):.3f}) {{\\href{{{u}}}{{{r['fig']}}}}};")
+            y += rh+lh+gap
+        L.append("\\end{tikzpicture}}")
+        if pi == 0: L += [caption(title, label), descr(title), f"\\label{{{label}}}"]
+        else: L += ["\\addtocounter{figure}{-1}", "\\caption{\\textbf{" + title + " (continued).}}", descr(title)]
+        L.append("\\end{figure*}")
+        out.append("\n".join(L))
+    head = "% AUTO-GENERATED by tools/gen_compilation_figure.py (--natural) -- vector TikZ, main-body, hyperlinked."
+    return head + "\n" + "\n".join(out) + "\n", tw/th
 
 def collage_tex(rows, title, label, subtitle, cols, link, tilemap, card):
     W = 13.8; gap = 0.05; tw = (W-(cols+1)*gap)/cols; th = tw*0.78; lh = 0.28; titleh = 0.58
@@ -165,12 +271,16 @@ def main():
     ap.add_argument("--tiles-out", default="")
     ap.add_argument("--card", default="")
     ap.add_argument("--fit", action="store_true", help="letterbox tiles instead of centre-cropping them")
+    ap.add_argument("--natural", action="store_true", help="trim white margins and keep each figure's own aspect (frames hug the image)")
+    ap.add_argument("--max-h", type=float, default=0.75, help="with --natural: cap a panel's height at this fraction of the column width")
+    ap.add_argument("--page-h", type=float, default=0.0, help="with --natural: split into continued floats taller than this (cm)")
     ap.add_argument("--fit-labels", action="store_true", help="shrink labels wider than their tile (needs adjustbox)")
     ap.add_argument("--band-colors", default="", help='"group=HEX;group=HEX" band colours')
     ap.add_argument("--caption", default="", help="caption text after the bold title (replaces the default)")
     a = ap.parse_args()
     global FIT, BAND_COLORS, CAPTION, FITLABEL
     FIT = a.fit; FITLABEL = a.fit_labels; CAPTION = a.caption
+    global NATURAL, MAXH, PAGE_H; NATURAL = a.natural; MAXH = a.max_h; PAGE_H = a.page_h
     BAND_COLORS = dict(kv.split('=',1) for kv in a.band_colors.split(';') if '=' in kv)
     rows = read_panels(a.panels_tsv)
     rows = [r for r in rows if r["tile"] and (a.mode == "collage" or r["fig"])]  # drop UNVERIFIABLE in grid
@@ -178,7 +288,7 @@ def main():
     aspect = 1.0/0.72 if a.mode == "grid" else 1.0/0.78
     tilemap = prep_tiles(rows, aspect, a.tiles_out)
     if a.mode == "grid":
-        tex, _ = grid_tex(rows, a.title, a.label, a.subtitle, cols, a.linkcolor, tilemap)
+        tex, _ = (natural_grid_tex if NATURAL else grid_tex)(rows, a.title, a.label, a.subtitle, cols, a.linkcolor, tilemap)
     else:
         tex, _ = collage_tex(rows, a.title, a.label, a.subtitle, cols, a.linkcolor, tilemap, a.card)
     open(a.out_tex, "w").write(tex)

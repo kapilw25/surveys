@@ -86,15 +86,25 @@ def main():
         if f.endswith((".pdf",".png")) and stem not in keep: os.remove(os.path.join(D,f))
     # ---- split floats (one page each) ----
     pages=int(subprocess.run(["pdfinfo","all.pdf"],capture_output=True,text=True).stdout.split("Pages:")[1].split()[0])
-    if pages!=len(present):
-        sys.exit(f"PAGE MISMATCH: every float must be exactly one page ({pages} pages vs {len(present)} floats)")
+    # a source may hold several floats (a gallery split into "(continued)" parts): one page per float
+    nfl={m[0]:len(re.findall(r"\\begin\{(?:figure|table)\*?\}",open(os.path.join(P,m[3]+".tex")).read())) for m in present}
+    if pages!=sum(nfl.values()):
+        sys.exit(f"PAGE MISMATCH: every float must be exactly one page ({pages} pages vs {sum(nfl.values())} floats)")
     def clear(name):
         for f in os.listdir(D):
             if f.startswith(name+"-") and f.endswith(".png") or f==name+".pdf": os.remove(os.path.join(D,f))
-    for i,(name,kind,num,src) in enumerate(present,1):
+    i=0
+    for name,kind,num,src in present:
+        k=nfl[name]; a_,b_=i+1,i+k; i+=k
         clear(name); out=os.path.join(D,name)
-        subprocess.run(["pdfseparate","-f",str(i),"-l",str(i),"all.pdf",out+".pdf"]); compact(out+".pdf")
-        subprocess.run(["pdftoppm","-png","-r","200","-f",str(i),"-l",str(i),"-singlefile","all.pdf",out+"-1"])
+        parts=[f"sep_{name}_{j}.pdf" for j in range(a_,b_+1)]
+        subprocess.run(["pdfseparate","-f",str(a_),"-l",str(b_),"all.pdf",f"sep_{name}_%d.pdf"])
+        if len(parts)>1: subprocess.run(["pdfunite",*parts,out+".pdf"])
+        else: os.replace(parts[0],out+".pdf")
+        for f in parts:
+            if os.path.exists(f): os.remove(f)
+        compact(out+".pdf")
+        subprocess.run(["pdftoppm","-png","-r","200",out+".pdf",out])
     # ---- split longtables by their page ranges, then crop each page tight ----
     rng=aux_pages("longs")
     for name,num,src in longs:

@@ -239,3 +239,15 @@ state file.
   appendix, one appendix per table, numbered by its appendix letter (A1, B1, ...); the main body keeps only
   one-page tables and points to the appendix at first mention. build_paper.py fails if a longtable is
   \input in the main body.
+- 2026-09-28 (P05, owner review -- the TAXONOMY is the most important figure; galleries must be legible):
+  (1) The forked forest tree printed leaf text at ~2 pt and left ~40% of its box empty (gutters, connector
+  lines, indentation). Rule: the taxonomy must use >=90% of its figure area and print >=2x the previous leaf
+  size. P05 does this with a one-page BLOCK MOSAIC (build/gen_taxonomy.py, tcolorbox): a title bar, two columns
+  of stage blocks, a full-width band for the core; the font is set directly (no \resizebox), the two columns are
+  measured and the shorter one's last block absorbs the difference (bottom edges align); fewer entries per
+  family (1 representative outside the core, up to 8 per core family) buy the font size. Measured: whitespace
+  1.1%, median word height 2.05 pt -> 5.6 pt. Measure both numbers on the render; do not eyeball.
+  (2) Galleries: at most 2 panels per row; trim each panel's white margins and keep its own aspect
+  (gen_compilation_figure.py --natural --max-h F); a gallery taller than a page splits into balanced
+  "(continued)" floats at row boundaries (--page-h cm); build_all.py counts floats per source so a multi-part
+  figure becomes one multi-page deliverable.
